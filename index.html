@@ -8,19 +8,20 @@
 
 <style>
 
-a:link {
-  color: white;
-  background-color: #ffff;
-  text-decoration: none;
-}
-
-a:hover {
+a, a:link, a:visited, a:focus,  a:hover, a:active{
   color: green;
-  background-color: #ffff;
-  text-decoration: none;
+  background-color: #ff6;
+  text-decoration:none; 
+ 
 }
 
 
+a:hover{
+  color: green;
+  background-color: #ff6;
+  text-decoration:none; 
+ 
+}
 * {
   box-sizing: border-box;
 }
@@ -53,6 +54,14 @@ nav ul {
   width: 100%;
 }
 
+
+@media only screen and (max-width: 1300px) {
+  #lessonID {
+    font-size: 16px;
+  }
+}
+
+
 #cards {
 
   height: 340px; /* only for demonstration, should be removed */
@@ -63,6 +72,7 @@ nav ul {
 .deck {
    height: 200px;
 }
+
 
 
 
@@ -79,6 +89,12 @@ nav ul {
  }  
  
  
+ @media only screen and (max-width: 1350px) {
+  #deck {
+    display: none;
+  }
+}
+
  
  .divDeckTable {
     display: table;
@@ -911,6 +927,8 @@ function getNextExercise(){
        
  
         selectExercise(selectedLesson)   // ntote the selected lesson is global.
+        
+        window.scrollTo(0,0);
 
 }  // end function getNextExercise
 
@@ -940,7 +958,7 @@ $("#exercise").val(nextExercise);         // select the randomly chosen lesson f
 
 
 selectExercise(selectedLesson);          // ntote the selected lesson is global.  Go play the cards for this randomly selected exercise
-
+window.scrollTo(0,0);
 }  // end function getRandomExercise
 
 
@@ -1221,6 +1239,19 @@ $(document).ready(function () {
                                 $("#distribution").show();
                                $("#dummyPoints").hide();
                                 $("#nextExerciseButton").css("display","none");
+                                
+                                if ($(window).width() <= 1024) {
+
+      											 $("#deck").hide();
+                              }
+									else {
+  									 //  alert('More than 1024' + $(window).width()  );
+  									 // $("#deck").hide();
+											}
+											
+			 
+
+
    getLessonsXML();     // this will read the XML and, when the AJAX async call is finished, will go get all the Lessons and populate them in the picklist, ready for selection by the end user
 
     }); 
@@ -1244,7 +1275,7 @@ $(document).ready(function () {
 
 <div id="mainpage">
 
-    <div id="LessonID">
+    <div id="LessonID" class="lessonID" >
     				<div id="lessonPicklist" style="display: inline-block">
           Lesson:
            <select name="lesson" id="lesson" style="font-size:inherit;" onchange="selectedLesson=selectLesson()">
@@ -1356,7 +1387,7 @@ $(document).ready(function () {
 
    </div>  
 <form id="formQuestions">
-	<div id="questions" style="padding:20px;">
+	<div id="questions" style="padding:6px;">
 	    Is this a balanced hand?   	    
 	        <div style="  display: inline-block;" >
 	        			  <input type="radio"  id="radioYes" value="Yes" name="balanced" >Yes</input>
@@ -1368,6 +1399,28 @@ $(document).ready(function () {
 	    <div id="distribution">How many distribution points?  <input id="dist" class="DIST"></input> <div id="distributionCorrect" class="correctCheck"></div> </div>
 	    <p />
 	     <div id="dummyPoints">How many dummy points?  <input id="dummy" class="DUMMY"></input><div id="dummyCorrect" class="correctCheck"></div> </div>
+
+	</div>   
+   </div>
+   
+   <div id="rightSide">
+			<div id="bidsArea" style="float:left; padding-top: 20px; padding-left: 20px; ">Bids so far...
+			
+		
+<table id="bids">
+<thead>
+  <tr>
+    <th>Position</th>
+    <th style="text-align:center;">Bid</th>
+
+  </tr>
+  </thead>
+<tbody></tbody>
+
+</table> 
+
+
+
 	    <p />
 	    <div id = "correctBidInput">What is the correct bid? 
 	    <select id="bidLevel" onchange="checkForPass()">
@@ -1394,33 +1447,19 @@ $(document).ready(function () {
 
 	    </select>
 	    <div id="bidCorrect" class="correctCheck"></div> 
-      </div>
 	    
+	    <P />
 	      <button type="button"   onclick="showCorrectAnswer()">Check Your Answers</button>
-	</div>   
-   </div>
-   
-   <div id="rightSide">
-			<div id="bidsArea" style="float:left; padding-top: 20px; padding-left: 20px; ">Bids so far...
-<table id="bids">
-<thead>
-  <tr>
-    <th>Position</th>
-    <th style="text-align:center;">Bid</th>
-
-  </tr>
-  </thead>
-<tbody></tbody>
-
-</table> 
-
+      </div>
+	      
+	      
 	    <div id="correctAnswer" style="padding-top: 20px; max-width:400px;"/>
 	         <div id="correctAnswerSummary" style="display:block" ></div>
 	          <div id="explanationPart1" style="display:block; padding-top:20px; " ></div>
 		       <div id="explanationPart2" style="display:block; padding-top:20px; " ></div>
 		        <div id="explanationPart3" style="display:block; padding-top:20px; " ></div>   
 	    </div>
-       <div id="nextExerciseButton" style="padding-top:10px">
+       <div id="nextExerciseButton" style="padding-top:10px; padding-bottom:10px">
        <button type="button"   onclick="getNextExercise()">Next Exercise in this Lesson</button>
 
        </div>
