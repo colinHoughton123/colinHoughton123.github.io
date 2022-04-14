@@ -28,9 +28,15 @@ a:hover{
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+ font-size: 20px;
 }
 
-
+input[type='radio'] { 
+     transform: scale(2); 
+     width: 30 px;
+ }
+ 
+ 
 
 /* Style the list inside the menu */
 nav ul {
@@ -55,6 +61,8 @@ nav ul {
 }
 
 
+
+
 @media only screen and (max-width: 1300px) {
   #lessonID {
     font-size: 16px;
@@ -73,6 +81,9 @@ nav ul {
    height: 200px;
 }
 
+#randomButton {
+  float: right;
+}
 
 
 
@@ -84,8 +95,10 @@ nav ul {
 #deck {
   float: left;
   background: #007D3B;
-  height: 615px; 
-  20px 0px 0px 20px
+  max-height: 300px;
+  20px 0px 0px 20px;
+    grid-column-start: 1;
+  grid-column-end: 1;
  }  
  
  
@@ -105,8 +118,8 @@ nav ul {
     vertical-align: middle;
     text-align: center;
     //  height: 615px; /* purely for demonstration */
-    padding-left: 20px;
-    padding-top: 30px;
+    padding-right: 20px;
+    padding-top: 60px;
 }
 
 
@@ -115,7 +128,7 @@ nav ul {
   background: #007D3B;
   padding: 20px;
   max-height: 615px;
-  min-height: 615px;
+ 
 }
 
 
@@ -123,7 +136,7 @@ nav ul {
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
   gap: 0px;
   background-color: #44AA05;
   padding: 10px;
@@ -140,45 +153,43 @@ nav ul {
 
 #spades{
 
-  grid-column-start: 1;
-  grid-column-end: 1;
+  grid-column-start: 2;
+  grid-column-end: 2;
   max-width: 180px;
   text-align:center;
-  min-width:150px;
-  
+ 
 
-  
 }
 
 
 #hearts{
 
-  grid-column-start: 2;
-  grid-column-end: 2;
+  grid-column-start: 3;
+  grid-column-end: 3;
     max-width: 180px;
   text-align:center;
-  min-width:150px;
+ 
 
 }
 
 #diamonds{
 
-  grid-column-start: 3;
-  grid-column-end: 3;
+  grid-column-start: 4;
+  grid-column-end: 4;
     max-width: 180px;
   text-align:center;
-  min-width:150px;
+ 
   object-fit: cover;
 }
 
 
 #clubs{
 
-  grid-column-start: 4;
-  grid-column-end: 4;
+  grid-column-start: 5;
+  grid-column-end: 5;
   max-width: 180px;
   text-align:center;
-  min-width:150px;
+ 
 }
 
 
@@ -968,7 +979,8 @@ window.scrollTo(0,0);
 
      
      var xmlDataSource =  "Exercises.xml";
-
+     
+  //   var xmlDataSource =  "http://localhost/~colin_houghton/Bridge/Exercises.xml";
 
         
    var settings = {
@@ -1289,8 +1301,8 @@ $(document).ready(function () {
                
 				</select>
 				</div>
-				<div id="randomButton" style="display: inline-block">
-				   <button type="button"    onclick="getRandomExercise()">Select at Random</button>
+				<div id="randomButton" style="font-size:30px">
+				   <button type="button"    style="font-size:30px" onclick="getRandomExercise()">Select at Random</button>
 				</div>
     </div>
     
@@ -1299,7 +1311,15 @@ $(document).ready(function () {
  
 	<div id="cards">
 	
-			<div id="deck">
+
+			   
+			
+			
+
+			<div id="dealt"  class="grid-container"  style="float:left">
+			
+			
+						<div id="deck">
 			
 			              <div class="divDeckTable">
     										<div class="innerDivDeckTable">
@@ -1313,10 +1333,6 @@ $(document).ready(function () {
         						</div>
 			   </div>
 			   
-			
-			
-
-			<div id="dealt" class="grid-container" style="float:left">
 			
 			        <div id="spades" style="float:left">
 			              <img id="cardPos1" class="card" src="images/playingCards/PNG-cards-1.3/ace_of_spades.png" />
@@ -1387,18 +1403,19 @@ $(document).ready(function () {
 
    </div>  
 <form id="formQuestions">
-	<div id="questions" style="padding:6px;">
-	    Is this a balanced hand?   	    
-	        <div style="  display: inline-block;" >
-	        			  <input type="radio"  id="radioYes" value="Yes" name="balanced" >Yes</input>
-	        	        <input type="radio" id="radioNo" name="balanced"  value="No">No</input>
+	<div id="questions" style="padding:6px;">Is this a balanced hand?  
+	    	    
+	        <div style="  display: inline-block;"  >
+	        			  <input type="radio"  id="radioYes" value="Yes" name="balanced" style="width: 30px;" >Yes</input>
+	        	        <input type="radio" id="radioNo" name="balanced"  value="No" style="width: 30px;">No</input>
 	        	        <div id="balancedHandCorrect" class="correctCheck"></div>
 	         </div>
-	     <div id = "highCardInput">How many high card points? <input id="hcp" class="HCP"></input> <div id="highCardCorrect" class="correctCheck"></div></div> 
-	     <p />
-	    <div id="distribution">How many distribution points?  <input id="dist" class="DIST"></input> <div id="distributionCorrect" class="correctCheck"></div> </div>
-	    <p />
-	     <div id="dummyPoints">How many dummy points?  <input id="dummy" class="DUMMY"></input><div id="dummyCorrect" class="correctCheck"></div> </div>
+	     
+	     <div id = "highCardInput" style="padding:6px;" >How many high card points? <input id="hcp" class="HCP" style="font-size:30px; width: 60px"  type="number" min="0" max="40"></input> <div id="highCardCorrect" class="correctCheck"></div></div> 
+ 
+	    <div id="distribution" style="padding:6px;">How many distribution points?  <input id="dist" class="DIST" style="font-size:30px; width: 60px"  type="number" min="0" max="20"></input> <div id="distributionCorrect" class="correctCheck"></div> </div>
+ 
+	     <div id="dummyPoints" style="padding:6px;">How many dummy points?  <input id="dummy" class="DUMMY" style="font-size:30px; width: 60px"   type="number" min="0" max="20"></input><div id="dummyCorrect" class="correctCheck"></div> </div>
 
 	</div>   
    </div>
@@ -1422,7 +1439,9 @@ $(document).ready(function () {
 
 
 	    <p />
-	    <div id = "correctBidInput">What is the correct bid? 
+	    <div id = "correctBidInput">
+	      <div>What is the correct bid? </div>
+	        <div>
 	    <select id="bidLevel" onchange="checkForPass()">
 	    	    	    	        <option>Select ... </option>
 	        <option value="1" >1</option>
@@ -1446,14 +1465,15 @@ $(document).ready(function () {
 	        	        	        	        <option value="Clubs">Clubs</option>
 
 	    </select>
+
 	    <div id="bidCorrect" class="correctCheck"></div> 
-	    
+	    	    </div>
 	    <P />
 	      <button type="button"   onclick="showCorrectAnswer()">Check Your Answers</button>
       </div>
 	      
 	      
-	    <div id="correctAnswer" style="padding-top: 20px; max-width:400px;"/>
+	    <div id="correctAnswer" style="padding-top: 20px; max-width:420px;"/>
 	         <div id="correctAnswerSummary" style="display:block" ></div>
 	          <div id="explanationPart1" style="display:block; padding-top:20px; " ></div>
 		       <div id="explanationPart2" style="display:block; padding-top:20px; " ></div>
