@@ -127,7 +127,9 @@ nav ul {
   float: left;
   background: #007D3B;
   padding: 20px;
-  max-height: 615px;
+  height: 575pxpx;
+  min-width: 575px;
+ 
  
 }
 
@@ -140,6 +142,7 @@ nav ul {
   gap: 0px;
   background-color: #44AA05;
   padding: 10px;
+  height: 600px
 }
 
 .grid-container > div {
@@ -477,31 +480,25 @@ function createLessonsXml(xml) {            // this function is called up on the
 function dealTheCards(spades,hearts,diamonds,clubs){
 
 
-// alert('the spades passed to deal the cards is ' + spades);
+ // alert('the spades passed to deal the cards is ' + spades);
 
 // erase the card images from the display
                
-               
-                             $('#spades').empty();
-                             $('#hearts').empty();
-                             $('#diamonds').empty();
-                             $('#clubs').empty();
-                            
-
-      //         <img id="cardPos1" class="card" src="images/playingCards/PNG-cards-1.3/ace_of_spades.png" />  //
-               
- 
 
 
-    
+var longestSuitLength = 0;
 var suitArray = spades.split(',')
 var arrayLength = suitArray.length;
+
+longestSuitLength = arrayLength;
+
+
 var cardImage = "seeThrough.png";
 var cardPosition = 0;
 var relativeFolder = "images/playingCards/PNG-cards-1.3/";
 var suit = 'spades';
 
-
+var rotateDegrees = 0;
 
 
 for (var i = 0; i < arrayLength; i++) {
@@ -529,37 +526,32 @@ for (var i = 0; i < arrayLength; i++) {
              
              var p =  $("spades:eq("+cardPosition+")");
              
-           //     var p = $( "#cardPos1" ).first();
-             
- //alert (p);
-     //        var position = p.position();
-             
-      //     alert(position)
-           
- //          var rect = #cardPos1.getBoundingClientRect();
-   //        console.log(rect.top, rect.right, rect.bottom, rect.left);
        
-  //   alert(position.left );
-    
-    
-
+         const el = document.getElementById("spades");
        
-       const el = document.getElementById("spades");
          var rect = el.getBoundingClientRect();
-//           console.log("going to  ..." + rect.top ,   rect.left  );
          const dealStart= document.getElementById("deckCard");
          var rectFrom = dealStart.getBoundingClientRect();
-//           console.log("coming from  ..." + rectFrom.top  ,   rectFrom.left  );
-         deal1Card(rectFrom.top, rectFrom.left, rect.top + 10 , rect.left + 10  )
+         
+          console.log("dealing spades"  );
+          
+        if(cardPosition > 1){
+             rotateDegrees = Math.floor((Math.random() * 10) - 5)    // randomly select the next lesson into the global varibale
+       }
+          
+              //    console.log('dealing the card ' + cardImage );
+                  
+                  
+         deal1Card(rectFrom.top, rectFrom.left, rect.top + 10 , rect.left + 10 , suit, cardPosition, cardImage, rotateDegrees,longestSuitLength );
  
-      $('#spades').append('<img id="cardPos'+ cardPosition +'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
-// alert('Element is ' + offsetTop + ' vertical pixels from <body> and ' +  offsetLeft +  ' horizontal pixels from <body>');
+ 
+      // if(cardPosition > 1){
+      // rotateDegrees = Math.floor((Math.random() * 10) - 5)    // randomly select the next lesson into the global varibale
+     //  }
+    //  $('#spades').append('<img style="transform: rotate('+rotateDegrees+'deg)"id="cardPos'+ cardPosition +'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
 
-                
 
-
-       
-}   /// end for loop
+}   // end for loop
       
  
 
@@ -575,6 +567,9 @@ var cardImage = "seeThrough.png";
 var cardPosition = 0;
 var relativeFolder = "images/playingCards/PNG-cards-1.3/";
 var suit = 'hearts'
+
+longestSuitLength = Math.max(longestSuitLength, arrayLength)   ;
+rotateDegrees = 0;
 for (var i = 0; i < arrayLength; i++) {
 
        cardPosition++;
@@ -596,14 +591,19 @@ for (var i = 0; i < arrayLength; i++) {
        
               const el = document.getElementById("hearts");
          var rect = el.getBoundingClientRect();
-//           console.log("going to  ..." + rect.top ,   rect.left  );
          const dealStart= document.getElementById("deckCard");
          var rectFrom = dealStart.getBoundingClientRect();
-//           console.log("coming from  ..." + rectFrom.top  ,   rectFrom.left  );
-         deal1Card(rectFrom.top, rectFrom.left, rect.top + 10 , rect.left + 10  )
          
+  //          console.log("target for hearts is   " + rect.top  + " and from Left " + rect.left);
          
-       $('#hearts').append('<img id="cardPos'+ cardPosition +'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
+       if(cardPosition > 1){
+       rotateDegrees = Math.floor((Math.random() * 10) - 5)    // randomly select the next lesson into the global varibale
+       }
+       
+                deal1Card(rectFrom.top, rectFrom.left, rect.top + 10 , rect.left + 10 , suit, cardPosition, cardImage, rotateDegrees,longestSuitLength );
+       
+       
+    //  $('#hearts').append('<img style="transform: rotate('+rotateDegrees+'deg)"id="cardPos'+ cardPosition +'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
 }
                   }      // end if there are any of this suit (length > 0 )  
        
@@ -616,6 +616,9 @@ var cardImage = "seeThrough.png";
 var cardPosition = 0;
 var relativeFolder = "images/playingCards/PNG-cards-1.3/";
 var suit = 'diamonds'
+
+longestSuitLength = Math.max(longestSuitLength, arrayLength)   ;
+rotateDegrees = 0;
 for (var i = 0; i < arrayLength; i++) {
 
        cardPosition++;
@@ -634,7 +637,23 @@ for (var i = 0; i < arrayLength; i++) {
        if(suitArray[i].trim()=='2'){  cardImage="2_of_"+suit+".png"}    ;
        if(suitArray[i].trim()=='1'){  cardImage="1_of_"+suit+".png"}    ;
        
-       $('#diamonds').append('<img id="cardPos'+ cardPosition +'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
+                     const el = document.getElementById("diamonds");
+         var rect = el.getBoundingClientRect();
+         const dealStart= document.getElementById("deckCard");
+         var rectFrom = dealStart.getBoundingClientRect();
+       
+       
+      //     console.log("target for diamonds is   " + rect.top  + " and from Left " + rect.left);
+           
+           
+       if(cardPosition > 1){
+       rotateDegrees = Math.floor((Math.random() * 10) - 5)    // randomly select the next lesson into the global varibale
+       }
+       
+                deal1Card(rectFrom.top, rectFrom.left, rect.top + 10 , rect.left + 10 , suit, cardPosition, cardImage, rotateDegrees,longestSuitLength );
+                
+                
+    //  $('#diamonds').append('<img style="transform: rotate('+rotateDegrees+'deg)"id="cardPos'+ cardPosition +'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
 }
              
              }      // end if there are any of this suit (length > 0 )  
@@ -648,7 +667,10 @@ var arrayLength = suitArray.length;
 var cardImage = "seeThrough.png";
 var cardPosition = 0;
 var relativeFolder = "images/playingCards/PNG-cards-1.3/";
-var suit = 'clubs'
+var suit = 'clubs';
+longestSuitLength = Math.max(longestSuitLength, arrayLength)   ;
+rotateDegrees = 0;
+ 
 for (var i = 0; i < arrayLength; i++) {
 
        cardPosition++;
@@ -667,58 +689,197 @@ for (var i = 0; i < arrayLength; i++) {
        if(suitArray[i].trim()=='2'){  cardImage="2_of_"+suit+".png"}    ;
        if(suitArray[i].trim()=='1'){  cardImage="1_of_"+suit+".png"}    ;
        
-       $('#clubs').append('<img id="cardPos'+ cardPosition +'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
+         const el = document.getElementById("clubs");
+         var rect = el.getBoundingClientRect();
+         
+         const dealStart= document.getElementById("deckCard");
+         var rectFrom = dealStart.getBoundingClientRect();
+       
+       
+           //       console.log("target for clubs is   " + rect.top  + " and from Left " + rect.left);
+           
+           //        alert("target for clubs is   " + rect.top  + " and from Left " + rect.left);
+           
+          if(cardPosition > 1){
+       rotateDegrees = Math.floor((Math.random() * 10) - 5)    // randomly select the next lesson into the global varibale
+       }
+       
+                deal1Card(rectFrom.top, rectFrom.left, rect.top + 10 , rect.left + 10 , suit, cardPosition, cardImage, rotateDegrees,longestSuitLength );
+                
+                
+    //  $('#clubs').append('<img style="transform: rotate('+rotateDegrees+'deg)"id="cardPos'+ cardPosition +'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
 }
             
                    }      // end if there are any of this suit (length > 0 )  
+          var cardHeight = 200;
+          
+        
+          if(longestSuitLength<9)   { cardHeight = 220  }   ;   
+
+         $(".card").each(function () {                            // this will run with each new deal of the cards, making the cards look better (bigger) ) if they will fit on the table.
+                  $(this).css("height", cardHeight );
+           });
+    
+    
        
        }   // end of function dealTheCards
+    
+    
+    /***************************/     
        
-       
-       
-function deal1Card(fromTop,fromLeft, top,left){
+function deal1Card(fromTop,fromLeft, top,left, suit, cardPosition, cardImage, rotateDegrees, longestSuitLength ){  
 
-// alert("moving the car to the top " + top + " to the left " + left );
-//alert($(cardDiv).innerHTML);
 
-           console.log(fromTop , fromLeft,  top, left );
-  //     var el = $("#decCard").position();
-       
-    //   alert(el);
-       
-   //    $("#animateCard").position(el);
-       var cardDiv = $("#animateCard");
-              cardDiv.css({position: 'absolute'})
-              cardDiv.css("top", "fromTop");
-              cardDiv.css("left", "fromLeft");
-              
-              cardDiv.css("z-index", "13");
-              
-       cardDiv.animate({top: top}, "slow");
-       cardDiv.animate({left: left}, "slow");
-       cardDiv.animate({left: left}, "slow");
-    //   cardDiv.animate({opacity,0.0}, "fast",resetCard)};
-       
-        cardDiv.animate({opacity: 0.0}, "fast", resetCard(fromTop,fromLeft));
+//   console.log("dealing   " + suit + " ind deal1Card");
+
+// alert("dealing the card " + suit + cardPosition + cardImage + rotateDegrees )
+ var relativeFolder = "images/playingCards/PNG-cards-1.3/";
+
+var animateSpeed = 250;      // this is how fast the cards move across the  board
+           var cardHeight = 200;
+       var cardDiv = $("#animateCardDiv");
+       cardDiv.animate({left: fromLeft, top: fromTop}, 1);      // move the card to the beginning as fast as possible.
+      cardDiv.animate({opacity: 1.0}, "fast");              // show the card   
+                 
+ //  console.log("moving the card to  " + top + " and from Left " + left);
+      
+      
+          if(suit == "spades"){    
+      cardDiv.animate({left: left, top:top},  animateSpeed, function() {
+ 
+   
+ 
+                   $('#spades').append('<img style="transform: rotate('+rotateDegrees+'deg)"  id="cardPos'+cardPosition+'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
+                   
+                                   $('#spades .placeholder').remove();
+                              
+       										if(longestSuitLength<9)   { cardHeight = 220  }   ;   
+
+         																$(".card").each(function () {                            // this will run with each new deal of the cards, making the cards look better (bigger) ) if they will fit on the table.
+                 								 $(this).css("height", cardHeight );
+           						        });
+                //  alert("new card there?")
+       // Animation complete.
+  });
+      
+      
+      }
+                if(suit == "hearts"){    
+                    cardDiv.animate({left: left, top:top},  animateSpeed, function() {
+
+                   $('#hearts').append('<img style="transform: rotate('+rotateDegrees+'deg)"  id="cardPos'+cardPosition+'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
+               
+                            $('#hearts .placeholder').remove();
+                             										if(longestSuitLength<9)   { cardHeight = 220  }   ;   
+
+         																$(".card").each(function () {                            // this will run with each new deal of the cards, making the cards look better (bigger) ) if they will fit on the table.
+                 								 $(this).css("height", cardHeight );
+           						        });
+                //  alert("new card there?")
+       // Animation complete.
+  });
+    
+   //   $('#spades').append('<img style="transform: rotate('+rotateDegrees+'deg)"id="cardPos'+ cardPosition +'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
+    
+    
+    }
+
+
+                if(suit == "diamonds"){    
+      cardDiv.animate({left: left, top:top},  animateSpeed, function() {
+
      
- //    resetCard(fromTop,fromLeft);
+                   $('#diamonds').append('<img style="transform: rotate('+rotateDegrees+'deg)"  id="cardPos'+cardPosition+'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
+                   
+                             $('#diamonds .placeholder').remove();	
+                              										if(longestSuitLength<9)   { cardHeight = 220  }   ;   
+
+         																$(".card").each(function () {                            // this will run with each new deal of the cards, making the cards look better (bigger) ) if they will fit on the table.
+                 								 $(this).css("height", cardHeight );
+           						        });
+                //  alert("new card there?")
+       // Animation complete.
+  });
+    
+   //   $('#spades').append('<img style="transform: rotate('+rotateDegrees+'deg)"id="cardPos'+ cardPosition +'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
+    
+    
+    }
+
+
+                if(suit == "clubs"){    
+      cardDiv.animate({left: left, top:top},  animateSpeed, function() { 
+
+                   $('#clubs').append('<img style="transform: rotate('+rotateDegrees+'deg)"  id="cardPos'+cardPosition+'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
+                               $('#clubs .placeholder').remove();
+                    										if(longestSuitLength<9)   { cardHeight = 220  }   ;   
+
+         																$(".card").each(function () {                            // this will run with each new deal of the cards, making the cards look better (bigger) ) if they will fit on the table.
+                 								 $(this).css("height", cardHeight );
+           						        });
+                //  alert("new card there?")
+       // Animation complete.
+  });
+    
+   //   $('#spades').append('<img style="transform: rotate('+rotateDegrees+'deg)"id="cardPos'+ cardPosition +'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
+    
+    
+    }
+/*
+       var cardDiv = $("#animateCardDiv");
+        cardDiv.animate({left: fromLeft, top: fromTop}, 100);
+      cardDiv.animate({opacity: 1.0}, "fast");              // show the card   
+      console.log("moving the card to  " + top + " and from Left " + left);
+       
+      cardDiv.animate({left: left, top:top}, 100, function() {
      
+                   $('#spades').append('<img id="cardPos1"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
+                   alert("new card there?")
+       // Animation complete.
+  });
+      */
+
+
+       cardDiv.animate({opacity: 0.0}, 50 );  
+
+      
     }  // end of fucntion deal1Card
     
+    
+    
+/***************************/    
+    
+       
+    function placeCard(fromTop,fromLeft){
+    
+
+  
+  //  alert("callback to palce card");
+    
+    
+    }
     
     function resetCard(fromTop,fromLeft){
 
  //     $( "#animateCard" ).remove();
  
         console.log('putting the card back on the deck   ...' + fromTop   + ' and left of .. '+fromLeft  ); 
- 
-// debugger;
-        var cardDiv = $("#animateCard");
 
-               cardDiv.css("opacity", "1.0");      
-              cardDiv.css("position", "absolute");  
+        var cardDiv = $("#animateCardDiv");
+ 
+  
+ //   alert( $( cardDiv ).css("top") )
+
+  //  console.log("card should be  back on the pile which should be at position fromTop" + fromTop + " and from Left " + fromLeft);
+   
+   
+             cardDiv.css("opacity", "0.0");      
              cardDiv.css("top", fromTop);
               cardDiv.css("left", fromLeft);
+              
+                   console.log("card should be  back on the pile which should be at position fromTop" + fromTop + " and from Left " + fromLeft);
+                   
+            //            $('#spades').append('<img style="transform: rotate('+rotateDegrees+'deg)"id="cardPos'+ cardPosition +'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' ); 
          
     //     debugger;     
    //    $("#animateCardDiv").append('<img id="animateCard" class="deck" style="opacity:1.0; position: absolute; z-index: 13; top: '+fromTop+'px; display: grid; left: '+fromLeft+'px;" src="images/playingCards/PNG-cards-1.3/8cEbeEMLi.png" >');
@@ -1072,10 +1233,14 @@ function updateExerciseList(lessonNumber){
 
 function clearPlayedCards(){
 
+/*
+
       $("#spades").css("display","none");
             $("#hearts").css("display","none");
                   $("#diamonds").css("display","none");
                         $("#clubs").css("display","none");
+                        
+                        */
 
 }  // end of  function clearPlayedCards
 
@@ -1095,31 +1260,32 @@ function selectLesson(){
 
   var lessonSelected = document.getElementById("lesson").value;   // this will return the number of the lesson selected
  
-      
-//const el = document.getElementById("spades");
-
-//alert(el);
-
-//var bodyRect = document.body.getBoundingClientRect(),
-//    elemRect = el.getBoundingClientRect(),
- //   offset   = elemRect.top - bodyRect.top;
-
-//alert('Element is ' + offset + ' vertical pixels from <body>');
 
          $("#bids > tbody").empty();
       
- 
+     /*  
       // First clear all the cards from the last exercise/lesson.
         $('.card').each(function(i){
         
                this.src="images/playingCards/PNG-cards-1.3/seeThrough.png";
        
       });
-      
+      */
+                             $('#spades').empty();
+                             $('#hearts').empty();
+                             $('#diamonds').empty();
+                             $('#clubs').empty();
+                             
+                             $('#spades').append(   '  <img id="cardPos1" class="card placeholder" name="placholder"  src="images/playingCards/PNG-cards-1.3/seeThrough.png" /> ' );
+                             $('#hearts').append(   '  <img id="cardPos1" class="card placeholder" name="placholder" src="images/playingCards/PNG-cards-1.3/seeThrough.png" /> ' );
+                             $('#diamonds').append(   '  <img id="cardPos1" class="card placeholder" name="placholder" src="images/playingCards/PNG-cards-1.3/seeThrough.png" /> ' );
+                             $('#clubs').append(   '  <img id="cardPos1" class="card placeholder" name="placholder"  src="images/playingCards/PNG-cards-1.3/seeThrough.png" /> ' );
+       
  
       
       clearTheAnswers();       // clear any answers from the previous exercise
       $("#questions").hide();
+            $("#bidsArea").hide();
      updateExerciseList(lessonSelected);
      
  // alert('wer are bakc ')
@@ -1128,9 +1294,11 @@ function selectLesson(){
   
 }   // end of selectLesson
 
+/*
 function  updateHand(lesson,exercise){
 
  alert(  "You selected lesson " + lesson + " and exercise " + exercise );  
+ 
  
        // First clear all the cards  
         $('.card').each(function(i){
@@ -1141,7 +1309,7 @@ function  updateHand(lesson,exercise){
       
   
 }
- 
+ */
  
  function checkForPass(){     //  show or hid bid suite if the user selected PASS or not
  
@@ -1194,14 +1362,29 @@ function selectExercise(selectedLesson){
  
      var exercise = document.getElementById("exercise").value;   // this will return the number of the lesson selected
    
+   
+                                $('#spades').empty();
+                             $('#hearts').empty();
+                             $('#diamonds').empty();
+                             $('#clubs').empty();
+                             
+                             $('#spades').append(   '  <img id="cardPos1" class="card placeholder" name="placholder"  src="images/playingCards/PNG-cards-1.3/seeThrough.png" /> ' );
+                             $('#hearts').append(   '  <img id="cardPos1" class="card placeholder" name="placholder" src="images/playingCards/PNG-cards-1.3/seeThrough.png" /> ' );
+                             $('#diamonds').append(   '  <img id="cardPos1" class="card placeholder" name="placholder" src="images/playingCards/PNG-cards-1.3/seeThrough.png" /> ' );
+                             $('#clubs').append(   '  <img id="cardPos1" class="card placeholder" name="placholder"  src="images/playingCards/PNG-cards-1.3/seeThrough.png" /> ' );
+                             
+                             
     //   clear all the previous exercise answers and data
  
      clearTheAnswers();       // clear any answers from the previous exercise
      $("#questions").hide();
+           $("#bidsArea").hide();
      clearPlayedCards();
              
       if(exercise > 0 ) {   // if this is NOT the "Select and Exercise .. " optoin then
-            $("#questions").show();// 
+            $("#questions").show();
+                  $("#bidsArea").show();
+            // 
                 showPlayedCards();
                 getPlayForSelectedExercise(selectedLesson,exercise);          // show the cards and bids for the selected exercise
 
@@ -1245,13 +1428,32 @@ function showCorrectAnswer(){
 }   
 
 
+function placeAnimateCardOverDeckCard(){
+
+
+
+         const dealStart= document.getElementById("deckCard");
+         var rectFrom = dealStart.getBoundingClientRect();
+         
+       console.log(" putting the animate card in place "  );
+          
+          $("#animateCardDiv").css("opacity","1.0");
+          $("#animateCardDiv").css("top",rectFrom.top);
+          $("#animateCardDiv").css("left",rectFrom.left);
+
+          
+     //    deal1Card(rectFrom.top, rectFrom.left, rect.top + 10 , rect.left + 10  )
+
+}
+
 $(document).ready(function () {
 
                                 $("#questions ").hide();
+                                                     $("#bidsArea ").hide();
                                 $("#distribution").show();
                                $("#dummyPoints").hide();
                                 $("#nextExerciseButton").css("display","none");
-                                
+                                placeAnimateCardOverDeckCard();
                                 if ($(window).width() <= 1024) {
 
       											 $("#deck").hide();
@@ -1325,7 +1527,8 @@ $(document).ready(function () {
     										<div class="innerDivDeckTable">
     										       
         			              					    <img  id="deckCard" class="deck" src="images/playingCards/PNG-cards-1.3/8cEbeEMLi.png" />   
-        			              		             <div id="animateCardDiv"><img  id="animateCard" class="deck" style=" transform: rotate(5deg) ;  position: relative; z-index: 2; top: -197px;  display: grid;  left: 5px;" src="images/playingCards/PNG-cards-1.3/8cEbeEMLi.png" />   </div>
+        			              		             <div id="animateCardDiv" style=" position: absolute; z-index: 13; opacity:0.0;" >
+        			              		             <img  id="animateCard" class="deck" style=" transform: rotate(8deg) ; " src="images/playingCards/PNG-cards-1.3/8cEbeEMLi.png" />   </div>
  
         			              					
 											</div>
@@ -1421,7 +1624,7 @@ $(document).ready(function () {
    </div>
    
    <div id="rightSide">
-			<div id="bidsArea" style="float:left; padding-top: 20px; padding-left: 20px; ">Bids so far...
+			<div id="bidsArea" style="float:left; padding-top: 20px; padding-left: 20px;  display:none">Bids so far...
 			
 		
 <table id="bids">
