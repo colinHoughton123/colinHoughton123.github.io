@@ -63,17 +63,12 @@ nav ul {
 
 
 
-@media only screen and (max-width: 1300px) {
-  #lessonID {
-    font-size: 16px;
-  }
-}
 
 
 #cards {
 
-  height: 340px; /* only for demonstration, should be removed */
-    width: 100%;
+ // height: 340px; /* only for demonstration, should be removed */
+//    width: 100%;
     display: inline;
 }
 
@@ -102,12 +97,43 @@ nav ul {
  }  
  
  
- @media only screen and (max-width: 1350px) {
-  #deck {
-    display: none;
+ @media only screen and (max-width: 1300px) {
+  #lessonID {
+    font-size: 16px;
   }
 }
 
+
+
+ @media only screen and (max-width: 1300px) {
+  #deck {
+    display: none;
+  }
+  
+
+}
+
+
+ @media only screen and (max-width: 1300px) {
+
+  #randomButton{
+           font-size: 20px;
+    }
+}
+
+
+
+
+#randomButton{
+  font-size: 30px;
+}
+ 
+ 
+ #randomButtonDiv{
+  display: inline-block;
+  float: right;
+  
+}
  
  .divDeckTable {
     display: table;
@@ -128,7 +154,7 @@ nav ul {
   background: #007D3B;
   padding: 20px;
   height: 575pxpx;
-  min-width: 575px;
+//  min-width: 575px;
  
  
 }
@@ -160,7 +186,7 @@ nav ul {
   grid-column-end: 2;
   max-width: 180px;
   text-align:center;
- 
+  padding-right:5px;
 
 }
 
@@ -171,7 +197,7 @@ nav ul {
   grid-column-end: 3;
     max-width: 180px;
   text-align:center;
- 
+   padding-right:5px;
 
 }
 
@@ -183,6 +209,7 @@ nav ul {
   text-align:center;
  
   object-fit: cover;
+    padding-right:5px;
 }
 
 
@@ -530,10 +557,11 @@ for (var i = 0; i < arrayLength; i++) {
          const el = document.getElementById("spades");
        
          var rect = el.getBoundingClientRect();
+         
          const dealStart= document.getElementById("deckCard");
          var rectFrom = dealStart.getBoundingClientRect();
          
-          console.log("dealing spades"  );
+   //       console.log("dealing spades"  );
           
         if(cardPosition > 1){
              rotateDegrees = Math.floor((Math.random() * 10) - 5)    // randomly select the next lesson into the global varibale
@@ -637,7 +665,7 @@ for (var i = 0; i < arrayLength; i++) {
        if(suitArray[i].trim()=='2'){  cardImage="2_of_"+suit+".png"}    ;
        if(suitArray[i].trim()=='1'){  cardImage="1_of_"+suit+".png"}    ;
        
-                     const el = document.getElementById("diamonds");
+         const el = document.getElementById("diamonds");
          var rect = el.getBoundingClientRect();
          const dealStart= document.getElementById("deckCard");
          var rectFrom = dealStart.getBoundingClientRect();
@@ -1189,7 +1217,7 @@ function updateExerciseList(lessonNumber){
     .remove()
     .end()
 
-
+   
     var option = document.createElement("option");
                                option.text = "Select an Exercise";
                                option.value = exerciseCounter;
@@ -1271,6 +1299,9 @@ function selectLesson(){
        
       });
       */
+      
+
+      
                              $('#spades').empty();
                              $('#hearts').empty();
                              $('#diamonds').empty();
@@ -1281,7 +1312,11 @@ function selectLesson(){
                              $('#diamonds').append(   '  <img id="cardPos1" class="card placeholder" name="placholder" src="images/playingCards/PNG-cards-1.3/seeThrough.png" /> ' );
                              $('#clubs').append(   '  <img id="cardPos1" class="card placeholder" name="placholder"  src="images/playingCards/PNG-cards-1.3/seeThrough.png" /> ' );
        
+           resetAnimateCard();
  
+
+              
+       
       
       clearTheAnswers();       // clear any answers from the previous exercise
       $("#questions").hide();
@@ -1294,6 +1329,18 @@ function selectLesson(){
   
 }   // end of selectLesson
 
+
+function resetAnimateCard(){
+
+         const dealStart= document.getElementById("deckCard");
+         var rectFrom = dealStart.getBoundingClientRect();
+         
+         
+          	$("#animateCardDiv").stop(1,1);               // stop any previous animations  .. the 1 and 1 parameters means "stop all" and "go to end" (of the animations queue)
+           $("#animateCardDiv").css("top",rectFrom.top);           
+           $("#animateCardDiv").css("left",rectFrom.left);  
+           $("#animateCardDiv").css("opacity",1.0);
+}
 /*
 function  updateHand(lesson,exercise){
 
@@ -1373,7 +1420,8 @@ function selectExercise(selectedLesson){
                              $('#diamonds').append(   '  <img id="cardPos1" class="card placeholder" name="placholder" src="images/playingCards/PNG-cards-1.3/seeThrough.png" /> ' );
                              $('#clubs').append(   '  <img id="cardPos1" class="card placeholder" name="placholder"  src="images/playingCards/PNG-cards-1.3/seeThrough.png" /> ' );
                              
-                             
+                             $("#animateCardDiv").stop(1,1);               // stop any previous animations  .. the 1 and 1 parameters means "stop all" and "go to end" (of the animations queue)
+                              resetAnimateCard();
     //   clear all the previous exercise answers and data
  
      clearTheAnswers();       // clear any answers from the previous exercise
@@ -1503,12 +1551,12 @@ $(document).ready(function () {
                
 				</select>
 				</div>
-				<div id="randomButton" style="font-size:30px">
-				   <button type="button"    style="font-size:30px" onclick="getRandomExercise()">Select at Random</button>
+				<div id="randomButtonDiv">
+				   <button type="button"  id="randomButton"   onclick="getRandomExercise()">Select at Random</button>
 				</div>
     </div>
     
- <div id="leftside" style="float:left">
+ <div id="leftside" style="float:left; width:50%">
  
  
 	<div id="cards">
@@ -1606,24 +1654,24 @@ $(document).ready(function () {
 
    </div>  
 <form id="formQuestions">
-	<div id="questions" style="padding:6px;">Is this a balanced hand?  
+	<div id="questions" style="padding:6px;">Is this a balanced hand?   &nbsp; &nbsp; &nbsp; &nbsp; 
 	    	    
 	        <div style="  display: inline-block;"  >
-	        			  <input type="radio"  id="radioYes" value="Yes" name="balanced" style="width: 30px;" >Yes</input>
-	        	        <input type="radio" id="radioNo" name="balanced"  value="No" style="width: 30px;">No</input>
+	        			  <input type="radio"  id="radioYes" value="Yes" name="balanced" style="width: 30px;" >   Yes  </input>
+	        	        <input type="radio" id="radioNo" name="balanced"  value="No" style="width: 30px;"> No </input>
 	        	        <div id="balancedHandCorrect" class="correctCheck"></div>
 	         </div>
 	     
-	     <div id = "highCardInput" style="padding:6px;" >How many high card points? <input id="hcp" class="HCP" style="font-size:30px; width: 60px"  type="number" min="0" max="40"></input> <div id="highCardCorrect" class="correctCheck"></div></div> 
+	     <div id = "highCardInput" style="padding:6px;"  >How many high card points? <input id="hcp" class="HCP" style="font-size:30px; width: 75px"  type="number" min="0" max="40"></input> <div id="highCardCorrect" class="correctCheck"></div></div> 
  
-	    <div id="distribution" style="padding:6px;">How many distribution points?  <input id="dist" class="DIST" style="font-size:30px; width: 60px"  type="number" min="0" max="20"></input> <div id="distributionCorrect" class="correctCheck"></div> </div>
+	    <div id="distribution" style="padding:6px;" >How many distribution points?  <input id="dist" class="DIST" style="font-size:30px; width: 75px"  type="number" min="0" max="20"></input> <div id="distributionCorrect" class="correctCheck"></div> </div>
  
 	     <div id="dummyPoints" style="padding:6px;">How many dummy points?  <input id="dummy" class="DUMMY" style="font-size:30px; width: 60px"   type="number" min="0" max="20"></input><div id="dummyCorrect" class="correctCheck"></div> </div>
 
 	</div>   
    </div>
    
-   <div id="rightSide">
+   <div id="rightSide" style="float:left; width:50%">
 			<div id="bidsArea" style="float:left; padding-top: 20px; padding-left: 20px;  display:none">Bids so far...
 			
 		
@@ -1642,10 +1690,10 @@ $(document).ready(function () {
 
 
 	    <p />
-	    <div id = "correctBidInput">
+	    <div id = "correctBidInput"  style="font-size:30px">
 	      <div>What is the correct bid? </div>
 	        <div>
-	    <select id="bidLevel" onchange="checkForPass()">
+	    <select id="bidLevel" style="font-size:20px; "    onchange="checkForPass()">
 	    	    	    	        <option>Select ... </option>
 	        <option value="1" >1</option>
 	        	        <option value="2" >2</option>
@@ -1658,7 +1706,7 @@ $(document).ready(function () {
 	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        
 	    </select>
 	    
-	    	    <select id="bidSuit">
+	    	    <select id="bidSuit"   style="font-size:20px; "  style="width: 75px" >
 	    	    	        <option value="">Select ... </option>
 	    	    	        	        <option value="No Trump">No Trump</option>
 	    	    	        	        <option  value="Spades">Spades</option>
@@ -1672,18 +1720,18 @@ $(document).ready(function () {
 	    <div id="bidCorrect" class="correctCheck"></div> 
 	    	    </div>
 	    <P />
-	      <button type="button"   onclick="showCorrectAnswer()">Check Your Answers</button>
+	      <button type="button"  style="font-size:30px"  onclick="showCorrectAnswer()">Check Your Answers</button>
       </div>
 	      
 	      
-	    <div id="correctAnswer" style="padding-top: 20px; max-width:420px;"/>
+	    <div id="correctAnswer" style="padding-top: 20px; "/>
 	         <div id="correctAnswerSummary" style="display:block" ></div>
 	          <div id="explanationPart1" style="display:block; padding-top:20px; " ></div>
 		       <div id="explanationPart2" style="display:block; padding-top:20px; " ></div>
 		        <div id="explanationPart3" style="display:block; padding-top:20px; " ></div>   
 	    </div>
        <div id="nextExerciseButton" style="padding-top:10px; padding-bottom:10px">
-       <button type="button"   onclick="getNextExercise()">Next Exercise in this Lesson</button>
+       <button type="button"  style="font-size:20px; "  	  onclick="getNextExercise()">Next Exercise in this Lesson</button>
 
        </div>
 
