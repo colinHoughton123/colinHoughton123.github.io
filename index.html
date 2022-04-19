@@ -76,10 +76,6 @@ nav ul {
    height: 200px;
 }
 
-#randomButton {
-  float: right;
-}
-
 
 
 .card {
@@ -97,7 +93,7 @@ nav ul {
  }  
  
  
- @media only screen and (max-width: 1300px) {
+ @media only screen and (max-width: 1024px) {
   #lessonID {
     font-size: 16px;
   }
@@ -105,16 +101,22 @@ nav ul {
 
 
 
- @media only screen and (max-width: 1300px) {
+ @media only screen and (max-width: 1024px) {
   #deck {
     display: none;
   }
-  
-
 }
 
 
- @media only screen and (max-width: 1300px) {
+ @media only screen and (min-width: 1024px) {
+  #deck {
+    display: block;
+  }
+}
+
+
+
+ @media only screen and (max-width: 1024px) {
 
   #randomButton{
            font-size: 20px;
@@ -126,12 +128,18 @@ nav ul {
 
 #randomButton{
   font-size: 30px;
+  float: left;
+  background-color:green;
+  color: gold;
+  
 }
  
  
  #randomButtonDiv{
   display: inline-block;
-  float: right;
+  float: left;
+  vertical-align: middle;
+ 
   
 }
  
@@ -437,29 +445,6 @@ nextBidLevelShouldBe= "";
    var imagePath =  "images/playingCards/PNG-cards-1.3/";
 
 
-    //         $("#correctAnswer").append('Is this a balanced hand? ' + balancedHand + '.  There are ' +hcp+' high card points and '+ distribution+' distribution points. <p />Therefore, the next bid  by  ' +nextBidPosition +  " should be " + nextBidLevel + " " + nextBidSuit );
-             
-             
-
-
-function loadLessonData(){
-// alert("I am in loadLessonData");
-
-;}
-
-function fillLessonSelector(){
-    //   alert("I am in fillLessonSelector");
-;}
-
-function getLastLesson1(){
-   //    alert("I am in getLastLesson1");
-;}
-
-
-function clearAnswers(){
-       alert("I am in clearAnswers");
-;}
-
 </script>
 
 <!-- The document.ready ensures that the script will not run until the entire document is loaded.  A simpler syntax might show as $(function(){  -->
@@ -757,14 +742,31 @@ for (var i = 0; i < arrayLength; i++) {
        
 function deal1Card(fromTop,fromLeft, top,left, suit, cardPosition, cardImage, rotateDegrees, longestSuitLength ){  
 
+//  if(isMobile){return};     // no animation if mobile because not enough room for the deck
 
-//   console.log("dealing   " + suit + " ind deal1Card");
-
-// alert("dealing the card " + suit + cardPosition + cardImage + rotateDegrees )
  var relativeFolder = "images/playingCards/PNG-cards-1.3/";
+var cardHeight = 200;
+ 
+var deckDisplayed =  $('#deck').css("display");
 
-var animateSpeed = 250;      // this is how fast the cards move across the  board
-           var cardHeight = 200;
+
+// console.log ( "the deck dispalyed is " + deckDisplayed  + " and the relative folder is " + relativeFolder ) ;
+
+if(deckDisplayed == "none"){
+
+     $("#" + suit).append('<img style="transform: rotate('+rotateDegrees+'deg)"  id="cardPos'+cardPosition+'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
+     
+     $("#" + suit + " .placeholder").remove();
+     
+     return;
+}
+
+
+ 
+
+
+        var animateSpeed = 250;      // this is how fast the cards move across the  board
+ 
        var cardDiv = $("#animateCardDiv");
        cardDiv.animate({left: fromLeft, top: fromTop}, 1);      // move the card to the beginning as fast as possible.
       cardDiv.animate({opacity: 1.0}, "fast");              // show the card   
@@ -773,7 +775,7 @@ var animateSpeed = 250;      // this is how fast the cards move across the  boar
       
       
           if(suit == "spades"){    
-      cardDiv.animate({left: left, top:top},  animateSpeed, function() {
+                  cardDiv.animate({left: left, top:top},  animateSpeed, function() {
  
    
  
@@ -783,11 +785,12 @@ var animateSpeed = 250;      // this is how fast the cards move across the  boar
                               
        										if(longestSuitLength<9)   { cardHeight = 220  }   ;   
 
-         																$(".card").each(function () {                            // this will run with each new deal of the cards, making the cards look better (bigger) ) if they will fit on the table.
+         										 $(".card").each(function () {                            // this will run with each new deal of the cards, making the cards look better (bigger) ) if they will fit on the table.
                  								 $(this).css("height", cardHeight );
            						        });
-                //  alert("new card there?")
        // Animation complete.
+       
+        //      cardDiv.animate({left: fromLeft, top: fromTop}, 1);      // move the card to the beginning as fast as possible.
   });
       
       
@@ -1010,16 +1013,17 @@ function getPlayForSelectedExercise(selectedLesson,selectedExercise) {    // the
                    nextBidPosition = $exercise.find('positionNext').text();
                     nextBidLevel = $exercise.find('levelNext').text().trim();
                     
+// console.log(nextBidPosition )                    
+                    
+                          $("#BidTurn").html(nextBidPosition );  
+                    
                    nextBidLevelShouldBe = nextBidLevel;  // put it in a global variable
                                             
                                             
                     nextBidText = $exercise.find('suitNext').text();
 
-// alert('bidSuit before the trim is ' + bidSuit);
                                      var bidSuit = nextBidText.trim();
-//  alert('bidSuit after the trim is ' + bidDisplaySuit);     
-                    
-// alert(nextBidSuit)
+
 
                                      nextBidSuitShouldBe = bidSuit;  // put it in a global variable
 
@@ -1040,7 +1044,7 @@ function getPlayForSelectedExercise(selectedLesson,selectedExercise) {    // the
                                                               
                       explanationPart3 = $exercise.find('explanationpart3').text();
                       
-                      
+                
                       
  // alert ('this is the 3d part ' + explanationPart3);
 //  alert(' 685 The next bid for  exercisee '+ selectedExercise  + 'should be ... ' +nextBidPosition +  " " + nextBidLevel + " " + nextBidSuit + " " + hcp)
@@ -1538,6 +1542,11 @@ $(document).ready(function () {
 <div id="mainpage">
 
     <div id="LessonID" class="lessonID" >
+    
+    				<div id="randomButtonDiv">
+				   <button type="button"  id="randomButton"   onclick="getRandomExercise()">Click Here to Select Random ...</button>
+				</div>
+				
     				<div id="lessonPicklist" style="display: inline-block">
           Lesson:
            <select name="lesson" id="lesson" style="font-size:inherit;" onchange="selectedLesson=selectLesson()">
@@ -1551,12 +1560,10 @@ $(document).ready(function () {
                
 				</select>
 				</div>
-				<div id="randomButtonDiv">
-				   <button type="button"  id="randomButton"   onclick="getRandomExercise()">Select at Random</button>
-				</div>
+
     </div>
     
- <div id="leftside" style="float:left; width:50%">
+ <div id="leftside" style="float:left; width:50%; max-width: 923px;">
  
  
 	<div id="cards">
@@ -1672,66 +1679,62 @@ $(document).ready(function () {
    </div>
    
    <div id="rightSide" style="float:left; width:50%">
-			<div id="bidsArea" style="float:left; padding-top: 20px; padding-left: 20px;  display:none">Bids so far...
+   
+		<div id="bidsArea" style="float:left; padding-top: 20px; padding-left: 20px;  display:none">
+			<div>Bids so far...</div>
 			
-		
-<table id="bids">
-<thead>
-  <tr>
-    <th>Position</th>
-    <th style="text-align:center;">Bid</th>
-
-  </tr>
-  </thead>
-<tbody></tbody>
-
-</table> 
-
-
-
-	    <p />
-	    <div id = "correctBidInput"  style="font-size:30px">
-	      <div>What is the correct bid? </div>
-	        <div>
-	    <select id="bidLevel" style="font-size:20px; "    onchange="checkForPass()">
+          <div id="bidsTable" style="float:left">
+               <table id="bids">
+                  <thead>
+                  <tr>
+                     <th>Position</th>
+                     <th style="text-align:center;">Bid</th>
+                  </tr>
+                </thead>
+              <tbody></tbody>
+            </table> 
+         </div>
+	      <div id = "correctBidInput"  style="font-size:30px; float:left; padding-left:20px;">
+	             <div id="bidQuestion" style=" float:left;" >
+	                 <div id="QuestionPart1" style="  float:left; " >What is the correct bid for&nbsp;</div>
+	                 <div style=" float:left;  " id="BidTurn"> </div>
+	                 <div style="  float:left; " >?</div>
+	               </div>  
+	               <div id="SelectLists">
+	               <select id="bidLevel" style="font-size:20px; "    onchange="checkForPass()">
 	    	    	    	        <option>Select ... </option>
-	        <option value="1" >1</option>
-	        	        <option value="2" >2</option>
+	                          <option value="1" >1</option>
+	        	                 <option value="2" >2</option>
 	        	        	        <option value="3" >3</option>
-	        	        	        	        <option value="4" >4</option>
-	        	        	        	        	        <option value="5" >5</option>
-	        <option value="6" >6</option>
-	        <option value="7" >7</option>
-	       <option value="Pass" >Pass</option>
-	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        	        
-	    </select>
-	    
-	    	    <select id="bidSuit"   style="font-size:20px; "  style="width: 75px" >
-	    	    	        <option value="">Select ... </option>
-	    	    	        	        <option value="No Trump">No Trump</option>
-	    	    	        	        <option  value="Spades">Spades</option>
-
-	        	        <option value="Hearts">Hearts</option>
+	        	        	        <option value="4" >4</option>
+	        	        	        <option value="5" >5</option>
+	                          <option value="6" >6</option>
+	                          <option value="7" >7</option>
+	                           <option value="Pass" >Pass</option>
+                   </select>
+     	    	       <select id="bidSuit"   style="font-size:20px; "  style="width: 75px" >
+	    	    	               <option value="">Select ... </option>
+	    	    	        	      <option value="No Trump">No Trump</option>
+	    	    	        	       <option  value="Spades">Spades</option>
+	        	                   <option value="Hearts">Hearts</option>
 	        	        	        <option value="Diamonds">Diamonds</option>
-	        	        	        	        <option value="Clubs">Clubs</option>
+	        	        	        	<option value="Clubs">Clubs</option>
+                     </select>
+	                  <div id="bidCorrect" class="correctCheck" style="padding-left:5px"></div> 
+	    	        </div>   
 
-	    </select>
-
-	    <div id="bidCorrect" class="correctCheck"></div> 
-	    	    </div>
-	    <P />
-	      <button type="button"  style="font-size:30px"  onclick="showCorrectAnswer()">Check Your Answers</button>
-      </div>
-	      
-	      
-	    <div id="correctAnswer" style="padding-top: 20px; "/>
-	         <div id="correctAnswerSummary" style="display:block" ></div>
+	    	     </div>
+	    	</div>  
+	    <div id="correctAnswer" style="padding:20px; display:block; float: left"/>
+	    	      <button type="button"  style="font-size:30px; margin-bottom:10px;"  onclick="showCorrectAnswer()">Check Your Answers</button>
+	          <div id="correctAnswerSummary" style="display:block" ></div>
 	          <div id="explanationPart1" style="display:block; padding-top:20px; " ></div>
 		       <div id="explanationPart2" style="display:block; padding-top:20px; " ></div>
 		        <div id="explanationPart3" style="display:block; padding-top:20px; " ></div>   
 	    </div>
-       <div id="nextExerciseButton" style="padding-top:10px; padding-bottom:10px">
-       <button type="button"  style="font-size:20px; "  	  onclick="getNextExercise()">Next Exercise in this Lesson</button>
+
+       <div id="nextExerciseButton" style="padding: 20px; float:left">
+              <button type="button"  style="font-size:20px; "  	  onclick="getNextExercise()">Next Exercise in this Lesson</button>
 
        </div>
 
