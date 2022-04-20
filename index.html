@@ -1331,18 +1331,19 @@ function  updateHand(lesson,exercise){
 }
  */
  
- function checkForPass(){     //  show or hid bid suite if the user selected PASS or not
+ function checkForPassOrDouble(){     //  show or hid bid suite if the user selected PASS or not
  
       var bidLevel = document.getElementById("bidLevel").value.trim();   // this will return the number of the lesson selected
 
-      if(bidLevel == "Pass"){
+ 
+      if(bidLevel == "Pass" || bidLevel == "Double"){
               $("#bidSuit").css("display","none");
       }else{
                     $("#bidSuit").css("display","inline-block");
       }
  
- }       // end of checkForPass }
- 
+
+ }       // end of checkForPassOrDouble }
  
  function clearTheAnswers(){
  
@@ -1373,7 +1374,7 @@ function  updateHand(lesson,exercise){
       
       $(".correctCheck").empty();
       $("#bidSuit").css("display","inline-block");
- 
+       $("#correctAnswer").css("display","none");
  
            
 }    // end funciton clearTheAnswers
@@ -1441,12 +1442,12 @@ function showCorrectAnswer(){
                     if(dummyPoints){      // there is a value for dummy pionts
                     
                               if(    $('#dummy').val() == dummyPoints)    {   $("#dummyCorrect").append(correct)  } else{ $("#dummyCorrect").append(incorrect)};
-                              $("#correctAnswerSummary").html('Is this a balanced hand? ' + balancedHand + '<p /> There are ' +hcp+' high card points and '+ dummyPoints+' dummy points. <p />Therefore, the next bid  by  ' +nextBidPosition +  " should be <b> " + nextBidLevel + "" + nextBidSuit + '</b>. <p />');
+                              $("#correctAnswerSummary").html('Balanced hand? ' + balancedHand + '<p /> There are ' +hcp+' high card points and '+ dummyPoints+' dummy points. <p />Therefore, the next bid  by  ' +nextBidPosition +  " should be <b> " + nextBidLevel + "" + nextBidSuit + '</b>. <p />');
                     } else{
                     
                                  if(    $('#dist').val() == distribution)    {   $("#distributionCorrect").append(correct)  } else{ $("#distributionCorrect").append(incorrect)};
                     
-                                $("#correctAnswerSummary").html('Is this a balanced hand? ' + balancedHand + '<p /> There are ' +hcp+' high card points and '+ distribution+' distribution points. <p />Therefore, the next bid  by  ' +nextBidPosition +  " should be <b> " + nextBidLevel + "" + nextBidSuit + '</b>. <p />');
+                                $("#correctAnswerSummary").html('Balanced hand? ' + balancedHand + '<p /> There are ' +hcp+' high card points and '+ distribution+' distribution points. <p />Therefore, the next bid  by  ' +nextBidPosition +  " should be <b> " + nextBidLevel + "" + nextBidSuit + '</b>. <p />');
                     }     
 
              $("#explanationPart1").html(explanationPart1);
@@ -1654,7 +1655,7 @@ $(document).ready(function () {
 	      <div id = "correctBidInput"  style="font-size:20px; float:left; margin-left:20px; padding: 10px;  background-color: lightgrey;">
 	      
 	      
-	      	<div id="questions" style=" ">Is this a balanced hand?  
+	      	<div id="questions" style=" ">Balanced hand?  
 	    	    
 	        <div style="  display: inline-block;"  >
 	        			  <input type="radio"  id="radioYes" value="Yes" name="balanced" style="width: 30px;" >  Yes </input>
@@ -1678,7 +1679,7 @@ $(document).ready(function () {
 	                 <div style="  display: inline-block; " >?</div>
 	               </div>  
 	               <div id="SelectLists">
-	               <select id="bidLevel" style="font-size:20px; "    onchange="checkForPass()">
+	               <select id="bidLevel" style="font-size:20px; "    onchange="checkForPassOrDouble()">
 	    	    	    	        <option>Select ... </option>
 	                          <option value="1" >1</option>
 	        	                 <option value="2" >2</option>
@@ -1688,6 +1689,7 @@ $(document).ready(function () {
 	                          <option value="6" >6</option>
 	                          <option value="7" >7</option>
 	                           <option value="Pass" >Pass</option>
+	                           	                           <option value="Double" >Double</option>
                    </select>
      	    	       <select id="bidSuit"   style="font-size:20px; "  style="width: 75px" >
 	    	    	               <option value="">Select ... </option>
