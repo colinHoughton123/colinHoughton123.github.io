@@ -894,11 +894,11 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
              </clubs>
          </cards>
          <bids>
-               <bid title="Opening Bid xxx">
+               <bid title="Opening Bid">
                 <position>                  <!-- can be North, East, South, West -->
                       South
                 </position>
-                <pass>Yes</pass>    <!-- can be Yes or No -->
+                <pass>No</pass>    <!-- can be Yes or No -->
                 
                  <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
                      ?
@@ -915,7 +915,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
          </inputToCorrectBid> 
          <nextCorrectBid>
               <positionNext>           <!-- can be North, East, South, West -->
-                     North
+                     South
               </positionNext>
                  <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7 -->
                      Pass
@@ -926,7 +926,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
                  <explanation>
                       <explanationpart1>
                  
-                     You have only 10 points.  You do not have the prerequisite 13 points to open.
+                     Opener has only 10 points.  Opener does not have the prerequisite 13 points to open.
 
                   </explanationpart1>
                  <explanationpart2>
@@ -3832,8 +3832,8 @@ So responder jumps to game with 4 spades
          <inputToCorrectBid>
               <balanced>Yes</balanced>         <!-- Can be Yes, No, Don't Cares -->
               <hcp>8</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
-              <distribution></distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
-              <dummyPoints>1</dummyPoints>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+              <distribution>0</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+              <dummyPoints></dummyPoints>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
          </inputToCorrectBid> 
          <nextCorrectBid>
               <positionNext>           <!-- can be North, East, South, West -->
@@ -3848,11 +3848,11 @@ So responder jumps to game with 4 spades
                  <explanation>
                       <explanationpart1>
                   
-                  With a a total of 9 points and a choice of two four-card suits to bid at the one level, bid the lower-ranking, Respond 1 Hearts.
+                  With a a total of 8 (within 6-9 total points) points and a choice of two four-card suits to bid at the one level, bid the lower-ranking, Respond 1 Hearts.
   
                   </explanationpart1>
                  <explanationpart2>
-                                         Your dummy points are based on 1 for the doubleton.  (Remember, you would give 5 for a void, and 3 for a singleton)
+                               When bidding Hearts for the first time, you are not going be the dummy, so you consider distribution points (0) rather than dummy points (1).
                  </explanationpart2>
                  <explanationpart3>
                      When responding to a 1 bid of a minor suit, with 6-9 points, your priority is to bid a new suit at the 1 level if  you can.  
@@ -5861,7 +5861,7 @@ So responder jumps to game with 4 spades
                        3
                  </levelNext>
                 <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
-                        No Trump
+                        Diamonds
                  </suitNext>
                  <explanation>
                       <explanationpart1>
@@ -5887,6 +5887,7 @@ So responder jumps to game with 4 spades
          
     </exercise>      
            <exercise title="4.8 - Re-response after 1 Minor-Suit Opening">
+           <page>153</page>
           <dealer>
                North
           </dealer>
@@ -5980,8 +5981,8 @@ So responder jumps to game with 4 spades
              
          </bids>
          <inputToCorrectBid>
-              <balanced>No</balanced>         <!-- Can be Yes, No, Don't Cares -->
-              <hcp>15</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <balanced>Yes</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>19</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
               <distribution>0</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
          </inputToCorrectBid> 
          <nextCorrectBid>
@@ -5996,7 +5997,7 @@ So responder jumps to game with 4 spades
                  </suitNext>
                  <explanation>
                       <explanationpart1>
-                       With 19 HCP, this is a highest  hand (19-21) total points).
+                       With 19 HCP, this is a  maximum hand (19-21) total points).
                        
 
                   </explanationpart1>
@@ -6007,8 +6008,10 @@ So responder jumps to game with 4 spades
                     
                  </explanationpart2>
                  <explanationpart3>
-                 The job rebid to 3 NT is called a "Jump shift", this means "jumping" level and "shifting" the strain/suit to a new one not previously
+                 The jump rebid to 3 NT is called a "Jump shift", this means "jumping" level and "shifting" the strain/suit to a new one not previously
                  mentioned in the bidding.
+                 
+                 When responder raises opener's minor suit to the three level, opener passes with  13 points, but bids game (3NT) with 14 or more.
                  </explanationpart3>
 
                  </explanation>
@@ -6016,7 +6019,2518 @@ So responder jumps to game with 4 spades
           
          
     </exercise> 
+       <exercise title="4.9 - Re-response after NT response with a minimum hand">
+             <page>154</page>]
+          <dealer>
+               North
+          </dealer>
+         <cards>
+            <spades>
+                   K,7,3
+             </spades>
+             <hearts>
+                   A,Q,10,9,5
+             </hearts>
+             <diamonds>
+                   K,10,3
+             </diamonds>
+             <clubs>
+                   8,2
+             </clubs>
+         </cards>
+         
+         
+         <bids>
+               <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      North
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     Hearts
+                 </suit>
+             </bid>
+             
+             
+                      <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     East
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+             
+               <bid title="Response">
+                <position>                  <!-- can be North, East, South, West -->
+                      South
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    No Trump
+                 </suit>
+             </bid>
+             
+                   <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     West
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+              <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    North
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     ?
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                ?
+                 </suit>
+             </bid> 
+             
+         </bids>
+         <inputToCorrectBid>
+              <balanced>Yes</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>12</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution>2</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+         </inputToCorrectBid> 
+         <nextCorrectBid>
+              <positionNext>           <!-- can be North, East, South, West -->
+                     North
+              </positionNext>
+                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass -->
+                    Pass 
+                 </levelNext>
+                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                  
+                 </suitNext>
+                 <explanation>
+                      <explanationpart1>
+                 
+                     Opener (North) knows there is no Golden Fit in hearts because responder would have raised to 2 Hearts with three or more.  Since the 
+                     contract is already in No Trump and opener has not extra strength, best action is to pass.
+                     
+                    
+                  </explanationpart1>
+                 <explanationpart2>
+                       The partnership probably can't make game since responder has a maximum of 9 points. 
+                 </explanationpart2>
+                 <explanationpart3>
+                       Remember, if the responder bids 1 NT, it means they have 6-9 points and no support (2 cards or less) for the major.  A 2NT bid would have meant the responder has 13-15 points with two or fewer of the major opening.
+                       9
+                 </explanationpart3>
+
+                 </explanation>
+          </nextCorrectBid>
+    </exercise>  
   
+         <exercise title="4.10 - Re-response after NT response with minimum hand">
+         <page>154</page>]
+          <dealer>
+               North
+          </dealer>
+         <cards>
+            <spades>
+                  Q,9,8
+             </spades>
+             <hearts>
+                  K,Q,10,9,5
+             </hearts>
+             <diamonds>
+                  A,J,8,4
+             </diamonds>
+             <clubs>
+                   3
+             </clubs>
+         </cards>
+         
+         
+         <bids>
+               <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      North
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     Hearts
+                 </suit>
+             </bid>
+             
+             
+                      <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     East
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+             
+               <bid title="Response">
+                <position>                  <!-- can be North, East, South, West -->
+                      South
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    No Trump
+                 </suit>
+             </bid>
+             
+                   <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     West
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+              <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    North
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     ?
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                ?
+                 </suit>
+             </bid> 
+             
+         </bids>
+         <inputToCorrectBid>
+              <balanced>No</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>12</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution>1</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+         </inputToCorrectBid> 
+         <nextCorrectBid>
+              <positionNext>           <!-- can be North, East, South, West -->
+                     North
+              </positionNext>
+                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass -->
+                    2
+                 </levelNext>
+                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    Diamonds
+                 </suitNext>
+                 <explanation>
+                      <explanationpart1>
+                 
+                     Opener (North) has 13 total points.  The hand is unbalanced, since operner has a singleton club.   To finish 
+                     describing the hand, opener rebids 2 Diamonds, showing a second suit.
+                    
+                  </explanationpart1>
+                 <explanationpart2>
+                       Responder can now choose whether to pass or bid 2 Hearts.
+                 </explanationpart2>
+                 <explanationpart3>
+                       Remember, if the responder bids 1 NT, it means they have 6-9 points and no support (2 cards or less) for the major.  
+                 </explanationpart3>
+
+                 </explanation>
+          </nextCorrectBid>
+   
+   
+   
+   
+    </exercise>  
+          <exercise title="4.11 - Re-response after NT response with minimum hand">
+         <page>154</page>]
+          <dealer>
+               North
+          </dealer>
+         <cards>
+            <spades>
+                  9,6,2
+             </spades>
+             <hearts>
+                  A,K,10,8,6,2
+             </hearts>
+             <diamonds>
+                  A,J,4
+             </diamonds>
+             <clubs>
+                   6
+             </clubs>
+         </cards>
+         
+         
+         <bids>
+               <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      North
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     Hearts
+                 </suit>
+             </bid>
+             
+             
+                      <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     East
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+             
+               <bid title="Response">
+                <position>                  <!-- can be North, East, South, West -->
+                      South
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    No Trump
+                 </suit>
+             </bid>
+             
+                   <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     West
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+              <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    North
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     ?
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                ?
+                 </suit>
+             </bid> 
+             
+             
+         </bids>
+         <inputToCorrectBid>
+              <balanced>No</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>12</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution>2</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+         </inputToCorrectBid> 
+         <nextCorrectBid>
+              <positionNext>           <!-- can be North, East, South, West -->
+                     North
+              </positionNext>
+                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass -->
+                    2
+                 </levelNext>
+                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    Hearts
+                 </suitNext>
+                 <explanation>
+                      <explanationpart1>
+                 
+                     Opener (North) has 14 total points including 2 for the six card suit.
+                     Opener's hand is unbalanced and there is no second suit to show.  Opener rebids the original suit of 2 Hearts
+                  </explanationpart1>
+                 <explanationpart2>
+                      The rebid of the heart suit after a 1 NT bid by responder definately shows a six card suit.
+                 </explanationpart2>
+                 <explanationpart3>
+                        Remember, if the responder bids 1 NT, it means they have 6-9 points and no support (2 cards or less) for the major. 
+                 </explanationpart3>
+
+                 </explanation>
+          </nextCorrectBid>
+   
+   
+   
+   
+    </exercise>  
+    
+          <exercise title="4.12 - Re-response after NT response with minimum hand">
+         <page>154</page>]
+          <dealer>
+               North
+          </dealer>
+         <cards>
+            <spades>
+                  K,10,6,4
+             </spades>
+             <hearts>
+                  A,Q,J,7,6,3
+             </hearts>
+             <diamonds>
+                 Q,10
+             </diamonds>
+             <clubs>
+                   5
+             </clubs>
+         </cards>
+         
+         
+         <bids>
+               <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      North
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     Hearts
+                 </suit>
+             </bid>
+             
+             
+                      <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     East
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+             
+               <bid title="Response">
+                <position>                  <!-- can be North, East, South, West -->
+                      South
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    No Trump
+                 </suit>
+             </bid>
+             
+             
+                                   <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     West
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+             
+                            <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      North
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     ?
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     ?
+                 </suit>
+             </bid>
+             
+             
+         </bids>
+         <inputToCorrectBid>
+              <balanced>No</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>12</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution>2</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+         </inputToCorrectBid> 
+         <nextCorrectBid>
+              <positionNext>           <!-- can be North, East, South, West -->
+                     North
+              </positionNext>
+                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass -->
+                    2
+                 </levelNext>
+                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    Hearts
+                 </suitNext>
+                 <explanation>
+                      <explanationpart1>
+                 
+                     Opener has a minimum hand of 14 total points.   Opener has a second suit, Spades, which might be shown.
+                     There are two reasons, however, why opener should not suit this suit.  First, if opener bids 2 Spades to show the second
+                     suit and an unbalanced hand, responder will have to choose between Spades and Hearts.  If responder prefers Hearts, responder
+                     must bid 3 Hearts and, with both partners having minimum hands, the partnership may be to high on the Bidding Scale.
+                     Second, opener knows there can't be a Golden Fit in Spades since responder would have bid 1 Sapd with for or more Spades rather
+                     than NT.
+                  </explanationpart1>
+                 <explanationpart2>
+                      Opener should rebid the orginal suit, 2 Hearts and this should end the bidding.
+                 </explanationpart2>
+                 <explanationpart3>
+                        Remember, if the responder bids 1 NT, it means they have 6-9 points and no support (2 cards or less) for the major. 
+                 </explanationpart3>
+
+                 </explanation>
+          </nextCorrectBid>
+    </exercise>  
+    
+              <exercise title="4.13 - Re-response after NT response with medium hand">
+         <page>155</page>]
+          <dealer>
+               North
+          </dealer>
+         <cards>
+            <spades>
+                  2
+             </spades>
+             <hearts>
+                  A,8,3
+             </hearts>
+             <diamonds>
+                 A,K,J,9,7,6
+             </diamonds>
+             <clubs>
+                  A,4,2
+             </clubs>
+         </cards>
+         
+         
+         <bids>
+               <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      North
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     Diamonds
+                 </suit>
+             </bid>
+             
+             
+                      <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     East
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+             
+               <bid title="Response">
+                <position>                  <!-- can be North, East, South, West -->
+                      South
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    No Trump
+                 </suit>
+             </bid>
+             
+                   <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     West
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+              <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    North
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     ?
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                ?
+                 </suit>
+             </bid> 
+             
+         </bids>
+         <inputToCorrectBid>
+              <balanced>No</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>16</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution>2</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+         </inputToCorrectBid> 
+         <nextCorrectBid>
+              <positionNext>           <!-- can be North, East, South, West -->
+                     North
+              </positionNext>
+                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass -->
+                    3
+                 </levelNext>
+                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    Diamonds
+                 </suitNext>
+                 <explanation>
+                      <explanationpart1>
+                 
+                     Opener has a medium hand of 16 HCP plus 2 points for the six-cards suit, totalling 18 points.  
+                     Opener has unblanced hand with no second suit.  To describe the shape of the hand, opener must rebid the original suit.
+                     With extra strength opener does not rebid the suit at the two level as opener would be holding a minimum strength hand.
+                     Instead, opener jumps to the three level and bids 3 Diamonds.
+                  </explanationpart1>
+                 <explanationpart2>
+                      Opener's jump to three of the orginal suit promises a six-card diamond suit.
+                 </explanationpart2>
+                 <explanationpart3>
+                       
+                 </explanationpart3>
+
+                 </explanation>
+          </nextCorrectBid>
+    </exercise>  
+              <exercise title="4.14 - Re-response after NT response with medium hand">
+         <page>155</page>]
+          <dealer>
+               North
+          </dealer>
+         <cards>
+            <spades>
+                  9
+             </spades>
+             <hearts>
+                  A,K,7,2
+             </hearts>
+             <diamonds>
+                 K,J,10,8,4
+             </diamonds>
+             <clubs>
+                  A,J,5
+             </clubs>
+         </cards>
+         
+         
+         <bids>
+               <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      North
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     Diamonds
+                 </suit>
+             </bid>
+             
+             
+                      <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     East
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+             
+               <bid title="Response">
+                <position>                  <!-- can be North, East, South, West -->
+                      South
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                   No Trump
+                 </suit>
+             </bid>
+             
+                   <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     West
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+              <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    North
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     ?
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                ?
+                 </suit>
+             </bid> 
+             
+             
+         </bids>
+         <inputToCorrectBid>
+              <balanced>No</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>16</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution>1</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+         </inputToCorrectBid> 
+         <nextCorrectBid>
+              <positionNext>           <!-- can be North, East, South, West -->
+                     North
+              </positionNext>
+                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass -->
+                    2
+                 </levelNext>
+                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    Hearts
+                 </suitNext>
+                 <explanation>
+                      <explanationpart1>
+                 
+                     Opener has a medium hand of 16 HCP plus 1 points for the five-cards suit, totalling 17 points.  
+                     Opener has unblanced hand and has a possible second suit.  
+                     Opener can show this by bidding the second suit at the 2 level to tell responder this is an unbalanced hand with at least five diamonds and four hearts
+                     Opener is also showing a medium strength hand by gidding a higher ranking suit at the two level.
+                     
+                  </explanationpart1>
+                 <explanationpart2>
+                      Opener would not have bid a new suit at the two level with a mimimum-strength hand.
+                      
+                 </explanationpart2>
+                 <explanationpart3>
+                       Opener has enough strength to allow the partnership to play at the three level if necessary.
+                 </explanationpart3>
+
+                 </explanation>
+          </nextCorrectBid>
+    </exercise>  
+    
+     <exercise title="4.15 - Re-response after NT response with medium hand">
+                   <page>155</page>]
+          <dealer>
+               North
+          </dealer>
+         <cards>
+            <spades>
+                  4
+             </spades>
+             <hearts>
+                  K,J,5
+             </hearts>
+             <diamonds>
+                K,Q,10,6,3
+             </diamonds>
+             <clubs>
+                 A,Q,J,8
+             </clubs>
+         </cards>
+         
+         
+         <bids>
+               <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      North
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     Diamonds
+                 </suit>
+             </bid>
+             
+             
+                      <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     East
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+             
+               <bid title="Response">
+                <position>                  <!-- can be North, East, South, West -->
+                      South
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                   No Trump
+                 </suit>
+             </bid>
+             
+                   <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     West
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+              <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    North
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     ?
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                ?
+                 </suit>
+             </bid> 
+             
+         </bids>
+         <inputToCorrectBid>
+              <balanced>No</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>16</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution>1</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+         </inputToCorrectBid> 
+         <nextCorrectBid>
+              <positionNext>           <!-- can be North, East, South, West -->
+                     North
+              </positionNext>
+                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass -->
+                    2
+                 </levelNext>
+                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    Clubs
+                 </suitNext>
+                 <explanation>
+                      <explanationpart1>
+                 
+                     Opener has a medium hand of 16 HCP plus 1 points for the five-cards suit, totalling 17 points.  
+                     Opener has unblanced hand and has a possible second suit but the second suit is lower than the opener's original suit.
+                     Opener describes the hand by rebidding 2 Clubs. 
+                     
+                  </explanationpart1>
+                 <explanationpart2>
+                      This shows an unbalanced hand.  It will sound exactly the same to responder as if the operner has a minimum-strength hand with diamonds and clubs.
+                      Unfortuantely, there is no way around this.  If opener jumps to 3 Clubs to show the extra strength, the partnership might get too high on the Bidding Scale.
+                      
+                 </explanationpart2>
+                 <explanationpart3>
+             
+                 </explanationpart3>
+
+                 </explanation>
+          </nextCorrectBid>
+    </exercise>  
+    
+      <exercise title="4.16 - Re-response after NT response with maximum hand">
+                   <page>156</page>]
+          <dealer>
+               North
+          </dealer>
+         <cards>
+            <spades>
+                  A,K,J,8,7
+             </spades>
+             <hearts>
+                  10,4,2
+             </hearts>
+             <diamonds>
+                A,Q,7
+             </diamonds>
+             <clubs>
+                 A,10
+             </clubs>
+         </cards>
+         
+         
+         <bids>
+               <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      North
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     Spades
+                 </suit>
+             </bid>
+             
+             
+                      <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     East
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+             
+               <bid title="Response">
+                <position>                  <!-- can be North, East, South, West -->
+                      South
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                   No Trump
+                 </suit>
+             </bid>
+             
+                   <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     West
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+              <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    North
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     ?
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                ?
+                 </suit>
+             </bid> 
+             
+         </bids>
+         <inputToCorrectBid>
+              <balanced>Yes</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>18</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution>1</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+         </inputToCorrectBid> 
+         <nextCorrectBid>
+              <positionNext>           <!-- can be North, East, South, West -->
+                     North
+              </positionNext>
+                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass -->
+                    3
+                 </levelNext>
+                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    No Trump
+                 </suitNext>
+                 <explanation>
+                      <explanationpart1>
+                 
+                     Opener has 18 HCP plus 1 point for the five-card suit, for a total of 19 points.
+                     
+                  </explanationpart1>
+                 <explanationpart2>
+                      Opener has a balanced hand and shows this by jumping to 3 NT.
+                      
+                 </explanationpart2>
+                 <explanationpart3>
+                    With a balanced hand with 18 or 19 HCP in hand, the opener will begin the bidding with one of a suit and make a jump rebid (jump shift) to notrump.
+                    If reponder shows 6 to 9 total points, the partnership has enough strength for game.
+                 </explanationpart3>
+
+                 </explanation>
+          </nextCorrectBid>
+    </exercise>  
+     <exercise title="4.17 - Re-response after NT response with maximum hand">
+                   <page>156</page>]
+          <dealer>
+               North
+          </dealer>
+         <cards>
+            <spades>
+                  K,Q,J,9,7,6,3
+             </spades>
+             <hearts>
+                  5
+             </hearts>
+             <diamonds>
+                A,J
+             </diamonds>
+             <clubs>
+                 A,Q,J
+             </clubs>
+         </cards>
+         
+         
+         <bids>
+               <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      North
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     Spades
+                 </suit>
+             </bid>
+             
+             
+                      <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     East
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+             
+               <bid title="Response">
+                <position>                  <!-- can be North, East, South, West -->
+                      South
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                   No Trump
+                 </suit>
+             </bid>
+             
+                   <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     West
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+              <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    North
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     ?
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                ?
+                 </suit>
+             </bid> 
+             
+         </bids>
+         <inputToCorrectBid>
+              <balanced>No</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>18</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution>3</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+         </inputToCorrectBid> 
+         <nextCorrectBid>
+              <positionNext>           <!-- can be North, East, South, West -->
+                     North
+              </positionNext>
+                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass -->
+                   4
+                 </levelNext>
+                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    Spades
+                 </suitNext>
+                 <explanation>
+                      <explanationpart1>
+                 
+                     Opener has 18 HCP plus 3 point sfor the seven-card suit, for a total of 21 points.
+                     
+                  </explanationpart1>
+                 <explanationpart2>
+                      With an unbalanced hand an no second suit to show, opener rebids the original suit but jumps right to game of 4 Spaces to show the great strength.
+                      
+                 </explanationpart2>
+                 <explanationpart3>
+                   
+                    If reponder shows 6 to 9 total points, the partnership has enough strength for game.
+                 </explanationpart3>
+
+                 </explanation>
+          </nextCorrectBid>
+    </exercise>  
+         <exercise title="4.18 - Re-response after NT response with maximum hand">
+                   <page>156</page>]
+          <dealer>
+               North
+          </dealer>
+         <cards>
+            <spades>
+                  A,Q,10,5,3
+             </spades>
+             <hearts>
+                  9,5
+             </hearts>
+             <diamonds>
+               A,K,J,6
+             </diamonds>
+             <clubs>
+                 A,3
+             </clubs>
+         </cards>
+         
+         
+         <bids>
+               <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      North
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     Spades
+                 </suit>
+             </bid>
+             
+             
+                      <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     East
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+             
+               <bid title="Response">
+                <position>                  <!-- can be North, East, South, West -->
+                      South
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                   No Trump
+                 </suit>
+             </bid>
+                   <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     West
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+              <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    North
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     ?
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                ?
+                 </suit>
+             </bid> 
+         </bids>
+         <inputToCorrectBid>
+              <balanced>No</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>18</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution>1</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+         </inputToCorrectBid> 
+         <nextCorrectBid>
+              <positionNext>           <!-- can be North, East, South, West -->
+                     North
+              </positionNext>
+                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass -->
+                   3
+                 </levelNext>
+                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    Diamonds
+                 </suitNext>
+                 <explanation>
+                      <explanationpart1>
+                 
+                     Opener has 18 HCP plus 1 point sfor the five-card suit, for a total of 19 points.
+                     
+                  </explanationpart1>
+                 <explanationpart2>
+                      This is a maximum strength had with a second suit that can be shown.  To show this, opener rebids 3 Diamonds.
+                      This jump-shift is a forcing bid by opener describing a maximum-strength unbalanced hand.  Responder will use
+                      this information to determine the final contract.
+                 
+                 </explanationpart2>
+                 <explanationpart3>
+                   
+                    If reponder shows 6 to 9 total points, the partnership has enough strength for game.
+                    
+                 </explanationpart3>
+
+                 </explanation>
+          </nextCorrectBid>
+    </exercise>  
+         <exercise title="4.19 - Re-response after 2 NT response with minimum hand">
+                   <page>167</page>]
+          <dealer>
+               North
+          </dealer>
+         <cards>
+            <spades>
+                  A,J,7,6,3
+             </spades>
+             <hearts>
+                 K,9,5
+             </hearts>
+             <diamonds>
+                8,4,2
+             </diamonds>
+             <clubs>
+                 A,3
+             </clubs>
+         </cards>
+         
+         
+         <bids>
+               <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      North
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     Spades
+                 </suit>
+             </bid>
+             
+             
+                      <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     East
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+             
+               <bid title="Response">
+                <position>                  <!-- can be North, East, South, West -->
+                      South
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     2
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                   No Trump
+                 </suit>
+             </bid>
+                   <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     West
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+              <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    North
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     ?
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                ?
+                 </suit>
+             </bid> 
+         </bids>
+         <inputToCorrectBid>
+              <balanced>Yes</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>12</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution>1</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+         </inputToCorrectBid> 
+         <nextCorrectBid>
+              <positionNext>           <!-- can be North, East, South, West -->
+                     North
+              </positionNext>
+                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass -->
+                   3
+                 </levelNext>
+                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    No Trump
+                 </suitNext>
+                 <explanation>
+                      <explanationpart1>
+                 
+                     Opener has a minimum hand strength with 13 total points.
+                     With a balanced hand, opener can simply raise to game at 3 NT.
+                     
+                  </explanationpart1>
+                 <explanationpart2>
+                      Note that the opener cannot pass since responder's bid is forcing.  Opener also knows there is no Golden Fit in spades, because responder did not raise them.
+                 </explanationpart2>
+                 <explanationpart3>
+                   
+                    If reponder says 2NT it means the responder has13-15 HCP with a balanced hand and no support for the opener's major suit
+             
+                    
+                 </explanationpart3>
+
+                 </explanation>
+          </nextCorrectBid>
+    </exercise>  
+    
+    
+         <exercise title="4.20 - Re-response after 2 NT response with minimum hand">
+                   <page>167</page>]
+          <dealer>
+               North
+          </dealer>
+         <cards>
+            <spades>
+                  A,J,7,6,3
+             </spades>
+             <hearts>
+                 K,9,5,4,2
+             </hearts>
+             <diamonds>
+                8
+             </diamonds>
+             <clubs>
+                 A,3
+             </clubs>
+         </cards>
+         
+         
+         <bids>
+               <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      North
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     Spades
+                 </suit>
+             </bid>
+             
+             
+                      <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     East
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+             
+               <bid title="Response">
+                <position>                  <!-- can be North, East, South, West -->
+                      South
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     2
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                   No Trump
+                 </suit>
+             </bid>
+                   <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     West
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+              <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    North
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     ?
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                ?
+                 </suit>
+             </bid> 
+         </bids>
+         <inputToCorrectBid>
+              <balanced>No</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>12</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution>2</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+         </inputToCorrectBid> 
+         <nextCorrectBid>
+              <positionNext>           <!-- can be North, East, South, West -->
+                     North
+              </positionNext>
+                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass -->
+                   3
+                 </levelNext>
+                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    Hearts
+                 </suitNext>
+                 <explanation>
+                      <explanationpart1>
+                 
+                     Opener has a minimum hand strength with 13 total points and is  unbalanced
+                     
+                     
+                  </explanationpart1>
+                 <explanationpart2>
+                      Note that the opener cannot pass since responder's bid is forcing.  Opener also knows there is no Golden Fit in spades, because responder did not raise them.
+                      But opener cannot bid 3 Hearts, whosing the second suit and leaving it up to the responder to place the contract.
+                 </explanationpart2>
+                 <explanationpart3>
+                   
+                    If reponder says 2NT it means the responder has13-15 HCP with a balanced hand and no support for the opener's major suit
+             
+                    
+                 </explanationpart3>
+
+                 </explanation>
+          </nextCorrectBid>
+    </exercise>  
+             <exercise title="4.21 - Re-response after 2 NT response with minimum hand">
+                   <page>167</page>]
+          <dealer>
+               North
+          </dealer>
+         <cards>
+            <spades>
+                  A,J,7,6,3,2
+             </spades>
+             <hearts>
+                 K,9,5
+             </hearts>
+             <diamonds>
+                8,4,2
+             </diamonds>
+             <clubs>
+                 A
+             </clubs>
+         </cards>
+         
+         
+         <bids>
+               <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      North
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     Spades
+                 </suit>
+             </bid>
+             
+             
+                      <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     East
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+             
+               <bid title="Response">
+                <position>                  <!-- can be North, East, South, West -->
+                      South
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     2
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                   No Trump
+                 </suit>
+             </bid>
+                   <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     West
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+              <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    North
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     ?
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                ?
+                 </suit>
+             </bid> 
+         </bids>
+         <inputToCorrectBid>
+              <balanced>No</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>12</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution>2</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+         </inputToCorrectBid> 
+         <nextCorrectBid>
+              <positionNext>           <!-- can be North, East, South, West -->
+                     North
+              </positionNext>
+                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass -->
+                   4
+                 </levelNext>
+                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    Spades
+                 </suitNext>
+                 <explanation>
+                      <explanationpart1>
+                 
+                     Opener has a minimum hand strength with 13 total points and is  unbalanced
+                     
+                     
+                  </explanationpart1>
+                 <explanationpart2>
+                      Opener knows there is a Golden Fit in Spaces, because responder's NT bid indicates a balanced hand with at least 2 Spades.
+                 </explanationpart2>
+                 <explanationpart3>
+                   
+                    If reponder says 2NT it means the responder has13-15 HCP with a balanced hand.
+             
+                    
+                 </explanationpart3>
+
+                 </explanation>
+          </nextCorrectBid>
+    </exercise>  
+    
+    
+   </lesson>
+   
+   
+     
+<lesson title="5 - Responder's Rebids">
+         
+         <description>
+
+         </description>
+        
+        
+        
+  <exercise title="5.1 - Rebids when Opener Shows Minimum Hand">
+     <page>204</page>]
+          <dealer>
+               North
+          </dealer>
+         <cards>
+            <spades>
+                  K,J,6,3
+             </spades>
+             <hearts>
+                 10,4,2
+             </hearts>
+             <diamonds>
+                Q,4,3
+             </diamonds>
+             <clubs>
+                 K,4,2
+             </clubs>
+         </cards>
+         
+         
+         <bids>
+               <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      East
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     Diamonds
+                 </suit>
+             </bid>
+             
+             
+                      <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     South
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+                <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    West
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                    1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                   Spades
+                 </suit>
+             </bid> 
+             
+                
+                <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    North
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                    Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid>   
+             
+                             
+                <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    East
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                   1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    No Trump
+                 </suit>
+             </bid>        
+             
+                     <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     South
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+                         <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    West
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     ?
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                  ?
+                 </suit>
+             </bid> 
+         </bids>
+         <inputToCorrectBid>
+              <balanced>Yes</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>9</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution>0</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+         </inputToCorrectBid> 
+         <nextCorrectBid>
+              <positionNext>           <!-- can be North, East, South, West -->
+                     West
+              </positionNext>
+                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass -->
+                   Pass
+                 </levelNext>
+                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    
+                 </suitNext>
+                 <explanation>
+                      <explanationpart1>
+                 With only 9 HCP, responder knows the partnership belongs in a partscore.
+                 There might be a Golden Fit in diamonds, but opener may have only a four-card suit.
+                 
+                     
+                     
+                     
+                  </explanationpart1>
+                 <explanationpart2>
+                    Responder can't be sure and would pass.
+                 </explanationpart2>
+                 <explanationpart3>
+                   
+                       The opener (East) shows a minimum-strength hand by rebidding 1NT at the cheapest available level.
+             
+                       Remember, when the opener indicates a minimum hand (13-15 points) by rebidding 1NT, this does not mean the opener has a balanced hand but indicates it is a minimum hand.
+                 </explanationpart3>
+
+                 </explanation>
+          </nextCorrectBid>
+    </exercise>  
+    
+     <exercise title="5.2 - Rebids when Opener Shows Minimum Hand">
+     <page>204</page>]
+          <dealer>
+               North
+          </dealer>
+         <cards>
+            <spades>
+                  K,Q,J,9,7,3
+             </spades>
+             <hearts>
+                 6,3
+             </hearts>
+             <diamonds>
+                3,2
+             </diamonds>
+             <clubs>
+                 10,7,2
+             </clubs>
+         </cards>
+         
+         
+         <bids>
+               <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      East
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     Diamonds
+                 </suit>
+             </bid>
+             
+             
+                      <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     South
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+                <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    West
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                   Spades
+                 </suit>
+             </bid> 
+             
+                
+                <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    North
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                    Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid>   
+             
+                             
+                <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    East
+                </position>
+                <pass>XXX</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                   1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    No Trump
+                 </suit>
+             </bid>        
+             
+                     <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     South
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+                         <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    West
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     ?
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                  ?
+                 </suit>
+             </bid> 
+         </bids>
+         <inputToCorrectBid>
+              <balanced>No</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>6</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution>2</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+         </inputToCorrectBid> 
+         <nextCorrectBid>
+              <positionNext>           <!-- can be North, East, South, West -->
+                     West
+              </positionNext>
+                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass -->
+                   2
+                 </levelNext>
+                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    Spades
+                 </suitNext>
+                 <explanation>
+                      <explanationpart1>
+                 Opener shows a minimum hand (with 1NT rebid), but opener is indicating there are 4 Spades, responder knows there is a Golden Fit in Spades.
+                 With only 8 total points, responder wants the partnership to play in a partscore and bids 2 Spades.
+                     
+                     
+                     
+                  </explanationpart1>
+                 <explanationpart2>
+                    This is a sign-off bid, telling opener to pass.
+                 </explanationpart2>
+                 <explanationpart3>
+                   
+                                   Remember, when the opener indicates a minimum hand (13-15 points) by bidding 1NT, this does not mean the opener has a balanced hand but indicates it is a minimum hand.
+             
+                    
+                 </explanationpart3>
+
+                 </explanation>
+          </nextCorrectBid>
+    </exercise>  
+    
+    
+    
+     <exercise title="5.3 - Rebids when Opener Shows Minimum Hand">
+     <page>204</page>]
+          <dealer>
+               North
+          </dealer>
+         <cards>
+            <spades>
+                  A,9,7,5
+             </spades>
+             <hearts>
+                 4
+             </hearts>
+             <diamonds>
+                Q,8,6,4,2
+             </diamonds>
+             <clubs>
+                9,3,2
+             </clubs>
+         </cards>
+         
+         
+         <bids>
+               <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      East
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     Diamonds
+                 </suit>
+             </bid>
+             
+             
+                      <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     South
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+                <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    West
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                   Spades
+                 </suit>
+             </bid> 
+             
+                
+                <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    North
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                    Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid>   
+             
+                             
+                <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    East
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                   1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    No Trump
+                 </suit>
+             </bid>        
+             
+                     <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     South
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+                         <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    West
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     ?
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                  ?
+                 </suit>
+             </bid> 
+         </bids>
+         
+         <inputToCorrectBid>
+              <balanced>No</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>6</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution></distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+              <dummyPoints>3</dummyPoints>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+         </inputToCorrectBid> 
+         <nextCorrectBid>
+              <positionNext>           <!-- can be North, East, South, West -->
+                     West
+              </positionNext>
+                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass -->
+                   2
+                 </levelNext>
+                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    Diamonds
+                 </suitNext>
+                 <explanation>
+                      <explanationpart1>
+                 Since opener shows a minimum hand (with 1NT rebid), responder knows there is a Golden Fit in Diamonds.
+                 With only 9 total points, responder wants the partnership to play in a partscore and bids 2 Diamonds.
+                 
+                   Returning to the ppening bid is a signoff bid, telling opener to pass.
+                     
+                  </explanationpart1>
+                 <explanationpart2>
+                       Remember, when the opener indicates a minimum hand (13-15 points) by bidding 1NT, this does not mean the opener has a balanced hand but indicates it is a minimum hand.
+                 </explanationpart2>
+                 <explanationpart3>
+           
+                    Note that the responder considered Dummy points, rather than Distribution points, since the responder will end up being the Dummy.
+                    (this is different than what is shown in the book on page 204)
+                    
+                 </explanationpart3>
+
+                 </explanation>
+          </nextCorrectBid>
+    </exercise>  
+    
+    
+    
+     <exercise title="5.4 - Rebids when Opener Shows Minimum Hand ">
+     <page>205</page>]
+          <dealer>
+               North
+          </dealer>
+         <cards>
+            <spades>
+                  K,9,3
+             </spades>
+             <hearts>
+                 K,10,9,7,2
+             </hearts>
+             <diamonds>
+                4,2
+             </diamonds>
+             <clubs>
+                 8,6,4
+             </clubs>
+         </cards>
+         
+         
+         <bids>
+               <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      East
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     Diamonds
+                 </suit>
+             </bid>
+             
+             
+                      <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     South
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+                <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    West
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                   Hearts
+                 </suit>
+             </bid> 
+             
+                
+                <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    North
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                    Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid>   
+             
+                             
+                <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    East
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                   2
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    Hearts
+                 </suit>
+             </bid>        
+             
+                     <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     South
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+                         <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    West
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     ?
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                  ?
+                 </suit>
+             </bid> 
+         </bids>
+         <inputToCorrectBid>
+              <balanced>Yes</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>6</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution>1</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+         </inputToCorrectBid> 
+         <nextCorrectBid>
+              <positionNext>           <!-- can be North, East, South, West -->
+                     West
+              </positionNext>
+                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass -->
+                   Pass
+                 </levelNext>
+                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suitNext>
+                 <explanation>
+                      <explanationpart1>
+                     
+                     Opener shows a minimum hand with four-card support for responder's suit.
+                     
+                     
+                  </explanationpart1>
+                 <explanationpart2>
+     With 7 total points, responder knows the partnership has already found a Golden Fit, so responder should pass.
+                 </explanationpart2>
+                 <explanationpart3>
+                   
+            
+             
+                    
+                 </explanationpart3>
+
+                 </explanation>
+          </nextCorrectBid>
+    </exercise>  
+    
+    
+    
+     <exercise title="5.5 - Rebids when Opener Shows Minimum Hand">
+        <page>205</page>]
+          <dealer>
+               North
+          </dealer>
+         <cards>
+            <spades>
+                  J,3
+             </spades>
+             <hearts>
+                 Q,8,7,5
+             </hearts>
+             <diamonds>
+                A,10,8,5,2
+             </diamonds>
+             <clubs>
+                 10,3
+             </clubs>
+         </cards>
+         
+         
+         <bids>
+               <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      East
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     Diamonds
+                 </suit>
+             </bid>
+             
+             
+                      <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     South
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+                <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    West
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                   Hearts
+                 </suit>
+             </bid> 
+             
+                
+                <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    North
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                    Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid>   
+             
+                             
+                <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    East
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                   2
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    Hearts
+                 </suit>
+             </bid>        
+             
+                     <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                     South
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+                         <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    West
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     ?
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                  ?
+                 </suit>
+             </bid> 
+         </bids>
+         <inputToCorrectBid>
+              <balanced>No</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>7</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution>1</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+         </inputToCorrectBid> 
+         <nextCorrectBid>
+              <positionNext>           <!-- can be North, East, South, West -->
+                     West
+              </positionNext>
+                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass -->
+                   Pass
+                 </levelNext>
+                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suitNext>
+                 <explanation>
+                      <explanationpart1>
+                     
+           Responder knows there is a Golden Fit in hearts and, with only 8 total points, knows the partnership should play in a partscore.
+                     
+                     
+                  </explanationpart1>
+     
+                 <explanationpart2>
+
+
+
+                 </explanationpart2>
+                 <explanationpart3>
+                   
+            
+                 The opener had shown a minimum hand with four-card support for responder's suit.
+                    
+                 </explanationpart3>
+
+                 </explanation>
+          </nextCorrectBid>
+    </exercise>  
+    
+
+
+     
    </lesson>
    
     </lessons>
