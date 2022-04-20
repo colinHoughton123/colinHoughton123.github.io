@@ -1424,6 +1424,15 @@ function showCorrectAnswer(){
             if(    $('#hcp').val() == hcp)    {   $("#highCardCorrect").append(correct)  } else{ $("#highCardCorrect").append(incorrect)};
 
             var balancedRadio = $("#formQuestions input[type='radio']:checked").val();
+            
+     //       alert( "the correct balanced hand answer is .. "  + balancedHand + " and the radio button was set to " + balancedRadio );
+            
+      
+//   alert(           $('input[name=balanced]:checked', '#formQuestions').val()           ); 
+ 
+
+        
+        
             if(  balancedHand == balancedRadio  )  {   $("#balancedHandCorrect").append(correct)  }else{ $("#balancedHandCorrect").append(incorrect)};
 
             if(    $('#bidLevel').val() == nextBidLevelShouldBe  &&  $('#bidSuit').val() ==nextBidSuitShouldBe)    {   $("#bidCorrect").append(correct)  }else{ $("#bidCorrect").append(incorrect)};
@@ -1622,16 +1631,16 @@ $(document).ready(function () {
 			</div>
 
    </div>  
-<form id="formQuestions">
+
 
    </div>
-   
+   <form id="formQuestions">
    <div id="rightSide" style="float:left; width:50%">
    
 		<div id="bidsArea" style="float:left; padding-top: 20px; padding-left: 20px;  display:none">
 			<div>Bids so far...</div>
 			 <div> 
-          <div id="bidsTable" style="float:left; padding-left: 20px;">
+          <div id="bidsTable" style="float:left; padding-left: 20px; margin-bottom: 10px;">
                <table id="bids">
                   <thead>
                   <tr>
@@ -1642,13 +1651,13 @@ $(document).ready(function () {
               <tbody></tbody>
             </table> 
          </div>
-	      <div id = "correctBidInput"  style="font-size:20px; float:left; padding-left:20px;">
+	      <div id = "correctBidInput"  style="font-size:20px; float:left; margin-left:20px; padding: 10px;  background-color: lightgrey;">
 	      
 	      
 	      	<div id="questions" style=" ">Is this a balanced hand?  
 	    	    
 	        <div style="  display: inline-block;"  >
-	        			  <input type="radio"  id="radioYes" value="Yes" name="balanced" style="width: 30px;" >   Yes  </input>
+	        			  <input type="radio"  id="radioYes" value="Yes" name="balanced" style="width: 30px;" >  Yes </input>
 	        	        <input type="radio" id="radioNo" name="balanced"  value="No" style="width: 30px;"> No </input>
 	        	        <div id="balancedHandCorrect" class="correctCheck"></div>
 	         </div>
