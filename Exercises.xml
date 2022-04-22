@@ -3135,7 +3135,7 @@ So responder jumps to game with 4 spades
               <balanced>No</balanced>         <!-- Can be Yes, No, Don't Cares -->
               <hcp>1</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
               <distribution>2</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
-                          <dummyPoints> 2</dummyPoints>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+
          </inputToCorrectBid> 
          <nextCorrectBid>
               <positionNext>           <!-- can be North, East, South, West -->
@@ -3149,9 +3149,9 @@ So responder jumps to game with 4 spades
                  </suitNext>
                  <explanation>
                       <explanationpart1>
-                 
+         
                      With 3 total points, you don't have enough to bid, even though you have 6 Spades.
-                     A new-suit bid by you would be forcing and this might get the partnership too high
+                     A new-suit bid by respondent would be forcing and this might get the partnership too high
                      as you may have only 16 points between you. 
   
                   </explanationpart1>
@@ -3168,6 +3168,7 @@ So responder jumps to game with 4 spades
 
    
 <exercise title="3.2 - Response to 1 major with 6-9 total points">
+   <page>115</page>
           <dealer>
                North
           </dealer>
@@ -3196,7 +3197,7 @@ So responder jumps to game with 4 spades
                      1
                  </level>
                 <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
-                     Spades
+                     Hearts
                  </suit>
              </bid>
              
@@ -3254,7 +3255,9 @@ So responder jumps to game with 4 spades
                      Also, with 6-9 total points, you may bid a new suit, but only at the 1 level (a new suit at the 2 level would be forcing)
                      Since your partner opened with Spades, you don't have the strength to go to the 2 level.
                      
-                     Your options with 6-9 points are, in order (1) Raise partner's major suit to the two level with at least three-card support, (2) Bid a new suit at the one level), or (3) Bid 1NT)   
+
+
+
   
                   </explanationpart1>
                  <explanationpart2>
@@ -3262,7 +3265,11 @@ So responder jumps to game with 4 spades
                      to keep the bidding going but not other bid to make.
                  </explanationpart2>
                  <explanationpart3>
-
+                     Once you see that your hand is suitable for a raise of partner’s major, value your hand using dummy points before deciding what response to make (page 115))
+                     
+                   
+                                     	Your options with 6-9 points are, in order (1) Raise partner's major suit to the two level with at least three-card support, (2) Bid a new suit at the one level, or (3) Bid 1NT  
+                     
                  </explanationpart3>
 
                  </explanation>
@@ -3355,15 +3362,20 @@ So responder jumps to game with 4 spades
                      You know there is a Golden Fit in Hearts since partner's opening bid shows at 
                      least 5 Hearts.  You have 6 high card points and 1 point for the doubletom in Spades, a total of 7 points.
                      
-                	Your options with 6-9 points are, in order (1) Raise partner's major suit to the two level with at least three-card support, (2) Bid a new suit at the one level), or (3) Bid 1NT)   
+ 
   
                   </explanationpart1>
                  <explanationpart2>
                      Raise to the cheapest level, 2 Hearts.
+                     
+                                          This is a minimal hand.  This is an invitational bid.  If the opener has a minimum hand (near 13) the opener will pass.
+                     With additional strength, opener may bid again.
+                     
                  </explanationpart2>
                  <explanationpart3>
-                     This is a minimal hand.  This is an invitational bid.  If the opener has a minimum hand (near 13) the opener will pass.
-                     With additional strength, opener may bid again.
+
+                     
+                                     	Your options with 6-9 points are, in order (1) Raise partner's major suit to the two level with at least three-card support, (2) Bid a new suit at the one level, or (3) Bid 1NT  
                  </explanationpart3>
 
                  </explanation>
@@ -3437,7 +3449,7 @@ So responder jumps to game with 4 spades
               <balanced>No</balanced>         <!-- Can be Yes, No, Don't Cares -->
               <hcp>7</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
               <distribution></distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
-              <dummyPoints>1</dummyPoints>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+              <dummyPoints>2</dummyPoints>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
          </inputToCorrectBid> 
          <nextCorrectBid>
               <positionNext>           <!-- can be North, East, South, West -->
@@ -3452,16 +3464,24 @@ So responder jumps to game with 4 spades
                  <explanation>
                       <explanationpart1>
                  
-                     You don't have the support for partner's Hearts.  With only two, there is a possiblity there are only 5 Hearts between you.
-                     Your options with 6-9 points are, in order (1) Raise partner's major suit to the two level with at least three-card support, (2) Bid a new suit at the one level), or (3) Bid 1NT)   
+                    Your first choice is to support partner’s hearts if you can, but you have only two hearts. 
+                    Your next choice is to bid a new suit at the one level. With a four-card spade suit, you can bid 1 Spade.
+                    
+        
+
+ 
+   
                      
   
                   </explanationpart1>
                  <explanationpart2>
-                     With a four-card spade suit, you can bid 1 Spade.
+                     With a four-card spade suit, you can bid 1 Spade.    Changing suits is a forcing bid and opener will bid again.
                  </explanationpart2>
                  <explanationpart3>
-                     Changing suits is a forcing bid and opener will bid again.
+                   
+                           Once you see that your hand is suitable for a raise of partner’s major, value your hand using dummy points before deciding what response to make (page 115))
+                           
+                                       Your options with 6-9 points are, in order (1) Raise partner's major suit to the two level with at least three-card support, (2) Bid a new suit at the one level, or (3) Bid 1NT  
                  </explanationpart3>
 
                  </explanation>
@@ -3676,7 +3696,7 @@ So responder jumps to game with 4 spades
                   8
              </spades>
              <hearts>
-                  10,9,8,5,2
+                  K,10,8,5,2
              </hearts>
              <diamonds>
                  A,7,5,4,2
@@ -3732,9 +3752,9 @@ So responder jumps to game with 4 spades
          </bids>
          <inputToCorrectBid>
               <balanced>Yes</balanced>         <!-- Can be Yes, No, Don't Cares -->
-              <hcp>4</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
-              <distribution></distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
-              <dummyPoints>4</dummyPoints>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+              <hcp>7</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution>2</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+              <dummyPoints></dummyPoints>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
          </inputToCorrectBid> 
          <nextCorrectBid>
               <positionNext>           <!-- can be North, East, South, West -->
@@ -3753,14 +3773,24 @@ So responder jumps to game with 4 spades
   
                   </explanationpart1>
                  <explanationpart2>
-                                         Your dummy points are based on 3 for the singleton and 1 for the doubleton.  (Remember, you would give 5 for a void)
+                      
                  </explanationpart2>
                  <explanationpart3>
-                     When responding to a 1 bid of a minor suit, with 6-9 points, your priority is to bid a new suit at the 1 level if  you can.  
-                     If you have a choice of suits, the guidelines are to ... 
-                     (1) Bid your longest suit
-                     (2) Bid the higher-ranking of two five-card suits
-                     (3) Bid the lower-ranking of two four-card suits
+                     When responding to a 1 bid of a minor suit, with 6-9 points, your priority is to 
+                     <![CDATA[ 
+                     <ol>
+                     <li> bid a new suit at the 1 level if  you can.     If you have a choice of suits, the guidelines are to ... </li>
+                      <ol>
+                     <li>Bid your longest  suit at the 1 level</li>
+                     <li>Bid the higher-ranking of two five-card  suits at the 1 level</li>
+                     <ol>
+                     <li> Bid the lower-ranking of two four-card new suits</li>
+                       </ol>
+                     <li>Bid 1 NT</li>
+                     <li>Raise partner's minor suit</li>
+                       </ol>
+                        </ol>
+                     ]]>
                  </explanationpart3>
 
                  </explanation>
@@ -3848,18 +3878,29 @@ So responder jumps to game with 4 spades
                  <explanation>
                       <explanationpart1>
                   
-                  With a a total of 8 (within 6-9 total points) points and a choice of two four-card suits to bid at the one level, bid the lower-ranking, Respond 1 Hearts.
+                  With a total of 8 (within 6-9 total points) points and a choice of two four-card suits to bid at the one level, bid the lower-ranking, Respond 1 Hearts.
   
                   </explanationpart1>
                  <explanationpart2>
-                               When bidding Hearts for the first time, you are not going be the dummy, so you consider distribution points (0) rather than dummy points (1).
+                               When bidding Hearts for the first time, you are not going be the dummy, so you consider distribution points (0) rather than dummy points.
                  </explanationpart2>
                  <explanationpart3>
-                     When responding to a 1 bid of a minor suit, with 6-9 points, your priority is to bid a new suit at the 1 level if  you can.  
-                     If you have a choice of suits, the guidelines are to ... 
-                     (1) Bid your longest suit
-                     (2) Bid the higher-ranking of two five-card suits
-                     (3) Bid the lower-ranking of two four-card suits
+                     When responding to a 1 bid of a minor suit, with 6-9 points, your priority is to 
+                     <![CDATA[ 
+                     <ol>
+                     <li> bid a new suit at the 1 level if  you can.     If you have a choice of suits, the guidelines are to ... </li>
+                      <ol>
+                     <li>Bid your longest  suit at the 1 level</li>
+                     <li>Bid the higher-ranking of two five-card  suits at the 1 level</li>
+                     <ol>
+                     <li> Bid the lower-ranking of two four-card new suits</li>
+                       </ol>
+                     <li>Bid 1 NT</li>
+                     <li>Raise partner's minor suit</li>
+                       </ol>
+                        </ol>
+                     ]]>
+                     
                  </explanationpart3>
 
                  </explanation>
@@ -3955,14 +3996,29 @@ So responder jumps to game with 4 spades
   
                   </explanationpart1>
                  <explanationpart2>
-                             Note that if your hand isn't suited for a 1NT bid, you third choice would be to support your parnter's minor suit.
+                     If you can’t bid a new suit at the one level, and your hand isn’t suited for a 1NT bid, your third choice is to support your partner’s minor suit. 
+                     Remember that partner may have only three cards in the suit when opening with a minor. 
+                     You should prefer to have five-card support when you raise to the two level.
+
+
                  </explanationpart2>
                  <explanationpart3>
-                     When responding to a 1 bid of a minor suit, with 6-9 points, your priority is to bid a new suit at the 1 level if  you can.  
-                     If you have a choice of suits, the guidelines are to ... 
-                     (1) Bid your longest suit
-                     (2) Bid the higher-ranking of two five-card suits
-                     (3) Bid the lower-ranking of two four-card suits ... bit upir 4 card suit is lower than the bid suit, so stay with your 2nd choice and bid 1 NT.
+                     When responding to a 1 bid of a minor suit, with 6-9 points, your priority is to 
+                     <![CDATA[ 
+                     <ol>
+                     <li> bid a new suit at the 1 level if  you can.     If you have a choice of suits, the guidelines are to ... </li>
+                      <ol>
+                     <li>Bid your longest  suit at the 1 level</li>
+                     <li>Bid the higher-ranking of two five-card  suits at the 1 level</li>
+                     <ol>
+                     <li> Bid the lower-ranking of two four-card new suits</li>
+                       </ol>
+                     <li>Bid 1 NT</li>
+                     <li>Raise partner's minor suit</li>
+                       </ol>
+                        </ol>
+                     ]]>
+                     
                  </explanationpart3>
 
                  </explanation>
@@ -4053,19 +4109,29 @@ So responder jumps to game with 4 spades
                       <explanationpart1>
                   
                   You have a total of 9 points and you don't have a four-card or longer suit to bid at the one level, You don't have
-                  stoppers in Spaces, so you prefer not to bid notrump.   However, you do have five cards in partner's minor suit.  Bid 2 Diamonds.
+                  stoppers in Spades, so you prefer not to bid notrump.   However, you do have five cards in partner's minor suit.  Bid 2 Diamonds.
   
                   </explanationpart1>
                  <explanationpart2>
-                             Note that if your hand isn't suited for a 1NT bid, you third choice would be to support your parnter's minor suit.
+                             Note that if your hand isn't suited for a 1NT bid, you third choice would be to support your partner's minor suit.
                  </explanationpart2>
                  <explanationpart3>
-                     When responding to a 1 bid of a minor suit, with 6-9 points, your priority is to bid a new suit at the 1 level if  you can.  
-                     If you have a choice of suits, the guidelines are to ... 
-                     (1) Bid your longest suit
-                     (2) Bid the higher-ranking of two five-card suits
-                     (3) Bid the lower-ranking of two four-card suits ... if you don't have a four-card suit to bid at the 1 level, your next priority is to bid 1 NT
-                     but that requires stoppers in most, if not all, other suits.  So your third choice is to support your partner's minor suit.
+                     When responding to a 1 bid of a minor suit, with 6-9 points, your priority is to 
+                     <![CDATA[ 
+                     <ol>
+                     <li> bid a new suit at the 1 level if  you can.     If you have a choice of suits, the guidelines are to ... </li>
+                      <ol>
+                     <li>Bid your longest  suit at the 1 level</li>
+                     <li>Bid the higher-ranking of two five-card  suits at the 1 level</li>
+                     <ol>
+                     <li> Bid the lower-ranking of two four-card new suits</li>
+                       </ol>
+                     <li>Bid 1 NT</li>
+                     <li>Raise partner's minor suit</li>
+                       </ol>
+                        </ol>
+                     ]]>
+                     
                  </explanationpart3>
 
                  </explanation>
@@ -4336,8 +4402,8 @@ So responder jumps to game with 4 spades
          <inputToCorrectBid>
               <balanced>Yes</balanced>         <!-- Can be Yes, No, Don't Cares -->
               <hcp>9</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
-              <distribution></distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
-              <dummyPoints>2</dummyPoints>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+              <distribution>1</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+              <dummyPoints></dummyPoints>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
          </inputToCorrectBid> 
          <nextCorrectBid>
               <positionNext>           <!-- can be North, East, South, West -->
@@ -4539,8 +4605,8 @@ So responder jumps to game with 4 spades
          <inputToCorrectBid>
               <balanced>Yes</balanced>         <!-- Can be Yes, No, Don't Cares -->
               <hcp>14</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
-              <distribution></distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
-              <dummyPoints>0</dummyPoints>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+              <distribution>0</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+              <dummyPoints></dummyPoints>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
          </inputToCorrectBid> 
          <nextCorrectBid>
               <positionNext>           <!-- can be North, East, South, West -->
@@ -4644,8 +4710,8 @@ So responder jumps to game with 4 spades
          <inputToCorrectBid>
               <balanced>No</balanced>         <!-- Can be Yes, No, Don't Cares -->
               <hcp>14</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
-              <distribution></distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
-              <dummyPoints>3</dummyPoints>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+              <distribution>2</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+              <dummyPoints></dummyPoints>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
          </inputToCorrectBid> 
          <nextCorrectBid>
               <positionNext>           <!-- can be North, East, South, West -->
@@ -4680,7 +4746,8 @@ So responder jumps to game with 4 spades
   </exercise>
       
    
-        <exercise title="3.17 - Response to 1 major with 12 or more total points">
+        <exercise title="3.17 - Response to 1 minor with 12 or more total points">
+        <page>123</page>
           <dealer>
                North
           </dealer>
@@ -4709,7 +4776,7 @@ So responder jumps to game with 4 spades
                      1
                  </level>
                 <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
-                     Spades
+                     Diamonds
                  </suit>
              </bid>
              
@@ -4746,18 +4813,18 @@ So responder jumps to game with 4 spades
          <inputToCorrectBid>
               <balanced>Yes</balanced>         <!-- Can be Yes, No, Don't Cares -->
               <hcp>14</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
-              <distribution></distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
-              <dummyPoints>1</dummyPoints>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+              <distribution>0</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+              <dummyPoints></dummyPoints>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
          </inputToCorrectBid> 
          <nextCorrectBid>
               <positionNext>           <!-- can be North, East, South, West -->
                      South
               </positionNext>
                  <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7 -->
-                    2
+                    1
                  </levelNext>
                 <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
-                     Diamonds
+                     Spades	
                  </suitNext>
                  <explanation>
                       <explanationpart1>
@@ -4783,105 +4850,7 @@ So responder jumps to game with 4 spades
          </nextCorrectBid>
   </exercise>
   
-       <exercise title="3.18 - Response to 1 minor with 12 or more total points">
-          <dealer>
-               North
-          </dealer>
-         <cards>
-            <spades>
-                Q,J,9,3
-             </spades>
-             <hearts>
-                  8,7
-             </hearts>
-             <diamonds>
-                 A,J,9,8
-             </diamonds>
-             <clubs>
-                A,Q,3
-             </clubs>
-         </cards>
-         <bids>
-               <bid title="Opening Bid">
-                <position>                  <!-- can be North, East, South, West -->
-                      North
-                </position>
-                <pass>No</pass>    <!-- can be Yes or No -->
-                
-                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
-                     1
-                 </level>
-                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
-                     Diamonds
-                 </suit>
-             </bid>
-             
-                                <bid title=" ">
-                <position>                  <!-- can be North, East, South, West -->
-                     East
-                </position>
-                <pass>Yes</pass>    <!-- can be Yes or No -->
-                
-                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
-                     Pass
-                 </level>
-                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
-                
-                 </suit>
-             </bid> 
-             
-             
-                           <bid title="Response">
-                <position>                  <!-- can be North, East, South, West -->
-                      South
-                </position>
-                <pass></pass>    <!-- can be Yes or No or leave it as a blank if this is the last bid -->
-                
-                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
-                     ?
-                 </level>
-                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
-                    ?
-                 </suit>
-             </bid>
-             
-         </bids>
-         <inputToCorrectBid>
-              <balanced>Yes</balanced>         <!-- Can be Yes, No, Don't Cares -->
-              <hcp>14</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
-              <distribution></distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
-              <dummyPoints>1</dummyPoints>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
-         </inputToCorrectBid> 
-         <nextCorrectBid>
-              <positionNext>           <!-- can be North, East, South, West -->
-                     South
-              </positionNext>
-                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7 -->
-                    1
-                 </levelNext>
-                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
-                     Spades
-                 </suitNext>
-                 <explanation>
-                      <explanationpart1>
-                            Responder could support opener's diamonds.  Looking for a Golden Fit in a major, however, takes priority.
-                  </explanationpart1>
-                 <explanationpart2>
-                        Responder should bid a new suit, preferring a major if one is available (4 cards or more).  Bid 1 Spade.
-                 </explanationpart2>
-                 <explanationpart3>
-                        Opposite an opening bid of one of a minor, responder has 3 choices (in order) with 12 or more total points:
-                           <![CDATA[
-                           <UL><li>Bid a new suit, a major if possible</li>
-                           <li>With a balanced hand, bid 2NT with 13-15 HCP</li>
-                           <LI>With a balanced hand, bid 3NT with 16-18 HCP</li>
-                            </ul>
-                           ]]>
-                 </explanationpart3>
-
-                 </explanation>
-         </nextCorrectBid>
-  </exercise>
+   
   
   
          <exercise title="3.18 - Response to 1 minor with 12 or more total points">
@@ -9464,7 +9433,7 @@ If the opponents play the contract, you would like partner to lead a Heart.
 <p />Requirements for an Overcall in a Suit 
 <ul>
 <li>A five-card or longer suit. Try to have a six-card suit to overcall at the two level. </li>
-<li​>8–16 HCP (10–17 total points). Overcalls at the two level suggest a hand that is strong enough to have opened the bidding. </li>
+ <li> 8–16 HCP (10–17 total points). Overcalls at the two level suggest a hand that is strong enough to have opened the bidding. </li>
 </ul>
  
 Requirements for a 1NT Overcall 
@@ -9572,7 +9541,7 @@ When you make an overcall in a suit, you should have at least a five-card suit. 
 <p />Requirements for an Overcall in a Suit 
 <ul>
 <li>A five-card or longer suit. Try to have a six-card suit to overcall at the two level. </li>
-<li​>8–16 HCP (10–17 total points). Overcalls at the two level suggest a hand that is strong enough to have opened the bidding. </li>
+<li>8–16 HCP (10–17 total points). Overcalls at the two level suggest a hand that is strong enough to have opened the bidding. </li>
 </ul>
  
 Requirements for a 1NT Overcall 
@@ -9677,7 +9646,7 @@ Requirements for a 1NT Overcall
 Requirements for an Overcall in a Suit 
 <ul>
 <li>A five-card or longer suit. Try to have a six-card suit to overcall at the two level. </li>
-<li​>8–16 HCP (10–17 total points). Overcalls at the two level suggest a hand that is strong enough to have opened the bidding. </li>
+<li>8–16 HCP (10–17 total points). Overcalls at the two level suggest a hand that is strong enough to have opened the bidding. </li>
 </ul>
  
 Requirements for a 1NT Overcall 
@@ -9784,6 +9753,8 @@ An overcall of 1NT is similar to a 1NT opening bid. You need a balanced hand wit
                  </explanation>
           </nextCorrectBid>
     </exercise> 
+    
+    
                 <exercise title="6.5 - Overcalls">
         <page>263</page>]
           <dealer>
@@ -9839,7 +9810,7 @@ An overcall of 1NT is similar to a 1NT opening bid. You need a balanced hand wit
          <inputToCorrectBid>
               <balanced>Yes</balanced>         <!-- Can be Yes, No, Don't Cares -->
               <hcp>16</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
-              <distribution>0</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+              <distribution>1</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
                 <dummyPoints></dummyPoints>  
          </inputToCorrectBid> 
          <nextCorrectBid>
@@ -9872,7 +9843,7 @@ Because of this, if you overcall with 1NT, you generally should have some streng
 Requirements for an Overcall in a Suit 
 <ul>
 <li>A five-card or longer suit. Try to have a six-card suit to overcall at the two level. </li>
-<li​>8–16 HCP (10–17 total points). Overcalls at the two level suggest a hand that is strong enough to have opened the bidding. </li>
+<li>8–16 HCP (10–17 total points). Overcalls at the two level suggest a hand that is strong enough to have opened the bidding. </li>
 </ul>
  
 Requirements for a 1NT Overcall 
@@ -9977,7 +9948,7 @@ Because of this, if you overcall with 1NT, you generally should have some streng
 Requirements for an Overcall in a Suit 
 <ul>
 <li>A five-card or longer suit. Try to have a six-card suit to overcall at the two level. </li>
-<li​>8–16 HCP (10–17 total points). Overcalls at the two level suggest a hand that is strong enough to have opened the bidding. </li>
+<li> 8–16 HCP (10–17 total points). Overcalls at the two level suggest a hand that is strong enough to have opened the bidding. </li>
 </ul>
  
 Requirements for a 1NT Overcall 
@@ -10080,7 +10051,7 @@ Overcall 1 Spade. You have a good suit.
 Requirements for an Overcall in a Suit 
 <ul>
 <li>A five-card or longer suit. Try to have a six-card suit to overcall at the two level. </li>
-<li​>8–16 HCP (10–17 total points). Overcalls at the two level suggest a hand that is strong enough to have opened the bidding. </li>
+<li>8–16 HCP (10–17 total points). Overcalls at the two level suggest a hand that is strong enough to have opened the bidding. </li>
 </ul>
  
 Requirements for a 1NT Overcall 
@@ -10095,6 +10066,9 @@ Requirements for a 1NT Overcall
                  </explanation>
           </nextCorrectBid>
     </exercise>     
+    
+    
+    
   </lesson>
    
    
@@ -10497,7 +10471,7 @@ Your hand is not strong enough to overcall clubs at the two level. Counting 5 du
           </nextCorrectBid>
     </exercise> 
     
-                <exercise title="7.5 - Takeout Double or Overcall">
+   <exercise title="7.5 - Takeout Double or Overcall">
         <page>300</page>]
           <dealer>
                East
@@ -10603,9 +10577,1256 @@ This hand is too good for a simple overcall. Make a takeout double and then bid 
 
          </description>
         
-        
-
+      <exercise title="8.1 - Stayman Convention">
+        <page>333</page>]
+          <dealer>
+               East
+          </dealer>
+         <cards>
+            <spades>
+                A,8,7,3
+             </spades>
+             <hearts>
+                Q,J,10
+             </hearts>
+             <diamonds>
+               A,Q,8
+             </diamonds>
+             <clubs>
+              K,8,5
+             </clubs>
+         </cards>
+         
+         
+         <bids>
+               <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      East
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     No Trump
+                 </suit>
+             </bid>
+             
+             
     
+               <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    South
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+               
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+                            <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    West
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                  2
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                  Clubs
+                 </suit>
+             </bid> 
+             
+                  <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    North
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+               
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+              <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      East
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     ?
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     ?
+                 </suit>
+             </bid>
+             
+             
+             
+         </bids>
+         <inputToCorrectBid>
+              <balanced>Yes</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>16</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution>0</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+                <dummyPoints></dummyPoints>  
+         </inputToCorrectBid> 
+         <nextCorrectBid>
+              <positionNext>           <!-- can be North, East, South, West -->
+                     East
+              </positionNext>
+                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass, Double -->
+                    2
+                 </levelNext>
+                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    Spades
+                 </suitNext>
+                 <explanation>
+                      <explanationpart1>
+Rebid 2 Spades to show the four-card spade suit.
+
+
+
+
+                  </explanationpart1>
+     
+                 <explanationpart2>
+
+
+                 </explanationpart2>
+                 <explanationpart3>
+
+           
+ The Stayman convention is used to ask if opener has a four-card major suit. 
+ In order to use Stayman, responder must have at least one four-card major with at least an invitational hand of 8 or 9 total points.
+ 
+ Responder bids 2 after opener’s 1NT. With a four-card or longer major suit, opener responds in that suit at the two level. If opener has both four-card majors, the heart suit is rebid first, going up the line. 
+ Without a four-card major suit, opener rebids 2 Diamonds. The 2 Clubs response and the 2 Diamonds rebid are artificial (conventional) calls that do not imply any information about the club and diamond suits respectively.
+
+
+                 </explanationpart3>
+
+                 </explanation>
+          </nextCorrectBid>
+    </exercise> 
+
+ <exercise title="8.2 - Stayman Convention">
+        <page>333</page>]
+          <dealer>
+               East
+          </dealer>
+         <cards>
+            <spades>
+                A,K
+             </spades>
+             <hearts>
+                10,9,7,3
+             </hearts>
+             <diamonds>
+               K,Q,9,2
+             </diamonds>
+             <clubs>
+              A,J,10
+             </clubs>
+         </cards>
+         
+         
+         <bids>
+               <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      East
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     No Trump
+                 </suit>
+             </bid>
+             
+             
+    
+               <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    South
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+               
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+                            <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    West
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                  2
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                  Clubs
+                 </suit>
+             </bid> 
+             
+                  <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    North
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+               
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+              <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      East
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     ?
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     ?
+                 </suit>
+             </bid>
+             
+             
+             
+         </bids>
+         <inputToCorrectBid>
+              <balanced>Yes</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>17</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution>0</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+                <dummyPoints></dummyPoints>  
+         </inputToCorrectBid> 
+         <nextCorrectBid>
+              <positionNext>           <!-- can be North, East, South, West -->
+                     East
+              </positionNext>
+                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass, Double -->
+                    2
+                 </levelNext>
+                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    Hearts
+                 </suitNext>
+                 <explanation>
+                      <explanationpart1>
+Rebid 2 Hearts to show the four-card heart suit. Responder is not interested in how good a suit you have, merely whether you have four of the suit.
+
+
+
+
+
+                  </explanationpart1>
+     
+                 <explanationpart2>
+
+
+                 </explanationpart2>
+                 <explanationpart3>
+
+           
+ The Stayman convention is used to ask if opener has a four-card major suit. 
+ In order to use Stayman, responder must have at least one four-card major with at least an invitational hand of 8 or 9 total points.
+ 
+ Responder bids 2 after opener’s 1NT. With a four-card or longer major suit, opener responds in that suit at the two level. If opener has both four-card majors, the heart suit is rebid first, going up the line. 
+ Without a four-card major suit, opener rebids 2 Diamonds. The 2 Clubs response and the 2 Diamonds rebid are artificial (conventional) calls that do not imply any information about the club and diamond suits respectively.
+
+
+                 </explanationpart3>
+
+                 </explanation>
+          </nextCorrectBid>
+    </exercise> 
+
+    <exercise title="8.3 - Stayman Convention">
+        <page>333</page>]
+          <dealer>
+               East
+          </dealer>
+         <cards>
+            <spades>
+                K,10,2
+             </spades>
+             <hearts>
+                A,K,5
+             </hearts>
+             <diamonds>
+               8,2
+             </diamonds>
+             <clubs>
+              A,Q,10,6,310
+             </clubs>
+         </cards>
+         
+         
+         <bids>
+               <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      East
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     No Trump
+                 </suit>
+             </bid>
+             
+             
+    
+               <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    South
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+               
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+                            <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    West
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                  2
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                  Clubs
+                 </suit>
+             </bid> 
+             
+                  <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    North
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+               
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+              <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      East
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     ?
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     ?
+                 </suit>
+             </bid>
+             
+             
+             
+         </bids>
+         <inputToCorrectBid>
+              <balanced>Yes</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>16</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution>0</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+                <dummyPoints></dummyPoints>  
+         </inputToCorrectBid> 
+         <nextCorrectBid>
+              <positionNext>           <!-- can be North, East, South, West -->
+                     East
+              </positionNext>
+                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass, Double -->
+                    2
+                 </levelNext>
+                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    Diamonds
+                 </suitNext>
+                 <explanation>
+                      <explanationpart1>
+With no four-card major, rebid 2 Diamonds. This says nothing about your diamond holding. 
+It’s an artificial (conventional) response saying that you don’t have a four-card major suit. Responder will bid again.
+
+
+                  </explanationpart1>
+     
+                 <explanationpart2>
+
+
+                 </explanationpart2>
+                 <explanationpart3>
+
+           
+ The Stayman convention is used to ask if opener has a four-card major suit. 
+ In order to use Stayman, responder must have at least one four-card major with at least an invitational hand of 8 or 9 total points.
+ 
+ Responder bids 2  after opener’s 1NT. With a four-card or longer major suit, opener responds in that suit at the two level. If opener has both four-card majors, the heart suit is rebid first, going up the line. 
+ Without a four-card major suit, opener rebids 2 Diamonds. The 2 Clubs response and the 2 Diamonds rebid are artificial (conventional) calls that do not imply any information about the club and diamond suits respectively.
+
+
+                 </explanationpart3>
+
+                 </explanation>
+          </nextCorrectBid>
+    </exercise> 
+    
+    
+      <exercise title="8.4 - Stayman Convention When Responder has 10 or more total points">
+        <page>333</page>]
+          <dealer>
+               East
+          </dealer>
+         <cards>
+            <spades>
+                 A,Q,7 
+             </spades>
+             <hearts>
+                K,Q,5,4
+             </hearts>
+             <diamonds>
+               9,8,7,6
+             </diamonds>
+             <clubs>
+              8,2
+             </clubs>
+         </cards>
+         
+         
+         <bids>
+               <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      East
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     No Trump
+                 </suit>
+             </bid>
+             
+             
+    
+               <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    South
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+               
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+                            <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    West
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                  2
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                  Clubs
+                 </suit>
+             </bid> 
+             
+                  <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    North
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+               
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+              <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      East
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                    2
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     Hearts
+                 </suit>
+             </bid>
+             
+                <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    South
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+               
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+              <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                      West
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                    ?
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    ? 	
+                 </suit>
+             </bid>         
+             
+         </bids>
+         <inputToCorrectBid>
+              <balanced>No</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>11</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution></distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+                <dummyPoints>3</dummyPoints>  
+         </inputToCorrectBid> 
+         <nextCorrectBid>
+              <positionNext>           <!-- can be North, East, South, West -->
+                     West
+              </positionNext>
+                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass, Double -->
+                    4
+                 </levelNext>
+                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    Hearts
+                 </suitNext>
+                 <explanation>
+                      <explanationpart1>
+You can jump directly to game in that suit knowing you have found a Golden Fit. 
+
+                  </explanationpart1>
+     
+                 <explanationpart2>
+
+
+
+                 </explanationpart2>
+                 <explanationpart3>
+
+           
+ The Stayman convention is used to ask if opener has a four-card major suit. 
+ In order to use Stayman, responder must have at least one four-card major with at least an invitational hand of 8 or 9 total points.
+ <![CDATA[    <P />]]>
+ Responder bids 2  after opener’s 1NT. With a four-card or longer major suit, opener responds in that suit at the two level. If opener has both four-card majors, the heart suit is rebid first, going up the line. 
+ Without a four-card major suit, opener rebids 2 Diamonds. The 2 Clubs response and the 2 Diamonds rebid are artificial (conventional) calls that do not imply any information about the club and diamond suits respectively.
+
+
+
+                 </explanationpart3>
+
+                 </explanation>
+          </nextCorrectBid>
+    </exercise> 
+    
+    
+        <exercise title="8.5 - Stayman Convention When Responder has 10 or more total points">
+        <page>333</page>]
+          <dealer>
+               East
+          </dealer>
+         <cards>
+            <spades>
+                 A,Q,7,2
+             </spades>
+             <hearts>
+                K,Q,5,4
+             </hearts>
+             <diamonds>
+               9,8,7,6
+             </diamonds>
+             <clubs>
+              8
+             </clubs>
+         </cards>
+         
+         
+         <bids>
+               <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      East
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     No Trump
+                 </suit>
+             </bid>
+             
+             
+    
+               <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    South
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+               
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+                            <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    West
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                  2
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                  Clubs
+                 </suit>
+             </bid> 
+             
+                  <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    North
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+               
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+              <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      East
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                    2
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     Hearts
+                 </suit>
+             </bid>
+             
+                <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    South
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+               
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+              <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                      West
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                    ?
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    ? 	
+                 </suit>
+             </bid>         
+             
+         </bids>
+         <inputToCorrectBid>
+              <balanced>No</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>11</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution></distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+                <dummyPoints>3</dummyPoints>  
+         </inputToCorrectBid> 
+         <nextCorrectBid>
+              <positionNext>           <!-- can be North, East, South, West -->
+                     West
+              </positionNext>
+                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass, Double -->
+                    4
+                 </levelNext>
+                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    Hearts
+                 </suitNext>
+                 <explanation>
+                      <explanationpart1>
+You can jump directly to game in that suit knowing you have found a Golden Fit. 
+
+                  </explanationpart1>
+     
+                 <explanationpart2>
+
+
+
+                 </explanationpart2>
+                 <explanationpart3>
+
+           
+ The Stayman convention is used to ask if opener has a four-card major suit. 
+ In order to use Stayman, responder must have at least one four-card major with at least an invitational hand of 8 or 9 total points.
+ <![CDATA[    <P />]]>
+ Responder bids 2  after opener’s 1NT. With a four-card or longer major suit, opener responds in that suit at the two level. If opener has both four-card majors, the heart suit is rebid first, going up the line. 
+ Without a four-card major suit, opener rebids 2 Diamonds. The 2 Clubs response and the 2 Diamonds rebid are artificial (conventional) calls that do not imply any information about the club and diamond suits respectively.
+
+
+
+                 </explanationpart3>
+
+                 </explanation>
+          </nextCorrectBid>
+    </exercise> 
+    
+    
+        <exercise title="8.6 - Stayman Convention When Responder has 10 or more total points">
+        <page>336</page>]
+          <dealer>
+               East
+          </dealer>
+         <cards>
+            <spades>
+                 A,Q,7,2
+             </spades>
+             <hearts>
+                K,Q,5
+             </hearts>
+             <diamonds>
+               9,8,7,6
+             </diamonds>
+             <clubs>
+              8,2
+             </clubs>
+         </cards>
+         
+         
+         <bids>
+               <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      East
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     No Trump
+                 </suit>
+             </bid>
+             
+             
+    
+               <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    South
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+               
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+                            <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    West
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                  2
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                  Clubs
+                 </suit>
+             </bid> 
+             
+                  <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    North
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+               
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+              <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      East
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                    2
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     Hearts
+                 </suit>
+             </bid>
+             
+                <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    South
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+               
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+              <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                      West
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                    ?
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    ? 	
+                 </suit>
+             </bid>         
+             
+         </bids>
+         <inputToCorrectBid>
+              <balanced>Yes</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>11</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution></distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+                <dummyPoints>0</dummyPoints>  
+         </inputToCorrectBid> 
+         <nextCorrectBid>
+              <positionNext>           <!-- can be North, East, South, West -->
+                     West
+              </positionNext>
+                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass, Double -->
+                    3
+                 </levelNext>
+                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    No Trump
+                 </suitNext>
+                 <explanation>
+                      <explanationpart1>
+Because you respond 3NT to the opener's invitation of 2 Hearts, the opener knows that you are only interested in Spades.  After all, you did
+use the Stayman convention, so you must have at least one four-card major.
+
+                  </explanationpart1>
+     
+                 <explanationpart2>
+If opener corrects to 4 in this last example, it would indicate that opener has both majors and is confident that bidding game in spades is the correct bid, putting the partnership in its Golden Fit. Opener is making a sign-off bid and responder should pass, knowing that the correct level and strain for the final contract have been reached.
+
+
+
+
+                 </explanationpart2>
+                 <explanationpart3>
+
+           
+ The Stayman convention is used to ask if opener has a four-card major suit. 
+ In order to use Stayman, responder must have at least one four-card major with at least an invitational hand of 8 or 9 total points.
+ <![CDATA[    <P />]]>
+ Responder bids 2  after opener’s 1NT. With a four-card or longer major suit, opener responds in that suit at the two level. If opener has both four-card majors, the heart suit is rebid first, going up the line. 
+ Without a four-card major suit, opener rebids 2 Diamonds. The 2 Clubs response and the 2 Diamonds rebid are artificial (conventional) calls that do not imply any information about the club and diamond suits respectively.
+
+
+
+                 </explanationpart3>
+
+                 </explanation>
+          </nextCorrectBid>
+    </exercise> 
+    
+    
+          <exercise title="8.7 - Stayman Convention When Responder has 10 or more total points">
+        <page>336</page>]
+          <dealer>
+               East
+          </dealer>
+         <cards>
+            <spades>
+                 A,J,9,7,6,5
+                </spades>
+             <hearts>
+                K,7,6
+             </hearts>
+             <diamonds>
+               8,6
+             </diamonds>
+             <clubs>
+              8,2
+             </clubs>
+         </cards>
+         
+         
+         <bids>
+               <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      East
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     No Trump
+                 </suit>
+             </bid>
+             
+             
+    
+               <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    South
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+               
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+
+       
+             
+              <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                      West
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                    ?
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    ? 	
+                 </suit>
+             </bid>         
+             
+         </bids>
+         <inputToCorrectBid>
+              <balanced>No</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>8</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution>2</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+                <dummyPoints></dummyPoints>  
+         </inputToCorrectBid> 
+         <nextCorrectBid>
+              <positionNext>           <!-- can be North, East, South, West -->
+                     West
+              </positionNext>
+                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass, Double -->
+                    4
+                 </levelNext>
+                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    Spades
+                 </suitNext>
+                 <explanation>
+                      <explanationpart1>
+With a six-card major suit, there’s no need for responder to use Stayman. 
+Opener must hold at least two spades. 
+Responder can take the partnership directly to 4. This is a sign-off bid, and opener is expected to pass.
+
+                  </explanationpart1>
+     
+                 <explanationpart2>
+With a six-card major suit, responder knows that a Golden Fit exists, since opener has a balanced hand. Responder can bid game in the appropriate major suit.
+
+
+                 </explanationpart2>
+                 <explanationpart3>
+
+           
+
+                 </explanationpart3>
+
+                 </explanation>
+          </nextCorrectBid>
+    </exercise> 
+    
+          <exercise title="8.8 - Stayman Convention When Responder has 10 or more total points">
+        <page>337</page>]
+          <dealer>
+               East
+          </dealer>
+         <cards>
+            <spades>
+                 A,4
+             </spades>
+             <hearts>
+                K,J,7,4,3
+             </hearts>
+             <diamonds>
+               Q,8,2
+             </diamonds>
+             <clubs>
+              10,4,2
+             </clubs>
+         </cards>
+         
+         
+         <bids>
+               <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      East
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     No Trump
+                 </suit>
+             </bid>
+             
+             
+    
+               <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                    South
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+               
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                
+                 </suit>
+             </bid> 
+             
+
+
+             
+              <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                      West
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                    ?
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    ? 	
+                 </suit>
+             </bid>         
+             
+         </bids>
+         <inputToCorrectBid>
+              <balanced>No</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>10</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution></distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+                <dummyPoints>1</dummyPoints>  
+         </inputToCorrectBid> 
+         <nextCorrectBid>
+              <positionNext>           <!-- can be North, East, South, West -->
+                     West
+              </positionNext>
+                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass, Double -->
+                    3
+                 </levelNext>
+                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    Hearts
+                 </suitNext>
+                 <explanation>
+                      <explanationpart1>
+With a five-card suit and a game-going hand, you don't need to ask if the opener has a four-card heart suit; three card support will be sufficient.
+So, using standard bidding methods, reponder jumps to 3 Hearts.  This is a forcing bid, asking opener to choose between 3NT and 4 Hearts.
+
+                  </explanationpart1>
+     
+                 <explanationpart2>
+If opener has a doubleton Heart, opener will rebid 3NT, but with three or more Hearts, opener will continue to 4 Hearts.  There is no need to use the Stayman convention.
+
+
+                 </explanationpart2>
+                 <explanationpart3>
+
+
+
+                 </explanationpart3>
+
+                 </explanation>
+          </nextCorrectBid>
+    </exercise> 
+    
+    
+    
+           <exercise title="8.9 - Stayman Convention When Responder has 10 or more total points">
+        <page>337</page>]
+          <dealer>
+               East
+          </dealer>
+         <cards>
+            <spades>
+                 A,10,6,4,2
+             </spades>
+             <hearts>
+               Q,J,10,6
+             </hearts>
+             <diamonds>
+               K,8,5
+             </diamonds>
+             <clubs>
+              9
+             </clubs>
+         </cards>
+         
+         
+         <bids>
+               <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      East
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     No Trump
+                 </suit>
+             </bid>
+             
+
+
+             
+              <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                      West
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                    ?
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    ? 	
+                 </suit>
+             </bid>         
+             
+         </bids>
+         <inputToCorrectBid>
+              <balanced>No</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>10</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution></distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+                <dummyPoints>3</dummyPoints>  
+         </inputToCorrectBid> 
+         <nextCorrectBid>
+              <positionNext>           <!-- can be North, East, South, West -->
+                     West
+              </positionNext>
+                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass, Double -->
+                    2
+                 </levelNext>
+                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    Clubs
+                 </suitNext>
+                 <explanation>
+                      <explanationpart1>
+With a four-card major suit and a five-card or longer major suit, responder starts with 2 Clubs.  
+If opener shows either major, then responder can jump to game in that major.
+
+                  </explanationpart1>
+     
+                 <explanationpart2>
+If opener rebids 2 Diamonds, responder now will jump to 3 Spades, a forcing bid asking opener to chosse between 4 Spades and 3NT.  
+
+                 </explanationpart2>
+                 <explanationpart3>
+           
+ The Stayman convention is used to ask if opener has a four-card major suit. 
+ In order to use Stayman, responder must have at least one four-card major with at least an invitational hand of 8 or 9 total points.
+ <![CDATA[    <P />]]>
+ Responder bids 2  after opener’s 1NT. With a four-card or longer major suit, opener responds in that suit at the two level. If opener has both four-card majors, the heart suit is rebid first, going up the line. 
+ Without a four-card major suit, opener rebids 2 Diamonds. The 2 Clubs response and the 2 Diamonds rebid are artificial (conventional) calls that do not imply any information about the club and diamond suits respectively.
+
+
+
+
+                 </explanationpart3>
+
+                 </explanation>
+          </nextCorrectBid>
+    </exercise> 
            </lesson>
     </lessons>
  

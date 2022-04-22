@@ -707,7 +707,10 @@ for (var i = 0; i < arrayLength; i++) {
           var cardHeight = 200;
           
         
-          if(longestSuitLength<9)   { cardHeight = 220  }   ;   
+          if(longestSuitLength<9)   { cardHeight = 220  }  
+          else {
+          	cardHeight = 200
+          } ;   
 
          $(".card").each(function () {                            // this will run with each new deal of the cards, making the cards look better (bigger) ) if they will fit on the table.
                   $(this).css("height", cardHeight );
