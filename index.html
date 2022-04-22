@@ -28,7 +28,7 @@ a:hover{
 
 body {
   font-family: Arial, Helvetica, sans-serif;
- font-size: 20px;
+ font-size: 16px;
 }
 
 input[type='radio'] { 
@@ -127,9 +127,9 @@ nav ul {
 
 
 #randomButton{
-  font-size: 30px;
+ font-size: 24px;
   float: left;
-  background-color:green;
+  background-color:#007D3B;
   color: gold;
   
 }
@@ -139,8 +139,8 @@ nav ul {
   display: inline-block;
   float: left;
   vertical-align: middle;
- 
-  
+  margin-right:10px;
+
 }
  
  .divDeckTable {
@@ -970,7 +970,7 @@ function getPlayForSelectedExercise(selectedLesson,selectedExercise) {    // the
                                      if(bidSuit == "Spades"){bidSuit = '<img style="height: 20px;" src="'+imagePath + 'spadeSuit.png"'}
                                      if(bidSuit == "Diamonds"){bidSuit = '<img style="height: 20px;" src="'+imagePath + 'diamondSuit.png"'}
                                      if(bidSuit == "Clubs"){bidSuit = '<img style="height: 20px;" src="'+imagePath + 'clubSuit.png"'}
-                                     if(bidSuit == "No Trump"){bidSuit = 'NT"'}
+                                     if(bidSuit == "No Trump"){bidSuit = 'NT'  }
                                       newRowContent = "<tr><td>"+bidPosition+"</td><td>" +bidLevel +  bidSuit + " </td></tr>";
                                       $("#bids tbody").append(newRowContent);
            
@@ -1643,16 +1643,16 @@ $(document).ready(function () {
 			 <div> 
           <div id="bidsTable" style="float:left; padding-left: 20px; margin-bottom: 10px;">
                <table id="bids">
-                  <thead>
+                  <thead >
                   <tr>
-                     <th>Position</th>
-                     <th style="text-align:center;">Bid</th>
+                     <th style="background-color: #007D3B;">Position</th>
+                     <th style="background-color: #007D3B; text-align:center;">Bid</th>
                   </tr>
                 </thead>
               <tbody></tbody>
             </table> 
          </div>
-	      <div id = "correctBidInput"  style="font-size:20px; float:left; margin-left:20px; padding: 10px;  background-color: lightgrey;">
+	      <div id = "correctBidInput"  style="font-size:16px; float:left; margin-left:20px; padding: 10px;  background-color: lightgrey;">
 	      
 	      
 	      	<div id="questions" style=" ">Balanced hand?  
