@@ -532,6 +532,12 @@ for (var i = 0; i < arrayLength; i++) {
              rotateDegrees = Math.floor((Math.random() * 10) - 5)    // randomly select the next lesson into the global varibale
        }
           
+        //  alert( $(window).width()   )
+          if ($(window).width() < 1024) {
+                 rotateDegrees = 0;
+          }
+          
+          
               //    console.log('dealing the card ' + cardImage );
                   
                   
@@ -593,6 +599,11 @@ for (var i = 0; i < arrayLength; i++) {
        rotateDegrees = Math.floor((Math.random() * 10) - 5)    // randomly select the next lesson into the global varibale
        }
        
+                 
+          if ($(window).width() < 1024) {
+                 rotateDegrees = 0;
+          }
+       
                 deal1Card(rectFrom.top, rectFrom.left, rect.top + 10 , rect.left + 10 , suit, cardPosition, cardImage, rotateDegrees,longestSuitLength );
        
        
@@ -642,7 +653,10 @@ for (var i = 0; i < arrayLength; i++) {
        if(cardPosition > 1){
        rotateDegrees = Math.floor((Math.random() * 10) - 5)    // randomly select the next lesson into the global varibale
        }
-       
+                
+          if ($(window).width() < 1024) {
+                 rotateDegrees = 0;
+          }
                 deal1Card(rectFrom.top, rectFrom.left, rect.top + 10 , rect.left + 10 , suit, cardPosition, cardImage, rotateDegrees,longestSuitLength );
                 
                 
@@ -696,7 +710,9 @@ for (var i = 0; i < arrayLength; i++) {
           if(cardPosition > 1){
        rotateDegrees = Math.floor((Math.random() * 10) - 5)    // randomly select the next lesson into the global varibale
        }
-       
+                if ($(window).width() < 1024) {
+                 rotateDegrees = 0;
+          }
                 deal1Card(rectFrom.top, rectFrom.left, rect.top + 10 , rect.left + 10 , suit, cardPosition, cardImage, rotateDegrees,longestSuitLength );
                 
                 
@@ -707,16 +723,18 @@ for (var i = 0; i < arrayLength; i++) {
           var cardHeight = 200;
           
         
-          if(longestSuitLength<9)   { cardHeight = 220  }  
+          if(longestSuitLength<9)   { $('.card').css('height','220');  }  
           else {
-          	cardHeight = 200
+          	$('.card').css('height','200');
           } ;   
 
+
+/*
          $(".card").each(function () {                            // this will run with each new deal of the cards, making the cards look better (bigger) ) if they will fit on the table.
                   $(this).css("height", cardHeight );
            });
     
-    
+    */
        
        }   // end of function dealTheCards
     
@@ -728,7 +746,7 @@ function deal1Card(fromTop,fromLeft, top,left, suit, cardPosition, cardImage, ro
 //  if(isMobile){return};     // no animation if mobile because not enough room for the deck
 
  var relativeFolder = "images/playingCards/PNG-cards-1.3/";
-var cardHeight = 200;
+ var cardHeight = 200;
  
 var deckDisplayed =  $('#deck').css("display");
 
@@ -766,11 +784,17 @@ if(deckDisplayed == "none"){
                    
                                    $('#spades .placeholder').remove();
                               
-       										if(longestSuitLength<9)   { cardHeight = 220  }   ;   
+       										          if(longestSuitLength<9)   { $('.card').css('height','220');  }  
+          else {
+          	$('.card').css('height','200');
+          } ;   
+
+/*
 
          										 $(".card").each(function () {                            // this will run with each new deal of the cards, making the cards look better (bigger) ) if they will fit on the table.
                  								 $(this).css("height", cardHeight );
            						        });
+           						        */
        // Animation complete.
        
         //      cardDiv.animate({left: fromLeft, top: fromTop}, 1);      // move the card to the beginning as fast as possible.
@@ -784,11 +808,18 @@ if(deckDisplayed == "none"){
                    $('#hearts').append('<img style="transform: rotate('+rotateDegrees+'deg)"  id="cardPos'+cardPosition+'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
                
                             $('#hearts .placeholder').remove();
-                             										if(longestSuitLength<9)   { cardHeight = 220  }   ;   
+                             									          if(longestSuitLength<9)   { $('.card').css('height','220');  }  
+          else {
+          	$('.card').css('height','200');
+          } ;   
 
-         																$(".card").each(function () {                            // this will run with each new deal of the cards, making the cards look better (bigger) ) if they will fit on the table.
+
+/*
+
+         										 $(".card").each(function () {                            // this will run with each new deal of the cards, making the cards look better (bigger) ) if they will fit on the table.
                  								 $(this).css("height", cardHeight );
            						        });
+           						        */
                 //  alert("new card there?")
        // Animation complete.
   });
@@ -806,11 +837,18 @@ if(deckDisplayed == "none"){
                    $('#diamonds').append('<img style="transform: rotate('+rotateDegrees+'deg)"  id="cardPos'+cardPosition+'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
                    
                              $('#diamonds .placeholder').remove();	
-                              										if(longestSuitLength<9)   { cardHeight = 220  }   ;   
+                              										          if(longestSuitLength<9)   { $('.card').css('height','220');  }  
+          else {
+          	$('.card').css('height','200');
+          } ;   
 
-         																$(".card").each(function () {                            // this will run with each new deal of the cards, making the cards look better (bigger) ) if they will fit on the table.
+
+/*
+
+         										 $(".card").each(function () {                            // this will run with each new deal of the cards, making the cards look better (bigger) ) if they will fit on the table.
                  								 $(this).css("height", cardHeight );
            						        });
+           						        */
                 //  alert("new card there?")
        // Animation complete.
   });
@@ -826,11 +864,18 @@ if(deckDisplayed == "none"){
 
                    $('#clubs').append('<img style="transform: rotate('+rotateDegrees+'deg)"  id="cardPos'+cardPosition+'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
                                $('#clubs .placeholder').remove();
-                    										if(longestSuitLength<9)   { cardHeight = 220  }   ;   
+                    										          if(longestSuitLength<9)   { $('.card').css('height','220');  }  
+          else {
+          	$('.card').css('height','200');
+          } ;   
 
-         																$(".card").each(function () {                            // this will run with each new deal of the cards, making the cards look better (bigger) ) if they will fit on the table.
+
+/*
+
+         										 $(".card").each(function () {                            // this will run with each new deal of the cards, making the cards look better (bigger) ) if they will fit on the table.
                  								 $(this).css("height", cardHeight );
            						        });
+           						        */
                 //  alert("new card there?")
        // Animation complete.
   });
@@ -1674,7 +1719,7 @@ $(document).ready(function () {
 		<div id="bidsArea" style="float:left; padding-top: 20px; padding-left: 20px;  display:none">
 			<div>Bids so far...</div>
 			 <div> 
-          <div id="bidsTable" style="float:left; margin-bottom: 10px; border-style: solid; border-width: 1px;: ">
+          <div id="bidsTable" style="float:left; margin-right:20px; margin-bottom: 10px; border-style: solid; border-width: 1px;: ">
                <table id="bids">
                   <thead >
                   <tr>
@@ -1685,7 +1730,7 @@ $(document).ready(function () {
               <tbody></tbody>
             </table> 
          </div>
-	      <div id = "correctBidInput"  style="font-size:16px; float:left; margin-left:20px; padding: 10px;  background-color: lightgrey; border-style: solid; border-width: 1px; border-color:black; ">
+	      <div id = "correctBidInput"  style="font-size:16px; float:left;  padding: 10px;  background-color: lightgrey; border-style: solid; border-width: 1px; border-color:black; ">
 	      
 	         <div>
 	      	<div id="questions" ">
@@ -1785,6 +1830,7 @@ $(document).ready(function () {
        </div>
 
 				    <div class="footer" style="display: inline-block; font-size:12px; color:white; background-color:#666; padding:10px; width:100%; font-size:20px;">
+				    Release (Version 1.1) <P />
 				    Answers included in this application are based on Audrey Grant's book, "Bidding in the 21st Century: The Club Series" 
           <a href="https://www.amazon.ca/dp/B08R3KBFNY?binding=kindle_edition&qid=1648237076&sr=1-9-catcorr&ref=dbs_dp_rwt_sb_pc_tukn" target="amazon">Click here to order this book on Amazon
           </a>
