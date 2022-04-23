@@ -1674,7 +1674,7 @@ $(document).ready(function () {
 		<div id="bidsArea" style="float:left; padding-top: 20px; padding-left: 20px;  display:none">
 			<div>Bids so far...</div>
 			 <div> 
-          <div id="bidsTable" style="float:left; padding-left: 20px; margin-bottom: 10px;">
+          <div id="bidsTable" style="float:left; margin-bottom: 10px;">
                <table id="bids">
                   <thead >
                   <tr>
@@ -1685,45 +1685,58 @@ $(document).ready(function () {
               <tbody></tbody>
             </table> 
          </div>
-	      <div id = "correctBidInput"  style="font-size:16px; float:left; margin-left:20px; padding: 10px;  background-color: lightgrey;">
+	      <div id = "correctBidInput"  style="font-size:16px; float:left; margin-left:20px; padding: 10px;  background-color: lightgrey; border-style: solid; border-width: 1px; border-color:black; ">
 	      
-	      
-	      	<div id="questions" style=" ">Balanced hand?  
-	    	    
-	        <div style="  display: inline-block;"  >
-	        			  <input type="radio"  id="radioYes" value="Yes" name="balanced" style="width: 30px;" >  Yes </input>
-	        	        <input type="radio" id="radioNo" name="balanced"  value="No" style="width: 30px;"> No </input>
-	        	        <div id="balancedHandCorrect" class="correctCheck"></div>
-	         </div>
-	     <div>
+	         <div>
+	      	<div id="questions" ">
+	      	
+	      	 <div style="  display: inline-block;"  >
+	      	    <div style="  float:left; padding-top: 10px;">
+	      	   Balanced hand?  
+	    	       </div>
+	             <div style="  float:left;">
+	                 <div style="  padding-bottom: 8px">
+	        			         <input type="radio"  id="radioYes" value="Yes" name="balanced" style="width: 30px;    " >  Yes </input>
+	        			  </div>
+	        			  <div style="  padding-bottom: 8px">
+	        	              <input type="radio" id="radioNo" name="balanced"  value="No" style="width: 30px;"> No </input>
+	        	        </div>
+	     
+	               </div>
+	                <div id="balancedHandCorrect" class="correctCheck" style="float:left"></div>
+	            </div>
 	     <div id = "highCardInput" style=" "  >High card points? <input id="hcp" class="HCP" style="font-size:30px; width: 75px"  type="number" min="0" max="40"></input> <div id="highCardCorrect" class="correctCheck"></div></div> 
-        </div>
-        <div>
+      
+        
 	    <div id="distribution" style=" " >Distribution points?  <input id="dist" class="DIST" style="font-size:30px; width: 75px"  type="number" min="0" max="20"></input> <div id="distributionCorrect" class="correctCheck"></div> </div>
-    </div>
-      <div>
+  
+      
 	     <div id="dummyPoints" style=" ">Dummy points?  <input id="dummy" class="DUMMY" style="font-size:30px; width: 60px"   type="number" min="0" max="20"></input><div id="dummyCorrect" class="correctCheck"></div> </div>
-        </div>
+        
 	</div>   
 	
 		    	    	    <div id="bidQuestion" style=" " >
-	                 <div id="QuestionPart1" style="  display: inline-block;" >What is the correct bid for&nbsp;</div>
+	                 <div id="QuestionPart1" style="  display: inline-block; margin-top: 10px;
+    margin-bottom: 5px;" >What is the correct bid for </div>
 	                 <div style=" display: inline-block;  " id="BidTurn"> </div>
 	                 <div style="  display: inline-block; " >?</div>
 	               </div>  
 	               <div id="SelectLists">
+	         
 	               <select id="bidLevel" style="font-size:20px; "    onchange="checkForPassOrDouble()">
 	    	    	    	        <option>Select ...</option>
 	                          <option value="1" >1</option>
 	        	                 <option value="2" >2</option>
 	        	        	        <option value="3" >3</option>
 	        	        	        <option value="4" >4</option>
+	        	        	        <option value="Pass" >Pass</option>
+	                           <option value="Double" >Double</option>
 	        	        	        <option value="5" >5</option>
 	                          <option value="6" >6</option>
 	                          <option value="7" >7</option>
-	                           <option value="Pass" >Pass</option>
-	                           	                           <option value="Double" >Double</option>
+
                    </select>
+ 
      	    	       <select id="bidSuit"   style="font-size:20px; "  style="width: 75px" >
 	    	    	               <option>Select ...</option>
 	    	    	        	      <option value="No Trump">No Trump</option>
@@ -1732,6 +1745,7 @@ $(document).ready(function () {
 	        	        	        <option value="Diamonds">Diamonds</option>
 	        	        	        	<option value="Clubs">Clubs</option>
                      </select>
+          
 	                  <div id="bidCorrect" class="correctCheck" style="padding-left:5px"></div> 
 	    	        </div>
   

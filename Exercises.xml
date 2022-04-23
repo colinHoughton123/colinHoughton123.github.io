@@ -10124,7 +10124,7 @@ Requirements for a 1NT Overcall
              </bid> 
          </bids>
          <inputToCorrectBid>
-              <balanced>Yes</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <balanced>No</balanced>         <!-- Can be Yes, No, Don't Cares -->
               <hcp>14</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
               <distribution>2</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
                 <dummyPoints></dummyPoints>  
