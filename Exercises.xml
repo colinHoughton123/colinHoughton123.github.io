@@ -7550,6 +7550,8 @@ So responder jumps to game with 4 spades
                  </explanation>
           </nextCorrectBid>
     </exercise>  
+    
+    
              <exercise title="4.21 - Re-response after 2 NT response with minimum hand">
                    <page>167</page>]
           <dealer>
@@ -9397,7 +9399,7 @@ Responder has a hand worth 7 total points — 6 HCP plus 1 point for the five-ca
          </bids>
          <inputToCorrectBid>
               <balanced>No</balanced>         <!-- Can be Yes, No, Don't Cares -->
-              <hcp>15</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <hcp>14</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
               <distribution>1</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
                 <dummyPoints></dummyPoints>  
          </inputToCorrectBid> 
@@ -9940,9 +9942,7 @@ You have only 9 HCP, and you don’t have a good five-card suit. Pass.
                   </explanationpart1>
      
                  <explanationpart2>
-  An overcall of 1NT is similar to a 1NT opening bid. You need a balanced hand with 15 to 18 HCP, but there is one additional consideration. 
-An opening bid in a suit provides information about the shape of opener’s hand that will help opener’s partner get off to a good opening lead for their side. 
-Because of this, if you overcall with 1NT, you generally should have some strength and/or length in the suit bid by your opponent.
+
                  </explanationpart2>
                  <explanationpart3>
 
@@ -12794,12 +12794,587 @@ If opener responds 2 Diamonds, pass and hope the partnership is at least in a pl
 
                  </explanation>
           </nextCorrectBid>
+  </exercise>
+      
+        <exercise title="8.16 - Stayman Convention - Handling Interference">
+        <page>342</page>]
+          <dealer>
+               West
+          </dealer>
+         <cards>
+            <spades>
+                 K,J,10,8,3
+             </spades>
+             <hearts>
+               J,4
+             </hearts>
+             <diamonds>
+              10,8,7,3
+             </diamonds>
+             <clubs>
+              Q,5
+             </clubs>
+         </cards>
+         
+         
+         <bids>
+               <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      West
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     No Trump
+                 </suit>
+             </bid>
+             
+             <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                      North
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                    Pass
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                	
+                 </suit>
+             </bid> 
+
+      
+      <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                      East
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     ?
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    ?
+                 </suit>
+             </bid>
+             
+         </bids>
+         <inputToCorrectBid>
+              <balanced>No</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>7</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution>1</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+                <dummyPoints></dummyPoints>  
+         </inputToCorrectBid> 
+         <nextCorrectBid>
+              <positionNext>           <!-- can be North, East, South, West -->
+                     West
+              </positionNext>
+                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass, Double -->
+                    2
+                 </levelNext>
+                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    Spades
+                 </suitNext>
+                           <explanation>
+                      <explanationpart1>
+This is a natural, non-forcing response showing a five-card or longer suit.
+Opener will treat this as a mildly invitational bid, since you would have passed with a very weak hand.
+
+
+                  </explanationpart1>
+     
+                 <explanationpart2>
+
+The standard agreement is to continue to use your conventional responses to 1NT if an opponent doubles, 
+since no bidding room has been used. 
+If an opponent overcalls, however, the partnership has to abandon most conventional responses because there is no longer enough bidding room.
+
+
+
+                 </explanationpart2>
+                 <explanationpart3>
+                 <![CDATA[     
+The standard agreements after partner opens 1NT and your right-hand opponent overcalls are the following: 
+<UL> 
+<LI>The bid of a suit at the two level is a natural bid, showing five or more cards in the suit bid, and is non-forcing. Opener is allowed to
+raise with a maximum, since responder could have passed with a very weak hand. </li>
+<LI>​The bid of a suit at the three level is natural. It shows five or more cards in the suit and is forcing.</LI>
+​<LI>A bid of the opponent’s suit — a cuebid — is forcing and acts as a substitute for the Stayman convention. Opener bids a four-card major or rebids notrump with no major suit. </LI>
+<LI>​2NT is invitational, and 3NT is to play. </LI>
+<LI>Double is a penalty double.</LI>
+</ul>
+]]>  
+                 </explanationpart3>
+
+                 </explanation>
+          </nextCorrectBid>
+  </exercise> 
+  
+          <exercise title="8.17 - Stayman Convention - Handling Interference">
+        <page>342</page>]
+          <dealer>
+               West
+          </dealer>
+         <cards>
+            <spades>
+                 K,4,2
+             </spades>
+             <hearts>
+               3
+             </hearts>
+             <diamonds>
+              10,8,3
+             </diamonds>
+             <clubs>
+              A,Q,J,8,7,5
+             </clubs>
+         </cards>
+         
+         
+         <bids>
+               <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      West
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     No Trump
+                 </suit>
+             </bid>
+             
+             <bid title=" "> 
+                <position>                  <!-- can be North, East, South, West -->
+                      West
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     2
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     Hearts
+                 </suit>
+             </bid>
+             
+      
+      <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                      East
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     ?
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    ?
+                 </suit>
+             </bid>
+             
+         </bids>
+         <inputToCorrectBid>
+              <balanced>No</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>10</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution>2</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+                <dummyPoints></dummyPoints>  
+         </inputToCorrectBid> 
+         <nextCorrectBid>
+              <positionNext>           <!-- can be North, East, South, West -->
+                     West
+              </positionNext>
+                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass, Double -->
+                    3
+                 </levelNext>
+                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    Clubs
+                 </suitNext>
+                           <explanation>
+                      <explanationpart1>
+This is a natural, showing a five-cad or longer club suit. It's a forcing bid, showing the strength of the partnership needs to continue to game.
+Opener may bid 3NT with some strength in the opponents suit.  Otherwise, the partnership will probably be better off in a contract of 5 Clubs or even 6 Clubs.
+
+                  </explanationpart1>
+     
+                 <explanationpart2>
+
+The standard agreement is to continue to use your conventional responses to 1NT if an opponent doubles, 
+since no bidding room has been used. 
+If an opponent overcalls, however, the partnership has to abandon most conventional responses because there is no longer enough bidding room.
+
+
+
+                 </explanationpart2>
+                 <explanationpart3>
+                 <![CDATA[     
+The standard agreements after partner opens 1NT and your right-hand opponent overcalls are the following: 
+<UL> 
+<LI>The bid of a suit at the two level is a natural bid, showing five or more cards in the suit bid, and is non-forcing. Opener is allowed to
+raise with a maximum, since responder could have passed with a very weak hand. </li>
+<LI>​The bid of a suit at the three level is natural. It shows five or more cards in the suit and is forcing.</LI>
+​<LI>A bid of the opponent’s suit — a cuebid — is forcing and acts as a substitute for the Stayman convention. Opener bids a four-card major or rebids notrump with no major suit. </LI>
+<LI>​2NT is invitational, and 3NT is to play. </LI>
+<LI>Double is a penalty double.</LI>
+</ul>
+]]>  
+                 </explanationpart3>
+
+                 </explanation>
+          </nextCorrectBid>
+  </exercise> 
+  
+      <exercise title="8.18 - Stayman Convention - Handling Interference">
+        <page>342</page>]
+          <dealer>
+               West
+          </dealer>
+         <cards>
+            <spades>
+                7,6,5
+             </spades>
+             <hearts>
+               K,J,9,3
+             </hearts>
+             <diamonds>
+              A,6,2
+             </diamonds>
+             <clubs>
+              10,9,5
+             </clubs>
+         </cards>
+         
+         
+         <bids>
+               <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      West
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     No Trump
+                 </suit>
+             </bid>
+             
+             <bid title=" "> 
+                <position>                  <!-- can be North, East, South, West -->
+                      West
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     2
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     Hearts
+                 </suit>
+             </bid>
+             
+      
+      <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                      East
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     ?
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    ?
+                 </suit>
+             </bid>
+             
+         </bids>
+         <inputToCorrectBid>
+              <balanced>Yes</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>8</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution>0</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+                <dummyPoints></dummyPoints>  
+         </inputToCorrectBid> 
+         <nextCorrectBid>
+              <positionNext>           <!-- can be North, East, South, West -->
+                     West
+              </positionNext>
+                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass, Double -->
+                    Double
+                 </levelNext>
+                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    
+                 </suitNext>
+                           <explanation>
+                      <explanationpart1>
+This is a penalty double of the opponent's overcall.  
+Since partner has a balanced hand with 15-17 HCP, you can probably get a sufficient penalty to compensate for any contract your side might make.
+                  </explanationpart1>
+     
+                 <explanationpart2>
+
+The standard agreement is to continue to use your conventional responses to 1NT if an opponent doubles, 
+since no bidding room has been used. 
+If an opponent overcalls, however, the partnership has to abandon most conventional responses because there is no longer enough bidding room.
+
+
+
+                 </explanationpart2>
+                 <explanationpart3>
+                 <![CDATA[     
+The standard agreements after partner opens 1NT and your right-hand opponent overcalls are the following: 
+<UL> 
+<LI>The bid of a suit at the two level is a natural bid, showing five or more cards in the suit bid, and is non-forcing. Opener is allowed to
+raise with a maximum, since responder could have passed with a very weak hand. </li>
+<LI>​The bid of a suit at the three level is natural. It shows five or more cards in the suit and is forcing.</LI>
+​<LI>A bid of the opponent’s suit — a cuebid — is forcing and acts as a substitute for the Stayman convention. Opener bids a four-card major or rebids notrump with no major suit. </LI>
+<LI>​2NT is invitational, and 3NT is to play. </LI>
+<LI>Double is a penalty double.</LI>
+</ul>
+]]>  
+                 </explanationpart3>
+
+                 </explanation>
+          </nextCorrectBid>
   </exercise> 
   
   
-      <![CDATA[     Add more exercises here  based on pages341 on ... Handling Interference  ]]>  
+    <exercise title="8.19 - Stayman Convention - Handling Interference">
+        <page>342</page>]
+          <dealer>
+               West
+          </dealer>
+         <cards>
+            <spades>
+                A,J,8,3
+             </spades>
+             <hearts>
+               4,3
+             </hearts>
+             <diamonds>
+              K,Q,10,6
+             </diamonds>
+             <clubs>
+              8,6,3
+             </clubs>
+         </cards>
+         
+         
+         <bids>
+               <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      West
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     No Trump
+                 </suit>
+             </bid>
+             
+             <bid title=" "> 
+                <position>                  <!-- can be North, East, South, West -->
+                      West
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     2
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     Hearts
+                 </suit>
+             </bid>
+             
       
+      <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                      East
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     ?
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    ?
+                 </suit>
+             </bid>
+             
+         </bids>
+         <inputToCorrectBid>
+              <balanced>Yes</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>9</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution>0</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+                <dummyPoints></dummyPoints>  
+         </inputToCorrectBid> 
+         <nextCorrectBid>
+              <positionNext>           <!-- can be North, East, South, West -->
+                     West
+              </positionNext>
+                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass, Double -->
+                    3
+                 </levelNext>
+                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    Hearts
+                 </suitNext>
+                           <explanation>
+                      <explanationpart1>
+The cubid of the oppnent's suit replaces Stayman.  Opener will bid 3 Spaces with a four-card or longer suit, and you can raise to game.
+With fewer than four Spaces, opner will rebid 3NT, which should be the best shot for your side.
+                  </explanationpart1>
+     
+                 <explanationpart2>
+
+The standard agreement is to continue to use your conventional responses to 1NT if an opponent doubles, 
+since no bidding room has been used. 
+If an opponent overcalls, however, the partnership has to abandon most conventional responses because there is no longer enough bidding room.
+
+
+
+                 </explanationpart2>
+                 <explanationpart3>
+                 <![CDATA[     
+The standard agreements after partner opens 1NT and your right-hand opponent overcalls are the following: 
+<UL> 
+<LI>The bid of a suit at the two level is a natural bid, showing five or more cards in the suit bid, and is non-forcing. Opener is allowed to
+raise with a maximum, since responder could have passed with a very weak hand. </li>
+<LI>​The bid of a suit at the three level is natural. It shows five or more cards in the suit and is forcing.</LI>
+​<LI>A bid of the opponent’s suit — a cuebid — is forcing and acts as a substitute for the Stayman convention. Opener bids a four-card major or rebids notrump with no major suit. </LI>
+<LI>​2NT is invitational, and 3NT is to play. </LI>
+<LI>Double is a penalty double.</LI>
+</ul>
+]]>  
+                 </explanationpart3>
+
+                 </explanation>
+          </nextCorrectBid>
+  </exercise> 
+  
+   <exercise title="8.20 - Stayman Convention - Handling Interference">
+        <page>342</page>]
+          <dealer>
+               West
+          </dealer>
+         <cards>
+            <spades>
+                K,7,5
+             </spades>
+             <hearts>
+              J,3
+             </hearts>
+             <diamonds>
+              Q,10,9,7,5,2
+             </diamonds>
+             <clubs>
+               J,5
+             </clubs>
+         </cards>
+         
+         
+         <bids>
+               <bid title="Opening Bid">
+                <position>                  <!-- can be North, East, South, West -->
+                      West
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     No Trump
+                 </suit>
+             </bid>
+             
+             <bid title=" "> 
+                <position>                  <!-- can be North, East, South, West -->
+                      West
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     2
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     Hearts
+                 </suit>
+             </bid>
+             
       
+      <bid title=" ">
+                <position>                  <!-- can be North, East, South, West -->
+                      East
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     ?
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    ?
+                 </suit>
+             </bid>
+             
+         </bids>
+         <inputToCorrectBid>
+              <balanced>No</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>7</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution>2</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+                <dummyPoints></dummyPoints>  
+         </inputToCorrectBid> 
+         <nextCorrectBid>
+              <positionNext>           <!-- can be North, East, South, West -->
+                     West
+              </positionNext>
+                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass, Double -->
+                    2
+                 </levelNext>
+                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    No Trump
+                 </suitNext>
+                           <explanation>
+                      <explanationpart1>
+There's no way to show an invitational-strength hand with a long diamond suit after an opponent's interference bid.  
+A bid of 3 Diamonds would be forcing, committing the partnership to the game level.
+2 NT is a reasonable compromise.
+                  </explanationpart1>
+     
+                 <explanationpart2>
+
+The standard agreement is to continue to use your conventional responses to 1NT if an opponent doubles, 
+since no bidding room has been used. 
+If an opponent overcalls, however, the partnership has to abandon most conventional responses because there is no longer enough bidding room.
+
+
+
+                 </explanationpart2>
+                 <explanationpart3>
+                 <![CDATA[     
+The standard agreements after partner opens 1NT and your right-hand opponent overcalls are the following: 
+<UL> 
+<LI>The bid of a suit at the two level is a natural bid, showing five or more cards in the suit bid, and is non-forcing. Opener is allowed to
+raise with a maximum, since responder could have passed with a very weak hand. </li>
+<LI>​The bid of a suit at the three level is natural. It shows five or more cards in the suit and is forcing.</LI>
+​<LI>A bid of the opponent’s suit — a cuebid — is forcing and acts as a substitute for the Stayman convention. Opener bids a four-card major or rebids notrump with no major suit. </LI>
+<LI>​2NT is invitational, and 3NT is to play. </LI>
+<LI>Double is a penalty double.</LI>
+</ul>
+]]>  
+                 </explanationpart3>
+
+                 </explanation>
+          </nextCorrectBid>
+  </exercise> 
                 </lesson>
     </lessons>
  
