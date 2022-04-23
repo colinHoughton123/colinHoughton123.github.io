@@ -10797,7 +10797,7 @@ Your hand is not strong enough to overcall clubs at the two level. Counting 5 du
                 A
              </spades>
              <hearts>
-                K,Q,j,10,3,2
+                K,Q,J,10,3,2
              </hearts>
              <diamonds>
                 5
@@ -10843,7 +10843,7 @@ Your hand is not strong enough to overcall clubs at the two level. Counting 5 du
               <balanced>No</balanced>         <!-- Can be Yes, No, Don't Cares -->
               <hcp>16</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
               <distribution></distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
-                <dummyPoints>3</dummyPoints>  
+                <dummyPoints>4</dummyPoints>  
          </inputToCorrectBid> 
          <nextCorrectBid>
               <positionNext>           <!-- can be North, East, South, West -->
@@ -10874,7 +10874,7 @@ This hand is too good for a simple overcall. Make a takeout double and then bid 
            ​OR  Any hand with 18 or more total points (that is, a hand too strong to overcall).
             
             
-            Note that with your 19 total points, you are meeting the criteria of 18 or more total points and communicating you don't want it to be the opener's suit (Diamonds).
+            Note that with your 20 total points, you are meeting the criteria of 18 or more total points and communicating you don't want it to be the opener's suit (Diamonds).
             When considering the 18+ total points, you are no longer required to have at least three-card support for all unbid suits.
 
 
