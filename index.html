@@ -1339,8 +1339,21 @@ function  updateHand(lesson,exercise){
       var bidLevel = document.getElementById("bidLevel").value.trim();   // this will return the number of the lesson selected
 
  
+
+  
+ 
       if(bidLevel == "Pass" || bidLevel == "Double"){
               $("#bidSuit").css("display","none");
+          
+        //      $("#bidSuit option:eq(SelectDummy)").prop("selected", true);
+              
+                    $("#bidSuit option").prop("selected", false);   // change the bid suite to "Selected..." because if the user goes back and forth between a suite and adouble or a pass, we want the suit to be null, or it may tell the user there is an error.
+                    // For example, without this code, if the answer was "Double", but the user first put in 1 Spades, pressed CHECK YOUR ANSWERS, then set it to Double and again pressed CHECK YOUR ANSWERS
+                    // then the system would throw an error because it would think the person was saying "DOUBLE SPADES".  So we remove the "Spades" to ensure this does not happen.
+              
+    //          $('#bidSuit  option:eq(SelectDummy)').attr('selected', 'selected')
+              
+              
       }else{
                     $("#bidSuit").css("display","inline-block");
       }
@@ -1683,7 +1696,7 @@ $(document).ready(function () {
 	               </div>  
 	               <div id="SelectLists">
 	               <select id="bidLevel" style="font-size:20px; "    onchange="checkForPassOrDouble()">
-	    	    	    	        <option>Select ... </option>
+	    	    	    	        <option value="SelectDummy">Select ... </option>
 	                          <option value="1" >1</option>
 	        	                 <option value="2" >2</option>
 	        	        	        <option value="3" >3</option>
@@ -1695,7 +1708,7 @@ $(document).ready(function () {
 	                           	                           <option value="Double" >Double</option>
                    </select>
      	    	       <select id="bidSuit"   style="font-size:20px; "  style="width: 75px" >
-	    	    	               <option value="">Select ... </option>
+	    	    	               <option value="SelectDummy">Select ... </option>
 	    	    	        	      <option value="No Trump">No Trump</option>
 	    	    	        	       <option  value="Spades">Spades</option>
 	        	                   <option value="Hearts">Hearts</option>
