@@ -508,7 +508,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
          <inputToCorrectBid>
               <balanced>Yes</balanced>         <!-- Can be Yes, No, Don't Cares -->
               <hcp>5</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
-              <distribution>0</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+              <distribution>1</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
          </inputToCorrectBid> 
          <nextCorrectBid>
               <positionNext>           <!-- can be North, East, South, West -->
@@ -1055,7 +1055,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
                      1
                  </levelNext>
                 <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
-                     Club
+                     Clubs
                  </suitNext>
                  <explanation>
                       <explanationpart1>
@@ -1530,7 +1530,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
                       2
                  </levelNext>
                 <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
-                      NT
+                      No Trump
                  </suitNext>
                  <explanation>
                       <explanationpart1>
@@ -3676,11 +3676,21 @@ So responder jumps to game with 4 spades
                                      In this case, you bid the longer suit, 1 Spade.
                  </explanationpart2>
                  <explanationpart3>
-                                   When responding to a 1 bid of a minor suit, with 6-9 points, your priority is to bid a new suit at the 1 level if  you can.  
-                     If you have a choice of suits, the guidelines are to ... 
-                     (1) Bid your longest suit
-                     (2) Bid the higher-ranking of two five-card suits
-                     (3) Bid the lower-ranking of two four-card suits
+                     When responding to a 1 bid of a minor suit, with 6-9 points, your priority is to 
+                     <![CDATA[ 
+                     <ol>
+                     <li> Bid a new suit at the 1 level if  you can.     If you have a choice of suits, the guidelines are to ... </li>
+                      <ol>
+                         <li>Bid your longest  suit at the 1 level</li>
+                         <li>Bid the higher-ranking of two five-card  suits at the 1 level</li>
+                         <li> Bid the lower-ranking of two four-card new suits</li>
+                       </ol>
+                        
+                     <li>Bid 1 NT</li>
+                     <li>Raise partner's minor suit</li>
+                      
+                        </ol>
+                     ]]>
                  </explanationpart3>
 
                  </explanation>
@@ -3751,7 +3761,7 @@ So responder jumps to game with 4 spades
              
          </bids>
          <inputToCorrectBid>
-              <balanced>Yes</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <balanced>No</balanced>         <!-- Can be Yes, No, Don't Cares -->
               <hcp>7</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
               <distribution>2</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
               <dummyPoints></dummyPoints>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
@@ -3779,16 +3789,16 @@ So responder jumps to game with 4 spades
                      When responding to a 1 bid of a minor suit, with 6-9 points, your priority is to 
                      <![CDATA[ 
                      <ol>
-                     <li> bid a new suit at the 1 level if  you can.     If you have a choice of suits, the guidelines are to ... </li>
+                     <li> Bid a new suit at the 1 level if  you can.     If you have a choice of suits, the guidelines are to ... </li>
                       <ol>
-                     <li>Bid your longest  suit at the 1 level</li>
-                     <li>Bid the higher-ranking of two five-card  suits at the 1 level</li>
-                     <ol>
-                     <li> Bid the lower-ranking of two four-card new suits</li>
+                         <li>Bid your longest  suit at the 1 level</li>
+                         <li>Bid the higher-ranking of two five-card  suits at the 1 level</li>
+                         <li> Bid the lower-ranking of two four-card new suits</li>
                        </ol>
+                        
                      <li>Bid 1 NT</li>
                      <li>Raise partner's minor suit</li>
-                       </ol>
+                      
                         </ol>
                      ]]>
                  </explanationpart3>
@@ -3888,16 +3898,16 @@ So responder jumps to game with 4 spades
                      When responding to a 1 bid of a minor suit, with 6-9 points, your priority is to 
                      <![CDATA[ 
                      <ol>
-                     <li> bid a new suit at the 1 level if  you can.     If you have a choice of suits, the guidelines are to ... </li>
+                     <li> Bid a new suit at the 1 level if  you can.     If you have a choice of suits, the guidelines are to ... </li>
                       <ol>
-                     <li>Bid your longest  suit at the 1 level</li>
-                     <li>Bid the higher-ranking of two five-card  suits at the 1 level</li>
-                     <ol>
-                     <li> Bid the lower-ranking of two four-card new suits</li>
+                         <li>Bid your longest  suit at the 1 level</li>
+                         <li>Bid the higher-ranking of two five-card  suits at the 1 level</li>
+                         <li> Bid the lower-ranking of two four-card new suits</li>
                        </ol>
+                        
                      <li>Bid 1 NT</li>
                      <li>Raise partner's minor suit</li>
-                       </ol>
+                      
                         </ol>
                      ]]>
                      
@@ -4006,16 +4016,16 @@ So responder jumps to game with 4 spades
                      When responding to a 1 bid of a minor suit, with 6-9 points, your priority is to 
                      <![CDATA[ 
                      <ol>
-                     <li> bid a new suit at the 1 level if  you can.     If you have a choice of suits, the guidelines are to ... </li>
+                     <li> Bid a new suit at the 1 level if  you can.     If you have a choice of suits, the guidelines are to ... </li>
                       <ol>
-                     <li>Bid your longest  suit at the 1 level</li>
-                     <li>Bid the higher-ranking of two five-card  suits at the 1 level</li>
-                     <ol>
-                     <li> Bid the lower-ranking of two four-card new suits</li>
+                         <li>Bid your longest  suit at the 1 level</li>
+                         <li>Bid the higher-ranking of two five-card  suits at the 1 level</li>
+                         <li> Bid the lower-ranking of two four-card new suits</li>
                        </ol>
+                        
                      <li>Bid 1 NT</li>
                      <li>Raise partner's minor suit</li>
-                       </ol>
+                      
                         </ol>
                      ]]>
                      
@@ -4119,16 +4129,16 @@ So responder jumps to game with 4 spades
                      When responding to a 1 bid of a minor suit, with 6-9 points, your priority is to 
                      <![CDATA[ 
                      <ol>
-                     <li> bid a new suit at the 1 level if  you can.     If you have a choice of suits, the guidelines are to ... </li>
+                     <li> Bid a new suit at the 1 level if  you can.     If you have a choice of suits, the guidelines are to ... </li>
                       <ol>
-                     <li>Bid your longest  suit at the 1 level</li>
-                     <li>Bid the higher-ranking of two five-card  suits at the 1 level</li>
-                     <ol>
-                     <li> Bid the lower-ranking of two four-card new suits</li>
+                         <li>Bid your longest  suit at the 1 level</li>
+                         <li>Bid the higher-ranking of two five-card  suits at the 1 level</li>
+                         <li> Bid the lower-ranking of two four-card new suits</li>
                        </ol>
+                        
                      <li>Bid 1 NT</li>
                      <li>Raise partner's minor suit</li>
-                       </ol>
+                      
                         </ol>
                      ]]>
                      
@@ -10884,7 +10894,9 @@ This hand is too good for a simple overcall. Make a takeout double and then bid 
           </nextCorrectBid>
     </exercise> 
     
-    
+       <![CDATA[
+      next sectuib text starts ib oage 300 - Advanciung after a takeout double
+    ]]>
            </lesson>
            
   <lesson title="8 - Stayman Convention">
@@ -13495,7 +13507,7 @@ raise with a maximum, since responder could have passed with a very weak hand. <
              
              <bid title=" "> 
                 <position>                  <!-- can be North, East, South, West -->
-                      West
+                      North
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
