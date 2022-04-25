@@ -2526,7 +2526,7 @@ So responder jumps to game with 4 spades
          </bids>
          <inputToCorrectBid>
               <balanced>Yes</balanced>         <!-- Can be Yes, No, Don't Cares -->
-              <hcp>10</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <hcp>12</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
               <distribution>1</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
          </inputToCorrectBid> 
          <nextCorrectBid>
