@@ -1841,11 +1841,24 @@ So responder jumps to game with 4 spades
                  <explanationpart2>
                  You know you belong in a partscore, because your total combined points are not more than 21 (17+4), so play in your Golden Fit.
                  Your partnership has at least eight cards in spades in the combined hands since opener has at least two.
+                 
+                                    A response of 2 Spades indicates 7 or less points and at least 5 spades.  The opener will know not
+                   to go much higher since the opener knows you are in a partgame.
                  </explanationpart2>
                  <explanationpart3>
-                   A response of 2 Spades indicates 7 or less points and at least 5 spades.  The opener will know not
-                   to go much higher since the opener knows you are in a partgame.
+
                    
+                   
+                                                                           <![CDATA[
+                   When Responding to a 1NT Opening Bid with 0 to 7 Total Points 
+                   <ol>
+                   <li>​​Bid 2 Spades, 2 Hearts or 2 Diamonds with a five-card or longer suit (2 is reserved for the Stayman convention). </li>
+                   <li>​Otherwise, pass.</li>
+                   </ul>
+
+]]>
+
+
                  </explanationpart3>
 
                  </explanation>
@@ -1944,10 +1957,23 @@ So responder jumps to game with 4 spades
                  You know you belong in a partscore, because your total combined points are not more than 23 (17+6), so play in your Golden Fit.
                  You have at least a seven-card fit in diamonds and very likely eight or more (as the opener will quite often have three or more of a suit)
                  Your partnership has at least eight cards in spades in the combined hands since opener has at least two.
+                 
+                                    A response of 2 Diamonds indicates 7 or less points and at least 5 diamonds.  The opener will know not
+                   to go much higher since the opener knows you are in a partgame.
                  </explanationpart2>
                  <explanationpart3>
-                   A response of 2 Diamonds indicates 7 or less points and at least 5 diamonds.  The opener will know not
-                   to go much higher since the opener knows you are in a partgame.
+
+                   
+                                                        <![CDATA[
+                   When Responding to a 1NT Opening Bid with 0 to 7 Total Points 
+                   <ol>
+                   <li>​​Bid 2 Spades, 2 Hearts or 2 Diamonds with a five-card or longer suit (2 is reserved for the Stayman convention). </li>
+                   <li>​Otherwise, pass.</li>
+                   </ul>
+
+]]>
+
+
                    
                  </explanationpart3>
 
@@ -2046,7 +2072,21 @@ So responder jumps to game with 4 spades
                  </explanationpart2>
                  <explanationpart3>
 
-                   
+
+
+
+                  
+                                     <![CDATA[
+                   When Responding to a 1NT Opening Bid with 0 to 7 Total Points 
+                   <ol>
+                   <li>​​Bid 2 Spades, 2 Hearts or 2 Diamonds with a five-card or longer suit (2 is reserved for the Stayman convention). </li>
+                   <li>​Otherwise, pass.</li>
+                   </ul>
+
+]]>
+                  
+                  
+                  
                  </explanationpart3>
 
                  </explanation>
@@ -2145,10 +2185,23 @@ So responder jumps to game with 4 spades
                   </explanationpart1>
                  <explanationpart2>
                  Respond 2NT to ask the opener to further describe the strength of the opener's hand.
+                 
+                                  The opener will jump to 3NT if the opener has 17 points since you are promising 8 points with your 2NT bid.
+                  The opener might pass at 2NT with 15 or 16 points.
                  </explanationpart2>
                  <explanationpart3>
-                  The opener will jump to 3NT if the opener has 17 points since you are promising 8 points with your 2NT bid.
-                  The opener might pass at 2NT with 15 or 16 points.
+ 
+                  
+                                     <![CDATA[
+                   When Responding to a 1NT Opening Bid with 8 or 9 Total Points 
+                   <ul>
+                   <li>​Bid 2NT.* </li>
+                   <li>​Bid 2 Clubs , Stayman. * Note: This is an invitational bid.</li>
+                   </ul>
+
+]]>
+
+
                    
                  </explanationpart3>
 
@@ -2240,18 +2293,26 @@ So responder jumps to game with 4 spades
                  
                      With 9 total points, you want to look for a Golden Game.  Ignore the Golden Fit in 
                      your minor suit, since there can't be enough combined strength (29 points) to make 5 Clubs.
-              
+                              Respond 2NT to ask the opener to further describe the strength of the opener's hand.
                      
  
   
                   </explanationpart1>
                  <explanationpart2>
-                 Respond 2NT to ask the opener to further describe the strength of the opener's hand.
+                The opener will jump to 3NT if the opener has 17 points since you are promising at least 8 points with your 2NT bid.
+                 The opener might pass to stay at the  2NT level if the opener has only 15 or 16 points.
                  </explanationpart2>
                  <explanationpart3>
-                  The opener will jump to 3NT if the opener has 17 points since you are promising at least 8 points with your 2NT bid.
-                  The opener might pass to stay at the  2NT level if the opener has only 15 or 16 points.
-                   
+   
+                 
+                   <![CDATA[
+                   When Responding to a 1NT Opening Bid with 8 or 9 Total Points:
+                   <ul>
+                   <li>​Bid 2NT.* </li>
+                   <li>​Bid 2 Clubs , Stayman. * Note: This is an invitational bid.</li>
+                   </ul>
+
+]]>
                  </explanationpart3>
 
                  </explanation>
@@ -2350,8 +2411,17 @@ So responder jumps to game with 4 spades
                  Place the final contract in 4 Spades
                  </explanationpart2>
                  <explanationpart3>
-                  This is a sign-off bid.  The opener will not rebid higher.
-                   
+<![CDATA[
+                    When Responding to a 1NT Opening Bid with 10 to 15 Total Points:
+
+                   <ul>
+                   <li>​​Bid 4 Hearts or 4 Spades with a six-card or longer major suit. These are sign-off bids at the game level.</li>
+                   <li>​Bid 3 Hearts or 3 Spades with a five-card major suit. These are game forcing bids.</li>
+                    <li>Otherwise, bid 3NT. This is a game sign-off bid.</li>
+                   </ul>
+                     ]]>
+
+
                  </explanationpart3>
 
                  </explanation>
@@ -2448,12 +2518,20 @@ So responder jumps to game with 4 spades
   
                   </explanationpart1>
                  <explanationpart2>
-                 Place the final contract in 3 NT
+                 Place the final contract in 3 NT.
+                                   This is a stopping bid.  The opener will not rebid higher.  Even if they have 17 points and you had 15 points, 32 is not enough for a small slam
+                  so there is no point in bidding higher than game.
                  </explanationpart2>
                  <explanationpart3>
-                  This is a stopping bid.  The opener will not rebid higher.  Even if they have 17 points and you had 15 points, 32 is not enough for a small slam
-                  so there is no point in bidding higher than game.
-                   
+<![CDATA[
+                    When Responding to a 1NT Opening Bid with 10 to 15 Total Points:
+
+                   <ul>
+                   <li>​​Bid 4 Hearts or 4 Spades with a six-card or longer major suit. These are sign-off bids at the game level.</li>
+                   <li>​Bid 3 Hearts or 3 Spades with a five-card major suit. These are game forcing bids.</li>
+                    <li>Otherwise, bid 3NT. This is a game sign-off bid.</li>
+                   </ul>
+                     ]]>
                  </explanationpart3>
 
                  </explanation>
@@ -2554,11 +2632,19 @@ So responder jumps to game with 4 spades
   
                   </explanationpart1>
                  <explanationpart2>
-                 Make a forcing bid at 3 hearts
+                 Make a forcing bid at 3 Hearts.
+               The opener will ether bid 4 Hearts if opener has 3 or more Hearts, or game at 3 NT.
                  </explanationpart2>
                  <explanationpart3>
-                  This is a forcing bid.  The opener will ether bid 4 Hearts if openere has 3 or more Hearts, or game at 3 NT.
-                   
+<![CDATA[
+                    When Responding to a 1NT Opening Bid with 10 to 15 Total Points:
+
+                   <ul>
+                   <li>​​Bid 4 Hearts or 4 Spades with a six-card or longer major suit. These are sign-off bids at the game level.</li>
+                   <li>​Bid 3 Hearts or 3 Spades with a five-card major suit. These are game forcing bids.</li>
+                    <li>Otherwise, bid 3NT. This is a game sign-off bid.</li>
+                   </ul>
+                     ]]>
                  </explanationpart3>
 
                  </explanation>
@@ -2654,16 +2740,25 @@ So responder jumps to game with 4 spades
                   </explanationpart1>
                  <explanationpart2>
                 With 10 total points and a four-card major suit, you could use the Stayman convention (2 Clubs)
-                 to ask if openr has a four-card major.  However, assuming you don't know about Stayman, bid 3NT.
+                 to ask if opener has a four-card major.  However, assuming you don't know about Stayman, bid 3NT.
+                   This is a stopping bid.  The opener has not need to bid higher than game.
                  </explanationpart2>
                  <explanationpart3>
-                  This is a stopping bid.  The opener has not need to bid higher than game.
-                   
+<![CDATA[
+                    When Responding to a 1NT Opening Bid with 10 to 15 Total Points:
+
+                   <ul>
+                   <li>​​Bid 4 Hearts or 4 Spades with a six-card or longer major suit. These are sign-off bids at the game level.</li>
+                   <li>​Bid 3 Hearts or 3 Spades with a five-card major suit. These are game forcing bids.</li>
+                    <li>Otherwise, bid 3NT. This is a game sign-off bid.</li>
+                   </ul>
+                     ]]>
                  </explanationpart3>
 
                  </explanation>
           </nextCorrectBid>
-    </exercise>    
+    </exercise>   
+     
   <exercise title="2.14 - Re-Response with 1 NT ">
           <dealer>
                North
@@ -3263,12 +3358,27 @@ So responder jumps to game with 4 spades
                  <explanationpart2>
                      Note the the 1NT response does not promise a balanced hand.  It simply indicates there are enough total points
                      to keep the bidding going but not other bid to make.
+                     
+                                          Once you see that your hand is suitable for a raise of partner’s major, value your hand using dummy points before deciding what response to make (page 115))
                  </explanationpart2>
                  <explanationpart3>
-                     Once you see that your hand is suitable for a raise of partner’s major, value your hand using dummy points before deciding what response to make (page 115))
+
                      
-                   
-                                     	Your options with 6-9 points are, in order (1) Raise partner's major suit to the two level with at least three-card support, (2) Bid a new suit at the one level, or (3) Bid 1NT  
+                       When responding to a 1 bid of a minor suit, with 6-9 points, your priority is to 
+                     <![CDATA[ 
+                     <ol>
+                     <li> Bid a new suit at the 1 level if  you can.     If you have a choice of suits, the guidelines are to ... </li>
+                      <ol>
+                         <li>Bid your longest  suit at the 1 level</li>
+                         <li>Bid the higher-ranking of two five-card  suits at the 1 level</li>
+                         <li> Bid the lower-ranking of two four-card new suits</li>
+                       </ol>
+                        
+                     <li>Bid 1 NT</li>
+                     <li>Raise partner's minor suit</li>
+                      
+                        </ol>
+                     ]]>
                      
                  </explanationpart3>
 
@@ -3373,9 +3483,21 @@ So responder jumps to game with 4 spades
                      
                  </explanationpart2>
                  <explanationpart3>
-
-                     
-                                     	Your options with 6-9 points are, in order (1) Raise partner's major suit to the two level with at least three-card support, (2) Bid a new suit at the one level, or (3) Bid 1NT  
+                       When responding to a 1 bid of a minor suit, with 6-9 points, your priority is to 
+                     <![CDATA[ 
+                     <ol>
+                     <li> Bid a new suit at the 1 level if  you can.     If you have a choice of suits, the guidelines are to ... </li>
+                      <ol>
+                         <li>Bid your longest  suit at the 1 level</li>
+                         <li>Bid the higher-ranking of two five-card  suits at the 1 level</li>
+                         <li> Bid the lower-ranking of two four-card new suits</li>
+                       </ol>
+                        
+                     <li>Bid 1 NT</li>
+                     <li>Raise partner's minor suit</li>
+                      
+                        </ol>
+                     ]]>
                  </explanationpart3>
 
                  </explanation>
@@ -3476,12 +3598,28 @@ So responder jumps to game with 4 spades
                   </explanationpart1>
                  <explanationpart2>
                      With a four-card spade suit, you can bid 1 Spade.    Changing suits is a forcing bid and opener will bid again.
+                     
+                       Once you see that your hand is suitable for a raise of partner’s major, value your hand using dummy points before deciding what response to make (page 115))
                  </explanationpart2>
                  <explanationpart3>
                    
-                           Once you see that your hand is suitable for a raise of partner’s major, value your hand using dummy points before deciding what response to make (page 115))
+                         
                            
-                                       Your options with 6-9 points are, in order (1) Raise partner's major suit to the two level with at least three-card support, (2) Bid a new suit at the one level, or (3) Bid 1NT  
+                       When responding to a 1 bid of a minor suit, with 6-9 points, your priority is to 
+                     <![CDATA[ 
+                     <ol>
+                     <li> Bid a new suit at the 1 level if  you can.     If you have a choice of suits, the guidelines are to ... </li>
+                      <ol>
+                         <li>Bid your longest  suit at the 1 level</li>
+                         <li>Bid the higher-ranking of two five-card  suits at the 1 level</li>
+                         <li> Bid the lower-ranking of two four-card new suits</li>
+                       </ol>
+                        
+                     <li>Bid 1 NT</li>
+                     <li>Raise partner's minor suit</li>
+                      
+                        </ol>
+                     ]]>
                  </explanationpart3>
 
                  </explanation>
@@ -3578,9 +3716,21 @@ So responder jumps to game with 4 spades
                                      Unlike an opening bid of 1NT, a response of 1 NT does not describe a balanced hand.  Instead it shows a minimum hand of 6-9 points.
                  </explanationpart2>
                  <explanationpart3>
-                     When responding to a 1 bid of a major suit, your priorities are to (1) Raise you partner's major suit to the two level with at least three-card support.
-                     (2) Bid a new suite at the 1 level
-                     (3) Bid 1 NT
+                     When responding to a 1 bid of a minor suit, with 6-9 points, your priority is to 
+                     <![CDATA[ 
+                     <ol>
+                     <li> Bid a new suit at the 1 level if  you can.     If you have a choice of suits, the guidelines are to ... </li>
+                      <ol>
+                         <li>Bid your longest  suit at the 1 level</li>
+                         <li>Bid the higher-ranking of two five-card  suits at the 1 level</li>
+                         <li> Bid the lower-ranking of two four-card new suits</li>
+                       </ol>
+                        
+                     <li>Bid 1 NT</li>
+                     <li>Raise partner's minor suit</li>
+                      
+                        </ol>
+                     ]]>
                  </explanationpart3>
 
                  </explanation>
@@ -4241,7 +4391,11 @@ So responder jumps to game with 4 spades
                   in a part score. With more, opener can bid to game.
                  </explanationpart2>
                  <explanationpart3>
-                
+With 10 or 11 total points, responder knows the partnership has at least 23 (10 + 13 = 23) points and is close to the strength required for game. 
+Responder’s first priority is to support opener’s major suit. 
+If responder can’t support opener’s major, responder can bid a new suit — at the two level if necessary.
+
+
                  </explanationpart3>
 
                  </explanation>
@@ -4339,7 +4493,9 @@ So responder jumps to game with 4 spades
                             will have to bid again.
                  </explanationpart2>
                  <explanationpart3>
-                
+                With 10 or 11 total points, responder knows the partnership has at least 23 (10 + 13 = 23) points and is close to the strength required for game. 
+Responder’s first priority is to support opener’s major suit. 
+If responder can’t support opener’s major, responder can bid a new suit — at the two level if necessary.
                  </explanationpart3>
 
                  </explanation>
@@ -4436,13 +4592,22 @@ So responder jumps to game with 4 spades
                  <explanationpart2>
                            Responder bids a new suit, 1 Spade, and waits to hear a furhter description of the opener's hand.  If there is <![CDATA[<B>no </b> ]]> 
                            Golden Fit in spades, responder will show diamond support at the next opportunity.
-                 </explanationpart2>
-                 <explanationpart3>
-                           Bidding notrump with this hand is not acceptable because of the questionable Heart stopper.
+                           
+                                                      Bidding notrump with this hand is not acceptable because of the questionable Heart stopper.
                            <![CDATA[<p>
                            Responder should rebid by raising diamonds to the three level to show 10 or 11 points, inviting the opener
                            to bid game in notrump with more than 13 points, or game in the minor with 18 or more total points. 
                            </P> ]]>
+                 </explanationpart2>
+                 <explanationpart3>
+
+                           
+                           
+                           With 10 or 11 total points, responder knows the partnership has at least 23 (10 + 13 = 23) points and is close to the strength required for game. 
+Responder’s first priority is to support opener’s major suit. 
+If responder can’t support opener’s major, responder can bid a new suit — at the two level if necessary.
+
+
                  </explanationpart3>
 
                  </explanation>
@@ -4542,7 +4707,9 @@ So responder jumps to game with 4 spades
                            opener to bid game in notrump with more than 13 total points or game in the minor with 18 or more total points.
                  </explanationpart2>
                  <explanationpart3>
-    
+    With 10 or 11 total points, responder knows the partnership has at least 23 (10 + 13 = 23) points and is close to the strength required for game. 
+Responder’s first priority is to support opener’s major suit. 
+If responder can’t support opener’s major, responder can bid a new suit — at the two level if necessary.
                  </explanationpart3>
 
                  </explanation>
