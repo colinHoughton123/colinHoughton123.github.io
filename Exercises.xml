@@ -5508,7 +5508,7 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                A,8,2
              </diamonds>
              <clubs>
-                A,J,7
+               J,7
              </clubs>
          </cards>
          <bids>
@@ -5603,8 +5603,8 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                  </suitNext>
                  <explanation>
                       <explanationpart1>
-                       With 13 total points, and responder having a maximum of 11 total points, thre will not be enough
-                       combined strength for game.
+                      Opener has 12 HCP plus 1 point for the five-card suit. Since responder has at most 11 total points, there will not be enough combined strength
+
 
                   </explanationpart1>
                  <explanationpart2>
@@ -5619,6 +5619,7 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                  </explanation>
           </nextCorrectBid>
     </exercise>   
+    
           <exercise title="4.5 - Re-response after 1 Major-Suit Opening">
           <dealer>
                North
@@ -5931,7 +5932,7 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
                  <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
-                     3
+                     2
                  </level>
                 <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
                     Diamonds
@@ -6237,7 +6238,7 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
          <inputToCorrectBid>
               <balanced>Yes</balanced>         <!-- Can be Yes, No, Don't Cares -->
               <hcp>12</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
-              <distribution>2</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+              <distribution>1</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
          </inputToCorrectBid> 
          <nextCorrectBid>
               <positionNext>           <!-- can be North, East, South, West -->
