@@ -3364,19 +3364,12 @@ So responder jumps to game with 4 spades
                  <explanationpart3>
 
                      
-                       When responding to a 1 bid of a minor suit, with 6-9 points, your priority is to 
+                       When responding to a 1 bid of a major suit, with 6-9 points, your priority is to 
                      <![CDATA[ 
                      <ol>
-                     <li> Bid a new suit at the 1 level if  you can.     If you have a choice of suits, the guidelines are to ... </li>
-                      <ol>
-                         <li>Bid your longest  suit at the 1 level</li>
-                         <li>Bid the higher-ranking of two five-card  suits at the 1 level</li>
-                         <li> Bid the lower-ranking of two four-card new suits</li>
-                       </ol>
-                        
+                     <li>Raise partner’s major suit to the two level with at least three-card support. </li>
+                      <li>Raise partner’s major suit to the two level with at least three-card support. </li>   
                      <li>Bid 1 NT</li>
-                     <li>Raise partner's minor suit</li>
-                      
                         </ol>
                      ]]>
                      
@@ -3483,19 +3476,12 @@ So responder jumps to game with 4 spades
                      
                  </explanationpart2>
                  <explanationpart3>
-                       When responding to a 1 bid of a minor suit, with 6-9 points, your priority is to 
+                       When responding to a 1 bid of a major suit, with 6-9 points, your priority is to 
                      <![CDATA[ 
                      <ol>
-                     <li> Bid a new suit at the 1 level if  you can.     If you have a choice of suits, the guidelines are to ... </li>
-                      <ol>
-                         <li>Bid your longest  suit at the 1 level</li>
-                         <li>Bid the higher-ranking of two five-card  suits at the 1 level</li>
-                         <li> Bid the lower-ranking of two four-card new suits</li>
-                       </ol>
-                        
+                     <li>Raise partner’s major suit to the two level with at least three-card support. </li>
+                      <li>Raise partner’s major suit to the two level with at least three-card support. </li>   
                      <li>Bid 1 NT</li>
-                     <li>Raise partner's minor suit</li>
-                      
                         </ol>
                      ]]>
                  </explanationpart3>
@@ -3603,21 +3589,13 @@ So responder jumps to game with 4 spades
                  </explanationpart2>
                  <explanationpart3>
                    
-                         
-                           
-                       When responding to a 1 bid of a minor suit, with 6-9 points, your priority is to 
+
+                       When responding to a 1 bid of a major suit, with 6-9 points, your priority is to 
                      <![CDATA[ 
                      <ol>
-                     <li> Bid a new suit at the 1 level if  you can.     If you have a choice of suits, the guidelines are to ... </li>
-                      <ol>
-                         <li>Bid your longest  suit at the 1 level</li>
-                         <li>Bid the higher-ranking of two five-card  suits at the 1 level</li>
-                         <li> Bid the lower-ranking of two four-card new suits</li>
-                       </ol>
-                        
+                     <li>Raise partner’s major suit to the two level with at least three-card support. </li>
+                      <li>Raise partner’s major suit to the two level with at least three-card support. </li>   
                      <li>Bid 1 NT</li>
-                     <li>Raise partner's minor suit</li>
-                      
                         </ol>
                      ]]>
                  </explanationpart3>
@@ -3716,19 +3694,12 @@ So responder jumps to game with 4 spades
                                      Unlike an opening bid of 1NT, a response of 1 NT does not describe a balanced hand.  Instead it shows a minimum hand of 6-9 points.
                  </explanationpart2>
                  <explanationpart3>
-                     When responding to a 1 bid of a minor suit, with 6-9 points, your priority is to 
+                       When responding to a 1 bid of a major suit, with 6-9 points, your priority is to 
                      <![CDATA[ 
                      <ol>
-                     <li> Bid a new suit at the 1 level if  you can.     If you have a choice of suits, the guidelines are to ... </li>
-                      <ol>
-                         <li>Bid your longest  suit at the 1 level</li>
-                         <li>Bid the higher-ranking of two five-card  suits at the 1 level</li>
-                         <li> Bid the lower-ranking of two four-card new suits</li>
-                       </ol>
-                        
+                     <li>Raise partner’s major suit to the two level with at least three-card support. </li>
+                      <li>Raise partner’s major suit to the two level with at least three-card support. </li>   
                      <li>Bid 1 NT</li>
-                     <li>Raise partner's minor suit</li>
-                      
                         </ol>
                      ]]>
                  </explanationpart3>
@@ -4468,8 +4439,8 @@ If responder can’t support opener’s major, responder can bid a new suit — 
          <inputToCorrectBid>
               <balanced>Yes</balanced>         <!-- Can be Yes, No, Don't Cares -->
               <hcp>10</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
-              <distribution></distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
-              <dummyPoints>1</dummyPoints>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+              <distribution>1</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+              <dummyPoints></dummyPoints>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
          </inputToCorrectBid> 
          <nextCorrectBid>
               <positionNext>           <!-- can be North, East, South, West -->
@@ -4595,8 +4566,8 @@ If responder can’t support opener’s major, responder can bid a new suit — 
                            
                                                       Bidding notrump with this hand is not acceptable because of the questionable Heart stopper.
                            <![CDATA[<p>
-                           Responder should rebid by raising diamonds to the three level to show 10 or 11 points, inviting the opener
-                           to bid game in notrump with more than 13 points, or game in the minor with 18 or more total points. 
+                           If responder doesn’t have a new suit to bid, responder can raise opener’s minor suit to the three level with 10 or 11 total points, inviting opener to bid game in notrump with more than 13 total points or game in the minor with 18 or more total points.
+
                            </P> ]]>
                  </explanationpart2>
                  <explanationpart3>
@@ -4707,9 +4678,10 @@ If responder can’t support opener’s major, responder can bid a new suit — 
                            opener to bid game in notrump with more than 13 total points or game in the minor with 18 or more total points.
                  </explanationpart2>
                  <explanationpart3>
-    With 10 or 11 total points, responder knows the partnership has at least 23 (10 + 13 = 23) points and is close to the strength required for game. 
-Responder’s first priority is to support opener’s major suit. 
-If responder can’t support opener’s major, responder can bid a new suit — at the two level if necessary.
+If responder doesn’t have a new suit to bid, responder can raise opener’s minor suit to the three level with 10 or 11 total points, 
+inviting opener to bid game in notrump with more than 13 total points or game in the minor with 18 or more total points.
+
+Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p. 122). Baron Barclay. Kindle Edition. 
                  </explanationpart3>
 
                  </explanation>
@@ -5005,20 +4977,22 @@ If responder can’t support opener’s major, responder can bid a new suit — 
                  </suitNext>
                  <explanation>
                       <explanationpart1>
-                              With 15 total points (includes 1 point for the doubleton Heart), responder could support opener's spades,
-                              but 15 total points is too much to raise to the 3 level.  A raise to the 4 level would stop the bidding at game and wouldn't
-                              leave room to explore the possibility for a slam contract.
+                              Responder could support opener’s diamonds. 
+                              Looking for a Golden Fit in a major, however, takes priority. 
+                              Responder should bid a new suit, preferring a major if one is available. Bid 1 Spade.
+
+
                   </explanationpart1>
                  <explanationpart2>
                   Bidding 2 Diamonds gives the opener the opportunity to further describe the hand.  Responder will show spade support by 
                   jumping to game at the next opportunity to call.
                  </explanationpart2>
                  <explanationpart3>
-                        Opposite an opening bid of one of a major, responder has 3 choices with 12 or more total points:
+                        Opposite an opening bid of one of a minor, responder has 3 choices (in order) with 12 or more total points:
                            <![CDATA[
-                           <UL><li>With a balanced hand, bid 2NT with 13-15 HCP</li>
-                           <li>With a balanced hand, bid 3NT with 16-18 HCP</li>
-                           <LI>Bid a new suit (with an unbalanced hand and 12 or more total points)</li>
+                           <UL><li>Bid a new suit, a major if possible</li>
+                           <li>With a balanced hand, bid 2NT with 13-15 HCP</li>
+                           <LI>With a balanced hand, bid 3NT with 16-18 HCP</li>
                             </ul>
                            ]]>
                  </explanationpart3>
