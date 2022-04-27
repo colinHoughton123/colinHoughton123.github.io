@@ -74,7 +74,7 @@
                  <explanation>
                  <explanationpart1>
                  
-                     This is a balanced hand.  16 points and no distirbution points.  Therefore, bid 1 NT.
+                     This is a balanced hand.  16 points and no distribution points.  Therefore, bid 1 NT.
   
  
                   </explanationpart1>
@@ -992,7 +992,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
                  <explanation>
                       <explanationpart1>
                  
-                     This is an unalanced hand.  There are 16 hcp and 1 distribution point (for the 5 card Hearts run).     
+                     This is an unbalanced hand.  There are 16 hcp and 1 distribution point (for the 5 card Hearts run).     
                      
                      
                   </explanationpart1>
@@ -1060,7 +1060,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
                  <explanation>
                       <explanationpart1>
                  
-                     This is a balanced hand (4-4-3-2) but there are not enought total points (15-17) to bid 1 NT.
+                     This is a balanced hand (4-4-3-2) but there are not enough total points (15-17) to bid 1 NT.
                      
        
                   </explanationpart1>
@@ -1352,7 +1352,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
          <description>
                              When your partner opens the bidding at 1 NT, you as a responder know that the opener has 15,16,17 HCP (the opener does not consider distribution points when opening NT).
                By adding your strength to that of the opener's, you can usually tell whether the partnership has at least 25 combined points, enough for a game contract, or fewer than 15 combined points.
-               enough only for a partscore contract.
+               enough only for a part-score contract.
          </description>
          
          
@@ -1438,7 +1438,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
                       <explanationpart1>
                  
                      With 6 total points, responder knows the combined strength is either 21,22,or 23 which is fewer than the 25 
-                     points needed for a game contract.  Responder passes because responder knows the contract should be a partscore.
+                     points needed for a game contract.  Responder passes because responder knows the contract should be a part-score.
   
                   </explanationpart1>
                  <explanationpart2>
@@ -1839,11 +1839,11 @@ So responder jumps to game with 4 spades
   
                   </explanationpart1>
                  <explanationpart2>
-                 You know you belong in a partscore, because your total combined points are not more than 21 (17+4), so play in your Golden Fit.
+                 You know you belong in a part-score, because your total combined points are not more than 21 (17+4), so play in your Golden Fit.
                  Your partnership has at least eight cards in spades in the combined hands since opener has at least two.
                  
                                     A response of 2 Spades indicates 7 or less points and at least 5 spades.  The opener will know not
-                   to go much higher since the opener knows you are in a partgame.
+                   to go much higher since the opener knows you are in a part-game.
                  </explanationpart2>
                  <explanationpart3>
 
@@ -1954,12 +1954,12 @@ So responder jumps to game with 4 spades
   
                   </explanationpart1>
                  <explanationpart2>
-                 You know you belong in a partscore, because your total combined points are not more than 23 (17+6), so play in your Golden Fit.
+                 You know you belong in a part-score, because your total combined points are not more than 23 (17+6), so play in your Golden Fit.
                  You have at least a seven-card fit in diamonds and very likely eight or more (as the opener will quite often have three or more of a suit)
                  Your partnership has at least eight cards in spades in the combined hands since opener has at least two.
                  
                                     A response of 2 Diamonds indicates 7 or less points and at least 5 diamonds.  The opener will know not
-                   to go much higher since the opener knows you are in a partgame.
+                   to go much higher since the opener knows you are in a part-game.
                  </explanationpart2>
                  <explanationpart3>
 
@@ -2400,7 +2400,7 @@ So responder jumps to game with 4 spades
                  <explanation>
                       <explanationpart1>
                  
-                     With 12 total points, you know you want to play in game because you have at least 26 points between you (the opening bid of 1NT promsed 15-17 points).
+                     With 12 total points, you know you want to play in game because you have at least 26 points between you (the opening bid of 1NT promised 15-17 points).
                      The opener has at least 2 Spades and thus you have at least 8 Spades between you - a Golden Fit.
               
                      
@@ -3003,7 +3003,7 @@ So responder jumps to game with 4 spades
                  
                  Responder has 8 or 9 points.  If you have 15, then 23 is not enough for game, so you would pass.
                  If you have 16 you have 24 which is still not enough for game so you would pass.
-                 But you have 17 points, so beween you you have 25 or 26 points.  Enough for game in NT.
+                 But you have 17 points, so between you you have 25 or 26 points.  Enough for game in NT.
                      
  
   
@@ -3463,7 +3463,7 @@ So responder jumps to game with 4 spades
                       <explanationpart1>
                  
                      You know there is a Golden Fit in Hearts since partner's opening bid shows at 
-                     least 5 Hearts.  You have 6 high card points and 1 point for the doubletom in Spades, a total of 7 points.
+                     least 5 Hearts.  You have 6 high card points and 1 point for the doubleton in Spades, a total of 7 points.
                      
  
   
@@ -4121,7 +4121,7 @@ So responder jumps to game with 4 spades
                       <explanationpart1>
                   
                   You have a total of 9 points and you don't have a four-card or longer suit to bid at the one level.  Remember that
-                  you cannot go to the 2 level, which you might be tempted to in clubs (since diamonds are higher than clubes.
+                  you cannot go to the 2 level, which you might be tempted to in clubs (since diamonds are higher than Clubs.
                   Since have
                   stoppers in other suits.  Your hand looks like a notrump.  So bid it.
   
@@ -4561,7 +4561,7 @@ If responder can’t support opener’s major, responder can bid a new suit — 
   
                   </explanationpart1>
                  <explanationpart2>
-                           Responder bids a new suit, 1 Spade, and waits to hear a furhter description of the opener's hand.  If there is <![CDATA[<B>no </b> ]]> 
+                           Responder bids a new suit, 1 Spade, and waits to hear a further description of the opener's hand.  If there is <![CDATA[<B>no </b> ]]> 
                            Golden Fit in spades, responder will show diamond support at the next opportunity.
                            
                                                       Bidding notrump with this hand is not acceptable because of the questionable Heart stopper.
@@ -4674,14 +4674,14 @@ If responder can’t support opener’s major, responder can bid a new suit — 
   
                   </explanationpart1>
                  <explanationpart2>
-                           Responder raises opener's suit to the three level, 3 Clubs.  This shows 10 or 11 total poitns and to invite
+                           Responder raises opener's suit to the three level, 3 Clubs.  This shows 10 or 11 total points and to invite
                            opener to bid game in notrump with more than 13 total points or game in the minor with 18 or more total points.
                  </explanationpart2>
                  <explanationpart3>
 If responder doesn’t have a new suit to bid, responder can raise opener’s minor suit to the three level with 10 or 11 total points, 
 inviting opener to bid game in notrump with more than 13 total points or game in the minor with 18 or more total points.
 
-Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p. 122). Baron Barclay. Kindle Edition. 
+ 
                  </explanationpart3>
 
                  </explanation>
@@ -4877,7 +4877,7 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                               Without a balanced hand, responder bids a new suit, bidding the longest suit of 2 Diamonds.  
                   </explanationpart1>
                  <explanationpart2>
-                The change of suit is forcing.  After hearing opener's next bid, reponder will be in a better position to decide on the suit
+                The change of suit is forcing.  After hearing opener's next bid, responder will be in a better position to decide on the suit
                 and level of the contract.
                  </explanationpart2>
                  <explanationpart3>
@@ -5224,7 +5224,7 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                  </suitNext>
                  <explanation>
                       <explanationpart1>
-                   Opener has 11 HCP plus 2 points fo rhte six-card suit.   Responder's raise is invitational, indicating 6-9 points.
+                   Opener has 11 HCP plus 2 points for the six-card suit.   Responder's raise is invitational, indicating 6-9 points.
 
                   </explanationpart1>
                  <explanationpart2>
@@ -5350,11 +5350,11 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                  </suitNext>
                  <explanation>
                       <explanationpart1>
-                   Opener has 15 HCP plus 2 points fo rhte six-card suit.   Responder's raise is invitational, indicating 6-9 points.
+                   Opener has 15 HCP plus 2 points for the six-card suit.   Responder's raise is invitational, indicating 6-9 points.
 
                   </explanationpart1>
                  <explanationpart2>
-                   This is a medium hand (16-18 points).  With some extra strength, opern moves higher on the bidding scale to three Spades.
+                   This is a medium hand (16-18 points).  With some extra strength, opener moves higher on the bidding scale to three Spades.
                   
                  </explanationpart2>
                  <explanationpart3>
@@ -5477,7 +5477,7 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                  <explanation>
                       <explanationpart1>
                    Opener has 21 total points.  This is a maximum hand (19-21 total points) for a 1 suit opener.
-                   With this much extra strength, oper can jump one level on the bidding scale and rebid 4 Spades putting the partnership in game.
+                   With this much extra strength, opener can jump one level on the bidding scale and rebid 4 Spades putting the partnership in game.
                     
 
                   </explanationpart1>
@@ -5609,7 +5609,7 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                   </explanationpart1>
                  <explanationpart2>
                    
-                  Opener must decline responder's invtation and pass.
+                  Opener must decline responder's invitation and pass.
                     
                  </explanationpart2>
                  <explanationpart3>
@@ -5730,7 +5730,7 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                  </suitNext>
                  <explanation>
                       <explanationpart1>
-                       With 13 total points plus 2 points for the six-card suti, opener has enough to accept the invitation (15 for opener and 9 - 11 for responder = 24-26)
+                       With 13 total points plus 2 points for the six-card suit, opener has enough to accept the invitation (15 for opener and 9 - 11 for responder = 24-26)
 
                   </explanationpart1>
                  <explanationpart2>
@@ -5741,7 +5741,7 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                  <explanationpart3>
                       When responder raises opener's major suit to the three level, promising 9-11 points, opener passes with a minimum 13 but
                       bids game with 14 or more.  Actually, 14 points only works if responder has 11 points, not 10 total points.  Unfortunately,
-                      the opener cannot find out through the bidding if reponder has 10 or 11 points.  But, in this case, opener proceeds to game
+                      the opener cannot find out through the bidding if responder has 10 or 11 points.  But, in this case, opener proceeds to game
                       based on the "quality" of the hand.  This is a subtle difference.
                  </explanationpart3>
 
@@ -5860,12 +5860,12 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                       <explanationpart1>
                        With 12 HCP plus 2 points for the six-card suit, a total of 14 points.
                        This is a minimum hand (13-15 total points).
-                       Responder's raise is invitational, and opern may pass or bid again.
+                       Responder's raise is invitational, and opener may pass or bid again.
 
                   </explanationpart1>
                  <explanationpart2>
                    
-                  Opener has not extra strength and will pass, leaving partnership in a partscore.  Even if responder has as much as 9 total points,
+                  Opener has not extra strength and will pass, leaving partnership in a part-score.  Even if responder has as much as 9 total points,
                   there won't be enough combined strength for game.
                     
                  </explanationpart2>
@@ -5988,7 +5988,7 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                       <explanationpart1>
                        With 15 HCP plus 2 points for the six-card suit, a total of 17 points.
                        This is a medium hand (16-18) total points).
-                       Responder's raise is invitational, and opern may pass or bid again.
+                       Responder's raise is invitational, and opener may pass or bid again.
 
                   </explanationpart1>
                  <explanationpart2>
@@ -5998,7 +5998,7 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                     
                  </explanationpart2>
                  <explanationpart3>
-                  If responder has only 6 or 7 totl poitns, there won't be enough conbined strength for gam (29 points) and will pass.
+                  If responder has only 6 or 7 total points, there won't be enough combined strength for gam (29 points) and will pass.
                   If responder has at least 8 total points, the partnership should have enough for the Golden Game in 3NT.
                  </explanationpart3>
 
@@ -6125,7 +6125,7 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                  <explanationpart2>
                    
                   With this much additional strength, opener wants to be in game and jump to 3NT, the Golden Game, rather than 5 Diamonds.
-                   Unless reponder had the maximum of 10 total points, it is unlikely there will be enought combined strength for a 5 Diamonds contract.
+                   Unless responder had the maximum of 10 total points, it is unlikely there will be enough combined strength for a 5 Diamonds contract.
                     
                  </explanationpart2>
                  <explanationpart3>
@@ -6383,7 +6383,7 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                  <explanation>
                       <explanationpart1>
                  
-                     Opener (North) has 13 total points.  The hand is unbalanced, since operner has a singleton club.   To finish 
+                     Opener (North) has 13 total points.  The hand is unbalanced, since opener has a singleton club.   To finish 
                      describing the hand, opener rebids 2 Diamonds, showing a second suit.
                     
                   </explanationpart1>
@@ -6519,7 +6519,7 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                      Opener's hand is unbalanced and there is no second suit to show.  Opener rebids the original suit of 2 Hearts
                   </explanationpart1>
                  <explanationpart2>
-                      The rebid of the heart suit after a 1 NT bid by responder definately shows a six card suit.
+                      The rebid of the heart suit after a 1 NT bid by responder definitely shows a six card suit.
                  </explanationpart2>
                  <explanationpart3>
                         Remember, if the responder bids 1 NT, it means they have 6-9 points and no support (2 cards or less) for the major. 
@@ -6653,11 +6653,11 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                      There are two reasons, however, why opener should not suit this suit.  First, if opener bids 2 Spades to show the second
                      suit and an unbalanced hand, responder will have to choose between Spades and Hearts.  If responder prefers Hearts, responder
                      must bid 3 Hearts and, with both partners having minimum hands, the partnership may be to high on the Bidding Scale.
-                     Second, opener knows there can't be a Golden Fit in Spades since responder would have bid 1 Sapd with for or more Spades rather
+                     Second, opener knows there can't be a Golden Fit in Spades since responder would have bid 1 Spade with for or more Spades rather
                      than NT.
                   </explanationpart1>
                  <explanationpart2>
-                      Opener should rebid the orginal suit, 2 Hearts and this should end the bidding.
+                      Opener should rebid the original suit, 2 Hearts and this should end the bidding.
                  </explanationpart2>
                  <explanationpart3>
                         Remember, if the responder bids 1 NT, it means they have 6-9 points and no support (2 cards or less) for the major. 
@@ -6781,12 +6781,12 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                       <explanationpart1>
                  
                      Opener has a medium hand of 16 HCP plus 2 points for the six-cards suit, totalling 18 points.  
-                     Opener has unblanced hand with no second suit.  To describe the shape of the hand, opener must rebid the original suit.
+                     Opener has unbalanced hand with no second suit.  To describe the shape of the hand, opener must rebid the original suit.
                      With extra strength opener does not rebid the suit at the two level as opener would be holding a minimum strength hand.
                      Instead, opener jumps to the three level and bids 3 Diamonds.
                   </explanationpart1>
                  <explanationpart2>
-                      Opener's jump to three of the orginal suit promises a six-card diamond suit.
+                      Opener's jump to three of the original suit promises a six-card diamond suit.
                  </explanationpart2>
                  <explanationpart3>
                        
@@ -6910,13 +6910,13 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                       <explanationpart1>
                  
                      Opener has a medium hand of 16 HCP plus 1 points for the five-cards suit, totalling 17 points.  
-                     Opener has unblanced hand and has a possible second suit.  
+                     Opener has unbalanced hand and has a possible second suit.  
                      Opener can show this by bidding the second suit at the 2 level to tell responder this is an unbalanced hand with at least five diamonds and four hearts
-                     Opener is also showing a medium strength hand by gidding a higher ranking suit at the two level.
+                     Opener is also showing a medium strength hand by bidding a higher ranking suit at the two level.
                      
                   </explanationpart1>
                  <explanationpart2>
-                      Opener would not have bid a new suit at the two level with a mimimum-strength hand.
+                      Opener would not have bid a new suit at the two level with a minimum-strength hand.
                       
                  </explanationpart2>
                  <explanationpart3>
@@ -7041,13 +7041,13 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                       <explanationpart1>
                  
                      Opener has a medium hand of 16 HCP plus 1 points for the five-cards suit, totalling 17 points.  
-                     Opener has unblanced hand and has a possible second suit but the second suit is lower than the opener's original suit.
+                     Opener has unbalanced hand and has a possible second suit but the second suit is lower than the opener's original suit.
                      Opener describes the hand by rebidding 2 Clubs. 
                      
                   </explanationpart1>
                  <explanationpart2>
-                      This shows an unbalanced hand.  It will sound exactly the same to responder as if the operner has a minimum-strength hand with diamonds and clubs.
-                      Unfortuantely, there is no way around this.  If opener jumps to 3 Clubs to show the extra strength, the partnership might get too high on the Bidding Scale.
+                      This shows an unbalanced hand.  It will sound exactly the same to responder as if the opener has a minimum-strength hand with diamonds and clubs.
+                      Unfortunately, there is no way around this.  If opener jumps to 3 Clubs to show the extra strength, the partnership might get too high on the Bidding Scale.
                       
                  </explanationpart2>
                  <explanationpart3>
@@ -7180,7 +7180,7 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                  </explanationpart2>
                  <explanationpart3>
                     With a balanced hand with 18 or 19 HCP in hand, the opener will begin the bidding with one of a suit and make a jump rebid (jump shift) to notrump.
-                    If reponder shows 6 to 9 total points, the partnership has enough strength for game.
+                    If responder shows 6 to 9 total points, the partnership has enough strength for game.
                  </explanationpart3>
 
                  </explanation>
@@ -7299,7 +7299,7 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                  <explanation>
                       <explanationpart1>
                  
-                     Opener has 18 HCP plus 3 point sfor the seven-card suit, for a total of 21 points.
+                     Opener has 18 HCP plus 3 points for the seven-card suit, for a total of 21 points.
                      
                   </explanationpart1>
                  <explanationpart2>
@@ -7308,7 +7308,7 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                  </explanationpart2>
                  <explanationpart3>
                    
-                    If reponder shows 6 to 9 total points, the partnership has enough strength for game.
+                    If responder shows 6 to 9 total points, the partnership has enough strength for game.
                  </explanationpart3>
 
                  </explanation>
@@ -7425,7 +7425,7 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                  <explanation>
                       <explanationpart1>
                  
-                     Opener has 18 HCP plus 1 point sfor the five-card suit, for a total of 19 points.
+                     Opener has 18 HCP plus 1 point for the five-card suit, for a total of 19 points.
                      
                   </explanationpart1>
                  <explanationpart2>
@@ -7436,7 +7436,7 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                  </explanationpart2>
                  <explanationpart3>
                    
-                    If reponder shows 6 to 9 total points, the partnership has enough strength for game.
+                    If responder shows 6 to 9 total points, the partnership has enough strength for game.
                     
                  </explanationpart3>
 
@@ -7559,11 +7559,12 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                      
                   </explanationpart1>
                  <explanationpart2>
-                      Note that the opener cannot pass since responder's bid is forcing.  Opener also knows there is no Golden Fit in spades, because responder did not raise them.
+                      Note that the opener cannot pass since responder's bid is forcing.  
+                      Opener also knows there is no Golden Fit in spades, because responder did not raise them.
                  </explanationpart2>
                  <explanationpart3>
                    
-                    If reponder says 2NT it means the responder has13-15 HCP with a balanced hand and no support for the opener's major suit
+                    If responder says 2NT it means the responder has13-15 HCP with a balanced hand and no support for the opener's major suit
              
                     
                  </explanationpart3>
@@ -7689,14 +7690,13 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                      
                   </explanationpart1>
                  <explanationpart2>
-                      Note that the opener cannot pass since responder's bid is forcing.  Opener also knows there is no Golden Fit in spades, because responder did not raise them.
-                      But opener cannot bid 3 Hearts, whosing the second suit and leaving it up to the responder to place the contract.
+                      Opener has a minimum-strength hand, but it is unbalanced.
+
+                      But opener can rebid 3 Hearts, showing the second suit and leaving it up to the responder to place the contract.
                  </explanationpart2>
                  <explanationpart3>
-                   
-                    If reponder says 2NT it means the responder has13-15 HCP with a balanced hand and no support for the opener's major suit
-             
-                    
+
+   
                  </explanationpart3>
 
                  </explanation>
@@ -7824,7 +7824,7 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                  </explanationpart2>
                  <explanationpart3>
                    
-                    If reponder says 2NT it means the responder has13-15 HCP with a balanced hand.
+                    If responder says 2NT it means the responder has13-15 HCP with a balanced hand.
              
                     
                  </explanationpart3>
@@ -7985,7 +7985,7 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                  </suitNext>
                  <explanation>
                       <explanationpart1>
-                 With only 9 HCP, responder knows the partnership belongs in a partscore.
+                 With only 9 HCP, responder knows the partnership belongs in a part-score.
                  There might be a Golden Fit in diamonds, but opener may have only a four-card suit.
                  
                      
@@ -8146,7 +8146,7 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                  <explanation>
                       <explanationpart1>
                  Opener shows a minimum hand (with 1NT rebid), but opener is indicating there are 4 Spades, responder knows there is a Golden Fit in Spades.
-                 With only 8 total points, responder wants the partnership to play in a partscore and bids 2 Spades.
+                 With only 8 total points, responder wants the partnership to play in a part-score and bids 2 Spades.
                      
                      
                      
@@ -8309,9 +8309,9 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                  <explanation>
                       <explanationpart1>
                  Since opener shows a minimum hand (with 1NT rebid), responder knows there is a Golden Fit in Diamonds.
-                 With only 9 total points, responder wants the partnership to play in a partscore and bids 2 Diamonds.
+                 With only 9 total points, responder wants the partnership to play in a part-score and bids 2 Diamonds.
                  
-                   Returning to the ppening bid is a signoff bid, telling opener to pass.
+                   Returning to the opening bid is a sign-off bid, telling opener to pass.
                      
                   </explanationpart1>
                  <explanationpart2>
@@ -8630,7 +8630,7 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                  <explanation>
                       <explanationpart1>
                      
-           Responder knows there is a Golden Fit in hearts and, with only 8 total points, knows the partnership should play in a partscore.
+           Responder knows there is a Golden Fit in hearts and, with only 8 total points, knows the partnership should play in a part-score.
                      
                      
                   </explanationpart1>
@@ -8794,7 +8794,7 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                       <explanationpart1>
                      
            Responder has 9 HCP.  No Golden Fit has been uncovered.  
-           With a minimum handm responder stops in partscore and rebids 1NT. 
+           With a minimum hand responder stops in part-score and rebids 1NT. 
                      
                      
                   </explanationpart1>
@@ -8958,11 +8958,11 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                       <explanationpart1>
                      
            Responder initially values this hand as 6 HCP.  
-           When opener bids 1 Club, reponder looks for a Golden Fit by bidding 1 Heart (up the line).
+           When opener bids 1 Club, responder looks for a Golden Fit by bidding 1 Heart (up the line).
            When opener rebids 1 Spade, responder knows there is a Golden Fit in a major suit.
-           Responder now values the hand using dumming points.  
+           Responder now values the hand using dummy points.  
            This brings the total to 7 points - 6 HCP plus 1 point for the doubleton club.
-           The hand is still minimum category, and responder knows the partnership belongs in a partscore.
+           The hand is still minimum category, and responder knows the partnership belongs in a part-score.
                      
                      
                   </explanationpart1>
@@ -9127,7 +9127,7 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
            Even knowing there is a Golden Fit in clubs when opener starts the bidding with 1 Club, responder's first bid is 1 Heart.
            Responder is looking for a Golden Fit in a major suit.
            Opener's rebid has told responder that there is not Golden Fit in a major suit.
-           Responder nows signs off in 2 Clubs, putting the partnership in a partscore in its Golden Fit.
+           Responder nows signs off in 2 Clubs, putting the partnership in a part-score in its Golden Fit.
                      
                      
                   </explanationpart1>
@@ -9291,7 +9291,7 @@ Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p.
                  <explanation>
                       <explanationpart1>
                      
-           With 7 HCP, responder wants to stop in partscore in a Golden Fit.
+           With 7 HCP, responder wants to stop in part-score in a Golden Fit.
            There is no Spade fit because opener did not raise responder's suit.
            Since opener has an unbalanced hand with diamonds that are equal in length or longer than clubs, the most likely Golden Fit is in Diamonds, opener's original suit, rather than in Clubs.
            
@@ -9476,9 +9476,9 @@ Responder has a hand worth 7 total points — 6 HCP plus 1 point for the five-ca
                  <explanationpart3>
                    
             
-          If responder has 6 or 7 total points, the partnership belongs in a partscore since opener’s maximum is 18 total points. 
+          If responder has 6 or 7 total points, the partnership belongs in a part-score since opener’s maximum is 18 total points. 
           Unless opener has exactly 18 total points and responder has exactly 7 total points (a possibility that will be ignored for simplicity’s sake), the partnership will have
-          fewer than 25 combined total points. Therefore, responder wants to sign off in the best partscore.
+          fewer than 25 combined total points. Therefore, responder wants to sign off in the best part-score.
           This would be done either by (A) Passing, or (B) bidding a suit  already mentioned by the partnership at the cheapest available level.
 
                  </explanationpart3>
@@ -9500,7 +9500,7 @@ Responder has a hand worth 7 total points — 6 HCP plus 1 point for the five-ca
       <exercise title="6.1 - Overcalls">
         <page>258</page>]
           <dealer>
-               Sout
+               South
           </dealer>
          <cards>
             <spades>
@@ -9892,7 +9892,6 @@ Requirements for a 1NT Overcall
                       <explanationpart1>
 With a balanced hand with 17 HCP, you may overcall 1NT. You have some strength in the opponent’s suit, so you don’t mind if they lead a heart.
 
-Grant, Audrey; Starzec, Betty. Bidding in the 21st Century (The Club Series) (p. 263). Baron Barclay. Kindle Edition. 
 
 
 
@@ -10636,7 +10635,7 @@ Count dummy points! You are asking your partner to pick the suit for the contrac
                  <explanationpart3>
                    
             
-           When an opponent opens the bidding, you may make a takeout double of a partscore contract if your partner has not bid and if your hand satisfies the basic requirements.:
+           When an opponent opens the bidding, you may make a takeout double of a part-score contract if your partner has not bid and if your hand satisfies the basic requirements.:
            
            A takeout double promises at least three-card support for all unbid suits with 13 or more total points, 
            ​OR  Any hand with 18 or more total points (that is, a hand too strong to overcall).
@@ -10899,7 +10898,7 @@ Pass. You have neither the required strength nor the distribution to overcall or
          </bids>
          <inputToCorrectBid>
               <balanced>No</balanced>         <!-- Can be Yes, No, Don't Cares -->
-              <hcp>9</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <hcp>11</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
               <distribution></distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
                 <dummyPoints>5</dummyPoints>  
          </inputToCorrectBid> 
@@ -10915,7 +10914,9 @@ Pass. You have neither the required strength nor the distribution to overcall or
                  </suitNext>
                  <explanation>
                       <explanationpart1>
-Your hand is not strong enough to overcall clubs at the two level. Counting 5 dummy points for the void in diamonds, however, you have enough to double. This is the best way to compete with this hand.
+Your hand is not strong enough to overcall Clubs at the two level. 
+Counting 5 dummy points for the void in diamonds, 
+however, you have enough to double. This is the best way to compete with this hand.
 
 
 
@@ -12179,7 +12180,7 @@ With a six-card major suit, responder knows that a Golden Fit exists, since open
                  <explanation>
                       <explanationpart1>
 With a five-card suit and a game-going hand, you don't need to ask if the opener has a four-card heart suit; three card support will be sufficient.
-So, using standard bidding methods, reponder jumps to 3 Hearts.  This is a forcing bid, asking opener to choose between 3NT and 4 Hearts.
+So, using standard bidding methods, responder jumps to 3 Hearts.  This is a forcing bid, asking opener to choose between 3NT and 4 Hearts.
 
                   </explanationpart1>
      
@@ -12290,7 +12291,7 @@ If opener shows either major, then responder can jump to game in that major.
                   </explanationpart1>
      
                  <explanationpart2>
-If opener rebids 2 Diamonds, responder now will jump to 3 Spades, a forcing bid asking opener to chosse between 4 Spades and 3NT.  
+If opener rebids 2 Diamonds, responder now will jump to 3 Spades, a forcing bid asking opener to choose between 4 Spades and 3NT.  
 
                  </explanationpart2>
                  <explanationpart3>
@@ -12723,7 +12724,7 @@ knew you must have four Spades.
                  </suit>
              </bid> 
      
-        <bid title="Opening Bid">
+        <bid title="">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -12769,7 +12770,7 @@ knew you must have four Spades.
               <balanced>Yes</balanced>         <!-- Can be Yes, No, Don't Cares -->
               <hcp>8</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
               <distribution></distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
-                <dummyPoints>0</dummyPoints>  
+                <dummyPoints>1</dummyPoints>  
          </inputToCorrectBid> 
          <nextCorrectBid>
               <positionNext>           <!-- can be North, East, South, West -->
@@ -12784,7 +12785,7 @@ knew you must have four Spades.
                            <explanation>
                       <explanationpart1>
 If opener replies 2 Spades to your Stayman inquiry, you have found a Golden Fit. 
-Invite to game by raising to 3. Partner will pass with a minimum hand, but go on to 4 with a maximum hand.
+Invite to game by raising to 3 Spades. Partner will pass with a minimum hand, but go on to 4 Spades with a maximum hand.
 
 
                   </explanationpart1>
@@ -13695,8 +13696,8 @@ raise with a maximum, since responder could have passed with a very weak hand. <
                  </suitNext>
                            <explanation>
                       <explanationpart1>
-The cubid of the oppnent's suit replaces Stayman.  Opener will bid 3 Spaces with a four-card or longer suit, and you can raise to game.
-With fewer than four Spaces, opner will rebid 3NT, which should be the best shot for your side.
+The cubid of the opponent's suit replaces Stayman.  Opener will bid 3 Spaces with a four-card or longer suit, and you can raise to game.
+With fewer than four Spaces, opener will rebid 3NT, which should be the best shot for your side.
                   </explanationpart1>
      
                  <explanationpart2>

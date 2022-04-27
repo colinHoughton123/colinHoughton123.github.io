@@ -734,11 +734,12 @@ for (var i = 0; i < arrayLength; i++) {
                    }      // end if there are any of this suit (length > 0 )  
           var cardHeight = 200;
           
-        
-          if(longestSuitLength<9)   { $('.card').css('height','220');  }  
-          else {
-          	$('.card').css('height','200');
-          } ;   
+       									if(longestSuitLength<9)   { 
+       									   //   $('.card').css('height','220');  
+       									}  
+                                 else {
+                                     //         	$('.card').css('height','200');
+                                  } ; 
 
 
 /*
@@ -750,19 +751,19 @@ for (var i = 0; i < arrayLength; i++) {
     
     // adjust the card table height to match the number/distribution of cards so that the answers show as high as possible on mobile apps
     
-    var screensize = document.documentElement.clientHeight;
-if (screensize  < 900) {
+//    var screensize = document.documentElement.clientHeight;
+//if (screensize  < 900) {
 
 
-    if(longestSuitLength==4)   { $('.grid-container').css('height','420');  }       
-    if(longestSuitLength==5)   { $('.grid-container').css('height','470');  }    
-    if(longestSuitLength==6)   { $('.grid-container').css('height','520');  }     // most example hands will have 6 cards or less
-        if(longestSuitLength>6)   { $('.grid-container').css('height','600');  }  
+    if(longestSuitLength==4)   { $('.grid-container').css('height','420'); $('.card').css('height','220'); }       
+    if(longestSuitLength==5)   { $('.grid-container').css('height','470');  $('.card').css('height','220'); }    
+    if(longestSuitLength==6)   { $('.grid-container').css('height','520'); $('.card').css('height','220'); }     // most example hands will have 6 cards or less
+    if(longestSuitLength>6)   { $('.grid-container').css('height','600'); $('.card').css('height','200'); }  
 
-}
-else {
+//}
+//else {       // we have a big screen size, keep the card table a consistent height.
          if(longestSuitLength==6)   { $('.grid-container').css('height','520');  }     // most example hands will have 6 cards or less
-}
+//}
 
 
        
@@ -814,10 +815,12 @@ if(deckDisplayed == "none"){
                    
                                    $('#spades .placeholder').remove();
                               
-       										          if(longestSuitLength<9)   { $('.card').css('height','220');  }  
-          else {
-          	$('.card').css('height','200');
-          } ;   
+       									if(longestSuitLength<9)   { 
+       									    //  $('.card').css('height','220');  
+       									}  
+                                 else {
+                                     //         	$('.card').css('height','200');
+                                  } ;   
 
 /*
 
@@ -838,10 +841,12 @@ if(deckDisplayed == "none"){
                    $('#hearts').append('<img style="transform: rotate('+rotateDegrees+'deg)"  id="cardPos'+cardPosition+'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
                
                             $('#hearts .placeholder').remove();
-                             									          if(longestSuitLength<9)   { $('.card').css('height','220');  }  
-          else {
-          	$('.card').css('height','200');
-          } ;   
+       									if(longestSuitLength<9)   { 
+       									    //  $('.card').css('height','220');  
+       									}  
+                                 else {
+                                     //         	$('.card').css('height','200');
+                                  } ;  
 
 
 /*
@@ -867,10 +872,12 @@ if(deckDisplayed == "none"){
                    $('#diamonds').append('<img style="transform: rotate('+rotateDegrees+'deg)"  id="cardPos'+cardPosition+'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
                    
                              $('#diamonds .placeholder').remove();	
-                              										          if(longestSuitLength<9)   { $('.card').css('height','220');  }  
-          else {
-          	$('.card').css('height','200');
-          } ;   
+       									if(longestSuitLength<9)   { 
+       									    //  $('.card').css('height','220');  
+       									}  
+                                 else {
+                                     //         	$('.card').css('height','200');
+                                  } ; 
 
 
 /*
@@ -894,10 +901,12 @@ if(deckDisplayed == "none"){
 
                    $('#clubs').append('<img style="transform: rotate('+rotateDegrees+'deg)"  id="cardPos'+cardPosition+'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
                                $('#clubs .placeholder').remove();
-                    										          if(longestSuitLength<9)   { $('.card').css('height','220');  }  
-          else {
-          	$('.card').css('height','200');
-          } ;   
+       									if(longestSuitLength<9)   { 
+       									    //  $('.card').css('height','220');  
+       									}  
+                                 else {
+                                     //         	$('.card').css('height','200');
+                                  } ; 
 
 
 /*
