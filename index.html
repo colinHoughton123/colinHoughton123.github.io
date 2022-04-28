@@ -84,7 +84,7 @@ nav ul {
 
 
 .card {
-   height: 200px;
+   height: 220px;
 }
 
 /* Create two columns/boxes that floats next to each other */
@@ -754,18 +754,24 @@ for (var i = 0; i < arrayLength; i++) {
 //    var screensize = document.documentElement.clientHeight;
 //if (screensize  < 900) {
 
-
-    if(longestSuitLength==4)   { $('.grid-container').css('height','420'); $('.card').css('height','220'); }       
-    if(longestSuitLength==5)   { $('.grid-container').css('height','470');  $('.card').css('height','220'); }    
-    if(longestSuitLength==6)   { $('.grid-container').css('height','520'); $('.card').css('height','220'); }     // most example hands will have 6 cards or less
-    if(longestSuitLength>6)   { $('.grid-container').css('height','600'); $('.card').css('height','200'); }  
-
-//}
-//else {       // we have a big screen size, keep the card table a consistent height.
-         if(longestSuitLength==6)   { $('.grid-container').css('height','520');  }     // most example hands will have 6 cards or less
-//}
+    cardHeight = 220;
+     $('.card').css('height','220');      // this becomes the new default after the initial full deck is shown before any lessons / exercises are selected.
+ 
+    if(longestSuitLength==4)   { $('.grid-container').css('height','420'); }       
+    if(longestSuitLength==5)   { $('.grid-container').css('height','470'); }    
+    if(longestSuitLength==6)   { $('.grid-container').css('height','520'); }     // most example hands will have 6 cards or less
+    if(longestSuitLength==7)   { $('.grid-container').css('height','570'); }     // some might have 7 
+    if(longestSuitLength>7)   { $('.grid-container').css('height','600');    $('.card').css('height','200');  cardHeight = 200; }        // smaller cards.   This will likely never happen.
 
 
+  var counter = 1;
+         $(".card").each(function () {                            // this will run with each new deal of the cards, making the cards look better (bigger) ) if they will fit on the table.
+         counter++; 
+            console.log ( "setting the card height "  + counter) ;
+                  $(this).css("height", cardHeight );
+           });
+
+ // alert('longest length is ' + longestSuitLength )
        
        }   // end of function dealTheCards
     
@@ -1159,43 +1165,66 @@ function parseXmlForLessons()   {        // this function is called up on the su
 
 
 function getNextExercise(){
+         $("#animateCardDiv").stop(1,1);               // stop any previous animations  .. the 1 and 1 parameters means "stop all" and "go to end" (of the animations queue)
+        window.scrollTo(0,0);   // scroll to the top so that when the card's get dealt, that the absolute position of the placehodler card is where it should be
+     
 
        var currentExercise = document.getElementById("exercise").value;   // this will return the number of the exercies selected but includes 1 extra for "Select and exercies"
+    
        var nextExercise  = Number(currentExercise) + 1;
    
-       var totalOptions = $('#exercise option').length;   // will return the total number of options.  But this includes the "Seledt..." option 
+       var totalOptions = $('#exercise option').length ;   // will return the total number of options.  But this includes the "Seledt..." option 
        
-       if(nextExercise == totalOptions ){  
        
-               alert('There are no more exercises in this lesson.  Select another lesson');
+     //        alert('before thie ifthenelseThe nextExercise is '+ nextExercise + ' and the total options is '+ totalOptions)
+             
+             
+       if(nextExercise == totalOptions ){   // We already incremented the number to get the nextExercise .  Total Options includes the Select... optoin,    So, if they are equal then this is the  last exercise ...
+       
+
              
              // Later, we will update this code to go to the next lesson and the first exercies in that lesson
              
                
-                  var nextLesson = Number(currentExercise) + 1;
-                  var totalLessons = $('#lesson option').length;   // will return the total number of options.  But this includes the "Seledt..." option 
+                  var nextLesson = 1;
+                  var totalLessons = $('#lesson option').length;   // will return the total number of options PLUS 1 (for the Select...).   
                   
-                  //more to come here
-                  
+                  if(selectedLesson !=  totalLessons - 1 ){            // we are at the last exertcies of the Lesson.  Move on to the next Lesson.
+         
+                   alert('There are no more exercises in this lesson.  Moving on to the next Lesson...');
+                          var nextExercise  = 1;
+                          selectedLesson = Number(selectedLesson) + 1;
+                          $("#lesson").val(selectedLesson);         // select the randomly chosen lesson from the picklist
+                           selectLesson();
+                  // We are at the last exercise of the last lesson, start all over again.
+                           }else{
+                            alert('There are no more exercises in this lesson.  And you completed the last Lesson in this series.  Going back to Lesson #1 ...');
+                            selectedLesson = 1;
+                             $("#lesson").val(selectedLesson);         // select the randomly chosen lesson from the picklist
+                               selectLesson();
+                            nextExercise = 1;
+                           }
                   
        }else{   // there are more options here in this exercies
  
 
-            $("#exercise").val(nextExercise);
-  
+           //  $("#exercise").val(nextExercise);
+
        }
        
+       $("#exercise").val(nextExercise);         // select the randomly chosen lesson from the picklist
+    //   alert('After if then else ...  he nextExercise is '+ nextExercise + ' and the total options is '+ totalOptions + ' and the seelected lesson is ' +selectedLesson )
  
         selectExercise(selectedLesson)   // ntote the selected lesson is global.
         
-        window.scrollTo(0,0);
+
 
 }  // end function getNextExercise
 
 
 function getRandomExercise(){
 
-
+window.scrollTo(0,0);
  var totalLessons= $('#lesson option').length - 1;  // this will return the number of lessons selected but includes 1 extra for "Select and exercies"
  
 nextLesson = 1 + Math.floor(Math.random() * totalLessons);     // randomly select the next lesson into the global varibale
@@ -1218,7 +1247,7 @@ $("#exercise").val(nextExercise);         // select the randomly chosen lesson f
 
 
 selectExercise(selectedLesson);          // ntote the selected lesson is global.  Go play the cards for this randomly selected exercise
-window.scrollTo(0,0);
+
 }  // end function getRandomExercise
 
 
@@ -1345,7 +1374,12 @@ function showPlayedCards(){
 
 function selectLesson(){
 
-
+ 
+ 
+ $("#welcome").remove();
+  $("#startup").remove();
+ 
+ 
   var lessonSelected = document.getElementById("lesson").value;   // this will return the number of the lesson selected
  
 
@@ -1652,9 +1686,12 @@ $(document).ready(function () {
 
     </div>
     
- <div id="leftside" style="float:left; width:50%; max-width: 923px;">
+ <div id="leftside" style="position: relative; float:left; width:50%; max-width: 923px;">
  
- 
+
+	
+	
+	
 	<div id="cards">
 	
 
@@ -1662,10 +1699,27 @@ $(document).ready(function () {
 			
 			
 
-			<div id="dealt"  class="grid-container"  style="float:left">
+			<div id="dealt"  class="grid-container"  style="float:left; position: relative;  grid-area: 1/1; ">
 			
-			
+
+ <div id="welcome" style="position: absolute;
+   grid-area: 1 / 2 / 5 / 5;
+    width: 100%;
+    max-width: 923px;
+    z-index: 10;
+    align-content: center;
+    text-align: center;
+    font-size: 40;
+    color: white;
+}">Welcome to <br />Bridge Flashcards </div>
+
+
+              <div id="startup"  style="grid-area: 2 / 2 / 5 / 5;  text-align: center;
+    font-size: 24;
+    color: white;">Select a Lesson (above) to get started</div>
+	
 						<div id="deck">
+						
 			
 			              <div class="divDeckTable">
     										<div class="innerDivDeckTable">
@@ -1680,69 +1734,25 @@ $(document).ready(function () {
         						</div>
 			   </div>
 			   
+			    
 			
 			        <div id="spades" style="float:left">
-			              <img id="cardPos1" class="card" src="images/playingCards/PNG-cards-1.3/ace_of_spades.png" />
-			              <img id="cardPos2" class="card" src="images/playingCards/PNG-cards-1.3/king_of_spades.png" />   
-			              	<img id="cardPos3" class="card" src="images/playingCards/PNG-cards-1.3/queen_of_spades.png" />    
-			              	<img id="cardPos4" class="card" src="images/playingCards/PNG-cards-1.3/jack_of_spades.png" /> 
-			              	<img id="cardPos5" class="card" src="images/playingCards/PNG-cards-1.3/10_of_spades.png" />
-			             <img id="cardPos6" class="card" src="images/playingCards/PNG-cards-1.3/9_of_spades.png" />
-			             <img id="cardPos7" class="card" src="images/playingCards/PNG-cards-1.3/8_of_spades.png" />
-			              <img id="cardPos8" class="card" src="images/playingCards/PNG-cards-1.3/7_of_spades.png" />
-			              <img id="cardPos9" class="card" src="images/playingCards/PNG-cards-1.3/6_of_spades.png" />
-			             <img id="cardPos10" class="card" src="images/playingCards/PNG-cards-1.3/5_of_spades.png" />
-			              <img id="cardPos11" class="card" src="images/playingCards/PNG-cards-1.3/4_of_spades.png" />
-			              <img id="cardPos12" class="card" src="images/playingCards/PNG-cards-1.3/3_of_spades.png" />
-			              <img id="cardPos13" class="card" src="images/playingCards/PNG-cards-1.3/2_of_spades.png" />
+                              <img id="cardPos1" class="card placeholder" name="placholder"  src="images/playingCards/PNG-cards-1.3/seeThrough.png" /> 
+            
+                     
+                       
                   </div>
                   
                   <div id="hearts"  style="float:left">
-			              <img id="cardPos1" class="card" src="images/playingCards/PNG-cards-1.3/ace_of_hearts.png" />
-			              <img id="cardPos2" class="card" src="images/playingCards/PNG-cards-1.3/king_of_hearts.png" />   
-		              				              <img id="cardPos3" class="card" src="images/playingCards/PNG-cards-1.3/queen_of_hearts.png" />   			          
-			              	<img id="cardPos4" class="card" src="images/playingCards/PNG-cards-1.3/jack_of_hearts.png" /> 
-			              	<img id="cardPos5" class="card" src="images/playingCards/PNG-cards-1.3/10_of_hearts.png" />
-			             <img id="cardPos6" class="card" src="images/playingCards/PNG-cards-1.3/9_of_hearts.png" />
-			             <img id="cardPos7" class="card" src="images/playingCards/PNG-cards-1.3/8_of_hearts.png" />
-			              <img id="cardPos8" class="card" src="images/playingCards/PNG-cards-1.3/7_of_hearts.png" />
-			              <img id="cardPos9" class="card" src="images/playingCards/PNG-cards-1.3/6_of_hearts.png" />
-			             <img id="cardPos10" class="card" src="images/playingCards/PNG-cards-1.3/5_of_hearts.png" />
-			              <img id="cardPos11" class="card" src="images/playingCards/PNG-cards-1.3/4_of_hearts.png" />
-			              <img id="cardPos12" class="card" src="images/playingCards/PNG-cards-1.3/3_of_hearts.png" />
-			              <img id="cardPos13" class="card" src="images/playingCards/PNG-cards-1.3/2_of_hearts.png" />
+           <img id="cardPos1" class="card placeholder" name="placholder" src="images/playingCards/PNG-cards-1.3/seeThrough.png" />
                   </div>
                   
                    <div id="diamonds"  style="float:left">
-			              <img id="cardPos1" class="card" src="images/playingCards/PNG-cards-1.3/ace_of_diamonds.png" />
-			              <img id="cardPos2" class="card" src="images/playingCards/PNG-cards-1.3/king_of_diamonds.png" />   
-			              	<img id="cardPos3" class="card" src="images/playingCards/PNG-cards-1.3/queen_of_diamonds.png" />    
-			              	<img id="cardPos4" class="card" src="images/playingCards/PNG-cards-1.3/jack_of_diamonds.png" /> 
-			              	<img id="cardPos5" class="card" src="images/playingCards/PNG-cards-1.3/10_of_diamonds.png" />
-			             <img id="cardPos6" class="card" src="images/playingCards/PNG-cards-1.3/9_of_diamonds.png" />
-			             <img id="cardPos7" class="card" src="images/playingCards/PNG-cards-1.3/8_of_diamonds.png" />
-			              <img id="cardPos8" class="card" src="images/playingCards/PNG-cards-1.3/7_of_diamonds.png" />
-			              <img id="cardPos9" class="card" src="images/playingCards/PNG-cards-1.3/6_of_diamonds.png" />
-			             <img id="cardPos10" class="card" src="images/playingCards/PNG-cards-1.3/5_of_diamonds.png" />
-			              <img id="cardPos11" class="card" src="images/playingCards/PNG-cards-1.3/4_of_diamonds.png" />
-			              <img id="cardPos12" class="card" src="images/playingCards/PNG-cards-1.3/3_of_diamonds.png" />
-			              <img id="cardPos13" class="card" src="images/playingCards/PNG-cards-1.3/2_of_diamonds.png" />
+       <img id="cardPos1" class="card placeholder" name="placholder" src="images/playingCards/PNG-cards-1.3/seeThrough.png" /> 
                   </div>
 
                     <div id="clubs"  style="float:left">
-				            <img id="cardPos1" class="card" src="images/playingCards/PNG-cards-1.3/ace_of_clubs.png" />
-			              <img id="cardPos2" class="card" src="images/playingCards/PNG-cards-1.3/king_of_clubs.png" />   
-			              	<img id="cardPos3" class="card" src="images/playingCards/PNG-cards-1.3/queen_of_clubs.png" />    
-			              	<img id="cardPos4" class="card" src="images/playingCards/PNG-cards-1.3/jack_of_clubs.png" /> 
-			              	<img id="cardPos5" class="card" src="images/playingCards/PNG-cards-1.3/10_of_clubs.png" />
-			               <img id="cardPos6" class="card" src="images/playingCards/PNG-cards-1.3/9_of_clubs.png" />
-			               <img id="cardPos7" class="card" src="images/playingCards/PNG-cards-1.3/8_of_clubs.png" />
-			              <img id="cardPos8" class="card" src="images/playingCards/PNG-cards-1.3/7_of_clubs.png" />
-			              <img id="cardPos9" class="card" src="images/playingCards/PNG-cards-1.3/6_of_clubs.png" />
-			               <img id="cardPos10" class="card" src="images/playingCards/PNG-cards-1.3/5_of_clubs.png" />
-			              <img id="cardPos11" class="card" src="images/playingCards/PNG-cards-1.3/4_of_clubs.png" />
-			              <img id="cardPos12" class="card" src="images/playingCards/PNG-cards-1.3/3_of_clubs.png" />
-			              <img id="cardPos13" class="card" src="images/playingCards/PNG-cards-1.3/2_of_clubs.png" />
+ <img id="cardPos1" class="card placeholder" name="placholder"  src="images/playingCards/PNG-cards-1.3/seeThrough.png" /> 
                   </div>
                   
                   
@@ -1869,7 +1879,7 @@ $(document).ready(function () {
        </div>
 
 				    <div class="footer" style="display: inline-block; font-size:12px; color:white; background-color:#666; padding:10px; width:100%; font-size:20px;">
-				    Bridge Flashcards Release (Version 1.1) <P />
+				    Bridge Flashcards (Version 1.2) <P />
 				    Answers included in this application are based on Audrey Grant's book, "Bidding in the 21st Century: The Club Series" 
           <a href="https://www.amazon.ca/dp/B08R3KBFNY?binding=kindle_edition&qid=1648237076&sr=1-9-catcorr&ref=dbs_dp_rwt_sb_pc_tukn" target="amazon">Click here to order this book on Amazon
           </a>
