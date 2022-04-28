@@ -188,7 +188,7 @@ nav ul {
   gap: 0px;
   background-color: #44AA05;
   padding: 10px;
-  height: 600px
+  height: 420px
 }
 
 .grid-container > div {
@@ -197,8 +197,13 @@ nav ul {
 }
 
 
+#replaceLevel{
+   display: inline-block;
+}
 
-
+#replaceSuit{
+   display: inline-block;
+}
 
 #spades{
 
@@ -755,21 +760,23 @@ for (var i = 0; i < arrayLength; i++) {
 //if (screensize  < 900) {
 
     cardHeight = 220;
-     $('.card').css('height','220');      // this becomes the new default after the initial full deck is shown before any lessons / exercises are selected.
+ //    $('.card').css('height','220');      // this becomes the new default after the initial full deck is shown before any lessons / exercises are selected.
  
     if(longestSuitLength==4)   { $('.grid-container').css('height','420'); }       
     if(longestSuitLength==5)   { $('.grid-container').css('height','470'); }    
     if(longestSuitLength==6)   { $('.grid-container').css('height','520'); }     // most example hands will have 6 cards or less
     if(longestSuitLength==7)   { $('.grid-container').css('height','570'); }     // some might have 7 
-    if(longestSuitLength>7)   { $('.grid-container').css('height','600');    $('.card').css('height','200');  cardHeight = 200; }        // smaller cards.   This will likely never happen.
+    if(longestSuitLength>7)      { $('.grid-container').css('height','670'); }        // smaller cards.   This will likely never happen.
 
-
+/*
   var counter = 1;
          $(".card").each(function () {                            // this will run with each new deal of the cards, making the cards look better (bigger) ) if they will fit on the table.
          counter++; 
             console.log ( "setting the card height "  + counter) ;
                   $(this).css("height", cardHeight );
            });
+           
+           */
 
  // alert('longest length is ' + longestSuitLength )
        
@@ -1064,7 +1071,14 @@ function getPlayForSelectedExercise(selectedLesson,selectedExercise) {    // the
                                      if(bidSuit == "Diamonds"){bidSuit = '<img style="height: 20px;" src="'+imagePath + 'diamondSuit.png"'}
                                      if(bidSuit == "Clubs"){bidSuit = '<img style="height: 20px;" src="'+imagePath + 'clubSuit.png"'}
                                      if(bidSuit == "No Trump"){bidSuit = 'NT'  }
-                                      newRowContent = "<tr><td>"+bidPosition+"</td><td>" +bidLevel +  bidSuit + " </td></tr>";
+                                     if(bidSuit == "?"){  
+                                             newRowContent = "<tr><td>"+bidPosition+"</td><td><div id='replaceLevel'>"+ bidLevel + "</div><div id='replaceSuit'>" +  bidSuit + "</div> </td></tr>";
+                                     }else{
+                                     
+                                                                           newRowContent = "<tr><td>"+bidPosition+"</td><td>" +bidLevel +  bidSuit + " </td></tr>";
+                                     }
+                                     
+
                                       $("#bids tbody").append(newRowContent);
            
                                    }  
@@ -1452,20 +1466,40 @@ function  updateHand(lesson,exercise){
 }
  */
  
+ 
+ function  setReplaceSuit(){
+ 
+       var bidSuit = document.getElementById("bidSuit").value.trim();   // this will return the number of the lesson selected
+       
+                                            if(bidSuit == "Hearts"){replaceBidSuit = '&nbsp;<img style="height: 20px;" src="'+imagePath + 'heartSuit.png"' + '</img>'  }
+                                     else if(bidSuit == "Spades"){replaceBidSuit = '&nbsp;<img style="height: 20px;" src="'+imagePath + 'spadeSuit.png"   ' + '</img>'}
+                                     else if(bidSuit == "Diamonds"){replaceBidSuit = '&nbsp;<img style="height: 20px;" src="'+imagePath + 'diamondSuit.png"' + '</img>'}
+                                     else if(bidSuit == "Clubs"){replaceBidSuit = '&nbsp;<img style="height: 20px;" src="'+imagePath + 'clubSuit.png"' + '</img>'}
+                                     else if(bidSuit == "No Trump"){replaceBidSuit = "&nbsp;NT"}
+                                        else if(bidSuit == "Select ..."){replaceBidSuit = "&nbsp;?"}
+                                       else{nextBidSuit = bidSuit};
+                                     
+                                               
+    //    nextBidSuit =    "&nbsp;" + nextBidSuit + "</img>"   ;                         
+                                       
+       $("#replaceSuit").html(replaceBidSuit);
+ 
+ }
+ 
  function checkForPassOrDouble(){     //  show or hid bid suite if the user selected PASS or not
  
       var bidLevel = document.getElementById("bidLevel").value.trim();   // this will return the number of the lesson selected
+      
+       if(bidLevel == "Select ...")   {
+          bidLevel = "? "}   
+      $("#replaceLevel").html(bidLevel);
 
- 
- 
-  
- 
       if(bidLevel == "Pass" || bidLevel == "Double"){
               $("#bidSuit").css("display","none");
           
         //      $("#bidSuit option:eq(SelectDummy)").prop("selected", true);
         
-   
+              $("#replaceSuit").html(" "); 
               
                 $("#bidSuit option").prop("selected", false);   // change the bid suite to "Selected..." because if the user goes back and forth between a suite and adouble or a pass, we want the suit to be null, or it may tell the user there is an error.
                     // For example, without this code, if the answer was "Double", but the user first put in 1 Spades, pressed CHECK YOUR ANSWERS, then set it to Double and again pressed CHECK YOUR ANSWERS
@@ -1709,7 +1743,7 @@ $(document).ready(function () {
     z-index: 10;
     align-content: center;
     text-align: center;
-    font-size: 40;
+    font-size: 30;
     color: white;
 }">Welcome to <br />Bridge Flashcards </div>
 
@@ -1831,7 +1865,7 @@ $(document).ready(function () {
 
                    </select>
  
-     	    	       <select id="bidSuit"   style="font-size:20px; "  style="width: 75px" >
+     	    	       <select id="bidSuit"   style="font-size:20px; "  style="width: 75px"  onchange="setReplaceSuit()">
 	    	    	               <option>Select ...</option>
 	    	    	        	      <option value="No Trump">No Trump</option>
 	    	    	        	       <option  value="Spades">Spades</option>

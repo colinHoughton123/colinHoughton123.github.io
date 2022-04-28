@@ -36,7 +36,7 @@
              </clubs>
          </cards>
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>        <!-- can be North, East, South, West -->
                       North
                 </position>
@@ -211,7 +211,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 but y
              </clubs>
          </cards>
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>        <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -894,7 +894,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
              </clubs>
          </cards>
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       South
                 </position>
@@ -3182,7 +3182,7 @@ So responder jumps to game with 4 spades
              </clubs>
          </cards>
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       North
                 </position>
@@ -3282,7 +3282,7 @@ So responder jumps to game with 4 spades
              </clubs>
          </cards>
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       North
                 </position>
@@ -3399,7 +3399,7 @@ So responder jumps to game with 4 spades
              </clubs>
          </cards>
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       North
                 </position>
@@ -3509,7 +3509,7 @@ So responder jumps to game with 4 spades
              </clubs>
          </cards>
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       North
                 </position>
@@ -3623,7 +3623,7 @@ So responder jumps to game with 4 spades
              </clubs>
          </cards>
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       North
                 </position>
@@ -3727,7 +3727,7 @@ So responder jumps to game with 4 spades
              </clubs>
          </cards>
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       North
                 </position>
@@ -3837,7 +3837,7 @@ So responder jumps to game with 4 spades
              </clubs>
          </cards>
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       North
                 </position>
@@ -3946,7 +3946,7 @@ So responder jumps to game with 4 spades
              </clubs>
          </cards>
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       North
                 </position>
@@ -4057,7 +4057,7 @@ So responder jumps to game with 4 spades
              </clubs>
          </cards>
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       North
                 </position>
@@ -4176,7 +4176,7 @@ So responder jumps to game with 4 spades
              </clubs>
          </cards>
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       North
                 </position>
@@ -4289,7 +4289,7 @@ So responder jumps to game with 4 spades
              </clubs>
          </cards>
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       North
                 </position>
@@ -4392,7 +4392,7 @@ If responder can’t support opener’s major, responder can bid a new suit — 
              </clubs>
          </cards>
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       North
                 </position>
@@ -4492,7 +4492,7 @@ If responder can’t support opener’s major, responder can bid a new suit — 
              </clubs>
          </cards>
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       North
                 </position>
@@ -4604,7 +4604,7 @@ If responder can’t support opener’s major, responder can bid a new suit — 
              </clubs>
          </cards>
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       North
                 </position>
@@ -4707,7 +4707,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
              </clubs>
          </cards>
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       North
                 </position>
@@ -4812,7 +4812,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
              </clubs>
          </cards>
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       North
                 </position>
@@ -4915,7 +4915,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
              </clubs>
          </cards>
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       North
                 </position>
@@ -5023,7 +5023,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
              </clubs>
          </cards>
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       North
                 </position>
@@ -6162,7 +6162,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       North
                 </position>
@@ -6292,7 +6292,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       North
                 </position>
@@ -6423,7 +6423,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       North
                 </position>
@@ -6555,7 +6555,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       North
                 </position>
@@ -6615,7 +6615,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
              </bid> 
              
              
-                            <bid title="Opening Bid">
+                            <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       North
                 </position>
@@ -6689,7 +6689,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       North
                 </position>
@@ -6817,7 +6817,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       North
                 </position>
@@ -6949,7 +6949,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       North
                 </position>
@@ -7080,7 +7080,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       North
                 </position>
@@ -7208,7 +7208,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       North
                 </position>
@@ -7336,7 +7336,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       North
                 </position>
@@ -7465,7 +7465,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       North
                 </position>
@@ -7596,7 +7596,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       North
                 </position>
@@ -7726,7 +7726,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       North
                 </position>
@@ -7868,7 +7868,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -8028,7 +8028,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -8189,7 +8189,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -8352,7 +8352,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -8512,7 +8512,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -8675,7 +8675,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -8838,7 +8838,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -9005,7 +9005,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -9172,7 +9172,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -9343,7 +9343,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -9519,7 +9519,7 @@ Responder has a hand worth 7 total points — 6 HCP plus 1 point for the five-ca
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       South
                 </position>
@@ -9626,7 +9626,7 @@ Requirements for a 1NT Overcall
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       South
                 </position>
@@ -9736,7 +9736,7 @@ Requirements for a 1NT Overcall
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       South
                 </position>
@@ -9842,7 +9842,7 @@ Requirements for a 1NT Overcall
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       South
                 </position>
@@ -9934,7 +9934,7 @@ An overcall of 1NT is similar to a 1NT opening bid. You need a balanced hand wit
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       South
                 </position>
@@ -10039,7 +10039,7 @@ Requirements for a 1NT Overcall
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       South
                 </position>
@@ -10141,7 +10141,7 @@ Requirements for a 1NT Overcall
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       South
                 </position>
@@ -10244,7 +10244,7 @@ Requirements for a 1NT Overcall
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       South
                 </position>
@@ -10348,7 +10348,7 @@ Requirements for a 1NT Overcall
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       South
                 </position>
@@ -10452,7 +10452,7 @@ Requirements for a 1NT Overcall
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       South
                 </position>
@@ -10533,6 +10533,279 @@ Requirements for a 1NT Overcall
     </exercise>     
     
     
+       <exercise title="6.11 - Overcalls  - Advancing after an Overcall">
+        <page>267</page>]
+          <dealer>
+               South 
+          </dealer>
+         <cards>
+            <spades>
+                K,2
+             </spades>
+             <hearts>
+                K,7,3
+             </hearts>
+             <diamonds>
+                A,Q,7,5
+             </diamonds>
+             <clubs>
+               9,7,5,2
+             </clubs>
+         </cards>
+         
+         
+         <bids>
+               <bid title="Opener">
+                <position>                  <!-- can be North, East, South, West -->
+                      South (Opener)
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     Clubs
+                 </suit>
+             </bid>
+             
+             
+    
+               <bid title="Overcaller">
+                <position>                  <!-- can be North, East, South, West -->
+                    West (Partner)
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                  Diamonds
+                 </suit>
+             </bid> 
+          <bid title="Opposition">
+                <position>                  <!-- can be North, East, South, West -->
+                      North
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                      
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     
+                 </suit>
+             </bid>
+             
+            <bid title="Advancer ">
+                <position>                  <!-- can be North, East, South, West -->
+                    East (you)
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     ?
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                  ?
+                 </suit>
+             </bid> 
+             
+         </bids>
+         <inputToCorrectBid>
+              <balanced>Yes</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>12</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution>0</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+                <dummyPoints></dummyPoints>  
+         </inputToCorrectBid> 
+         <nextCorrectBid>
+              <positionNext>           <!-- can be North, East, South, West -->
+                     East
+              </positionNext>
+                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass, Double -->
+                   2
+                 </levelNext>
+                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                   Clubs
+                 </suitNext>
+                 <explanation>
+                      <explanationpart1>
+With 12 HCP plus 1 point for the doubleton spade and four-card support for partner’s suit, make a 2 cuebid. 
+Remember if there is game, we want to try for 3NT.
+
+
+
+                  </explanationpart1>
+     
+                 <explanationpart2>
+ A cuebid is the bid of a suit first mentioned by the opponents. 
+ The cuebid is really the only truly forcing call that the advancer can make in our bidding system, and it promises a limit raise or better in the overcaller’s suit. 
+ The cuebid asks the overcaller about the quality of the overcall.
+ 
+
+
+                 </explanationpart2>
+                 <explanationpart3>
+
+
+
+<![CDATA[
+When your partner Overcalled, the promised:
+<ul>
+<li>A five-card or longer suit. Usually to have a six-card suit to overcall at the two level. </li>
+<li>8–16 HCP (10–17 total points). Overcalls at the two level suggest a hand that is strong enough to have opened the bidding. </li>
+</ul>
+ 
+Requirements for a 1NT Overcall 
+<ul>
+<li>​15–18 HCP </li>
+<li>Balanced hand </li>
+<li>​Some strength in the opponent’s suit</li>
+</ul>
+]]>
+                 </explanationpart3>
+
+                 </explanation>
+          </nextCorrectBid>
+    </exercise>         
+    
+    
+         <exercise title="6.12 - Overcalls  - Advancing after an Overcall">
+        <page>267</page>]
+          <dealer>
+               South 
+          </dealer>
+         <cards>
+            <spades>
+                A,9,3
+             </spades>
+             <hearts>
+                6,2
+             </hearts>
+             <diamonds>
+                K,10,7,4
+             </diamonds>
+             <clubs>
+               J,7,4,3
+             </clubs>
+         </cards>
+         
+         
+         <bids>
+               <bid title="Opener">
+                <position>                  <!-- can be North, East, South, West -->
+                      South (Opener)
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     Clubs
+                 </suit>
+             </bid>
+             
+             
+    
+               <bid title="Overcaller">
+                <position>                  <!-- can be North, East, South, West -->
+                    West (Partner)
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     1
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                  Diamonds
+                 </suit>
+             </bid> 
+          <bid title="Opposition">
+                <position>                  <!-- can be North, East, South, West -->
+                      North
+                </position>
+                <pass>Yes</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                      
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                     
+                 </suit>
+             </bid>
+             
+            <bid title="Advancer ">
+                <position>                  <!-- can be North, East, South, West -->
+                    East (you)
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     ?
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                  ?
+                 </suit>
+             </bid> 
+             
+         </bids>
+         <inputToCorrectBid>
+              <balanced>Yes</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>8</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution></distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+                <dummyPoints>1</dummyPoints>  
+         </inputToCorrectBid> 
+         <nextCorrectBid>
+              <positionNext>           <!-- can be North, East, South, West -->
+                     East
+              </positionNext>
+                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass, Double -->
+                   2
+                 </levelNext>
+                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                   Diamonds
+                 </suitNext>
+                 <explanation>
+                      <explanationpart1>
+With four-card support for partner’s suit and 8 HCP plus 1 point for the doubleton heart, raise to 2 Diamonds
+
+
+
+                  </explanationpart1>
+     
+                 <explanationpart2>
+
+ 
+
+
+                 </explanationpart2>
+                 <explanationpart3>
+
+
+
+<![CDATA[
+When your partner overcalled, they promised:
+<ul>
+<li>A five-card or longer suit. Usually to have a six-card suit to overcall at the two level. </li>
+<li>8–16 HCP (10–17 total points). Overcalls at the two level suggest a hand that is strong enough to have opened the bidding. </li>
+</ul>
+ 
+Requirements for a 1NT Overcall 
+<ul>
+<li>​15–18 HCP </li>
+<li>Balanced hand </li>
+<li>​Some strength in the opponent’s suit</li>
+</ul>
+]]>
+                 </explanationpart3>
+
+                 </explanation>
+          </nextCorrectBid>
+    </exercise>         
+    
+  
     <![CDATA[
       next sectuib text starts ib oage 265- Advanciung after an overcall
     ]]>
@@ -10569,7 +10842,7 @@ Requirements for a 1NT Overcall
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -10677,7 +10950,7 @@ Count dummy points! You are asking your partner to pick the suit for the contrac
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -10773,7 +11046,7 @@ Note that since you are not planning a takeout double, you consider distribution
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -10866,7 +11139,7 @@ Pass. You have neither the required strength nor the distribution to overcall or
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -10962,7 +11235,7 @@ however, you have enough to double. This is the best way to compete with this ha
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -11070,7 +11343,7 @@ This hand is too good for a simple overcall. Make a takeout double and then bid 
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -11128,7 +11401,7 @@ This hand is too good for a simple overcall. Make a takeout double and then bid 
                  </suit>
              </bid> 
              
-              <bid title="Opening Bid">
+              <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -11212,7 +11485,7 @@ Rebid 2 Spades to show the four-card spade suit.
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -11270,7 +11543,7 @@ Rebid 2 Spades to show the four-card spade suit.
                  </suit>
              </bid> 
              
-              <bid title="Opening Bid">
+              <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -11355,7 +11628,7 @@ Rebid 2 Hearts to show the four-card heart suit. Responder is not interested in 
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -11413,7 +11686,7 @@ Rebid 2 Hearts to show the four-card heart suit. Responder is not interested in 
                  </suit>
              </bid> 
              
-              <bid title="Opening Bid">
+              <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -11497,7 +11770,7 @@ It’s an artificial (conventional) response saying that you don’t have a four
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -11555,7 +11828,7 @@ It’s an artificial (conventional) response saying that you don’t have a four
                  </suit>
              </bid> 
              
-              <bid title="Opening Bid">
+              <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -11665,7 +11938,7 @@ You can jump directly to game in that suit knowing you have found a Golden Fit.
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -11723,7 +11996,7 @@ You can jump directly to game in that suit knowing you have found a Golden Fit.
                  </suit>
              </bid> 
              
-              <bid title="Opening Bid">
+              <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -11833,7 +12106,7 @@ You can jump directly to game in that suit knowing you have found a Golden Fit.
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -11891,7 +12164,7 @@ You can jump directly to game in that suit knowing you have found a Golden Fit.
                  </suit>
              </bid> 
              
-              <bid title="Opening Bid">
+              <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -12004,7 +12277,7 @@ If opener corrects to 4 in this last example, it would indicate that opener has 
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -12113,7 +12386,7 @@ With a six-card major suit, responder knows that a Golden Fit exists, since open
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -12223,7 +12496,7 @@ If opener has a doubleton Heart, opener will rebid 3NT, but with three or more H
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -12333,7 +12606,7 @@ If opener rebids 2 Diamonds, responder now will jump to 3 Spades, a forcing bid 
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -12390,7 +12663,7 @@ If opener rebids 2 Diamonds, responder now will jump to 3 Spades, a forcing bid 
                  </suit>
              </bid> 
      
-        <bid title="Opening Bid">
+        <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -12417,7 +12690,7 @@ If opener rebids 2 Diamonds, responder now will jump to 3 Spades, a forcing bid 
                 	
                  </suit>
              </bid> 
-      <bid title="Opening Bid">
+      <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       West
                 </position>
@@ -12502,7 +12775,7 @@ Responder’s rebids of 2NT or responder's rebid of three of opener’s major af
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -12559,7 +12832,7 @@ Responder’s rebids of 2NT or responder's rebid of three of opener’s major af
                  </suit>
              </bid> 
      
-        <bid title="Opening Bid">
+        <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -12586,7 +12859,7 @@ Responder’s rebids of 2NT or responder's rebid of three of opener’s major af
                 	
                  </suit>
              </bid> 
-      <bid title="Opening Bid">
+      <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       West
                 </position>
@@ -12667,7 +12940,7 @@ knew you must have four Spades.
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -12751,7 +13024,7 @@ knew you must have four Spades.
                 	
                  </suit>
              </bid> 
-      <bid title="Opening Bid">
+      <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       West
                 </position>
@@ -12831,7 +13104,7 @@ Invite to game by raising to 3 Spades. Partner will pass with a minimum hand, bu
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -12915,7 +13188,7 @@ Invite to game by raising to 3 Spades. Partner will pass with a minimum hand, bu
                 	
                  </suit>
              </bid> 
-      <bid title="Opening Bid">
+      <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       West
                 </position>
@@ -12996,7 +13269,7 @@ This hand is now worth 10 total points, and responder can bid game.
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -13080,7 +13353,7 @@ This hand is now worth 10 total points, and responder can bid game.
                 	
                  </suit>
              </bid> 
-      <bid title="Opening Bid">
+      <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       West
                 </position>
@@ -13170,7 +13443,7 @@ The final contract will be at the correct level in the correct strain.
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       East
                 </position>
@@ -13285,7 +13558,7 @@ If opener responds 2 Diamonds, pass and hope the partnership is at least in a pl
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       West
                 </position>
@@ -13402,7 +13675,7 @@ raise with a maximum, since responder could have passed with a very weak hand. <
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       West
                 </position>
@@ -13518,7 +13791,7 @@ raise with a maximum, since responder could have passed with a very weak hand. <
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       West
                 </position>
@@ -13634,7 +13907,7 @@ raise with a maximum, since responder could have passed with a very weak hand. <
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       West
                 </position>
@@ -13749,7 +14022,7 @@ raise with a maximum, since responder could have passed with a very weak hand. <
          
          
          <bids>
-               <bid title="Opening Bid">
+               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
                       West
                 </position>
