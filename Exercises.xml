@@ -1377,7 +1377,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
          <bids>
                <bid title="Opening Bid of 1NT">
                 <position>                  <!-- can be North, East, South, West -->
-                      North
+                      North (Opener / Partner)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -1391,7 +1391,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
              
                                 <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                     East
+                     East (Opposition)
                 </position>
                 <pass>Yes</pass>    <!-- can be Yes or No -->
                 
@@ -1406,7 +1406,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
              
                            <bid title="Response">
                 <position>                  <!-- can be North, East, South, West -->
-                      South
+                      South (Responder / You)
                 </position>
                 <pass></pass>    <!-- can be Yes or No -->
                 
@@ -9521,7 +9521,7 @@ Responder has a hand worth 7 total points — 6 HCP plus 1 point for the five-ca
          <bids>
                <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
-                      South
+                      South (Opener))
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -9537,7 +9537,7 @@ Responder has a hand worth 7 total points — 6 HCP plus 1 point for the five-ca
     
                <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                    West
+                    West (You))
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -9628,7 +9628,7 @@ Requirements for a 1NT Overcall
          <bids>
                <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
-                      South
+                      South (Opener)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -9644,7 +9644,7 @@ Requirements for a 1NT Overcall
     
                <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                    West
+                    West (You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -9738,7 +9738,7 @@ Requirements for a 1NT Overcall
          <bids>
                <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
-                      South
+                      South (Opener))
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -9754,7 +9754,7 @@ Requirements for a 1NT Overcall
     
                <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                    West
+                    West (You))
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -9844,7 +9844,7 @@ Requirements for a 1NT Overcall
          <bids>
                <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
-                      South
+                      South (Opener)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -9860,7 +9860,7 @@ Requirements for a 1NT Overcall
     
                <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                    West
+                    West (You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -9936,7 +9936,7 @@ An overcall of 1NT is similar to a 1NT opening bid. You need a balanced hand wit
          <bids>
                <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
-                      South
+                      South (Opener)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -9952,7 +9952,7 @@ An overcall of 1NT is similar to a 1NT opening bid. You need a balanced hand wit
     
                <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                    West
+                    West (You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -10041,7 +10041,7 @@ Requirements for a 1NT Overcall
          <bids>
                <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
-                      South
+                      South (Opener)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -10057,7 +10057,7 @@ Requirements for a 1NT Overcall
     
                <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                    West
+                    West (You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -10143,7 +10143,7 @@ Requirements for a 1NT Overcall
          <bids>
                <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
-                      South
+                      South (Opener)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -10159,7 +10159,7 @@ Requirements for a 1NT Overcall
     
                <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                    West
+                    West (You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -10246,7 +10246,7 @@ Requirements for a 1NT Overcall
          <bids>
                <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
-                      South
+                      South (Opener)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -10262,7 +10262,7 @@ Requirements for a 1NT Overcall
     
                <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                    West
+                    West (You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -10350,7 +10350,7 @@ Requirements for a 1NT Overcall
          <bids>
                <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
-                      South
+                      South (Opener)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -10366,7 +10366,7 @@ Requirements for a 1NT Overcall
     
                <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                    West
+                    West (You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -10454,7 +10454,7 @@ Requirements for a 1NT Overcall
          <bids>
                <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
-                      South
+                      South (Opener)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -10470,7 +10470,7 @@ Requirements for a 1NT Overcall
     
                <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                    West
+                    West (You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
