@@ -11844,7 +11844,7 @@ Requirements for a 1NT Overcall
          <bids>
                <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
-                      East
+                      East (Opener / Opponent)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -11860,7 +11860,7 @@ Requirements for a 1NT Overcall
     
                <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                    South
+                    South (You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -11952,7 +11952,7 @@ Count dummy points! You are asking your partner to pick the suit for the contrac
          <bids>
                <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
-                      East
+                       East (Opener / Opponent)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -11968,7 +11968,7 @@ Count dummy points! You are asking your partner to pick the suit for the contrac
     
                <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                    South
+                    South (You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -12031,7 +12031,7 @@ Note that since you are not planning a takeout double, you consider distribution
           </dealer>
          <cards>
             <spades>
-                A,8,6
+                Q,8,6
              </spades>
              <hearts>
                 A,4
@@ -12048,7 +12048,7 @@ Note that since you are not planning a takeout double, you consider distribution
          <bids>
                <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
-                      East
+                      East (Opener / Opponent)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -12064,7 +12064,7 @@ Note that since you are not planning a takeout double, you consider distribution
     
                <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                    South
+                    South (You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -12141,7 +12141,7 @@ Pass. You have neither the required strength nor the distribution to overcall or
          <bids>
                <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
-                      East
+                       East (Opener / Opponent)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -12157,7 +12157,7 @@ Pass. You have neither the required strength nor the distribution to overcall or
     
                <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                    South
+                    South (You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -12237,7 +12237,7 @@ however, you have enough to double. This is the best way to compete with this ha
          <bids>
                <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
-                      East
+                       East (Opener / Opponent)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -12253,7 +12253,7 @@ however, you have enough to double. This is the best way to compete with this ha
     
                <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                    South
+                    South (You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
