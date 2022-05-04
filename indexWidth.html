@@ -87,6 +87,10 @@ nav ul {
    height: 220px;
 }
 
+
+
+
+
 /* Create two columns/boxes that floats next to each other */
 #deck {
   float: left;
@@ -371,6 +375,80 @@ nav ul {
 
 
 
+ @media only screen and (max-width: 800px) {
+  #cardPos1 {
+      height: 170px;
+  }
+  
+   #cardPos2 {
+       height: 170px;
+       top: -137px;
+   }
+   
+   #cardPos3 {
+      height: 170px;
+       top: -274px;
+   }   
+   
+ #cardPos4 {
+      height: 170px;
+       top: -411px;
+
+}
+
+#cardPos5 {
+      height: 170px;
+  top: -548px;
+
+}
+
+#cardPos6 {
+      height: 170px;
+  top: -685px;
+
+}
+#cardPos7 {
+      height: 170px;
+  top: -822px;
+
+}
+#cardPos8 {
+      height: 170px;
+  top: -959px;
+
+}
+
+#cardPos9 {
+      height: 170px;
+  top: -1096px;
+
+}
+#cardPos10 {
+      height: 170px;
+  top: -1233px;
+
+}
+#cardPos11 {
+      height: 170px;
+  top: -1370px;
+
+}
+#cardPos12 {
+      height: 170px;
+  top: -1507px;
+
+}
+#cardPos13 {
+      height: 170px;
+  top: -1644px;
+
+}
+
+}
+
+
+
+
 #bids {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
@@ -494,6 +572,8 @@ function dealTheCards(spades,hearts,diamonds,clubs){
 // erase the card images from the display
                
           alert( "The width of the window is " + $(window).width()   )
+          
+          
 
 var longestSuitLength = 0;
 var suitArray = spades.split(',')
