@@ -1,0 +1,1929 @@
+<HTML>
+<head>
+
+ <meta charset="UTF-8">
+  <meta name="description" content="Bridge Flashcards">
+  <meta name="keywords" content="Bridge">
+  <meta name="author" content="Colin Houghton" >
+
+<!-- The following viewport which will give the browser instructions on how to control the page's dimensions and scaling. -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="shortcut icon" href="#">
+
+<style>
+
+a, a:link, a:visited, a:focus,  a:hover, a:active{
+  color: green;
+  background-color: #ff6;
+  text-decoration:none; 
+ 
+}
+
+
+a:hover{
+  color: green;
+  background-color: #ff6;
+  text-decoration:none; 
+ 
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+ font-size: 16px;
+}
+
+input[type='radio'] { 
+     transform: scale(2); 
+     width: 30 px;
+ }
+ 
+ 
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+.correctCheck {
+  display: inline-block;
+  height: 20px;
+
+}
+
+/* Style the header */
+#lessonID {
+  background-color: #666;
+  padding: 30px;
+  font-size: 24px;
+  color: white;
+  width: 100%;
+}
+
+
+
+
+
+
+#cards {
+
+ // height: 340px; /* only for demonstration, should be removed */
+//    width: 100%;
+    display: inline;
+}
+
+.deck {
+   height: 200px;
+}
+
+
+
+.card {
+   height: 220px;
+}
+
+/* Create two columns/boxes that floats next to each other */
+#deck {
+  float: left;
+  background: #007D3B;
+  max-height: 300px;
+  20px 0px 0px 20px;
+    grid-column-start: 1;
+  grid-column-end: 1;
+ }  
+ 
+ 
+ @media only screen and (max-width: 1024px) {
+  #lessonID {
+    font-size: 16px;
+  }
+}
+
+
+
+ @media only screen and (max-width: 1024px) {
+  #deck {
+    display: none;
+  }
+}
+
+
+ @media only screen and (min-width: 1024px) {
+  #deck {
+    display: block;
+  }
+}
+
+
+
+ @media only screen and (max-width: 1024px) {
+
+  #randomButton{
+           font-size: 20px;
+    }
+}
+
+
+
+
+#randomButton{
+ font-size: 24px;
+  float: left;
+  background-color:#007D3B;
+  color: gold;
+  
+}
+
+#NextExButton{
+ font-size: 24px;
+  background-color:#007D3B;
+  color: gold;
+  
+}
+ 
+ 
+ #randomButtonDiv{
+  display: inline-block;
+  float: left;
+  vertical-align: middle;
+  margin-right:10px;
+
+}
+ 
+ .divDeckTable {
+    display: table;
+}
+
+.innerDivDeckTable {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    //  height: 615px; /* purely for demonstration */
+    padding-right: 20px;
+    padding-top: 60px;
+}
+
+
+#dealt {
+  float: left;
+  background: #007D3B;
+  padding: 20px;
+  height: 575pxpx;
+//  min-width: 575px;
+ 
+ 
+}
+
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 0px;
+  background-color: #44AA05;
+  padding: 10px;
+  height: 420px
+}
+
+.grid-container > div {
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+
+#replaceLevel{
+   display: inline-block;
+}
+
+#replaceSuit{
+   display: inline-block;
+}
+
+#spades{
+
+  grid-column-start: 2;
+  grid-column-end: 2;
+  max-width: 180px;
+  text-align:center;
+  padding-right:5px;
+
+}
+
+
+#hearts{
+
+  grid-column-start: 3;
+  grid-column-end: 3;
+    max-width: 180px;
+  text-align:center;
+   padding-right:5px;
+
+}
+
+#diamonds{
+
+  grid-column-start: 4;
+  grid-column-end: 4;
+    max-width: 180px;
+  text-align:center;
+ 
+  object-fit: cover;
+    padding-right:5px;
+}
+
+
+#clubs{
+
+  grid-column-start: 5;
+  grid-column-end: 5;
+  max-width: 180px;
+  text-align:center;
+ 
+}
+
+
+
+#cardPos1 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  max-width:100%;
+  
+}
+
+#cardPos2 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+    position: relative;
+  z-index: 2;
+  top: -170px;
+  max-width:100%;
+}
+
+#cardPos3 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+    position: relative;
+  z-index: 3;
+  top: -340px;
+  max-width:100%;
+
+}
+
+#cardPos4 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+    position: relative;
+  z-index: 4;
+  top: -510px;
+  max-width:100%;
+}
+
+#cardPos5 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+    position: relative;
+  z-index: 5;
+  top: -680px;
+  max-width:100%;
+}
+
+#cardPos6 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+    position: relative;
+  z-index: 6;
+  top: -850px;
+  max-width:100%;
+}
+
+
+#cardPos7 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+    position: relative;
+  z-index: 7;
+  top: -1020px;
+  max-width:100%;
+}
+
+#cardPos8 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+    position: relative;
+  z-index: 8;
+  top: -1190px;
+  max-width:100%;
+}
+
+#cardPos9 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+    position: relative;
+  z-index: 9;
+  top: -1360px;
+  max-width:100%;
+}
+
+#cardPos10 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+    position: relative;
+  z-index: 10;
+  top: -1530px;
+  max-width:100%;
+}
+
+
+#cardPos11 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+    position: relative;
+  z-index: 11;
+  top: -1700px;
+  max-width:100%;
+}
+
+
+#cardPos12 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+    position: relative;
+  z-index: 12;
+  top: -1870px;
+  max-width:100%;
+}
+
+
+#cardPos13 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+    position: relative;
+  z-index: 13;
+  top: -2040px;
+  max-width:100%;
+}
+
+
+
+#bids {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#bids td, #bids th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#bids tr:nth-child(even){background-color: #f2f2f2;}
+
+#bids tr:hover {background-color: #ddd;}
+
+#bids  {width: auto;}
+
+#bids th {
+  padding: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+  text-align:center;
+}
+/* Clear floats after the columns */
+#questions{
+
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+
+
+<!-- Get the Jquery code -->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<!-- Get the Jquery UI code -->
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js" integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY=" crossorigin="anonymous"></script>
+<!-- This is the jquery mobile code .... leave it out for now 
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js" integrity="sha256-1PYCpx/EXA36KN1NKrK7auaTylVyk01D98R7Ccf04Bc=" crossorigin="anonymous"></script>
+-->
+<!-- NOt sure how this is used yet, but here is the jquery color code -->
+<script src="https://code.jquery.com/color/jquery.color-2.2.0.js" integrity="sha256-gvMJWDHjgDrVSiN6eBI9h7dRfQmsTTsGU/eTT8vpzNg=" crossorigin="anonymous"></script>
+
+
+<script language="javascript" type="text/javascript">
+
+// Global variables - globals
+
+var LessonsObject = {}; // a global object to hold the XML
+
+ var xmlDoc ={};
+  var $xml = {};
+
+ var  hcp= "";
+  var  distribution= "";
+    var  dummyPoints= "";
+  var  balancedHand= "";
+  
+  
+var nextBidPosition = "";
+ var nextBidLevel = "";
+ var nextBidSuit= "";
+ 
+var explanation = "";
+
+var explanationPart1 = "";
+var explanationPart2 = "";
+var explanationPart3 = "";
+
+nextBidSuitShouldBe= "";
+nextBidLevelShouldBe= "";
+
+
+   var imagePath =  "images/playingCards/PNG-cards-1.3/";
+
+
+</script>
+
+<!-- The document.ready ensures that the script will not run until the entire document is loaded.  A simpler syntax might show as $(function(){  -->
+
+<script language="javascript" type="text/javascript">
+
+
+
+
+function displayAjaxError(XMLHttpRequest, textStatus, errorThrown){
+
+  alert('Sorry, there was an error reading the xml lessons file.  Check the filename and try again.  Error message = ' + errorThrown );
+}
+
+
+
+function createLessonsXml(xml) {            // this function is called up on the successful return of the Ajax call for the xml file that contains the node data (ie: employees or positions )
+
+       LessonsObject = xml;         // this is the globalv that contains all the XML from the file that we will continue to parse as needed to get lessons and exercises
+       parseXmlForLessons();           // now that the ajax call to get the xml has been read and we put the results in our global object, lets go fill in the lessons picklist
+
+ }         // end of createLessonsXml function       
+       
+       
+function dealTheCards(spades,hearts,diamonds,clubs){
+
+
+ // alert('the spades passed to deal the cards is ' + spades);
+
+// erase the card images from the display
+               
+
+
+var longestSuitLength = 0;
+var suitArray = spades.split(',')
+var arrayLength = suitArray.length;
+
+longestSuitLength = arrayLength;
+
+
+var cardImage = "seeThrough.png";
+var cardPosition = 0;
+var relativeFolder = "images/playingCards/PNG-cards-1.3/";
+var suit = 'spades';
+
+var rotateDegrees = 0;
+
+
+for (var i = 0; i < arrayLength; i++) {
+
+       cardPosition++;
+
+ 
+       if(suitArray[i].trim()=='A'){  cardImage="ace_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='K'){  cardImage="king_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='Q'){  cardImage="queen_of_"+suit+".png"} ;
+       if(suitArray[i].trim()=='J'){  cardImage="jack_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='10'){  cardImage="10_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='9'){  cardImage="9_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='8'){  cardImage="8_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='7'){  cardImage="7_of_"+suit+".png"} ;
+       if(suitArray[i].trim()=='6'){  cardImage="6_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='5'){  cardImage="5_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='4'){  cardImage="4_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='3'){  cardImage="3_of_"+suit+".png"} ;
+       if(suitArray[i].trim()=='2'){  cardImage="2_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='1'){  cardImage="1_of_"+suit+".png"}    ;
+       
+       //      var imagePositionID = "cardPos" + cardPosition;
+       //      var p = $( 'imagePositionID ').position();
+             
+             var p =  $("spades:eq("+cardPosition+")");
+             
+       
+         const el = document.getElementById("spades");
+       
+         var rect = el.getBoundingClientRect();
+         
+         const dealStart= document.getElementById("deckCard");
+         var rectFrom = dealStart.getBoundingClientRect();
+         
+   //       console.log("dealing spades"  );
+          
+        if(cardPosition > 1){
+             rotateDegrees = Math.floor((Math.random() * 10) - 5)    // randomly select the next lesson into the global varibale
+       }
+          
+          alert( "The width of the window is " + $(window).width()   )
+          if ($(window).width() < 1024) {
+                 rotateDegrees = 0;
+          }
+          
+          
+              //    console.log('dealing the card ' + cardImage );
+                  
+                  
+         deal1Card(rectFrom.top, rectFrom.left, rect.top + 10 , rect.left + 10 , suit, cardPosition, cardImage, rotateDegrees,longestSuitLength );
+ 
+ 
+      // if(cardPosition > 1){
+      // rotateDegrees = Math.floor((Math.random() * 10) - 5)    // randomly select the next lesson into the global varibale
+     //  }
+    //  $('#spades').append('<img style="transform: rotate('+rotateDegrees+'deg)"id="cardPos'+ cardPosition +'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
+
+
+}   // end for loop
+      
+ 
+
+       
+       
+  length = hearts.length;   
+   if(length>0){
+
+      
+var suitArray = hearts.split(',')
+var arrayLength = suitArray.length;
+var cardImage = "seeThrough.png";
+var cardPosition = 0;
+var relativeFolder = "images/playingCards/PNG-cards-1.3/";
+var suit = 'hearts'
+
+longestSuitLength = Math.max(longestSuitLength, arrayLength)   ;
+rotateDegrees = 0;
+for (var i = 0; i < arrayLength; i++) {
+
+       cardPosition++;
+       if(suitArray[i].trim()=='A'){  cardImage="ace_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='K'){  cardImage="king_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='Q'){  cardImage="queen_of_"+suit+".png"} ;
+       if(suitArray[i].trim()=='J'){  cardImage="jack_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='10'){  cardImage="10_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='9'){  cardImage="9_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='8'){  cardImage="8_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='7'){  cardImage="7_of_"+suit+".png"} ;
+       if(suitArray[i].trim()=='6'){  cardImage="6_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='5'){  cardImage="5_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='4'){  cardImage="4_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='3'){  cardImage="3_of_"+suit+".png"} ;
+       if(suitArray[i].trim()=='2'){  cardImage="2_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='1'){  cardImage="1_of_"+suit+".png"}    ;
+       
+       
+              const el = document.getElementById("hearts");
+         var rect = el.getBoundingClientRect();
+         const dealStart= document.getElementById("deckCard");
+         var rectFrom = dealStart.getBoundingClientRect();
+         
+  //          console.log("target for hearts is   " + rect.top  + " and from Left " + rect.left);
+         
+       if(cardPosition > 1){
+       rotateDegrees = Math.floor((Math.random() * 10) - 5)    // randomly select the next lesson into the global varibale
+       }
+       
+                 
+          if ($(window).width() < 1024) {
+                 rotateDegrees = 0;
+          }
+       
+                deal1Card(rectFrom.top, rectFrom.left, rect.top + 10 , rect.left + 10 , suit, cardPosition, cardImage, rotateDegrees,longestSuitLength );
+       
+       
+    //  $('#hearts').append('<img style="transform: rotate('+rotateDegrees+'deg)"id="cardPos'+ cardPosition +'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
+}
+                  }      // end if there are any of this suit (length > 0 )  
+       
+       
+      length = diamonds.length;   
+    if(length>0){         
+var suitArray = diamonds.split(',')
+var arrayLength = suitArray.length;
+var cardImage = "seeThrough.png";
+var cardPosition = 0;
+var relativeFolder = "images/playingCards/PNG-cards-1.3/";
+var suit = 'diamonds'
+
+longestSuitLength = Math.max(longestSuitLength, arrayLength)   ;
+rotateDegrees = 0;
+for (var i = 0; i < arrayLength; i++) {
+
+       cardPosition++;
+       if(suitArray[i].trim()=='A'){  cardImage="ace_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='K'){  cardImage="king_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='Q'){  cardImage="queen_of_"+suit+".png"} ;
+       if(suitArray[i].trim()=='J'){  cardImage="jack_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='10'){  cardImage="10_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='9'){  cardImage="9_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='8'){  cardImage="8_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='7'){  cardImage="7_of_"+suit+".png"} ;
+       if(suitArray[i].trim()=='6'){  cardImage="6_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='5'){  cardImage="5_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='4'){  cardImage="4_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='3'){  cardImage="3_of_"+suit+".png"} ;
+       if(suitArray[i].trim()=='2'){  cardImage="2_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='1'){  cardImage="1_of_"+suit+".png"}    ;
+       
+         const el = document.getElementById("diamonds");
+         var rect = el.getBoundingClientRect();
+         const dealStart= document.getElementById("deckCard");
+         var rectFrom = dealStart.getBoundingClientRect();
+       
+       
+      //     console.log("target for diamonds is   " + rect.top  + " and from Left " + rect.left);
+           
+           
+       if(cardPosition > 1){
+       rotateDegrees = Math.floor((Math.random() * 10) - 5)    // randomly select the next lesson into the global varibale
+       }
+                
+          if ($(window).width() < 1024) {
+                 rotateDegrees = 0;
+          }
+                deal1Card(rectFrom.top, rectFrom.left, rect.top + 10 , rect.left + 10 , suit, cardPosition, cardImage, rotateDegrees,longestSuitLength );
+                
+                
+    //  $('#diamonds').append('<img style="transform: rotate('+rotateDegrees+'deg)"id="cardPos'+ cardPosition +'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
+}
+             
+             }      // end if there are any of this suit (length > 0 )  
+    
+    
+      length = clubs.length;   
+    if(length>0){             
+    
+    var suitArray = clubs.split(',')
+var arrayLength = suitArray.length;
+var cardImage = "seeThrough.png";
+var cardPosition = 0;
+var relativeFolder = "images/playingCards/PNG-cards-1.3/";
+var suit = 'clubs';
+longestSuitLength = Math.max(longestSuitLength, arrayLength)   ;
+rotateDegrees = 0;
+ 
+for (var i = 0; i < arrayLength; i++) {
+
+       cardPosition++;
+       if(suitArray[i].trim()=='A'){  cardImage="ace_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='K'){  cardImage="king_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='Q'){  cardImage="queen_of_"+suit+".png"} ;
+       if(suitArray[i].trim()=='J'){  cardImage="jack_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='10'){  cardImage="10_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='9'){  cardImage="9_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='8'){  cardImage="8_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='7'){  cardImage="7_of_"+suit+".png"} ;
+       if(suitArray[i].trim()=='6'){  cardImage="6_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='5'){  cardImage="5_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='4'){  cardImage="4_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='3'){  cardImage="3_of_"+suit+".png"} ;
+       if(suitArray[i].trim()=='2'){  cardImage="2_of_"+suit+".png"}    ;
+       if(suitArray[i].trim()=='1'){  cardImage="1_of_"+suit+".png"}    ;
+       
+         const el = document.getElementById("clubs");
+         var rect = el.getBoundingClientRect();
+         
+         const dealStart= document.getElementById("deckCard");
+         var rectFrom = dealStart.getBoundingClientRect();
+       
+       
+           //       console.log("target for clubs is   " + rect.top  + " and from Left " + rect.left);
+           
+           //        alert("target for clubs is   " + rect.top  + " and from Left " + rect.left);
+           
+          if(cardPosition > 1){
+       rotateDegrees = Math.floor((Math.random() * 10) - 5)    // randomly select the next lesson into the global varibale
+       }
+                if ($(window).width() < 1024) {
+                 rotateDegrees = 0;
+          }
+                deal1Card(rectFrom.top, rectFrom.left, rect.top + 10 , rect.left + 10 , suit, cardPosition, cardImage, rotateDegrees,longestSuitLength );
+                
+                
+    //  $('#clubs').append('<img style="transform: rotate('+rotateDegrees+'deg)"id="cardPos'+ cardPosition +'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
+}
+            
+                   }      // end if there are any of this suit (length > 0 )  
+          var cardHeight = 200;
+          
+       									if(longestSuitLength<9)   { 
+       									   //   $('.card').css('height','220');  
+       									}  
+                                 else {
+                                     //         	$('.card').css('height','200');
+                                  } ; 
+
+
+/*
+         $(".card").each(function () {                            // this will run with each new deal of the cards, making the cards look better (bigger) ) if they will fit on the table.
+                  $(this).css("height", cardHeight );
+           });
+    
+    */
+    
+    // adjust the card table height to match the number/distribution of cards so that the answers show as high as possible on mobile apps
+    
+//    var screensize = document.documentElement.clientHeight;
+//if (screensize  < 900) {
+
+    cardHeight = 220;
+ //    $('.card').css('height','220');      // this becomes the new default after the initial full deck is shown before any lessons / exercises are selected.
+ 
+    if(longestSuitLength==4)   { $('.grid-container').css('height','420'); }       
+    if(longestSuitLength==5)   { $('.grid-container').css('height','470'); }    
+    if(longestSuitLength==6)   { $('.grid-container').css('height','520'); }     // most example hands will have 6 cards or less
+    if(longestSuitLength==7)   { $('.grid-container').css('height','570'); }     // some might have 7 
+    if(longestSuitLength>7)      { $('.grid-container').css('height','670'); }        // smaller cards.   This will likely never happen.
+
+/*
+  var counter = 1;
+         $(".card").each(function () {                            // this will run with each new deal of the cards, making the cards look better (bigger) ) if they will fit on the table.
+         counter++; 
+            console.log ( "setting the card height "  + counter) ;
+                  $(this).css("height", cardHeight );
+           });
+           
+           */
+
+ // alert('longest length is ' + longestSuitLength )
+       
+       }   // end of function dealTheCards
+    
+    
+    /***************************/     
+       
+function deal1Card(fromTop,fromLeft, top,left, suit, cardPosition, cardImage, rotateDegrees, longestSuitLength ){  
+
+//  if(isMobile){return};     // no animation if mobile because not enough room for the deck
+
+ var relativeFolder = "images/playingCards/PNG-cards-1.3/";
+ var cardHeight = 200;
+ 
+var deckDisplayed =  $('#deck').css("display");
+
+
+// console.log ( "the deck dispalyed is " + deckDisplayed  + " and the relative folder is " + relativeFolder ) ;
+
+if(deckDisplayed == "none"){
+
+     $("#" + suit).append('<img style="transform: rotate('+rotateDegrees+'deg)"  id="cardPos'+cardPosition+'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
+     
+     $("#" + suit + " .placeholder").remove();
+     
+     return;
+}
+
+
+ 
+
+
+        var animateSpeed = 125;      // this is how fast the cards move across the  board
+ 
+       var cardDiv = $("#animateCardDiv");
+       cardDiv.animate({left: fromLeft, top: fromTop}, 1);      // move the card to the beginning as fast as possible.
+      cardDiv.animate({opacity: 1.0}, "fast");              // show the card   
+                 
+ //  console.log("moving the card to  " + top + " and from Left " + left);
+      
+      
+          if(suit == "spades"){    
+                  cardDiv.animate({left: left, top:top},  animateSpeed, function() {
+ 
+   
+ 
+                   $('#spades').append('<img style="transform: rotate('+rotateDegrees+'deg)"  id="cardPos'+cardPosition+'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
+                   
+                                   $('#spades .placeholder').remove();
+                              
+       									if(longestSuitLength<9)   { 
+       									    //  $('.card').css('height','220');  
+       									}  
+                                 else {
+                                     //         	$('.card').css('height','200');
+                                  } ;   
+
+/*
+
+         										 $(".card").each(function () {                            // this will run with each new deal of the cards, making the cards look better (bigger) ) if they will fit on the table.
+                 								 $(this).css("height", cardHeight );
+           						        });
+           						        */
+       // Animation complete.
+       
+        //      cardDiv.animate({left: fromLeft, top: fromTop}, 1);      // move the card to the beginning as fast as possible.
+  });
+      
+      
+      }
+                if(suit == "hearts"){    
+                    cardDiv.animate({left: left, top:top},  animateSpeed, function() {
+
+                   $('#hearts').append('<img style="transform: rotate('+rotateDegrees+'deg)"  id="cardPos'+cardPosition+'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
+               
+                            $('#hearts .placeholder').remove();
+       									if(longestSuitLength<9)   { 
+       									    //  $('.card').css('height','220');  
+       									}  
+                                 else {
+                                     //         	$('.card').css('height','200');
+                                  } ;  
+
+
+/*
+
+         										 $(".card").each(function () {                            // this will run with each new deal of the cards, making the cards look better (bigger) ) if they will fit on the table.
+                 								 $(this).css("height", cardHeight );
+           						        });
+           						        */
+                //  alert("new card there?")
+       // Animation complete.
+  });
+    
+   //   $('#spades').append('<img style="transform: rotate('+rotateDegrees+'deg)"id="cardPos'+ cardPosition +'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
+    
+    
+    }
+
+
+                if(suit == "diamonds"){    
+      cardDiv.animate({left: left, top:top},  animateSpeed, function() {
+
+     
+                   $('#diamonds').append('<img style="transform: rotate('+rotateDegrees+'deg)"  id="cardPos'+cardPosition+'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
+                   
+                             $('#diamonds .placeholder').remove();	
+       									if(longestSuitLength<9)   { 
+       									    //  $('.card').css('height','220');  
+       									}  
+                                 else {
+                                     //         	$('.card').css('height','200');
+                                  } ; 
+
+
+/*
+
+         										 $(".card").each(function () {                            // this will run with each new deal of the cards, making the cards look better (bigger) ) if they will fit on the table.
+                 								 $(this).css("height", cardHeight );
+           						        });
+           						        */
+                //  alert("new card there?")
+       // Animation complete.
+  });
+    
+   //   $('#spades').append('<img style="transform: rotate('+rotateDegrees+'deg)"id="cardPos'+ cardPosition +'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
+    
+    
+    }
+
+
+                if(suit == "clubs"){    
+      cardDiv.animate({left: left, top:top},  animateSpeed, function() { 
+
+                   $('#clubs').append('<img style="transform: rotate('+rotateDegrees+'deg)"  id="cardPos'+cardPosition+'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
+                               $('#clubs .placeholder').remove();
+       									if(longestSuitLength<9)   { 
+       									    //  $('.card').css('height','220');  
+       									}  
+                                 else {
+                                     //         	$('.card').css('height','200');
+                                  } ; 
+
+
+/*
+
+         										 $(".card").each(function () {                            // this will run with each new deal of the cards, making the cards look better (bigger) ) if they will fit on the table.
+                 								 $(this).css("height", cardHeight );
+           						        });
+           						        */
+                //  alert("new card there?")
+       // Animation complete.
+  });
+    
+   //   $('#spades').append('<img style="transform: rotate('+rotateDegrees+'deg)"id="cardPos'+ cardPosition +'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
+    
+    
+    }
+/*
+       var cardDiv = $("#animateCardDiv");
+        cardDiv.animate({left: fromLeft, top: fromTop}, 100);
+      cardDiv.animate({opacity: 1.0}, "fast");              // show the card   
+      console.log("moving the card to  " + top + " and from Left " + left);
+       
+      cardDiv.animate({left: left, top:top}, 100, function() {
+     
+                   $('#spades').append('<img id="cardPos1"  class="card" src="'+relativeFolder+cardImage+'" ></img>' );
+                   alert("new card there?")
+       // Animation complete.
+  });
+      */
+
+
+       cardDiv.animate({opacity: 0.0}, 50 );  
+
+      
+    }  // end of fucntion deal1Card
+    
+    
+    
+/***************************/    
+    
+       
+    function placeCard(fromTop,fromLeft){
+    
+
+  
+  //  alert("callback to palce card");
+    
+    
+    }
+    
+    function resetCard(fromTop,fromLeft){
+
+ //     $( "#animateCard" ).remove();
+ 
+        console.log('putting the card back on the deck   ...' + fromTop   + ' and left of .. '+fromLeft  ); 
+
+        var cardDiv = $("#animateCardDiv");
+ 
+  
+ //   alert( $( cardDiv ).css("top") )
+
+  //  console.log("card should be  back on the pile which should be at position fromTop" + fromTop + " and from Left " + fromLeft);
+   
+   
+             cardDiv.css("opacity", "0.0");      
+             cardDiv.css("top", fromTop);
+              cardDiv.css("left", fromLeft);
+              
+                   console.log("card should be  back on the pile which should be at position fromTop" + fromTop + " and from Left " + fromLeft);
+                   
+            //            $('#spades').append('<img style="transform: rotate('+rotateDegrees+'deg)"id="cardPos'+ cardPosition +'"  class="card" src="'+relativeFolder+cardImage+'" ></img>' ); 
+         
+    //     debugger;     
+   //    $("#animateCardDiv").append('<img id="animateCard" class="deck" style="opacity:1.0; position: absolute; z-index: 13; top: '+fromTop+'px; display: grid; left: '+fromLeft+'px;" src="images/playingCards/PNG-cards-1.3/8cEbeEMLi.png" >');
+      
+    }  // emd pf reset Card
+       
+function getPlayForSelectedExercise(selectedLesson,selectedExercise) {    // there is a globalv for the LessonsObject)
+
+   
+    var dealer="";
+                                    
+
+
+    
+    var lessonCounter = 0;
+    $(LessonsObject).find('lesson').each(function(){
+    
+             lessonCounter++;
+             if(lessonCounter == selectedLesson){
+                               //       alert('found the selected lesson in getPlayForSelectedExercise ' + selectedLesson + "and the exercis is "+ selectedExercise );
+                var $lesson = $(this);
+               var exerciseCounter = 0; 
+               $($lesson).find('exercise').each(function(){
+                         exerciseCounter++;
+                         if(exerciseCounter == selectedExercise){
+                         
+                      // alert('found the selected exercies in getPlayForSelectedExercise ' + selectedExercise);
+                         var $exercise = $(this);
+                         var exerciseTitle = $exercise.attr('title'); 
+                         var exerciseList = document.getElementById("exercise");
+                         
+                         /*
+                         var option = document.createElement("option");
+                               option.text = exerciseTitle;
+                               option.value = exerciseCounter;
+                               exerciseList.add(option);
+                               */
+
+                            var dealer = $exercise.find('dealer').text();
+                            
+                             var spades = $exercise.find('spades').text();
+                             var hearts = $exercise.find('hearts').text();
+                             var diamonds = $exercise.find('diamonds').text();
+                             var clubs = $exercise.find('clubs').text();
+                             
+                             
+                     //        alert(spades,hearts,diamonds,clubs);
+                             dealTheCards(spades,hearts,diamonds,clubs);                            
+                             
+                             
+                             var bidCounter = 0;
+                             $($exercise).find('bid').each(function(){
+                                  bidCounter++;
+                                  
+                                  var $bid = $(this);
+                                  var bidTitle = $bid.attr('title');  
+                                  var bidPosition = $bid.find('position').text();  
+                                 
+                                   var bidPass = $bid.find('pass').text();  
+                                   
+                          //         newRowContent = "<tr><td>" + bidPosition + " </td><td>Pass</td></tr> ";
+                                   if(bidPass.trim()=="Yes"){
+                                        newRowContent = "<tr><td>"+bidPosition+"</td><td>Pass</td></tr>";
+                                        $("#bids tbody").append(newRowContent);
+                                   }else{
+                                     var bidLevel = $bid.find('level').text();  
+                        
+                                     var bidSuitText = $bid.find('suit').text();  
+                                     var bidSuit = bidSuitText.trim();
+                                     
+                                     nextBidSuitShouldBe = bidSuit;  // put it in a global variable
+
+
+
+                        
+                                     if(bidSuit == "Hearts"){bidSuit = '<img style="height: 20px;" src="'+imagePath + 'heartSuit.png"'};
+                                     if(bidSuit == "Spades"){bidSuit = '<img style="height: 20px;" src="'+imagePath + 'spadeSuit.png"'}
+                                     if(bidSuit == "Diamonds"){bidSuit = '<img style="height: 20px;" src="'+imagePath + 'diamondSuit.png"'}
+                                     if(bidSuit == "Clubs"){bidSuit = '<img style="height: 20px;" src="'+imagePath + 'clubSuit.png"'}
+                                     if(bidSuit == "No Trump"){bidSuit = 'NT'  }
+                                     if(bidSuit == "?"){  
+                                             newRowContent = "<tr><td>"+bidPosition+"</td><td><div id='replaceLevel'>"+ bidLevel + "</div><div id='replaceSuit'>" +  bidSuit + "</div> </td></tr>";
+                                     }else{
+                                     
+                                                                           newRowContent = "<tr><td>"+bidPosition+"</td><td>" +bidLevel +  bidSuit + " </td></tr>";
+                                     }
+                                     
+
+                                      $("#bids tbody").append(newRowContent);
+           
+                                   }  
+                                 });      // for each bid
+ 
+                   balancedHand = $exercise.find('balanced').text().trim();
+                    hcp = $exercise.find('hcp').text();
+                   distribution = $exercise.find('distribution').text();
+                    dummyPoints = $exercise.find('dummyPoints').text().trim();;
+                    if(dummyPoints ){      // there is a value for dummy pionts
+                               $("#distribution").hide();
+                               $("#dummyPoints").show();
+                    } else{
+                                $("#distribution").show();
+                               $("#dummyPoints").hide();
+                    
+                    }                                   
+                                    
+                   nextBidPosition = $exercise.find('positionNext').text();
+                    nextBidLevel = $exercise.find('levelNext').text().trim();
+                    
+// console.log(nextBidPosition )                    
+                    
+                          $("#BidTurn").html(nextBidPosition );  
+                    
+                   nextBidLevelShouldBe = nextBidLevel;  // put it in a global variable
+                                            
+                                            
+                    nextBidText = $exercise.find('suitNext').text();
+
+                                     var bidSuit = nextBidText.trim();
+
+
+                                     nextBidSuitShouldBe = bidSuit;  // put it in a global variable
+
+
+                                     if(bidSuit == "Hearts"){nextBidSuit = '<img style="height: 20px;" src="'+imagePath + 'heartSuit.png"'}
+                                     else if(bidSuit == "Spades"){nextBidSuit = '<img style="height: 20px;" src="'+imagePath + 'spadeSuit.png"'}
+                                     else if(bidSuit == "Diamonds"){nextBidSuit = '<img style="height: 20px;" src="'+imagePath + 'diamondSuit.png"'}
+                                     else if(bidSuit == "Clubs"){nextBidSuit = '<img style="height: 20px;" src="'+imagePath + 'clubSuit.png"'}
+                                     else if(bidSuit == "No Trump"){nextBidSuit = "NT"}
+                                       else{nextBidSuit = bidSuit};
+                                        
+                      explanation = $exercise.find('explanation').text();
+                      
+                      explanationPart1 = $exercise.find('explanationpart1').text();
+
+                                          
+                      explanationPart2 = $exercise.find('explanationpart2').text();
+                                                              
+                      explanationPart3 = $exercise.find('explanationpart3').text();
+                      
+                
+                      
+ // alert ('this is the 3d part ' + explanationPart3);
+//  alert(' 685 The next bid for  exercisee '+ selectedExercise  + 'should be ... ' +nextBidPosition +  " " + nextBidLevel + " " + nextBidSuit + " " + hcp)
+                     return false;            // breaks the each exercise. We processed the one selected
+                    }    // end if 
+     
+                  });    // for each exercise
+                  
+                    return false;            // breaks the each Lesson. We processed the one selected
+        }  // end if lessonCounter == selectedLesson
+
+    });   // for each lesson
+    
+    
+    // put all the play data onto the playing board
+   
+ 
+
+ }         // end of parseXml function
+
+ 
+
+
+function parseXmlForLessons()   {        // this function is called up on the successful return of the Ajax call for the xml file that contains the node data (ie: employees or positions )
+
+   
+    var lesson="";
+    var dealer="";
+    var lessonCounter = 0;
+
+    $(LessonsObject).find('lesson').each(function(){         // add each lesson found in the XML to the lessons select picklist as options
+
+               var $lesson = $(this);
+                 lessonCounter++;
+               var LessonTitle = $lesson.attr('title');
+               var lessonsList = document.getElementById("lesson");
+               var option = document.createElement("option");
+              option.text = LessonTitle;
+              option.value = lessonCounter;
+              lessonsList.add(option);
+
+    });   // for each lesson
+
+ }         // end of parseXml function
+
+
+function getNextExercise(){
+         $("#animateCardDiv").stop(1,1);               // stop any previous animations  .. the 1 and 1 parameters means "stop all" and "go to end" (of the animations queue)
+        window.scrollTo(0,0);   // scroll to the top so that when the card's get dealt, that the absolute position of the placehodler card is where it should be
+     
+
+       var currentExercise = document.getElementById("exercise").value;   // this will return the number of the exercies selected but includes 1 extra for "Select and exercies"
+    
+       var nextExercise  = Number(currentExercise) + 1;
+   
+       var totalOptions = $('#exercise option').length ;   // will return the total number of options.  But this includes the "Seledt..." option 
+       
+       
+     //        alert('before thie ifthenelseThe nextExercise is '+ nextExercise + ' and the total options is '+ totalOptions)
+             
+             
+       if(nextExercise == totalOptions ){   // We already incremented the number to get the nextExercise .  Total Options includes the Select... optoin,    So, if they are equal then this is the  last exercise ...
+       
+
+             
+             // Later, we will update this code to go to the next lesson and the first exercies in that lesson
+             
+               
+                  var nextLesson = 1;
+                  var totalLessons = $('#lesson option').length;   // will return the total number of options PLUS 1 (for the Select...).   
+                  
+                  if(selectedLesson !=  totalLessons - 1 ){            // we are at the last exertcies of the Lesson.  Move on to the next Lesson.
+         
+                   alert('There are no more exercises in this lesson.  Moving on to the next Lesson...');
+                          var nextExercise  = 1;
+                          selectedLesson = Number(selectedLesson) + 1;
+                          $("#lesson").val(selectedLesson);         // select the randomly chosen lesson from the picklist
+                           selectLesson();
+                  // We are at the last exercise of the last lesson, start all over again.
+                           }else{
+                            alert('There are no more exercises in this lesson.  And you completed the last Lesson in this series.  Going back to Lesson #1 ...');
+                            selectedLesson = 1;
+                             $("#lesson").val(selectedLesson);         // select the randomly chosen lesson from the picklist
+                               selectLesson();
+                            nextExercise = 1;
+                           }
+                  
+       }else{   // there are more options here in this exercies
+ 
+
+           //  $("#exercise").val(nextExercise);
+
+       }
+       
+       $("#exercise").val(nextExercise);         // select the randomly chosen lesson from the picklist
+    //   alert('After if then else ...  he nextExercise is '+ nextExercise + ' and the total options is '+ totalOptions + ' and the seelected lesson is ' +selectedLesson )
+ 
+        selectExercise(selectedLesson)   // ntote the selected lesson is global.
+        
+
+
+}  // end function getNextExercise
+
+
+function getRandomExercise(){
+
+window.scrollTo(0,0);
+ var totalLessons= $('#lesson option').length - 1;  // this will return the number of lessons selected but includes 1 extra for "Select and exercies"
+ 
+nextLesson = 1 + Math.floor(Math.random() * totalLessons);     // randomly select the next lesson into the global varibale
+
+$("#lesson").val(nextLesson);         // select the randomly chosen lesson from the picklist
+
+// alert('randomly picklist lesson '+nextLesson)
+selectedLesson=selectLesson()                          // clear the interface and then populate that available exercises
+ 
+ 
+ var totalExercises = $('#exercise option').length - 1;   // this will return the number of the exercies, for the new lesson, but includes 1 extra for "Select and exercies"
+
+ 
+var nextExercise = 1 + Math.floor(Math.random() * totalExercises);
+
+$("#exercise").val(nextExercise);         // select the randomly chosen lesson from the picklist
+
+
+// alert('in selectExercise the exercise selected is ' + nextExercise);
+
+
+selectExercise(selectedLesson);          // ntote the selected lesson is global.  Go play the cards for this randomly selected exercise
+
+}  // end function getRandomExercise
+
+
+ function getLessonsXML(){       // make the Ajax call to go read the XML of all lessons and all  other data
+
+ 
+
+     
+     var xmlDataSource =  "Exercises.xml";
+     
+  //   var xmlDataSource =  "http://localhost/~colin_houghton/Bridge/Exercises.xml";
+
+        
+   var settings = {
+          'cache': false,
+          'dataType': "xml",
+          "async": true,
+          "crossDomain": true,
+          "url":  xmlDataSource,
+          "method": "GET",
+                "type": "GET",
+                          "error": function (e) {
+            alert("An error occurred while processing XML file and the returncode is " + e);
+            console.log("XML reading Failed: ", e);
+        },
+          "success":  createLessonsXml
+      
+   
+      }
+ 
+
+ 
+     $xmlBack = $.ajax(settings).done(function (response) {
+          console.log(response);
+   //   alert('the response is' + response)
+         //     console.log('Here is the entire xml that waas read ..' + $(response).text());
+
+
+    });
+    
+      
+ };   // end of getLessonsXML
+             
+
+function updateExerciseList(lessonNumber){
+
+    var lessonCounter = 0;
+    var exerciseCounter = 0; 
+    var exerciseList = document.getElementById("exercise");
+    
+    
+    // clear out all existing options from last choice of a Lesson
+    
+    $('#exercise')
+    .find('option')
+    .remove()
+    .end()
+
+   
+    var option = document.createElement("option");
+                               option.text = "Select an Exercise";
+                               option.value = exerciseCounter;
+                               exerciseList.add(option);
+
+             $(LessonsObject).find('lesson').each(function(){
+    
+
+                var $lesson = $(this);
+                 lessonCounter++;
+
+
+              if(lessonCounter == lessonNumber){
+              
+                      //    alert("match for  " + lessonNumber + $lesson.text())
+
+                     $($lesson).find('exercise').each(function(){
+                         exerciseCounter++;
+                         var $exercise = $(this);
+                         var exerciseTitle = $exercise.attr('title'); 
+                         var exerciseList = document.getElementById("exercise");
+                         var option = document.createElement("option");
+                               option.text = exerciseTitle;
+                               option.value = exerciseCounter;
+                               exerciseList.add(option);
+    
+                   });         // for each exercise
+                   
+                          return false; // breaks
+                   
+              }; // end if lesson found     
+              
+       
+     
+         });         // for each lesson
+
+
+
+}   // end of function  updateExerciseList(lessonNumber
+
+
+function clearPlayedCards(){
+
+/*
+
+      $("#spades").css("display","none");
+            $("#hearts").css("display","none");
+                  $("#diamonds").css("display","none");
+                        $("#clubs").css("display","none");
+                        
+                        */
+
+}  // end of  function clearPlayedCards
+
+function showPlayedCards(){
+
+      $("#spades").css("display","block");
+            $("#hearts").css("display","block");
+                  $("#diamonds").css("display","block");
+                        $("#clubs").css("display","block");
+                        
+                        
+}  // end of  function showPlayedCards
+
+
+function selectLesson(){
+
+ 
+ 
+ $("#welcome").remove();
+  $("#startup").remove();
+ 
+ 
+  var lessonSelected = document.getElementById("lesson").value;   // this will return the number of the lesson selected
+ 
+
+         $("#bids > tbody").empty();
+      
+     /*  
+      // First clear all the cards from the last exercise/lesson.
+        $('.card').each(function(i){
+        
+               this.src="images/playingCards/PNG-cards-1.3/seeThrough.png";
+       
+      });
+      */
+      
+
+      
+                             $('#spades').empty();
+                             $('#hearts').empty();
+                             $('#diamonds').empty();
+                             $('#clubs').empty();
+                             
+                             $('#spades').append(   '  <img id="cardPos1" class="card placeholder" name="placholder"  src="images/playingCards/PNG-cards-1.3/seeThrough.png" /> ' );
+                             $('#hearts').append(   '  <img id="cardPos1" class="card placeholder" name="placholder" src="images/playingCards/PNG-cards-1.3/seeThrough.png" /> ' );
+                             $('#diamonds').append(   '  <img id="cardPos1" class="card placeholder" name="placholder" src="images/playingCards/PNG-cards-1.3/seeThrough.png" /> ' );
+                             $('#clubs').append(   '  <img id="cardPos1" class="card placeholder" name="placholder"  src="images/playingCards/PNG-cards-1.3/seeThrough.png" /> ' );
+       
+           resetAnimateCard();
+ 
+
+              
+       
+      
+      clearTheAnswers();       // clear any answers from the previous exercise
+      $("#questions").hide();
+            $("#bidsArea").hide();
+     updateExerciseList(lessonSelected);
+     
+ // alert('wer are bakc ')
+     return(lessonSelected);
+   
+  
+}   // end of selectLesson
+
+
+function resetAnimateCard(){
+
+         const dealStart= document.getElementById("deckCard");
+         var rectFrom = dealStart.getBoundingClientRect();
+         
+         
+          	$("#animateCardDiv").stop(1,1);               // stop any previous animations  .. the 1 and 1 parameters means "stop all" and "go to end" (of the animations queue)
+           $("#animateCardDiv").css("top",rectFrom.top);           
+           $("#animateCardDiv").css("left",rectFrom.left);  
+           $("#animateCardDiv").css("opacity",1.0);
+}
+/*
+function  updateHand(lesson,exercise){
+
+ alert(  "You selected lesson " + lesson + " and exercise " + exercise );  
+ 
+ 
+       // First clear all the cards  
+        $('.card').each(function(i){
+        
+               this.src="images/playingCards/PNG-cards-1.3/seeThrough.png";
+       
+      });
+      
+  
+}
+ */
+ 
+ 
+ function  setReplaceSuit(){
+ 
+       var bidSuit = document.getElementById("bidSuit").value.trim();   // this will return the number of the lesson selected
+       
+                                            if(bidSuit == "Hearts"){replaceBidSuit = '&nbsp;<img style="height: 20px;" src="'+imagePath + 'heartSuit.png"' + '</img>'  }
+                                     else if(bidSuit == "Spades"){replaceBidSuit = '&nbsp;<img style="height: 20px;" src="'+imagePath + 'spadeSuit.png"   ' + '</img>'}
+                                     else if(bidSuit == "Diamonds"){replaceBidSuit = '&nbsp;<img style="height: 20px;" src="'+imagePath + 'diamondSuit.png"' + '</img>'}
+                                     else if(bidSuit == "Clubs"){replaceBidSuit = '&nbsp;<img style="height: 20px;" src="'+imagePath + 'clubSuit.png"' + '</img>'}
+                                     else if(bidSuit == "No Trump"){replaceBidSuit = "&nbsp;NT"}
+                                        else if(bidSuit == "Select ..."){replaceBidSuit = "&nbsp;?"}
+                                       else{nextBidSuit = bidSuit};
+                                     
+                                               
+    //    nextBidSuit =    "&nbsp;" + nextBidSuit + "</img>"   ;                         
+                                       
+       $("#replaceSuit").html(replaceBidSuit);
+ 
+ }
+ 
+ function checkForPassOrDouble(){     //  show or hid bid suite if the user selected PASS or not
+ 
+      var bidLevel = document.getElementById("bidLevel").value.trim();   // this will return the number of the lesson selected
+      
+       if(bidLevel == "Select ...")   {
+          bidLevel = "? "}   
+      $("#replaceLevel").html(bidLevel);
+
+      if(bidLevel == "Pass" || bidLevel == "Double"){
+              $("#bidSuit").css("display","none");
+          
+        //      $("#bidSuit option:eq(SelectDummy)").prop("selected", true);
+        
+              $("#replaceSuit").html(" "); 
+              
+                $("#bidSuit option").prop("selected", false);   // change the bid suite to "Selected..." because if the user goes back and forth between a suite and adouble or a pass, we want the suit to be null, or it may tell the user there is an error.
+                    // For example, without this code, if the answer was "Double", but the user first put in 1 Spades, pressed CHECK YOUR ANSWERS, then set it to Double and again pressed CHECK YOUR ANSWERS
+                    // then the system would throw an error because it would think the person was saying "DOUBLE SPADES".  So we remove the "Spades" to ensure this does not happen.
+              
+    //          $('#bidSuit  option:eq(SelectDummy)').attr('selected', 'selected')
+              
+              
+      }else{
+                    $("#bidSuit").css("display","inline-block");
+      }
+ 
+
+ }       // end of checkForPassOrDouble }
+ 
+ function clearTheAnswers(){
+ 
+
+
+    $("#bids > tbody").empty();
+ 
+     $("#correctAnswerSummary").empty();
+     
+    
+     $("#nextExerciseButton").css("display","none");
+    
+ 
+            
+      $("#explanationPart1").empty();
+      $("#explanationPart2").empty();
+      $("#explanationPart3").empty();
+      $("#hcp").val("");
+      $("#dist").val("");
+      $("#dummy").val("");
+      
+      $("#radioYes").prop('checked', false);
+      $("#radioNo").prop('checked', false);
+      
+      $("#bidLevel option").prop("selected", false);
+      $("#bidSuit option").prop("selected", false);
+    //  $("#questions").show();
+      
+      $(".correctCheck").empty();
+      $("#bidSuit").css("display","inline-block");
+       $("#correctAnswer").css("display","none");
+ 
+           
+}    // end funciton clearTheAnswers
+
+function selectExercise(selectedLesson){
+ 
+     var exercise = document.getElementById("exercise").value;   // this will return the number of the lesson selected
+   
+   $('.grid-container').css('height','520px');   // change the default to now handle a maximum of 6 cards per suit.
+                                $('#spades').empty();
+                             $('#hearts').empty();
+                             $('#diamonds').empty();
+                             $('#clubs').empty();
+                             
+                             $('#spades').append(   '  <img id="cardPos1" class="card placeholder" name="placholder"  src="images/playingCards/PNG-cards-1.3/seeThrough.png" /> ' );
+                             $('#hearts').append(   '  <img id="cardPos1" class="card placeholder" name="placholder" src="images/playingCards/PNG-cards-1.3/seeThrough.png" /> ' );
+                             $('#diamonds').append(   '  <img id="cardPos1" class="card placeholder" name="placholder" src="images/playingCards/PNG-cards-1.3/seeThrough.png" /> ' );
+                             $('#clubs').append(   '  <img id="cardPos1" class="card placeholder" name="placholder"  src="images/playingCards/PNG-cards-1.3/seeThrough.png" /> ' );
+                             
+                             $("#animateCardDiv").stop(1,1);               // stop any previous animations  .. the 1 and 1 parameters means "stop all" and "go to end" (of the animations queue)
+                              resetAnimateCard();
+    //   clear all the previous exercise answers and data
+ 
+     clearTheAnswers();       // clear any answers from the previous exercise
+     $("#questions").hide();
+           $("#bidsArea").hide();
+     clearPlayedCards();
+                                 $("#correctAnswer").show();
+      if(exercise > 0 ) {   // if this is NOT the "Select and Exercise .. " optoin then
+            $("#questions").show();
+                  $("#bidsArea").show();
+            // 
+                showPlayedCards();
+                getPlayForSelectedExercise(selectedLesson,exercise);          // show the cards and bids for the selected exercise
+
+      }    
+
+}
+
+
+function showCorrectAnswer(){
+
+            $(".correctCheck").empty();
+            var correct = '<img class="correctCheck" src="' + imagePath + 'greenCheck.png" />';
+            var incorrect = '<img class="correctCheck" src="' + imagePath + 'redWrongX.png" />';
+            
+            
+            if(    $('#hcp').val() == hcp)    {   $("#highCardCorrect").append(correct)  } else{ $("#highCardCorrect").append(incorrect)};
+
+            var balancedRadio = $("#formQuestions input[type='radio']:checked").val();
+            
+     //       alert( "the correct balanced hand answer is .. "  + balancedHand + " and the radio button was set to " + balancedRadio );
+            
+      
+//   alert(           $('input[name=balanced]:checked', '#formQuestions').val()           ); 
+ 
+
+        
+        
+            if(  balancedHand == balancedRadio  )  {   $("#balancedHandCorrect").append(correct)  }else{ $("#balancedHandCorrect").append(incorrect)};
+            
+            var thisBidSuit = "";
+
+   // alert("the value found is  " + $('#bidSuit').val()  )
+            if (  $('#bidSuit').val() == 'Select ...') {
+
+//  alert("so we do notherin becaues thisBuid suit is " + thisBidSuit)
+            } 
+            else{
+               thisBidSuit = $('#bidSuit').val();
+            }
+            
+            
+            
+//  alert(  $('#bidLevel').val()  + " was the bid level "  +  nextBidLevelShouldBe + " was what it should be " + $('#bidSuit').val() + " is the suit bid  and it should be " + nextBidSuitShouldBe + "and thisBidSuit is " +  thisBidSuit);
+
+            if(    $('#bidLevel').val() == nextBidLevelShouldBe  &&  thisBidSuit == nextBidSuitShouldBe)    {   $("#bidCorrect").append(correct)  }else{ $("#bidCorrect").append(incorrect)};
+
+                       
+                    if(dummyPoints){      // there is a value for dummy pionts
+                    
+                              if(    $('#dummy').val() == dummyPoints)    {   $("#dummyCorrect").append(correct)  } else{ $("#dummyCorrect").append(incorrect)};
+                              $("#correctAnswerSummary").html('Balanced hand? ' + balancedHand + '<p /> There are ' +hcp+' high card points and '+ dummyPoints+' dummy points. <p />Therefore, the next bid  by  ' +nextBidPosition +  " should be <b> " + nextBidLevel + "" + nextBidSuit + '</b>. <p />');
+                    } else{
+                    
+                                 if(    $('#dist').val() == distribution)    {   $("#distributionCorrect").append(correct)  } else{ $("#distributionCorrect").append(incorrect)};
+                    
+                                $("#correctAnswerSummary").html('Balanced hand? ' + balancedHand + '<p /> There are ' +hcp+' high card points and '+ distribution+' distribution points. <p />Therefore, the next bid  by  ' +nextBidPosition +  " should be <b> " + nextBidLevel + "" + nextBidSuit + '</b>. <p />');
+                    }     
+
+             $("#explanationPart1").html(explanationPart1);
+             $("#explanationPart2").html(explanationPart2);       
+             $("#explanationPart3").html(explanationPart3);
+             
+              $("#nextExerciseButton").css("display","block");
+   
+}   
+
+
+function placeAnimateCardOverDeckCard(){
+
+
+
+         const dealStart= document.getElementById("deckCard");
+         var rectFrom = dealStart.getBoundingClientRect();
+         
+       console.log(" putting the animate card in place "  );
+          
+          $("#animateCardDiv").css("opacity","1.0");
+          $("#animateCardDiv").css("top",rectFrom.top);
+          $("#animateCardDiv").css("left",rectFrom.left);
+
+          
+     //    deal1Card(rectFrom.top, rectFrom.left, rect.top + 10 , rect.left + 10  )
+
+}
+
+$(document).ready(function () {
+
+                                $("#questions ").hide();
+                                $("#bidsArea ").hide();
+                                $("#distribution").show();
+                               $("#dummyPoints").hide();
+                                $("#nextExerciseButton").css("display","none");
+                                $("#correctAnswer").hide();
+                                placeAnimateCardOverDeckCard();
+                                if ($(window).width() <= 1024) {
+     											 $("#deck").hide();
+                                }
+ 
+                               getLessonsXML();     // this will read the XML and, when the AJAX async call is finished, will go get all the Lessons and populate them in the picklist, ready for selection by the end user
+
+    }); 
+   
+   
+   
+   
+   
+   
+</script>
+   
+
+  
+<!-- This is the end of the document.read function -->  
+
+
+</head>
+
+<body>
+
+
+<div id="mainpage">
+
+    <div id="LessonID" class="lessonID" >
+    
+    				<div id="randomButtonDiv">
+				   <button type="button"  id="randomButton"   onclick="getRandomExercise()">Click Here to Select Random ...</button>
+				</div>
+				
+    				<div id="lessonPicklist" style="display: inline-block">
+          Lesson:
+           <select name="lesson" id="lesson" style="font-size:inherit;" onchange="selectedLesson=selectLesson()">
+  				
+                    <option id="defaultLesson" selected>Select a lesson...</option>
+				</select>
+				</div>
+				<div id="exercisePicklist" style="display: inline-block">
+				Exercise:
+				 <select name="exercise" id="exercise" style="font-size:inherit;" onchange="selectExercise(selectedLesson);">
+               
+				</select>
+				</div>
+
+    </div>
+    
+ <div id="leftside" style="position: relative; float:left; width:50%; max-width: 923px;">
+ 
+
+	
+	
+	
+	<div id="cards">
+	
+
+			   
+			
+			
+
+			<div id="dealt"  class="grid-container"  style="float:left; position: relative;  grid-area: 1/1; ">
+			
+
+ <div id="welcome" style="position: absolute;
+   grid-area: 1 / 2 / 5 / 5;
+    width: 100%;
+    max-width: 923px;
+    z-index: 10;
+    align-content: center;
+    text-align: center;
+    font-size: 30;
+    color: white;
+}">Welcome to <br />Bridge Flashcards </div>
+
+
+              <div id="startup"  style="grid-area: 2 / 2 / 5 / 5;  text-align: center;
+    font-size: 24;
+    color: white;">Select a Lesson (above) to get started</div>
+	
+						<div id="deck">
+						
+			
+			              <div class="divDeckTable">
+    										<div class="innerDivDeckTable">
+    										       
+        			              					    <img  id="deckCard" class="deck" src="images/playingCards/PNG-cards-1.3/8cEbeEMLi.png" />   
+        			              		             <div id="animateCardDiv" style=" position: absolute; z-index: 13; opacity:0.0;" >
+        			              		             <img  id="animateCard" class="deck" style=" transform: rotate(8deg) ; " src="images/playingCards/PNG-cards-1.3/8cEbeEMLi.png" />   </div>
+ 
+        			              					
+											</div>
+
+        						</div>
+			   </div>
+			   
+			    
+			
+			        <div id="spades" style="float:left">
+                              <img id="cardPos1" class="card placeholder" name="placholder"  src="images/playingCards/PNG-cards-1.3/seeThrough.png" /> 
+            
+                     
+                       
+                  </div>
+                  
+                  <div id="hearts"  style="float:left">
+           <img id="cardPos1" class="card placeholder" name="placholder" src="images/playingCards/PNG-cards-1.3/seeThrough.png" />
+                  </div>
+                  
+                   <div id="diamonds"  style="float:left">
+       <img id="cardPos1" class="card placeholder" name="placholder" src="images/playingCards/PNG-cards-1.3/seeThrough.png" /> 
+                  </div>
+
+                    <div id="clubs"  style="float:left">
+ <img id="cardPos1" class="card placeholder" name="placholder"  src="images/playingCards/PNG-cards-1.3/seeThrough.png" /> 
+                  </div>
+                  
+                  
+			</div>
+
+   </div>  
+
+
+   </div>
+   <form id="formQuestions">
+   <div id="rightSide" style="float:left; width:50%">
+   
+		<div id="bidsArea" style="float:left; padding-top: 20px; padding-left: 20px;  display:none">
+			<div>Bids so far...</div>
+			 <div> 
+          <div id="bidsTable" style="float:left; margin-right:20px; margin-bottom: 10px; border-style: solid; border-width: 1px;: ">
+               <table id="bids">
+                  <thead >
+                  <tr>
+                     <th style="background-color: #007D3B;">Position</th>
+                     <th style="background-color: #007D3B; text-align:center;">Bid</th>
+                  </tr>
+                </thead>
+              <tbody></tbody>
+            </table> 
+         </div>
+	      <div id = "correctBidInput"  style="font-size:16px; float:left;  padding: 10px;  background-color: lightgrey; border-style: solid; border-width: 1px; border-color:black; ">
+	      
+	         <div>
+	      	<div id="questions" ">
+	      	
+	      	 <div style="  display: inline-block;"  >
+	      	    <div style="  float:left; padding-top: 10px; margin-right: 10px">
+	      	   Balanced hand?  
+	    	       </div>
+	             <div style="  float:left;">
+	                 <div style="  padding-bottom: 8px">
+	        			         <input type="radio"  id="radioYes" value="Yes" name="balanced" style="width: 30px;    " >  Yes </input>
+	        			  </div>
+	        			  <div style="  padding-bottom: 8px">
+	        	              <input type="radio" id="radioNo" name="balanced"  value="No" style="width: 30px;"> No </input>
+	        	        </div>
+	     
+	               </div>
+	                <div id="balancedHandCorrect" class="correctCheck" style="float:left"></div>
+	            </div>
+	     <div id = "highCardInput" style=" "  >High card points? <input id="hcp" class="HCP" style="font-size:30px; width: 75px"  type="number" min="0" max="40"></input> <div id="highCardCorrect" class="correctCheck"></div></div> 
+      
+        
+	    <div id="distribution" style=" " >Distribution points?  <input id="dist" class="DIST" style="font-size:30px; width: 75px"  type="number" min="0" max="20"></input> <div id="distributionCorrect" class="correctCheck"></div> </div>
+  
+      
+	     <div id="dummyPoints" style=" ">Dummy points?  <input id="dummy" class="DUMMY" style="font-size:30px; width: 60px"   type="number" min="0" max="20"></input><div id="dummyCorrect" class="correctCheck"></div> </div>
+        
+	</div>   
+	
+		    	    	    <div id="bidQuestion" style=" " >
+	                 <div id="QuestionPart1" style="  display: inline-block; margin-top: 10px;
+    margin-bottom: 5px;" >What is the correct bid for </div>
+	                 <div style=" display: inline-block;  " id="BidTurn"> </div>
+	                 <div style="  display: inline-block; " >?</div>
+	               </div>  
+	               <div id="SelectLists">
+	         
+	               <select id="bidLevel" style="font-size:20px; "    onchange="checkForPassOrDouble()">
+	    	    	    	        <option>Select ...</option>
+	                          <option value="1" >1</option>
+	        	                 <option value="2" >2</option>
+	        	        	        <option value="3" >3</option>
+	        	        	        <option value="4" >4</option>
+	        	        	        <option value="Pass" >Pass</option>
+	                           <option value="Double" >Double</option>
+	        	        	        <option value="5" >5</option>
+	                          <option value="6" >6</option>
+	                          <option value="7" >7</option>
+
+                   </select>
+ 
+     	    	       <select id="bidSuit"   style="font-size:20px; "  style="width: 75px"  onchange="setReplaceSuit()">
+	    	    	               <option>Select ...</option>
+	    	    	        	      <option value="No Trump">No Trump</option>
+	    	    	        	       <option  value="Spades">Spades</option>
+	        	                   <option value="Hearts">Hearts</option>
+	        	        	        <option value="Diamonds">Diamonds</option>
+	        	        	        	<option value="Clubs">Clubs</option>
+                     </select>
+          
+	                  <div id="bidCorrect" class="correctCheck" style="padding-left:5px"></div> 
+	    	        </div>
+  
+
+	    	     </div>
+	    	     
+	    	       
+ 
+	    	        
+	    	        
+	    	     </div>
+	    	</div>  
+	    	
+	    	      <button type="button"  style="font-size:30px; margin-bottom:10px; margin-top:10px; width:100%"  onclick="showCorrectAnswer()">Check Your Answers</button>
+         <div id="correctAnswerSummary" style="display:block" ></div>
+ </div>	   
+ </div>
+	
+
+ </form>
+ 
+ 	    <div id="correctAnswer" style="display:block; clear: left"/>
+	    
+
+	    	        
+	    	        
+
+	 
+	          <div id="explanationPart1" style="display:block; padding-top:10px; " ></div>
+		       <div id="explanationPart2" style="display:block; padding-top:10px; " ></div>
+		        <div id="explanationPart3" style="display:block; padding-top:10px; " ></div>   
+	    </div>
+
+       <div id="nextExerciseButton" style="padding: 10px; text-align:center">
+              <button type="button"  style="font-size:20px; "  	  id="nextExButton" onclick="getNextExercise()">Next Exercise in this Lesson</button>
+
+       </div>
+
+				    <div class="footer" style="display: inline-block; font-size:12px; color:white; background-color:#666; padding:10px; width:100%; font-size:20px;">
+				    Bridge Flashcards - V 1.2 / Data 8.2<P />
+				    Answers included in this application are based on Audrey Grant's book, "Bidding in the 21st Century: The Club Series" 
+          <a href="https://www.amazon.ca/dp/B08R3KBFNY?binding=kindle_edition&qid=1648237076&sr=1-9-catcorr&ref=dbs_dp_rwt_sb_pc_tukn" target="amazon">Click here to order this book on Amazon
+          </a>
+          </div>
+
+
+ 
+
+</body>
+
+
+
+</HTML>
