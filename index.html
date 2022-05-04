@@ -87,6 +87,10 @@ nav ul {
    height: 220px;
 }
 
+
+
+
+
 /* Create two columns/boxes that floats next to each other */
 #deck {
   float: left;
@@ -371,6 +375,151 @@ nav ul {
 
 
 
+ @media only screen and (max-width: 800px) {
+  #cardPos1 {
+      height: 170px;
+  }
+  
+   #cardPos2 {
+       height: 170px;
+       top: -137px;
+   }
+   
+   #cardPos3 {
+      height: 170px;
+       top: -274px;
+   }   
+   
+ #cardPos4 {
+      height: 170px;
+       top: -411px;
+
+}
+
+#cardPos5 {
+      height: 170px;
+  top: -548px;
+
+}
+
+#cardPos6 {
+      height: 170px;
+  top: -685px;
+
+}
+#cardPos7 {
+      height: 170px;
+  top: -822px;
+
+}
+#cardPos8 {
+      height: 170px;
+  top: -959px;
+
+}
+
+#cardPos9 {
+      height: 170px;
+  top: -1096px;
+
+}
+#cardPos10 {
+      height: 170px;
+  top: -1233px;
+
+}
+#cardPos11 {
+      height: 170px;
+  top: -1370px;
+
+}
+#cardPos12 {
+      height: 170px;
+  top: -1507px;
+
+}
+#cardPos13 {
+      height: 170px;
+  top: -1644px;
+
+}
+
+}
+
+
+ @media only screen and (max-width: 501px) {
+  #cardPos1 {
+      height: 140px;
+  }
+  
+   #cardPos2 {
+      height: 140px;
+       top: -110px;
+   }
+   
+   #cardPos3 {
+      height: 140px;
+       top: -220px;
+   }   
+   
+ #cardPos4 {
+      height: 140px;
+       top: -330px;
+
+}
+
+#cardPos5 {
+      height: 140px;
+  top: -440px;
+
+}
+
+#cardPos6 {
+      height: 140px;
+  top: -550px;
+
+}
+#cardPos7 {
+      height: 140px;
+  top: -660px;
+
+}
+#cardPos8 {
+      height: 140px;
+  top: -770px;
+
+}
+
+#cardPos9 {
+      height: 140px;
+  top: -880px;
+
+}
+#cardPos10 {
+      height: 140px;
+  top: -990px;
+
+}
+#cardPos11 {
+      height: 140px;
+  top: -1100px;
+
+}
+#cardPos12 {
+      height: 140px;
+  top: -1210px;
+
+}
+#cardPos13 {
+      height: 140px;
+  top: -1320px;
+
+}
+
+}
+
+
+
 #bids {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
@@ -493,7 +642,9 @@ function dealTheCards(spades,hearts,diamonds,clubs){
 
 // erase the card images from the display
                
-
+   //       alert( "The width of the window is " + $(window).width()   )
+          
+          
 
 var longestSuitLength = 0;
 var suitArray = spades.split(',')
@@ -549,7 +700,7 @@ for (var i = 0; i < arrayLength; i++) {
              rotateDegrees = Math.floor((Math.random() * 10) - 5)    // randomly select the next lesson into the global varibale
        }
           
-        //  alert( $(window).width()   )
+
           if ($(window).width() < 1024) {
                  rotateDegrees = 0;
           }
@@ -1913,7 +2064,7 @@ $(document).ready(function () {
        </div>
 
 				    <div class="footer" style="display: inline-block; font-size:12px; color:white; background-color:#666; padding:10px; width:100%; font-size:20px;">
-				    Bridge Flashcards - V 1.2 / Data 8.2<P />
+				    Bridge Flashcards - V 1.2 / Data 8.3<P />
 				    Answers included in this application are based on Audrey Grant's book, "Bidding in the 21st Century: The Club Series" 
           <a href="https://www.amazon.ca/dp/B08R3KBFNY?binding=kindle_edition&qid=1648237076&sr=1-9-catcorr&ref=dbs_dp_rwt_sb_pc_tukn" target="amazon">Click here to order this book on Amazon
           </a>
