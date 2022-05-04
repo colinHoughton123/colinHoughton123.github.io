@@ -283,10 +283,10 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
           </dealer>
          <cards>
             <spades>
-                   A,Q,J,4,3,8
+                   A,Q,J,8,4,3
              </spades>
              <hearts>
-                   5.3.2 
+                   5,3 
              </hearts>
              <diamonds>
                    K,Q,7
