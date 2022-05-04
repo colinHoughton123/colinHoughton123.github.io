@@ -493,7 +493,7 @@ function dealTheCards(spades,hearts,diamonds,clubs){
 
 // erase the card images from the display
                
-
+          alert( "The width of the window is " + $(window).width()   )
 
 var longestSuitLength = 0;
 var suitArray = spades.split(',')
@@ -549,7 +549,7 @@ for (var i = 0; i < arrayLength; i++) {
              rotateDegrees = Math.floor((Math.random() * 10) - 5)    // randomly select the next lesson into the global varibale
        }
           
-          alert( "The width of the window is " + $(window).width()   )
+
           if ($(window).width() < 1024) {
                  rotateDegrees = 0;
           }
