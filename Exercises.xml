@@ -3406,7 +3406,7 @@ So responder jumps to game with 4 spades
                      1
                  </level>
                 <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
-                     Spades
+                     Hearts
                  </suit>
              </bid>
              
