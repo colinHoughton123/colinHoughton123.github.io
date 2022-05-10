@@ -17736,6 +17736,109 @@ raise with a maximum, since responder could have passed with a very weak hand. <
   
   
                 </lesson>
+                
+   <lesson title="9 - Strong and Weak Openings">
+         
+         <description>
+               This would be where a description of the concept being taught would be provided.
+         </description>
+         
+         <exercise title="9.1 - Strong Opening Bid">             
+                
+                        <page>377</page>]
+          <dealer>
+               West
+          </dealer>
+         <cards>
+            <spades>
+                A,K,Q,J,10,5,4
+             </spades>
+             <hearts>
+              A,K
+             </hearts>
+             <diamonds>
+              A,5,4
+             </diamonds>
+             <clubs>
+               7
+             </clubs>
+         </cards>
+         
+         
+         <bids>
+               <bid title="Opener / You">
+                <position>                  <!-- can be North, East, South, West -->
+                      West
+                </position>
+                <pass>No</pass>    <!-- can be Yes or No -->
+                
+                 <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
+                     ?
+                 </level>
+                <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    ?
+                 </suit>
+             </bid>
+             
+      
+             
+         </bids>
+         <inputToCorrectBid>
+              <balanced>No</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <hcp>21</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution>3</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+                <dummyPoints></dummyPoints>  
+         </inputToCorrectBid> 
+         <nextCorrectBid>
+              <positionNext>           <!-- can be North, East, South, West -->
+                     West
+              </positionNext>
+                 <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass, Double -->
+                    2
+                 </levelNext>
+                <suitNext>                 <!-- can be Spades, Hearts, Diamonds, Clubs, No Trump -->       
+                    Clubs
+                 </suitNext>
+                           <explanation>
+                      <explanationpart1>
+The one thing that we must be assured of is that partner will not pass our 2 Clubs bid. 
+This bid is an example of an artificial forcing bid. Simply stated, it means the bid says nothing about the suit named, clubs in this instance, and partner is forced to bid — no matter how weak partner’s hand is, partner cannot pass.
+
+
+                  </explanationpart1>
+     
+                 <explanationpart2>
+
+When responding to a 2 Clubs opening bid with fewer than 8 total points, always respond 2 Diamonds. 
+This bid is another example of an artificial bid — it’s what responder bids when there is no other suitable call. 
+    All other responses to a 2 opening bid are natural bids promising at least 8 total points, and they force the bidding to at least a game contract.
+
+
+
+                 </explanationpart2>
+                 <explanationpart3>
+                 <![CDATA[   
+                 
+                 SUMMARY OF STRONG OPENING BIDS 
+                 <ul>
+                            <li>Balanced Hands 20–21 HCP balanced hands, open 2 NT</li>
+                            <li>Balanced Hands 22 –24 HCP balanced hands, open 2 Clubs (and make a non-jump rebid in notrum (2NT)</li>
+                           <li>Balanced Hands 25-27 HCP balanced hands, open 3 NT</li>
+                                                   <li>Balanced Hands 28-30 HCP balanced hands, open open 2 Clubs (and make a jump rebid in notrum (3NT)</li>
+                                                   <li>Balanced Hands 31-32 HCP balanced hands, open open 2 Clubs (and make a jump rebid in notrum (4NT)</li>                                                   
+                  </ul>
+                                           <li>UnBalanced Hands 22 or more total points, open 2 Clubs</li>
+                  </ul>  
+
+
+
+]]>  
+                 </explanationpart3>
+
+                 </explanation>
+          </nextCorrectBid>
+  </exercise> 
+  </lesson>
     </lessons>
  
     <!-- Duplicate the lesson as often as desired, wech lesson should have at least one exercies -->
