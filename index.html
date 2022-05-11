@@ -167,6 +167,15 @@ nav ul {
   
 }
  
+  #checkAnswersButton{
+ font-size: 24px;
+  background-color:#007D3B;
+  color: gold; 
+  margin-bottom:10px; 
+  margin-top:10px; 
+  width:100%" 
+ }
+ 
  
  #randomButtonDiv{
   display: inline-block;
@@ -1437,7 +1446,7 @@ function getNextExercise(){
 
 function getRandomExercise(){
 
-window.scrollTo(0,0);
+// window.scrollTo(0,0);
  var totalLessons= $('#lesson option').length - 1;  // this will return the number of lessons selected but includes 1 extra for "Select and exercies"
  
 nextLesson = 1 + Math.floor(Math.random() * totalLessons);     // randomly select the next lesson into the global varibale
@@ -2084,7 +2093,7 @@ $(document).ready(function () {
 	                  <div id="bidCorrect" class="correctCheck" style="padding-left:5px"></div> 
 	    	        </div>
   
-
+	    	      <button type="button"  id="checkAnswersButton" onclick="showCorrectAnswer()">Check Your Answers</button>
 	    	     </div>
 	    	     
 	    	       
@@ -2093,10 +2102,12 @@ $(document).ready(function () {
 	    	        
 	    	     </div>
 	    	</div>  
-           <div style="text-align:center;">	    	
-	    	      <button type="button"  style="font-size:30px; margin-bottom:10px; margin-top:10px; width:100%"  onclick="showCorrectAnswer()">Check Your Answers</button>
+           <div style="display:block; float:left">	    	
+
                 <div id="correctAnswerSummary" style="display:block" >
                 </div>
+                
+                
                <div id="nextExerciseButton" style="padding: 10px; text-align:center; display:inline-block;">
                     <button type="button"  id="nextExButton"       style=" "  	 onclick="getNextExercise()">Next</button>
              </div> 
