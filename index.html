@@ -137,15 +137,7 @@ nav ul {
   
 }
 
-#randomButton2 {
- font-size: 24px;
-  float: left;
-  background-color:#007D3B;
-  color: gold;
 
-   margin: 10px; 
-  
-}
 
  @media only screen and (max-width: 1024px) {
 
@@ -161,6 +153,14 @@ nav ul {
 
 
 #NextExButton{
+ font-size: 24px;
+  background-color:#007D3B;
+  color: gold;
+  
+}
+ 
+ 
+ #randomExButton{
  font-size: 24px;
   background-color:#007D3B;
   color: gold;
@@ -1378,8 +1378,7 @@ function parseXmlForLessons()   {        // this function is called up on the su
 
 function getNextExercise(){
          $("#animateCardDiv").stop(1,1);               // stop any previous animations  .. the 1 and 1 parameters means "stop all" and "go to end" (of the animations queue)
-        window.scrollTo(0,0);   // scroll to the top so that when the card's get dealt, that the absolute position of the placehodler card is where it should be
-     
+
 
 
 
@@ -1725,7 +1724,7 @@ function  updateHand(lesson,exercise){
      
     
      $("#nextExerciseButton").css("display","none");
-    
+         $("#randomButton2").css("display","none");
  
             
       $("#explanationPart1").empty();
@@ -1839,7 +1838,8 @@ function showCorrectAnswer(){
              $("#explanationPart2").html(explanationPart2);       
              $("#explanationPart3").html(explanationPart3);
              
-              $("#nextExerciseButton").css("display","block");
+            $("#nextExerciseButton").css("display","inline-block");
+                     $("#randomButton2").css("display","inline-block");
    
 }   
 
@@ -1864,11 +1864,16 @@ function placeAnimateCardOverDeckCard(){
 
 $(document).ready(function () {
 
+    //   window.scrollTo(0,0);   // scroll to the top so that when the card's get dealt, that the absolute position of the placehodler card is where it should be
+         $('html, body').animate({
+        scrollTop: $("#mainpage").offset().top
+    }, 10);
                                 $("#questions ").hide();
                                 $("#bidsArea ").hide();
                                 $("#distribution").show();
                                $("#dummyPoints").hide();
                                 $("#nextExerciseButton").css("display","none");
+                               $("#randomButton2").css("display","none");
                                 $("#correctAnswer").hide();
                                 placeAnimateCardOverDeckCard();
                                 if ($(window).width() <= 1024) {
@@ -1876,6 +1881,8 @@ $(document).ready(function () {
                                 }
  
                                getLessonsXML();     // this will read the XML and, when the AJAX async call is finished, will go get all the Lessons and populate them in the picklist, ready for selection by the end user
+
+
 
     }); 
    
@@ -2045,7 +2052,7 @@ $(document).ready(function () {
 	
 		    	    	    <div id="bidQuestion" style=" " >
 	                 <div id="QuestionPart1" style="  display: inline-block; margin-top: 10px;
-    margin-bottom: 5px;" >What is the correct bid for </div>
+    margin-bottom: 5px;" >Correct bid for </div>
 	                 <div style=" display: inline-block;  " id="BidTurn"> </div>
 	                 <div style="  display: inline-block; " >?</div>
 	               </div>  
@@ -2086,22 +2093,16 @@ $(document).ready(function () {
 	    	        
 	    	     </div>
 	    	</div>  
-           <div>	    	
+           <div style="text-align:center;">	    	
 	    	      <button type="button"  style="font-size:30px; margin-bottom:10px; margin-top:10px; width:100%"  onclick="showCorrectAnswer()">Check Your Answers</button>
-        
-        
-         <div id="correctAnswerSummary" style="display:block" >
-         
-                  
-      
+                <div id="correctAnswerSummary" style="display:block" >
+                </div>
+               <div id="nextExerciseButton" style="padding: 10px; text-align:center; display:inline-block;">
+                    <button type="button"  id="nextExButton"       style=" "  	 onclick="getNextExercise()">Next</button>
+             </div> 
              
-         </div>
-               <div id="nextExerciseButton" style="padding: 10px; text-align:center;">
-               
-                <button type="button"  id="nextExButton"       style=" "  	 onclick="getNextExercise()">Next Exercise in this Lesson</button>
-                 
-  
-
+             <div id="randomButton2" style="padding: 10px; text-align:center; display:inline-block;">
+                  <button type="button"  id="randomExButton"       style=" "  	onclick="getRandomExercise()">Random</button>
              </div> 
 
           </div>
@@ -2113,7 +2114,7 @@ $(document).ready(function () {
 
  </form>
  
- 	    <div id="correctAnswer" style="display:block; clear: left"/>
+ 	    <div id="correctAnswer" style="margin-bottom:10px; display:block; clear: left" >
 	    
 
 	    	        
@@ -2137,6 +2138,7 @@ $(document).ready(function () {
           </a>
           </div>
 
+<div style="margin:500px"></div>
 
  
 

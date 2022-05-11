@@ -10871,7 +10871,7 @@ Therefore, responder wants to make sure the partnership gets to a suitable game 
          <bids>
                <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
-                      South (Opener))
+                      South (Opener)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -10887,7 +10887,7 @@ Therefore, responder wants to make sure the partnership gets to a suitable game 
     
                <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                    West (You))
+                    West (You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -14963,7 +14963,7 @@ This hand is too good for a simple overcall. Make a takeout double and then bid 
          <bids>
                <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
-                      East
+                        East (Opener / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -14979,7 +14979,7 @@ This hand is too good for a simple overcall. Make a takeout double and then bid 
     
                <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                    South
+                    South (Opposition)
                 </position>
                 <pass>Yes</pass>    <!-- can be Yes or No -->
                 
@@ -14993,7 +14993,7 @@ This hand is too good for a simple overcall. Make a takeout double and then bid 
              
                             <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                    West
+                    West (Partner)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -15007,7 +15007,7 @@ This hand is too good for a simple overcall. Make a takeout double and then bid 
              
                   <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                    North
+                    North (Opposition)
                 </position>
                 <pass>Yes</pass>    <!-- can be Yes or No -->
                 
@@ -15021,7 +15021,7 @@ This hand is too good for a simple overcall. Make a takeout double and then bid 
              
               <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
-                      East
+                      East (You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -17178,7 +17178,7 @@ If opener responds 2 Diamonds, pass and hope the partnership is at least in a pl
          <bids>
                <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
-                      West
+                      West (Opener / Partner)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -17192,22 +17192,22 @@ If opener responds 2 Diamonds, pass and hope the partnership is at least in a pl
              
              <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                      North
+                      North (Opposition)
                 </position>
-                <pass>Yes</pass>    <!-- can be Yes or No -->
+                <pass>No</pass>    <!-- can be Yes or No -->
                 
                  <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
-                    Pass
+                    2
                  </level>
                 <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
-                	
+                	  Hearts
                  </suit>
              </bid> 
 
       
       <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                      East
+                      East (You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -17292,10 +17292,11 @@ raise with a maximum, since responder could have passed with a very weak hand. <
          </cards>
          
          
-         <bids>
+ 
+             <bids>
                <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
-                      West
+                      West (Opener / Partner)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -17307,24 +17308,24 @@ raise with a maximum, since responder could have passed with a very weak hand. <
                  </suit>
              </bid>
              
-             <bid title=" "> 
+             <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                      West
+                      North (Opposition)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
                  <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
-                     2
+                    2
                  </level>
                 <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
-                     Hearts
+                	  Hearts
                  </suit>
-             </bid>
-             
+             </bid> 
+
       
       <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                      East
+                      East (You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -17408,10 +17409,11 @@ raise with a maximum, since responder could have passed with a very weak hand. <
          </cards>
          
          
-         <bids>
+ 
+                <bids>
                <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
-                      West
+                      West (Opener / Partner)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -17423,24 +17425,24 @@ raise with a maximum, since responder could have passed with a very weak hand. <
                  </suit>
              </bid>
              
-             <bid title=" "> 
+             <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                      West
+                      North (Opposition)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
                  <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
-                     2
+                    2
                  </level>
                 <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
-                     Hearts
+                	  Hearts
                  </suit>
-             </bid>
-             
+             </bid> 
+
       
       <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                      East
+                      East (You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -17524,10 +17526,11 @@ raise with a maximum, since responder could have passed with a very weak hand. <
          </cards>
          
          
-         <bids>
+ 
+           <bids>
                <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
-                      West
+                      West (Opener / Partner)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -17539,24 +17542,24 @@ raise with a maximum, since responder could have passed with a very weak hand. <
                  </suit>
              </bid>
              
-             <bid title=" "> 
+             <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                      North
+                      North (Opposition)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
                  <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
-                     2
+                    2
                  </level>
                 <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
-                     Hearts
+                	  Hearts
                  </suit>
-             </bid>
-             
+             </bid> 
+
       
       <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                      East
+                      East (You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -17639,10 +17642,11 @@ raise with a maximum, since responder could have passed with a very weak hand. <
          </cards>
          
          
-         <bids>
+     
+               <bids>
                <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
-                      West
+                      West (Opener / Partner)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -17654,24 +17658,24 @@ raise with a maximum, since responder could have passed with a very weak hand. <
                  </suit>
              </bid>
              
-             <bid title=" "> 
+             <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                      West
+                      North (Opposition)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
                  <level>                      <!-- can be ?, 1, 2, 3, 4, 5, 6 , 7 -->
-                     2
+                    2
                  </level>
                 <suit>                       <!-- can be ?, Spades, Hearts, Diamonds, Clubs, No Trump -->       
-                     Hearts
+                	  Hearts
                  </suit>
-             </bid>
-             
+             </bid> 
+
       
       <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                      East
+                      East (You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -17819,7 +17823,19 @@ This bid is another example of an artificial bid — it’s what responder bids 
                  <explanationpart3>
                  <![CDATA[   
                  
+
+
+                 
                  SUMMARY OF STRONG OPENING BIDS 
+                 
+                 <ol>
+                 
+                                <li>A 3NT opening bid promises between 25–27 HCP and a balanced hand. </li>
+                                <li>A 2 opening bid is used for all other hands with 22 or more total points.</li>
+                                </ol>
+
+                   Bids and follow-ups:
+
                  <ul>
                             <li>Balanced Hands 20–21 HCP balanced hands, open 2 NT</li>
                             <li>Balanced Hands 22 –24 HCP balanced hands, open 2 Clubs (and make a non-jump rebid in notrum (2NT)</li>
