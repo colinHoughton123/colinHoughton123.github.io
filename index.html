@@ -125,23 +125,40 @@ nav ul {
 
 
 
- @media only screen and (max-width: 1024px) {
-
-  #randomButton{
-           font-size: 20px;
-    }
-}
 
 
 
 
-#randomButton{
+#randomButton {
  font-size: 24px;
   float: left;
   background-color:#007D3B;
   color: gold;
   
 }
+
+#randomButton2 {
+ font-size: 24px;
+  float: left;
+  background-color:#007D3B;
+  color: gold;
+
+   margin: 10px; 
+  
+}
+
+ @media only screen and (max-width: 1024px) {
+
+  #randomButton {
+           font-size: 20px;
+    }
+    
+      #randomButton2 {
+           font-size: 20px;
+    }
+    
+}
+
 
 #NextExButton{
  font-size: 24px;
@@ -950,6 +967,16 @@ for (var i = 0; i < arrayLength; i++) {
            */
 
  // alert('longest length is ' + longestSuitLength )
+ 
+ 
+
+    $('html, body').animate({
+        scrollTop: $("#dealt").offset().top
+    }, 1000);
+
+
+
+
        
        }   // end of function dealTheCards
     
@@ -1353,6 +1380,8 @@ function getNextExercise(){
          $("#animateCardDiv").stop(1,1);               // stop any previous animations  .. the 1 and 1 parameters means "stop all" and "go to end" (of the animations queue)
         window.scrollTo(0,0);   // scroll to the top so that when the card's get dealt, that the absolute position of the placehodler card is where it should be
      
+
+
 
        var currentExercise = document.getElementById("exercise").value;   // this will return the number of the exercies selected but includes 1 extra for "Select and exercies"
     
@@ -1987,7 +2016,7 @@ $(document).ready(function () {
 	      <div id = "correctBidInput"  style="font-size:16px; float:left;  padding: 10px;  background-color: lightgrey; border-style: solid; border-width: 1px; border-color:black; ">
 	      
 	         <div>
-	      	<div id="questions" ">
+	      	<div id="questions ">
 	      	
 	      	 <div style="  display: inline-block;"  >
 	      	    <div style="  float:left; padding-top: 10px; margin-right: 10px">
@@ -2057,10 +2086,28 @@ $(document).ready(function () {
 	    	        
 	    	     </div>
 	    	</div>  
-	    	
+           <div>	    	
 	    	      <button type="button"  style="font-size:30px; margin-bottom:10px; margin-top:10px; width:100%"  onclick="showCorrectAnswer()">Check Your Answers</button>
-         <div id="correctAnswerSummary" style="display:block" ></div>
- </div>	   
+        
+        
+         <div id="correctAnswerSummary" style="display:block" >
+         
+                  
+      
+             
+         </div>
+               <div id="nextExerciseButton" style="padding: 10px; text-align:center;">
+               
+                <button type="button"  id="nextExButton"       style=" "  	 onclick="getNextExercise()">Next Exercise in this Lesson</button>
+                 
+  
+
+             </div> 
+
+          </div>
+         
+         
+          </div>	   
  </div>
 	
 
@@ -2077,14 +2124,14 @@ $(document).ready(function () {
 		       <div id="explanationPart2" style="display:block; padding-top:10px; " ></div>
 		        <div id="explanationPart3" style="display:block; padding-top:10px; " ></div>   
 	    </div>
+ 
+ 
 
-       <div id="nextExerciseButton" style="padding: 10px; text-align:center">
-              <button type="button"  style="font-size:20px; "  	  id="nextExButton" onclick="getNextExercise()">Next Exercise in this Lesson</button>
 
-       </div>
-
+				
+				
 				    <div class="footer" style="display: inline-block; font-size:16px; color:white; background-color:#666; padding:10px; width:100%; ">
-				    Bridge Flashcards - V 1.2 / Data 9.1<P />
+				    Bridge Flashcards - V 1.3 / Data 9.1<P />
 				    Answers included in this application are based on Audrey Grant's book, "Bidding in the 21st Century: The Club Series" 
           <a href="https://www.amazon.ca/dp/B08R3KBFNY?binding=kindle_edition&qid=1648237076&sr=1-9-catcorr&ref=dbs_dp_rwt_sb_pc_tukn" target="amazon">Click here to order this book on Amazon
           </a>
