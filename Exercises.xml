@@ -38,7 +38,7 @@
          <bids>
                <bid title="Opener">
                 <position>        <!-- can be North, East, South, West -->
-                      North
+                      North (Opener / You)
                 </position>
                 <pass>No</pass>   <!-- can be Yes or No -->
                 
@@ -124,7 +124,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and  
          <bids>
                <bid title="Opening Bid xxx">
                 <position>        <!-- can be North, East, South, West -->
-                      North
+                      North  (Opener / You)
                 </position>
                 <pass>No</pass>   <!-- can be Yes or No -->
                 
@@ -213,7 +213,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 but y
          <bids>
                <bid title="Opener">
                 <position>        <!-- can be North, East, South, West -->
-                      East
+                      East  (Opener / You)
                 </position>
                 <pass>No</pass>   <!-- can be Yes or No -->
                 
@@ -298,7 +298,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
          <bids>
                <bid title="Opening Bid xxx">
                 <position>                  <!-- can be North, East, South, West -->
-                      South
+                      South  (Opener / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -362,7 +362,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
          <bids>
                <bid title="Opening Bid xxx">
                 <position>                  <!-- can be North, East, South, West -->
-                      North
+                      North  (Opener / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -427,7 +427,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
          <bids>
                <bid title="Opening Bid xxx">
                 <position>                  <!-- can be North, East, South, West -->
-                      East
+                      East  (Opener / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -493,7 +493,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
          <bids>
                <bid title="Opening Bid xxx">
                 <position>                  <!-- can be North, East, South, West -->
-                      North
+                      North  (Opener / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -558,7 +558,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
          <bids>
                <bid title="Opening Bid xxx">
                 <position>                  <!-- can be North, East, South, West -->
-                      West
+                      West (Opener / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -626,7 +626,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
          <bids>
                <bid title="Opening Bid xxx">
                 <position>                  <!-- can be North, East, South, West -->
-                      North
+                      North (Opener / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -694,7 +694,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
          <bids>
                <bid title="Opening Bid xxx">
                 <position>                  <!-- can be North, East, South, West -->
-                      North
+                      North (Opener / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -762,7 +762,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
          <bids>
                <bid title="Opening Bid xxx">
                 <position>                  <!-- can be North, East, South, West -->
-                      North
+                      North (Opener / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -829,7 +829,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
          <bids>
                <bid title="Opening Bid xxx">
                 <position>                  <!-- can be North, East, South, West -->
-                      North
+                      North (Opener / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -896,7 +896,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
          <bids>
                <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
-                      South
+                      South (Opener / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -962,7 +962,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
          <bids>
                <bid title="Opening Bid xxx">
                 <position>                  <!-- can be North, East, South, West -->
-                      North
+                      North (Opener / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -1030,7 +1030,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
          <bids>
                <bid title="Opening Bid xxx">
                 <position>                  <!-- can be North, East, South, West -->
-                      East
+                      East (Opener / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -1097,7 +1097,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
          <bids>
                <bid title="Opening Bid xxx">
                 <position>                  <!-- can be North, East, South, West -->
-                      North
+                      North (Opener / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -1164,7 +1164,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
          <bids>
                <bid title="Opening Bid xxx">
                 <position>                  <!-- can be North, East, South, West -->
-                      North
+                      North (Opener / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -1232,7 +1232,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
          <bids>
                <bid title="Opening Bid xxx">
                 <position>                  <!-- can be North, East, South, West -->
-                      West
+                      West (Opener / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -1298,7 +1298,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
          <bids>
                <bid title="Opening Bid xxx">
                 <position>                  <!-- can be North, East, South, West -->
-                      West
+                      West (Opener / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -1475,7 +1475,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
          <bids>
                <bid title="Opening Bid of 1NT">
                 <position>                  <!-- can be North, East, South, West -->
-                      North
+                      North  (Opener / Partner)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -1489,7 +1489,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
              
                                     <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                     East
+                     East (Opposition)
                 </position>
                 <pass>Yes</pass>    <!-- can be Yes or No -->
                 
@@ -1504,7 +1504,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
              
                            <bid title="Response">
                 <position>                  <!-- can be North, East, South, West -->
-                      South
+                      South (Responder / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -1574,7 +1574,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
          <bids>
                <bid title="Opening Bid of 1NT">
                 <position>                  <!-- can be North, East, South, West -->
-                      North
+                      North (Opener / Partner)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -1588,7 +1588,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
              
                          <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                     East
+                     East (Opposition)
                 </position>
                 <pass>Yes</pass>    <!-- can be Yes or No -->
                 
@@ -1603,7 +1603,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
              
                            <bid title="Response">
                 <position>                  <!-- can be North, East, South, West -->
-                      South
+                      South (Responder / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -1673,7 +1673,7 @@ So responder jumps to game with 4 spades
          <bids>
                <bid title="Opening Bid of 1NT">
                 <position>                  <!-- can be North, East, South, West -->
-                      East
+                      East (Opener / Partner)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -1687,7 +1687,7 @@ So responder jumps to game with 4 spades
              
                                 <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                     South
+                     South (Opposition)
                 </position>
                 <pass>Yes</pass>    <!-- can be Yes or No -->
                 
@@ -1702,7 +1702,7 @@ So responder jumps to game with 4 spades
              
                            <bid title="Response">
                 <position>                  <!-- can be North, East, South, West -->
-                      West
+                      West (Responder / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -1772,7 +1772,7 @@ So responder jumps to game with 4 spades
          <bids>
                <bid title="Opening Bid of 1NT">
                 <position>                  <!-- can be North, East, South, West -->
-                      East
+                      East (Opener / Partner)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -1786,7 +1786,7 @@ So responder jumps to game with 4 spades
              
                          <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                     South
+                     South (Opposition)
                 </position>
                 <pass>Yes</pass>    <!-- can be Yes or No -->
                 
@@ -1801,7 +1801,7 @@ So responder jumps to game with 4 spades
              
                            <bid title="Response">
                 <position>                  <!-- can be North, East, South, West -->
-                      West
+                      West (Responder / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -1887,7 +1887,7 @@ So responder jumps to game with 4 spades
          <bids>
                <bid title="Opening Bid of 1NT">
                 <position>                  <!-- can be North, East, South, West -->
-                      East
+                      East (Opener / Partner)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -1901,7 +1901,7 @@ So responder jumps to game with 4 spades
              
                          <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                    South
+                    South (Opposition)
                 </position>
                 <pass>Yes</pass>    <!-- can be Yes or No -->
                 
@@ -1916,7 +1916,7 @@ So responder jumps to game with 4 spades
              
                            <bid title="Response">
                 <position>                  <!-- can be North, East, South, West -->
-                      West
+                      West (Responder / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -2002,7 +2002,7 @@ So responder jumps to game with 4 spades
          <bids>
                <bid title="Opening Bid of 1NT">
                 <position>                  <!-- can be North, East, South, West -->
-                      West
+                      West (Opener / Partner)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -2016,7 +2016,7 @@ So responder jumps to game with 4 spades
              
                                <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                     North
+                     North (Opposition)
                 </position>
                 <pass>Yes</pass>    <!-- can be Yes or No -->
                 
@@ -2031,7 +2031,7 @@ So responder jumps to game with 4 spades
              
                            <bid title="Response">
                 <position>                  <!-- can be North, East, South, West -->
-                      East
+                      East (Responder / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -2116,7 +2116,7 @@ So responder jumps to game with 4 spades
          <bids>
                <bid title="Opening Bid of 1NT">
                 <position>                  <!-- can be North, East, South, West -->
-                      West
+                      West (Opener / Partner)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -2130,7 +2130,7 @@ So responder jumps to game with 4 spades
              
                           <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                     North
+                     North (Opposition)
                 </position>
                 <pass>Yes</pass>    <!-- can be Yes or No -->
                 
@@ -2145,7 +2145,7 @@ So responder jumps to game with 4 spades
              
                            <bid title="Response">
                 <position>                  <!-- can be North, East, South, West -->
-                      East
+                      East (Responder / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -2231,7 +2231,7 @@ So responder jumps to game with 4 spades
          <bids>
                <bid title="Opening Bid of 1NT">
                 <position>                  <!-- can be North, East, South, West -->
-                      West
+                      West (Opener / Partner)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -2245,7 +2245,7 @@ So responder jumps to game with 4 spades
              
                           <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                     North
+                     North (Opposition)
                 </position>
                 <pass>Yes</pass>    <!-- can be Yes or No -->
                 
@@ -2260,7 +2260,7 @@ So responder jumps to game with 4 spades
              
                            <bid title="Response">
                 <position>                  <!-- can be North, East, South, West -->
-                      East
+                      East (Responder / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -2340,7 +2340,7 @@ So responder jumps to game with 4 spades
          <bids>
                <bid title="Opening Bid of 1NT">
                 <position>                  <!-- can be North, East, South, West -->
-                     North
+                     North (Opener / Partner)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -2354,7 +2354,7 @@ So responder jumps to game with 4 spades
              
                          <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                     East
+                     East (Opposition)
                 </position>
                 <pass>Yes</pass>    <!-- can be Yes or No -->
                 
@@ -2369,7 +2369,7 @@ So responder jumps to game with 4 spades
              
                            <bid title="Response">
                 <position>                  <!-- can be North, East, South, West -->
-                      South
+                      South (Responder / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -2450,7 +2450,7 @@ So responder jumps to game with 4 spades
          <bids>
                <bid title="Opening Bid of 1NT">
                 <position>                  <!-- can be North, East, South, West -->
-                     North
+                     North (Opener / Partner)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -2463,7 +2463,7 @@ So responder jumps to game with 4 spades
              </bid>
                          <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                     East
+                     East (Opposition)
                 </position>
                 <pass>Yes</pass>    <!-- can be Yes or No -->
                 
@@ -2478,7 +2478,7 @@ So responder jumps to game with 4 spades
              
                            <bid title="Response">
                 <position>                  <!-- can be North, East, South, West -->
-                      South
+                      South (Responder / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -2560,7 +2560,7 @@ So responder jumps to game with 4 spades
          <bids>
                <bid title="Opening Bid of 1NT">
                 <position>                  <!-- can be North, East, South, West -->
-                     North
+                     North (Opener / Partner)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -2574,7 +2574,7 @@ So responder jumps to game with 4 spades
              
                          <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                     East
+                     East (Opposition)
                 </position>
                 <pass>Yes</pass>    <!-- can be Yes or No -->
                 
@@ -2589,7 +2589,7 @@ So responder jumps to game with 4 spades
              
                            <bid title="Response">
                 <position>                  <!-- can be North, East, South, West -->
-                      South
+                      South (Responder / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -2671,7 +2671,7 @@ So responder jumps to game with 4 spades
          <bids>
                <bid title="Opening Bid of 1NT">
                 <position>                  <!-- can be North, East, South, West -->
-                     North
+                     North (Opener / Partner)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -2685,7 +2685,7 @@ So responder jumps to game with 4 spades
              
                          <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                     East
+                     East (Opposition)
                 </position>
                 <pass>Yes</pass>    <!-- can be Yes or No -->
                 
@@ -2700,7 +2700,7 @@ So responder jumps to game with 4 spades
              
                            <bid title="Response">
                 <position>                  <!-- can be North, East, South, West -->
-                      South
+                      South (Responder / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -2780,7 +2780,7 @@ So responder jumps to game with 4 spades
          <bids>
                <bid title="Opening Bid of 1NT">
                 <position>                  <!-- can be North, East, South, West -->
-                     North
+                     North (Opener / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -2795,7 +2795,7 @@ So responder jumps to game with 4 spades
              
                  <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                     East
+                     East (Opposition)
                 </position>
                 <pass>Yes</pass>    <!-- can be Yes or No -->
                 
@@ -2810,7 +2810,7 @@ So responder jumps to game with 4 spades
              
                            <bid title="Response">
                 <position>                  <!-- can be North, East, South, West -->
-                      South
+                      South (Responder / Partner)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -2824,7 +2824,7 @@ So responder jumps to game with 4 spades
              
                   <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                     West
+                     West (Opposition)
                 </position>
                 <pass>Yes</pass>    <!-- can be Yes or No -->
                 
@@ -2838,7 +2838,7 @@ So responder jumps to game with 4 spades
              
                                <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                    North
+                    North (Rebidder / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -2911,7 +2911,7 @@ So responder jumps to game with 4 spades
          <bids>
                <bid title="Opening Bid of 1NT">
                 <position>                  <!-- can be North, East, South, West -->
-                     North
+                     North (Opener / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -2969,7 +2969,7 @@ So responder jumps to game with 4 spades
              
                                <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                    North
+                    North (Rebidder / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -3041,7 +3041,7 @@ So responder jumps to game with 4 spades
          <bids>
                <bid title="Opening Bid of 1NT">
                 <position>                  <!-- can be North, East, South, West -->
-                     North
+                     North (Opener / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -3099,7 +3099,7 @@ So responder jumps to game with 4 spades
              
                                <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                    North
+                    North (Rebidder / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -8029,7 +8029,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
          <bids>
                <bid title="Opener">
                 <position>                  <!-- can be North, East, South, West -->
-                      East
+                      East(Opener / Partner)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -8044,7 +8044,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
              
                       <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                     South
+                     South (Opposition)
                 </position>
                 <pass>Yes</pass>    <!-- can be Yes or No -->
                 
@@ -8058,7 +8058,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
              
                 <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                    West
+                    West (Responder / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -8073,7 +8073,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
                 
                 <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                    North
+                    North (Opposition)
                 </position>
                 <pass>Yes</pass>    <!-- can be Yes or No -->
                 
@@ -8088,7 +8088,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
                              
                 <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                    East
+                    East (Opener / Partner)
                 </position>
                 <pass>XXX</pass>    <!-- can be Yes or No -->
                 
@@ -8102,7 +8102,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
              
                      <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                     South
+                     South (Opposition)
                 </position>
                 <pass>Yes</pass>    <!-- can be Yes or No -->
                 
@@ -8115,7 +8115,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
              </bid> 
                          <bid title=" ">
                 <position>                  <!-- can be North, East, South, West -->
-                    West
+                    West (Responder / You)
                 </position>
                 <pass>No</pass>    <!-- can be Yes or No -->
                 
@@ -8144,10 +8144,11 @@ inviting opener to bid game in notrump with more than 13 total points or game in
                  </suitNext>
                  <explanation>
                       <explanationpart1>
-                 Opener shows a minimum hand (with 1NT rebid), but opener is indicating there are 4 Spades, responder knows there is a Golden Fit in Spades.
-                 With only 8 total points, responder wants the partnership to play in a part-score and bids 2 Spades.
-                     
-                     
+         Since opener shows a balanced hand, responder knows there is a Golden Fit in spades. 
+         With only 8 total points, responder wants the partnership to play in a partscore and rebids 2. 
+ 
+
+
                      
                   </explanationpart1>
                  <explanationpart2>
@@ -8155,7 +8156,7 @@ inviting opener to bid game in notrump with more than 13 total points or game in
                  </explanationpart2>
                  <explanationpart3>
                    
-                                   Remember, when the opener indicates a minimum hand (13-15 points) by bidding 1NT, this does not mean the opener has a balanced hand but indicates it is a minimum hand.
+                                   Remember, when the opener indicates a minimum hand (13-15 points) by bidding 1NT in the rebid after opening with 1 of a suit, this mean the opener has a balanced hand but indicates it is a minimum hand.
              
                     
                  </explanationpart3>
@@ -9632,7 +9633,6 @@ inviting opener to bid game in notrump with more than 13 total points or game in
      
                  <explanationpart2>
 
-        (Colin's note .. shouldn't we be using Dummy Points of 5?  This would make an 11 point hand)
 
                  </explanationpart2>
                  <explanationpart3>
@@ -10113,7 +10113,7 @@ Responder bids 4 Hearts, placing the partnership in game in its Golden Fit.
               <balanced>No</balanced>         <!-- Can be Yes, No, Don't Cares -->
               <hcp>9</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
               <distribution></distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
-           <dummyPoints>2</dummyPoints>  
+           <dummyPoints>0</dummyPoints>  
          </inputToCorrectBid> 
          <nextCorrectBid>
               <positionNext>           <!-- can be North, East, South, West -->
@@ -10136,7 +10136,7 @@ With no apparent Golden Fit in a major suit (opener may have only a six-card hea
      
                  <explanationpart2>
  
-
+There are no dummy points if the contract will end in No Trump.
                  </explanationpart2>
                  <explanationpart3>
                    
@@ -12644,9 +12644,9 @@ Requirements for a 1NT Overcall
          </bids>
          <inputToCorrectBid>
               <balanced>Yes</balanced>         <!-- Can be Yes, No, Don't Cares -->
-              <hcp>9</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
-              <distribution>2</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
-                <dummyPoints></dummyPoints>  
+              <hcp>14</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <distribution></distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+                <dummyPoints>1</dummyPoints>  
          </inputToCorrectBid> 
          <nextCorrectBid>
               <positionNext>           <!-- can be North, East, South, West -->
@@ -12783,7 +12783,7 @@ Requirements for a 1NT Overcall
          <inputToCorrectBid>
               <balanced>Yes</balanced>         <!-- Can be Yes, No, Don't Cares -->
               <hcp>9</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
-              <distribution></distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+              <distribution>1</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
                 <dummyPoints></dummyPoints>  
          </inputToCorrectBid> 
          <nextCorrectBid>
@@ -12818,12 +12818,7 @@ The following are the recommended ranges for the advancer:
 <li>16+ HCP 2 No Trump   </li>
 </ul>
  
-Requirements for a 1NT Overcall 
-<ul>
-<li>​15–18 HCP </li>
-<li>Balanced hand </li>
-<li>​Some strength in the opponent’s suit</li>
-</ul>
+
 ]]>
 
                  </explanationpart2>
@@ -13441,7 +13436,7 @@ Requirements for a 1NT Overcall
           </dealer>
          <cards>
             <spades>
-                Q,8,2
+               A,8,2
              </spades>
              <hearts>
                 Q,10,7,4
@@ -15240,7 +15235,7 @@ Rebid 2 Hearts to show the four-card heart suit. Responder is not interested in 
                8,2
              </diamonds>
              <clubs>
-              A,Q,10,6,310
+              A,Q,10,6,3
              </clubs>
          </cards>
          
@@ -15324,7 +15319,7 @@ Rebid 2 Hearts to show the four-card heart suit. Responder is not interested in 
          <inputToCorrectBid>
               <balanced>Yes</balanced>         <!-- Can be Yes, No, Don't Cares -->
               <hcp>16</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
-              <distribution>0</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+              <distribution>1</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
                 <dummyPoints></dummyPoints>  
          </inputToCorrectBid> 
          <nextCorrectBid>
