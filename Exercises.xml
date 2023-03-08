@@ -2047,7 +2047,7 @@ So responder jumps to game with 4 spades
          <inputToCorrectBid>
               <balanced>Yes</balanced>         <!-- Can be Yes, No, Don't Cares -->
               <hcp>3</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
-              <distribution>1</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+              <distribution>0</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
          </inputToCorrectBid> 
          <nextCorrectBid>
               <positionNext>           <!-- can be North, East, South, West -->
@@ -3229,8 +3229,8 @@ So responder jumps to game with 4 spades
          <inputToCorrectBid>
               <balanced>No</balanced>         <!-- Can be Yes, No, Don't Cares -->
               <hcp>1</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
-              <distribution>2</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
-
+              <distribution></distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
+  <dummyPoints>2</dummyPoints>
          </inputToCorrectBid> 
          <nextCorrectBid>
               <positionNext>           <!-- can be North, East, South, West -->
