@@ -4172,7 +4172,7 @@ So responder jumps to game with 4 spades
                  Q,10,8,7,4
              </diamonds>
              <clubs>
-                 K,J,3
+                 K,8,3
              </clubs>
          </cards>
          <bids>
@@ -11368,7 +11368,7 @@ Requirements for a 1NT Overcall
     </exercise> 
     
     
-                  <exercise title="6.6 -  - Overcalls - When Opponents Bid Your Suit ">
+                  <exercise title="6.6 -  - Overcalls ">
         <page>264</page>]
           <dealer>
                South
@@ -11470,7 +11470,7 @@ Requirements for a 1NT Overcall
           </nextCorrectBid>
     </exercise> 
     
-                <exercise title="6.7 - Overcalls  When Opponents Bid Your Suit">
+                <exercise title="6.7 - Overcalls ">
         <page>264</page>]
           <dealer>
                South
@@ -11573,7 +11573,7 @@ Requirements for a 1NT Overcall
           </nextCorrectBid>
     </exercise>     
     
-               <exercise title="6.8 - Overcalls  When Opponents Bid Your Suit">
+               <exercise title="6.8 - Overcalls ">
         <page>265</page>]
           <dealer>
                South
@@ -11677,7 +11677,7 @@ Requirements for a 1NT Overcall
           </nextCorrectBid>
     </exercise>     
     
-       <exercise title="6.9 - Overcalls  - When Opponents Bid Your Suit">
+       <exercise title="6.9 - Overcalls ">
         <page>265</page>]
           <dealer>
                South
