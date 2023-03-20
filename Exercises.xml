@@ -15486,10 +15486,10 @@ It’s an artificial (conventional) response saying that you don’t have a four
              
          </bids>
          <inputToCorrectBid>
-              <balanced>No</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <balanced>Yes</balanced>         <!-- Can be Yes, No, Don't Cares -->
               <hcp>11</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
               <distribution></distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
-                <dummyPoints>3</dummyPoints>  
+                <dummyPoints>1</dummyPoints>  
          </inputToCorrectBid> 
          <nextCorrectBid>
               <positionNext>           <!-- can be North, East, South, West -->
@@ -15518,7 +15518,7 @@ You can jump directly to game in that suit knowing you have found a Golden Fit.
  The Stayman convention is used to ask if opener has a four-card major suit. 
  In order to use Stayman, responder must have at least one four-card major with at least an invitational hand of 8 or 9 total points.
  <![CDATA[    <P />]]>
- Responder bids 2  after opener’s 1NT. With a four-card or longer major suit, opener responds in that suit at the two level. If opener has both four-card majors, the heart suit is rebid first, going up the line. 
+ Responder bids 2  Clubs after opener’s 1NT. With a four-card or longer major suit, opener will next respond in that four-card major suit at the two level. If opener has both four-card majors, the heart suit is rebid first, going up the line. 
  Without a four-card major suit, opener rebids 2 Diamonds. The 2 Clubs response and the 2 Diamonds rebid are artificial (conventional) calls that do not imply any information about the club and diamond suits respectively.
 
 
@@ -15686,7 +15686,7 @@ You can jump directly to game in that suit knowing you have found a Golden Fit.
  The Stayman convention is used to ask if opener has a four-card major suit. 
  In order to use Stayman, responder must have at least one four-card major with at least an invitational hand of 8 or 9 total points.
  <![CDATA[    <P />]]>
- Responder bids 2  after opener’s 1NT. With a four-card or longer major suit, opener responds in that suit at the two level. If opener has both four-card majors, the heart suit is rebid first, going up the line. 
+ Responder bids 2  Clubs after opener’s 1NT. With a four-card or longer major suit, opener responds in that four-card major suit at the two level. If opener has both four-card majors, the heart suit is rebid first, going up the line. 
  Without a four-card major suit, opener rebids 2 Diamonds. The 2 Clubs response and the 2 Diamonds rebid are artificial (conventional) calls that do not imply any information about the club and diamond suits respectively.
 
 
@@ -15842,6 +15842,7 @@ You can jump directly to game in that suit knowing you have found a Golden Fit.
 Because you respond 3NT to the opener's invitation of 2 Hearts, the opener knows that you are only interested in Spades.  After all, you did
 use the Stayman convention, so you must have at least one four-card major.
 
+You might have been tempted to indicate there is 1 dummy point for the suit with 2 cards (Clubs).  However, since you are bidding NT, there are no dummy points to be considered.
                   </explanationpart1>
      
                  <explanationpart2>
@@ -15857,7 +15858,7 @@ If opener corrects to 4 in this last example, it would indicate that opener has 
  The Stayman convention is used to ask if opener has a four-card major suit. 
  In order to use Stayman, responder must have at least one four-card major with at least an invitational hand of 8 or 9 total points.
  <![CDATA[    <P />]]>
- Responder bids 2  after opener’s 1NT. With a four-card or longer major suit, opener responds in that suit at the two level. If opener has both four-card majors, the heart suit is rebid first, going up the line. 
+ Responder bids 2  Clubs after opener’s 1NT. With a four-card or longer major suit, opener responds in that suit at the two level. If opener has both four-card majors, the heart suit is rebid first, going up the line. 
  Without a four-card major suit, opener rebids 2 Diamonds. The 2 Clubs response and the 2 Diamonds rebid are artificial (conventional) calls that do not imply any information about the club and diamond suits respectively.
 
 
