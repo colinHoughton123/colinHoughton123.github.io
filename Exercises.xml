@@ -1110,7 +1110,7 @@ Remember: The patterns for a balanced hand are:  4-3-3-3, 4-5-3-2, 5-3-3-2 and t
              </bid>
          </bids>
          <inputToCorrectBid>
-              <balanced>Yes</balanced>         <!-- Can be Yes, No, Don't Cares -->
+              <balanced>No</balanced>         <!-- Can be Yes, No, Don't Cares -->
               <hcp>13</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
               <distribution>0</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
          </inputToCorrectBid> 
@@ -17571,13 +17571,13 @@ raise with a maximum, since responder could have passed with a very weak hand. <
          </bids>
          <inputToCorrectBid>
               <balanced>Yes</balanced>         <!-- Can be Yes, No, Don't Cares -->
-              <hcp>9</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
+              <hcp>10</hcp>                             <!-- Can be an integer between 0 and 40 inclusive -->
               <distribution>0</distribution>     <!-- Can be an integer between 0 and a higher number (TBD) inclusive -->
                 <dummyPoints></dummyPoints>  
          </inputToCorrectBid> 
          <nextCorrectBid>
               <positionNext>           <!-- can be North, East, South, West -->
-                     West
+                     East
               </positionNext>
                  <levelNext>            <!-- can be 1, 2, 3, 4, 5, 6 , 7, Pass, Double -->
                     3
